@@ -1,7 +1,11 @@
-import React from 'react';
+import { Text, View } from 'react-native';
 
 const SignInScreen = () => {
-  return <div>SignInScreen</div>;
+  return (
+    <View>
+      <Text>sign in screen</Text>
+    </View>
+  );
 };
 
 export default SignInScreen;

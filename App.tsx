@@ -1,8 +1,9 @@
+import './global.css';
+
 import { StatusBar } from 'expo-status-bar';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 
-import './global.css';
 import { HomeScreen } from 'screens/HomeScreen';
 import { GenerateQuizScreen } from 'screens/GenerateQuizScreen';
 import { HistoryQuizScreen } from 'screens/HistoryQuizScreen';
@@ -16,7 +17,7 @@ export default function App() {
     <>
       <StatusBar style="auto" />
       <NavigationContainer>
-        <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Navigator initialRouteName="home">
           <Drawer.Screen name="home" component={HomeScreen} />
           <Drawer.Screen name="generate-quiz" component={GenerateQuizScreen} />
           <Drawer.Screen name="history-quiz" component={HistoryQuizScreen} />

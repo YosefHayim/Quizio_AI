@@ -1,7 +1,11 @@
-import React from 'react';
+import { Text, View } from 'react-native';
 
 const HistoryQuizScreen = () => {
-  return <div>HistoryQuizScreen</div>;
+  return (
+    <View>
+      <Text>history quiz screen</Text>
+    </View>
+  );
 };
 
 export default HistoryQuizScreen;

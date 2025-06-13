@@ -1,7 +1,11 @@
-import React from 'react';
+import { Text, View } from 'react-native';
 
 const GenerateQuizScreen = () => {
-  return <div>GenerateQuizScreen</div>;
+  return (
+    <View>
+      <Text>generate quiz screen</Text>
+    </View>
+  );
 };
 
 export default GenerateQuizScreen;
