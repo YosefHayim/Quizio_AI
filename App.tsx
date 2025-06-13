@@ -18,11 +18,23 @@ export default function App() {
       <StatusBar style="auto" />
       <NavigationContainer>
         <Drawer.Navigator initialRouteName="home">
-          <Drawer.Screen name="home" component={HomeScreen} />
-          <Drawer.Screen name="generate-quiz" component={GenerateQuizScreen} />
-          <Drawer.Screen name="history-quiz" component={HistoryQuizScreen} />
-          <Drawer.Screen name="profile" component={ProfileScreen} />
-          <Drawer.Screen name="settings" component={SettingsScreen} />
+          <Drawer.Screen name="home" component={HomeScreen} options={{ title: 'Home' }} />
+          <Drawer.Screen
+            name="generate-quiz"
+            component={GenerateQuizScreen}
+            options={{ title: 'Create Quiz', drawerIcon: () => <></> }}
+          />
+          <Drawer.Screen
+            name="history-quiz"
+            component={HistoryQuizScreen}
+            options={{ title: 'History Quiz' }}
+          />
+          <Drawer.Screen name="profile" component={ProfileScreen} options={{ title: 'Profile' }} />
+          <Drawer.Screen
+            name="settings"
+            component={SettingsScreen}
+            options={{ title: 'Settings' }}
+          />
         </Drawer.Navigator>
       </NavigationContainer>
     </>
