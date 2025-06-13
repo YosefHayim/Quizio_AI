@@ -1,5 +1,5 @@
 {
-  "name": "my-expo-app",
+  "name": "ai-tube-quiz",
   "version": "1.0.0",
   "scripts": {
     "android": "expo start --android",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@react-navigation/drawer": "^7.4.1",
+    "@react-navigation/native": "^7.1.10",
     "expo": "^53.0.11",
     "expo-status-bar": "~2.2.3",
     "nativewind": "latest",
