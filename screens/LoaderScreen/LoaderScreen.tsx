@@ -1,9 +1,9 @@
-import { Text, View } from 'react-native';
+import { ActivityIndicator, View } from 'react-native';
 
 const LoaderScreen = () => {
   return (
-    <View>
-      <Text>loader screen</Text>
+    <View className="flex-1">
+      <ActivityIndicator size="large" className="color-red-400" />
     </View>
   );
 };
