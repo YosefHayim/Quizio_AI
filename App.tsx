@@ -3,7 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import './global.css';
 import { SafeAreaView } from 'react-native';
 import { verifyInstallation } from 'nativewind';
-import LoginScreen from 'screens/LoginScreen';
+import LoginScreen from 'screens/LoginScreen/LoginScreen';
 
 export default function App() {
   verifyInstallation();
