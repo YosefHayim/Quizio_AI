@@ -17,7 +17,7 @@ const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
-    <SafeAreaView className="flex-1 p-10">
+    <SafeAreaView style={{ flex: 1 }}>
       <StatusBar style="auto" />
       <NavigationContainer>
         <Drawer.Navigator
