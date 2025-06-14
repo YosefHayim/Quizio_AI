@@ -1,12 +1,12 @@
-import { Text } from 'react-native';
+import { StyleProp, Text, TextStyle } from 'react-native';
 
 interface TitleProps {
   titleText: string;
-  style?: string;
+  style?: StyleProp<TextStyle>;
 }
 
 const Title: React.FC<TitleProps> = ({ titleText, style }) => {
-  return <Text className={style}>{titleText}</Text>;
+  return <Text style={style}>{titleText}</Text>;
 };
 
 export default Title;

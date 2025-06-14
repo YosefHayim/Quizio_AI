@@ -1,20 +1,36 @@
 import { Title } from 'components/Title';
+import { ReactNode } from 'react';
 import { Text, View } from 'react-native';
 
 interface StatCardProps {
   statCardText: string;
   statCardTitle: string;
+  icon: ReactNode;
+  statValue: number;
 }
 
-const StatCard: React.FC<StatCardProps> = ({ statCardText, statCardTitle }) => {
+const StatCard: React.FC<StatCardProps> = ({ statValue, statCardText, statCardTitle, icon }) => {
   return (
-    <View>
-      <View>
+    <View
+      style={{
+        borderRadius: 8,
+        padding: 10,
+        backgroundColor: 'white',
+        flex: 1,
+        justifyContent: 'space-evenly',
+      }}>
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginBottom: 8,
+        }}>
         <Title titleText={statCardTitle} />
+        <View>{icon}</View>
       </View>
-      <View>
-        <Text>{statCardText}</Text>
-      </View>
+      <Text className="text-xl font-bold text-red-500">{statValue}</Text>
+      <Text className="text-sm">{statCardText}</Text>
     </View>
   );
 };
