@@ -1,12 +1,11 @@
-import { View } from 'react-native';
-import { Text } from 'react-native/Libraries/Text/Text';
+import { View, Text } from 'react-native';
 
-const Dashboard = () => {
+const DashboardScreen = () => {
   return (
     <View>
-      <Text>Dashboard screen</Text>
+      <Text>Welcome back! Ready to learn something new today?</Text>
     </View>
   );
 };
 
-export default Dashboard;
+export default DashboardScreen;

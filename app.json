@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "my-expo-app",
-    "slug": "my-expo-app",
+    "name": "AI Tube Quiz",
+    "slug": "ai-tube-quiz",
     "version": "1.0.0",
 
     "web": {

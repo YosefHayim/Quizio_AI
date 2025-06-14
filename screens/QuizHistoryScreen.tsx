@@ -1,5 +1,4 @@
-import { View } from 'react-native';
-import { Text } from 'react-native/Libraries/Text/Text';
+import { View, Text } from 'react-native';
 
 const QuizHistoryScreen = () => {
   return (
