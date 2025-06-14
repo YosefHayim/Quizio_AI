@@ -1,15 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
+
 import './global.css';
+import { SafeAreaView } from 'react-native';
 import { verifyInstallation } from 'nativewind';
-import { SafeAreaView, Text } from 'react-native';
+import LoginScreen from 'screens/LoginScreen';
 
 export default function App() {
   verifyInstallation();
 
   return (
-    <SafeAreaView className="flex-1">
+    <SafeAreaView className="flex-1 p-20">
       <StatusBar style="light" />
-      <Text className="text-2xl text-white">Hi there</Text>
+      <LoginScreen />
     </SafeAreaView>
   );
 }

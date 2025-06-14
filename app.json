@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ai tube quizzer",
-    "slug": "ai-tube-quizzer",
+    "name": "AI Tube Quiz",
+    "slug": "ai-tube-quiz",
     "version": "1.0.0",
 
     "web": {
