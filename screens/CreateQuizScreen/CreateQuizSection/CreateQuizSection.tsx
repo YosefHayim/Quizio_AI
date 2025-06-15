@@ -1,24 +1,40 @@
 import { ScreenHeader } from 'components/ScreenHeader';
-import { ScrollView, View } from 'react-native';
+import { Alert, ScrollView, View } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { CustomInput } from 'components/CustomInput';
 import { SmallText } from 'components/SmallText';
 import { CustomButton } from 'components/CustomButton';
 import { ChooseAmountOfQuestions } from './ChooseAmountOfQuestions';
 import { ChooseDifficulty } from './ChooseDifficulty';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import Entypo from '@expo/vector-icons/Entypo';
 import { Title } from 'components/Title';
 import { StepHowItWork } from '../StepHowItWork';
 import { colors } from 'constants/colors';
+import WebView from 'react-native-webview';
 
 const CreateQuizSection = () => {
   const [difficultyDialogVisible, setDifficultyDialogVisible] = useState(false);
   const [questionDialogVisible, setQuestionDialogVisible] = useState(false);
+  const [verifiedUrl, setVerifiedUrl] = useState(false);
 
   const [selectedDifficulity, setSelectedDifficulity] = useState('easy');
   const [selectedQuestion, setSelectedQuestion] = useState('5');
+
+  const [urlInput, setUrlInput] = useState('');
+
+  const handleSubmitUrl = () => {
+    if (!urlInput.includes('https://www.youtube.com/')) {
+      Alert.alert('Invalid input', 'Please provide a valid url', [{ text: 'Okay' }]);
+      setUrlInput('');
+    } else {
+      console.log(urlInput);
+      setVerifiedUrl(true);
+    }
+  };
+
+  useEffect(() => {}, [verifiedUrl]);
 
   return (
     <ScrollView style={{ flex: 1 }}>
@@ -31,13 +47,17 @@ const CreateQuizSection = () => {
         <View style={{ borderWidth: 1, padding: 20, gap: 6, borderRadius: 6 }}>
           <Title titleText="Video Preview" style={{ fontWeight: 'bold', textAlign: 'center' }} />
           <SmallText text={`Preview of the video you'll create a quiz from`} style={{ textAlign: 'center' }} />
-          <View style={{ borderWidth: 1, borderStyle: 'dashed', padding: 10, gap: 4, alignItems: 'center' }}>
-            <MaterialIcons name="ondemand-video" size={24} color={colors.gray} />
-            <SmallText text={`Enter a YouTube URL to see video preview`} style={{ textAlign: 'center' }} />
-          </View>
+          {verifiedUrl ? (
+            <WebView source={{ uri: urlInput }} style={{ height: 200, borderRadius: 6 }} />
+          ) : (
+            <View style={{ borderWidth: 1, borderStyle: 'dashed', padding: 10, gap: 4, alignItems: 'center', justifyContent: 'center', height: 200 }}>
+              <MaterialIcons name="ondemand-video" size={24} color={'gray'} />
+              <SmallText text={`Enter a YouTube URL to see video preview`} style={{ textAlign: 'center' }} />
+            </View>
+          )}
         </View>
 
-        <CustomInput placeholderText="https://www.youtube.com/watch?v=..." />
+        <CustomInput placeholderText="https://www.youtube.com/watch?v=..." handleInputFn={(v) => setUrlInput(v)} state={urlInput} />
         <SmallText text="URL of the YouTube video you want to create a quiz" />
 
         <View style={{ justifyContent: 'space-between', alignItems: 'center', flexDirection: 'row' }}>
@@ -70,10 +90,10 @@ const CreateQuizSection = () => {
           setSelectedDifficulity={setSelectedDifficulity}
         />
         <CustomButton
-          onPress={() => console.log('create quiz')}
+          onPress={handleSubmitUrl}
           style={{ backgroundColor: 'red', padding: 6, borderRadius: 6 }}
           styleText={{ color: 'white', fontWeight: 'bold' }}
-          buttonText="Create"
+          buttonText={`${verifiedUrl ? 'Upload' : 'Create'}`}
           icon={<Entypo name="controller-play" size={24} color="white" />}
         />
         <View style={{ gap: 4 }}>
