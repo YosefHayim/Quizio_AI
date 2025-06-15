@@ -84,5 +84,3 @@ const difficultyStyle = {
     borderRadius: 1000,
   },
 };
-
-export { default as RecentQuizCard } from './RecentQuizCard';

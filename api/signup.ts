@@ -1,8 +1,6 @@
-import supabase from './configuration';
-
 type SignupInformation = {
   full_name: string;
-  phone_number: string;
+  password: string;
   email: string;
   is_active: boolean;
 };

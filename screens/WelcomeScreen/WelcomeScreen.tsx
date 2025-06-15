@@ -14,9 +14,10 @@ const WelcomeScreen = () => {
   const [submit, setSubmit] = useState(false);
 
   const { mutate, isPending, isSuccess, isError, error } = useSignup();
-  
+
   const handleSignUp = () => {
     if (submit) {
+      mutate({ full_name: 'placeholder', email, password, is_active: true });
     }
   };
 
@@ -35,9 +36,9 @@ const WelcomeScreen = () => {
       <View style={{ flex: 1, gap: 6 }}>
         <Title titleText="Welcome" style={{ fontSize: 20, fontWeight: 'bold', textAlign: 'center' }} />
         <SmallText text={'Sign in to your account or create a new one'} style={{ textAlign: 'center' }} />
-        <CustomInput placeholderText="enter email" handleInputFn={} state={} />
-        <CustomInput placeholderText="enter password" />
-        <CustomButton buttonText="login" styleText={{ backgroundColor: 'red' }} onPress={() => setSubmit(true)} />
+        <CustomInput placeholderText="enter email" handleInputFn={(v) => setEmail(v)} state={email} />
+        <CustomInput placeholderText="enter password" handleInputFn={(v) => setPassword(v)} state={password} />
+        <CustomButton buttonText="login" styleText={{ backgroundColor: 'red' }} onPress={handleSignUp} icon={<></>} />
       </View>
     </ScrollView>
   );
