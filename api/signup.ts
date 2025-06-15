@@ -1,3 +1,5 @@
+import { supabase } from './configuration';
+
 type SignupInformation = {
   full_name: string;
   password: string;
@@ -6,11 +8,16 @@ type SignupInformation = {
 };
 
 const signup = async (info: SignupInformation) => {
-  const { data, error } = await supabase.from('users').insert(info).select();
+  try {
+    const { data, error } = await supabase.from('users').insert(info).select();
 
-  if (error) throw error;
+    if (error) throw error;
 
-  return data;
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export default signup;
