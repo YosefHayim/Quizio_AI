@@ -8,7 +8,7 @@ import { PaperProvider } from 'react-native-paper';
 export default function App() {
   return (
     <PaperProvider>
-      <SafeAreaView style={{ flex: 1 }}>
+      <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
         <StatusBar style="light" />
         <Sidebar />
       </SafeAreaView>
