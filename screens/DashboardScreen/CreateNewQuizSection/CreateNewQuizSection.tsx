@@ -14,6 +14,7 @@ const CreateNewQuizSection = () => {
         </View>
         <SmallText text="Turn any YouTube video into an interactive learning experience" />
         <CustomButton
+          icon={<AntDesign name="addfile" size={24} color="white" />}
           buttonText="Create New Quiz"
           style={{ backgroundColor: 'red', padding: 8, borderRadius: 6 }}
           onPress={() => console.log('placeholder click')}
