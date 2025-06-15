@@ -11,6 +11,8 @@ import { colors } from 'constants/colors';
 
 const SettingsScreen = () => {
   const [emailNotification, setEmailNotification] = useState(true);
+  const [weeklyReport, setWeeklyReport] = useState(true);
+  const [appNotification, setAppNotification] = useState(true);
   return (
     <ScrollView keyboardDismissMode="on-drag">
       <View style={{ flex: 1, gap: 16, padding: 16, marginBottom: '20%' }}>
@@ -22,8 +24,8 @@ const SettingsScreen = () => {
               <Title titleText="Profile Information" />
             </View>
             <SmallText text={'Manage your account details and prefrences'} />
-            <View style={{ gap: 8 }}>
-              <CustomInput placeholderText="Member Since" style={{}} />
+            <View style={{ gap: 16, marginTop: 10 }}>
+              <CustomInput placeholderText="Member Since" />
               <CustomInput placeholderText="Email Address" />
               <CustomInput placeholderText="Total Quizzes" />
               <CustomInput placeholderText="Subscription Type" />
@@ -46,14 +48,14 @@ const SettingsScreen = () => {
             labelText="Email Notifications"
           />
           <SettingsRow
-            state={emailNotification}
-            setState={setEmailNotification}
+            state={appNotification}
+            setState={setAppNotification}
             explanationText="Get App notification for quiz reminders"
             labelText="Push Notificiations"
           />
           <SettingsRow
-            state={emailNotification}
-            setState={setEmailNotification}
+            state={weeklyReport}
+            setState={setWeeklyReport}
             labelText="Weekly Report"
             explanationText="Receive a summary of your learning progress"
           />
