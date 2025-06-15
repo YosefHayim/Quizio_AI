@@ -1,7 +1,7 @@
 import { StyleProp, TextStyle, Text as RNText, StyleSheet } from 'react-native';
 
 interface SmallTextProps {
-  text: string;
+  text: string | number;
   style?: StyleProp<TextStyle>; // Optional is better for usability
 }
 

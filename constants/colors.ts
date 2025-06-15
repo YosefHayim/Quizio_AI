@@ -1,5 +1,7 @@
 export const colors = {
-  red: '#EE4443',
-  backgroundColorLighRed: '#FEF2F3',
-  gray: '#FAFAFA',
+  red: '#ee4433',
+  backgroundColorLighRed: '#fef2f3',
+  gray: '#fafafa',
+  yellow: '#f5c600',
+  green: '#00f502',
 };

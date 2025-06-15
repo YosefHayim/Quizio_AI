@@ -10,8 +10,8 @@ import { useState } from 'react';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import Entypo from '@expo/vector-icons/Entypo';
 import { Title } from 'components/Title';
-import StepHowItWork from '../StepHowItWork/StepHowItWork';
-import Feather from '@expo/vector-icons/Feather';
+import { StepHowItWork } from '../StepHowItWork';
+import { colors } from 'constants/colors';
 
 const CreateQuizSection = () => {
   const [difficultyDialogVisible, setDifficultyDialogVisible] = useState(false);
@@ -32,7 +32,7 @@ const CreateQuizSection = () => {
           <Title titleText="Video Preview" style={{ fontWeight: 'bold', textAlign: 'center' }} />
           <SmallText text={`Preview of the video you'll create a quiz from`} style={{ textAlign: 'center' }} />
           <View style={{ borderWidth: 1, borderStyle: 'dashed', padding: 10, gap: 4, alignItems: 'center' }}>
-            <MaterialIcons name="ondemand-video" size={24} color="gray" />
+            <MaterialIcons name="ondemand-video" size={24} color={colors.gray} />
             <SmallText text={`Enter a YouTube URL to see video preview`} style={{ textAlign: 'center' }} />
           </View>
         </View>
@@ -44,14 +44,14 @@ const CreateQuizSection = () => {
           <CustomButton
             onPress={() => setQuestionDialogVisible(true)}
             styleText={{ fontWeight: 'bold' }}
-            style={{ borderWidth: 1, borderRadius: 6, padding: 4, borderColor: 'gray', alignItems: 'center' }}
+            style={{ borderWidth: 1, borderRadius: 6, padding: 4, borderColor: colors.gray, alignItems: 'center' }}
             buttonText={`Questions: ${selectedQuestion}`}
             icon={<MaterialCommunityIcons name="head-question" size={24} color="red" />}
           />
           <CustomButton
             onPress={() => setDifficultyDialogVisible(true)}
             styleText={{ fontWeight: 'bold' }}
-            style={{ borderWidth: 1, borderRadius: 6, padding: 4, borderColor: 'gray', alignItems: 'center' }}
+            style={{ borderWidth: 1, borderRadius: 6, padding: 4, borderColor: colors.gray, alignItems: 'center' }}
             buttonText={`Difficulty: ${selectedDifficulity.charAt(0).toUpperCase() + selectedDifficulity.slice(1)}`}
             icon={<MaterialCommunityIcons name="stairs-up" size={24} color="red" />}
           />
