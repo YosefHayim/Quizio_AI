@@ -7,7 +7,7 @@ interface TextInputProps {
 
 const CustomInput: React.FC<TextInputProps> = ({ placeholderText, style }) => {
   return (
-    <View style={{ borderColor: 'gray', borderWidth: 1, borderRadius: 4, padding: 4 }}>
+    <View style={{ borderColor: 'gray', borderWidth: 1, borderRadius: 6, padding: 4 }}>
       <TextInput placeholder={placeholderText} autoCorrect={false} style={style} />
     </View>
   );

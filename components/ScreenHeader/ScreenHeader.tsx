@@ -11,7 +11,7 @@ interface ScreenHeaderProps {
 
 const ScreenHeader: React.FC<ScreenHeaderProps> = ({ title, paragraph, icon }) => {
   return (
-    <View style={{ justifyContent: 'center' }}>
+    <View style={{ justifyContent: 'center', alignItems: 'center' }}>
       <View style={{ flexDirection: 'row', gap: 6, alignItems: 'center' }}>
         {icon}
         <Title titleText={title} style={{ fontWeight: 'bold' }} />

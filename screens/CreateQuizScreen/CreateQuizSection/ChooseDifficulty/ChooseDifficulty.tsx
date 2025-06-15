@@ -1,7 +1,13 @@
 import { Picker } from '@react-native-picker/picker';
 import { CustomButton } from 'components/CustomButton';
-import { View } from 'react-native';
 import { Portal, Dialog } from 'react-native-paper';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+
+const data = [
+  { label: 'Easy', value: 'easy' },
+  { label: 'Medium', value: 'medium' },
+  { label: 'Hard', value: 'hard' },
+];
 
 interface ChooseDifficultyProps {
   selectedDifficulity: string;
@@ -18,17 +24,23 @@ const ChooseDifficulty: React.FC<ChooseDifficultyProps> = ({
 }) => {
   return (
     <Portal>
-      <Dialog visible={difficultyDialogVisible} onDismiss={() => setDifficultyDialogVisible(false)} style={{ borderRadius: 8, backgroundColor: 'white' }}>
-        <Dialog.Title style={{ fontSize: 12 }}>Choose Difficulty</Dialog.Title>
+      <Dialog visible={difficultyDialogVisible} onDismiss={() => setDifficultyDialogVisible(false)} style={{ borderRadius: 6, backgroundColor: 'white' }}>
+        <Dialog.Title style={{ fontSize: 16, fontWeight: 'bold', textAlign: 'center' }}>Choose Difficulty</Dialog.Title>
         <Dialog.Content>
           <Picker selectedValue={selectedDifficulity} onValueChange={(itemValue) => setSelectedDifficulity(itemValue)}>
-            <Picker.Item label="Easy" value="easy" />
-            <Picker.Item label="Medium" value="medium" />
-            <Picker.Item label="Hard" value="hard" />
+            {data.map((option) => (
+              <Picker.Item key={option.label} label={option.label} value={option.value} />
+            ))}
           </Picker>
         </Dialog.Content>
         <Dialog.Actions>
-          <CustomButton onPress={() => setDifficultyDialogVisible(false)} buttonText="Done" />
+          <CustomButton
+            style={{ backgroundColor: 'red', padding: 6, borderRadius: 6 }}
+            styleText={{ color: 'white', fontWeight: 'bold' }}
+            onPress={() => setDifficultyDialogVisible(false)}
+            buttonText="Done"
+            icon={<MaterialIcons name="done" size={24} color="white" />}
+          />
         </Dialog.Actions>
       </Dialog>
     </Portal>

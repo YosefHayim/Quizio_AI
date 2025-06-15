@@ -13,7 +13,7 @@ const StatCard: React.FC<StatCardProps> = ({ statValue, statCardText, statCardTi
   return (
     <View
       style={{
-        borderRadius: 8,
+        borderRadius: 6,
         padding: 10,
         backgroundColor: 'white',
         flex: 1,
