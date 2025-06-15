@@ -1,6 +1,5 @@
 // UserInfoContext.tsx
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { createContext, useContext, useState, ReactNode, useEffect } from 'react';
+import { createContext, useContext, useState, ReactNode } from 'react';
 
 type UserInfo = {
   name?: string;
@@ -19,30 +18,7 @@ type UserInfoContextType = {
 const UserInfoContext = createContext<UserInfoContextType | undefined>(undefined);
 
 export const UserInfoProvider = ({ children }: { children: ReactNode }) => {
-  const [user, setUser] = useState<UserInfo | null>({
-    name: 'user',
-    email: 'example@gmail.com',
-    theme: 'light',
-  });
-
-  useEffect(() => {
-    AsyncStorage.getItem('userInfo').then((storedUser) => {
-      if (storedUser) {
-        const parsed = JSON.parse(storedUser);
-
-        setUser({
-          name: parsed.name ?? 'user',
-          email: parsed.email ?? 'example@gmail.com',
-          theme: parsed.theme ?? 'light',
-          emailNotifciation: parsed.emailNotifciation,
-          pushNotification: parsed.pushNotification,
-          weeklyProgressNotification: parsed.weeklyProgressNotification,
-        });
-      } else {
-        setUser(user); // fallback if nothing in storage
-      }
-    });
-  }, []);
+  const [user, setUser] = useState<UserInfo | null>(null);
 
   return <UserInfoContext.Provider value={{ user, setUser }}>{children}</UserInfoContext.Provider>;
 };
