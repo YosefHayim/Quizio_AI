@@ -3,8 +3,11 @@ import { SmallText } from 'components/SmallText';
 import { Title } from 'components/Title';
 import { View } from 'react-native';
 import AntDesign from '@expo/vector-icons/AntDesign';
+import { useNavigation } from '@react-navigation/native';
 
 const CreateNewQuizSection = () => {
+  const navigation = useNavigation();
+
   return (
     <View style={{ flexDirection: 'row' }}>
       <View style={{ backgroundColor: 'white', padding: 20, gap: 8 }}>
@@ -17,7 +20,7 @@ const CreateNewQuizSection = () => {
           icon={<AntDesign name="addfile" size={24} color="white" />}
           buttonText="Create New Quiz"
           style={{ backgroundColor: 'red', padding: 8, borderRadius: 6 }}
-          onPress={() => console.log('placeholder click')}
+          onPress={() => navigation.navigate('dashboard')}
           styleText={{ color: 'white', fontWeight: 'bold', textAlign: 'center' }}
         />
       </View>

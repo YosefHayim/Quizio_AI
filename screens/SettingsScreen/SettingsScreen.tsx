@@ -13,9 +13,10 @@ const SettingsScreen = () => {
   const [emailNotification, setEmailNotification] = useState(true);
   const [weeklyReport, setWeeklyReport] = useState(true);
   const [appNotification, setAppNotification] = useState(true);
+
   return (
     <ScrollView keyboardDismissMode="on-drag">
-      <View style={{ flex: 1, gap: 16, padding: 16, marginBottom: '20%', backgroundColor: 'white' }}>
+      <View style={{ flex: 1, gap: 16, padding: 16, marginBottom: '20%' }}>
         <Title titleText={'Customize your learning experience and account prefrences'} />
         <View style={{ backgroundColor: 'white', borderRadius: 6, padding: 10, gap: 16 }}>
           <View>
