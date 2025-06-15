@@ -1,10 +1,77 @@
-import { View, Text } from 'react-native';
+import { SmallText } from 'components/SmallText';
+import { Title } from 'components/Title';
+import { View, ScrollView } from 'react-native';
+import Feather from '@expo/vector-icons/Feather';
+import { useState } from 'react';
+import SettingsRow from './SettingsRow/SettingsRow';
+import { CustomInput } from 'components/CustomInput';
+import { CustomButton } from 'components/CustomButton';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { colors } from 'constants/colors';
 
 const SettingsScreen = () => {
+  const [emailNotification, setEmailNotification] = useState(true);
   return (
-    <View>
-      <Text>SettingsScreen screen</Text>
-    </View>
+    <ScrollView keyboardDismissMode="on-drag">
+      <View style={{ flex: 1, gap: 16, padding: 16, marginBottom: '20%' }}>
+        <Title titleText={'Customize your learning experience and account prefrences'} />
+        <View style={{ backgroundColor: 'white', borderRadius: 6, padding: 10, gap: 16 }}>
+          <View>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+              <Feather name="user" size={24} color="black" />
+              <Title titleText="Profile Information" />
+            </View>
+            <SmallText text={'Manage your account details and prefrences'} />
+            <View style={{ gap: 8 }}>
+              <CustomInput placeholderText="Member Since" style={{}} />
+              <CustomInput placeholderText="Email Address" />
+              <CustomInput placeholderText="Total Quizzes" />
+              <CustomInput placeholderText="Subscription Type" />
+            </View>
+          </View>
+        </View>
+        <View style={{ backgroundColor: 'white', borderRadius: 6, padding: 10, gap: 16 }}>
+          <View>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+              <Feather name="bell" size={24} color="black" />
+              <Title titleText="Notifications" />
+            </View>
+            <SmallText text={'Manage how you receive updates and notifications'} />
+          </View>
+
+          <SettingsRow
+            state={emailNotification}
+            setState={setEmailNotification}
+            explanationText="Recieve quiz updates and learning tips via email"
+            labelText="Email Notifications"
+          />
+          <SettingsRow
+            state={emailNotification}
+            setState={setEmailNotification}
+            explanationText="Get App notification for quiz reminders"
+            labelText="Push Notificiations"
+          />
+          <SettingsRow
+            state={emailNotification}
+            setState={setEmailNotification}
+            labelText="Weekly Report"
+            explanationText="Receive a summary of your learning progress"
+          />
+        </View>
+      </View>
+      <CustomButton
+        icon={<MaterialIcons name="done" size={24} color="white" />}
+        styleText={{ fontWeight: 'bold', color: 'white' }}
+        style={{
+          padding: 10,
+          backgroundColor: colors.red,
+          borderRadius: 6,
+          marginHorizontal: 12,
+        }}
+        buttonText="Save Preferences"
+        onPress={() => console.log('save')}
+      />
+    </ScrollView>
   );
 };
 

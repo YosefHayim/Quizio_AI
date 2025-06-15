@@ -1,9 +1,8 @@
 import { RecentQuizCard } from 'components/RecentQuizCard';
 import { SmallText } from 'components/SmallText';
-import { Title } from 'components/Title';
 import { colors } from 'constants/colors';
 import { useState } from 'react';
-import { View, ScrollView, Keyboard } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import { Searchbar } from 'react-native-paper';
 
 const mockQuizzes = [
@@ -77,8 +76,8 @@ const QuizHistoryScreen = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   return (
-    <ScrollView onScrollBeginDrag={Keyboard.dismiss}>
-      <View style={{ gap: 16, padding: 16, marginBottom: 25 }}>
+    <ScrollView keyboardDismissMode="on-drag">
+      <View style={{ gap: 16, padding: 16, marginBottom: '20%' }}>
         <SmallText text={'Track your learning progress and review past quizzes'} />
         <View>
           <Searchbar placeholder="Search" onChangeText={setSearchQuery} value={searchQuery} style={{ borderRadius: 6, backgroundColor: colors.gray }} />

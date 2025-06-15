@@ -17,7 +17,7 @@ const StepHowItWork: React.FC<StepHowItWorksProps> = ({ stepNumber, stepText, di
         </View>
         <SmallText text={stepText} style={{ fontWeight: 'bold' }} />
       </View>
-      {displayArrow && <Feather name="arrow-right" size={24} color="black" style={{ marginBottom: 10 }} />}
+      {displayArrow && <Feather name="arrow-right" size={24} color="black" style={{ marginBottom: '10%' }} />}
     </View>
   );
 };

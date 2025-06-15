@@ -1,4 +1,4 @@
-import { Keyboard, ScrollView, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { RecentQuizSection } from './RecentQuizSection';
 import { ScreenHeader } from 'components/ScreenHeader';
 import { GroupStatsSection } from './GroupStatsSection';
@@ -9,8 +9,8 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 const DashboardScreen = () => {
   return (
-    <ScrollView onScrollBeginDrag={Keyboard.dismiss}>
-      <View style={{ gap: 16, padding: 16, marginBottom: 25 }}>
+    <ScrollView keyboardDismissMode="on-drag">
+      <View style={{ gap: 16, padding: 16, marginBottom: '20%' }}>
         <ScreenHeader title="Welcome back!" paragraph=" Ready to learn something new today?" />
         <GroupStatsSection />
         <CreateNewQuizSection />
