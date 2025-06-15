@@ -26,8 +26,10 @@ const CreateQuizSection = () => {
           paragraph="Set up your personalized learning experience"
           icon={<MaterialIcons name="settings-suggest" size={24} color="red" />}
         />
+
         <CustomInput placeholderText="https://www.youtube.com/watch?v=..." />
         <SmallText text="URL of the YouTube video you want to create a quiz" />
+
         <View style={{ justifyContent: 'space-between', alignItems: 'center', flexDirection: 'row' }}>
           <CustomButton
             onPress={() => setQuestionDialogVisible(true)}
@@ -44,6 +46,7 @@ const CreateQuizSection = () => {
             icon={<MaterialCommunityIcons name="stairs-up" size={24} color="red" />}
           />
         </View>
+
         <ChooseAmountOfQuestions
           questionDialogVisible={questionDialogVisible}
           selectedQuestion={selectedQuestion}
@@ -57,6 +60,7 @@ const CreateQuizSection = () => {
           setSelectedDifficulity={setSelectedDifficulity}
         />
       </View>
+
       <CustomButton
         onPress={() => console.log('create quiz')}
         style={{ backgroundColor: 'red', padding: 6, borderRadius: 6 }}
@@ -64,6 +68,7 @@ const CreateQuizSection = () => {
         buttonText="Create"
         icon={<Entypo name="controller-play" size={24} color="white" />}
       />
+
       <View style={{ borderWidth: 1, padding: 10, gap: 6 }}>
         <Title titleText="Video Preview" style={{ fontWeight: 'bold' }} />
         <SmallText text={`Preview of the video you'll create a quiz from`} />
