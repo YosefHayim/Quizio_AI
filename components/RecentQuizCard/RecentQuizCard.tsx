@@ -16,8 +16,7 @@ interface RecentQuizCardProps {
 }
 
 const RecentQuizCard: React.FC<RecentQuizCardProps> = ({ quizTitle, date, quizScore, numberOfQuestions, difficultyLevel, quizDuration }) => {
-  const mintues = quizDuration / 60;
-
+  const minutes = Math.round(quizDuration / 60);
   return (
     <View
       style={{
@@ -58,7 +57,7 @@ const RecentQuizCard: React.FC<RecentQuizCardProps> = ({ quizTitle, date, quizSc
           </View>
         </View>
         <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', gap: 4 }}>
-          <Text>{mintues + 'm'}</Text>
+          <Text>{minutes + 'm'}</Text>
           <Ionicons name="timer-outline" size={16} color="black" />
         </View>
       </View>

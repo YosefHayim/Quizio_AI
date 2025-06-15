@@ -1,10 +1,10 @@
 import { ScreenHeader } from 'components/ScreenHeader';
-import { View, ScrollView } from 'react-native';
+import { View, ScrollView, Keyboard } from 'react-native';
 import { CreateQuizSection } from './CreateQuizSection';
 
 const CreateQuizScreen = () => {
   return (
-    <ScrollView style={{ backgroundColor: 'white' }}>
+    <ScrollView style={{ backgroundColor: 'white' }} onScrollBeginDrag={Keyboard.dismiss}>
       <View style={{ gap: 16, padding: 16, marginBottom: 25 }}>
         <ScreenHeader title="" paragraph="Transform any YouTube video into an interactive learning experience" />
         <CreateQuizSection />
