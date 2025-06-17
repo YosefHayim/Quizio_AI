@@ -25,10 +25,9 @@ const SignupScreen = () => {
         showPasswordIcon={false}
         handleInputFn={(v) => setEmailOrPhone(v)}
         state={emailOrPhone}
-        placeholderText="Email or phone"
+        placeholderText="Email or Phone"
       />
-      <CustomButton buttonText="Login" buttonType="confirmation" onPress={() => handleSignup(emailOrPhone, signUpMutation)} isPending={isPending} />
-      <Paragraph text={'Forget Password?'} colorText="gray" />
+      <CustomButton buttonText="Sign up" buttonType="confirmation" onPress={() => handleSignup(emailOrPhone, signUpMutation)} isPending={isPending} />
       <CustomButton
         isPending={isPending}
         buttonText={'Continue with Google'}

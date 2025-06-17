@@ -25,7 +25,7 @@ const SignInScreen = () => {
         showPasswordIcon={false}
         handleInputFn={(v) => setEmailOrPhone(v)}
         state={emailOrPhone}
-        placeholderText="Email or phone"
+        placeholderText="Email or Phone"
       />
       isPending={isPending}
       <CustomButton buttonText="Login" buttonType="confirmation" onPress={() => handleSignin(emailOrPhone, signInMutation)} isPending={isPending} />
