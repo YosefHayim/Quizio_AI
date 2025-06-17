@@ -1,6 +1,7 @@
 import { colors } from 'constants/colors';
 import { ReactNode } from 'react';
 import { Pressable, StyleProp, Text, TextStyle, View } from 'react-native';
+import { ActivityIndicator } from 'react-native-paper';
 
 const getButtonStyleByType = (buttonType: string, extraStyle?: StyleProp<TextStyle>) => {
   switch (buttonType) {
@@ -33,14 +34,17 @@ interface CustomButtonProps {
 
 const CustomButton: React.FC<CustomButtonProps> = ({ ...props }) => {
   return (
-    <View
-      style={[getButtonStyleByType(props.buttonType, props.extraStyle), { borderRadius: 16, padding: 16, width: '100%', opacity: props.isPending ? 0.5 : 1 }]}>
-      <Pressable onPress={props.onPress} disabled={props.isPending}>
-        <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 8 }}>
-          {props.icon}
-          <Text style={{ fontSize: 20, fontWeight: 'light', color: props.buttonTextColor ? props.buttonTextColor : 'white' }}>{props.buttonText}</Text>
-        </View>
-      </Pressable>
+    <View style={[getButtonStyleByType(props.buttonType, props.extraStyle), { borderRadius: 16, padding: 16, width: '100%' }]}>
+      {props.isPending ? (
+        <ActivityIndicator color={colors.defaultborderButton} />
+      ) : (
+        <Pressable onPress={props.onPress} disabled={props.isPending}>
+          <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 8 }}>
+            {props.icon}
+            <Text style={{ fontSize: 20, fontWeight: 'light', color: props.buttonTextColor ? props.buttonTextColor : 'white' }}>{props.buttonText}</Text>
+          </View>
+        </Pressable>
+      )}
     </View>
   );
 };

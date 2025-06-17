@@ -1,7 +1,8 @@
 import { supabase } from './configuration';
 
 export type SignupInformation = {
-  emailOrPhone: string;
+  email?: string;
+  phone_number?: string;
 };
 
 const signup = async (info: SignupInformation) => {

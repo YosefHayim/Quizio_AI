@@ -11,8 +11,6 @@ import useSignup from 'hooks/useSignup';
 
 const SignInScreen = () => {
   const [emailOrPhone, setEmailOrPhone] = useState('');
-  const [submit, setSubmit] = useState(false);
-
   const { mutate: signupMutation, isPending } = useSignup();
 
   const handleSignIn = () => {
@@ -42,17 +40,18 @@ const SignInScreen = () => {
               showPasswordIcon={false}
               handleInputFn={(v) => setEmailOrPhone(v)}
               state={emailOrPhone}
-              placeholderText="emailOrPhone or phone"
+              placeholderText="Email or phone"
             />
             isPending={isPending}
             <CustomButton buttonText="Login" buttonType="confirmation" onPress={handleSignIn} isPending={isPending} />
             <Paragraph text={'Forget Password?'} colorText="gray" />
             <CustomButton
+              isPending={isPending}
               buttonText={'Continue with Google'}
               buttonType="custom"
               buttonTextColor={colors.darkButton}
               onPress={() => console.log('v')}
-              extraStyle={{ backgroundColor: 'white' }}
+              extraStyle={{ backgroundColor: 'white', width: '100%' }}
               icon={
                 <Svg xmlns="http://www.w3.org/2000/svg" width={30} height={30} viewBox="0 0 48 48">
                   <Path
@@ -74,16 +73,14 @@ const SignInScreen = () => {
                 </Svg>
               }
             />
-            <Pressable onPress={() => console.log('apple navigation')}>
-              <CustomButton
-                buttonText={'Continue with Apple'}
-                buttonType="custom"
-                isPending={isPending}
-                onPress={() => console.log('v')}
-                extraStyle={{ backgroundColor: '#1F2125' }}
-                icon={<AntDesign name="apple1" size={24} color="white" />}
-              />
-            </Pressable>
+            <CustomButton
+              buttonText={'Continue with Apple'}
+              buttonType="custom"
+              isPending={isPending}
+              onPress={() => console.log('v')}
+              extraStyle={{ backgroundColor: '#1F2125' }}
+              icon={<AntDesign name="apple1" size={24} color="white" />}
+            />
             <View style={{ flexDirection: 'row', gap: 12 }}>
               <Paragraph text={`Don׳t have an account?`} />
               <Pressable onPress={() => console.log('navigation to signup')}>
