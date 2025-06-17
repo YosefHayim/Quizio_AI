@@ -33,7 +33,7 @@ const CustomInput: React.FC<TextInputProps> = ({ ...props }) => {
         placeholder={props.placeholderText}
         placeholderTextColor={colors.placehoolderInputText}
         autoCorrect={false}
-        style={[{ borderRadius: 16, color: 'white', fontSize: 16 }, props.extraStyle]}
+        style={[{ borderRadius: 16, color: 'white', fontSize: 16, flex: 1 }, props.extraStyle]}
         onChangeText={props.handleInputFn}
         value={props.state}
       />
