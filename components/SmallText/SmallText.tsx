@@ -8,7 +8,7 @@ interface SmallTextProps {
 const SmallText: React.FC<SmallTextProps> = ({ text, style }) => {
   const flattenedStyle = StyleSheet.flatten(style);
 
-  return <RNText style={[flattenedStyle, { fontSize: 10 }]}>{text}</RNText>;
+  return <RNText style={[flattenedStyle]}>{text}</RNText>;
 };
 
 export default SmallText;
