@@ -25,7 +25,7 @@ const CustomInput: React.FC<TextInputProps> = ({ ...props }) => {
         borderColor: colors.defaultborderButton,
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: 16,
+        padding: 20,
         flexDirection: 'row',
       }}>
       <TextInput
@@ -33,7 +33,7 @@ const CustomInput: React.FC<TextInputProps> = ({ ...props }) => {
         placeholder={props.placeholderText}
         placeholderTextColor={colors.placehoolderInputText}
         autoCorrect={false}
-        style={{ borderRadius: 16, color: 'white', fontSize: 12, flex: 1 }}
+        style={{ borderRadius: 16, color: 'white', fontSize: 16, flex: 1 }}
         onChangeText={props.handleInputFn}
         value={props.state}
       />

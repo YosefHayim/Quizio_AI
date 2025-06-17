@@ -9,6 +9,7 @@ export const colors = {
   defaultborderButton: '#4D4D4D',
   selectedButtonBorder: '#0DD3D8',
   darkTheme: '#0F1112',
+  darkButton: '1F2125',
   inputBackground: '#161618',
   placehoolderInputText: '#767678',
   notificationText: '#EED34F',
