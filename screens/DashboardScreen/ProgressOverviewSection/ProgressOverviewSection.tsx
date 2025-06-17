@@ -1,4 +1,3 @@
-import { ProgressBar } from 'components/ProgressBar';
 import { SmallText } from 'components/SmallText';
 import { Title } from 'components/Title';
 import { View } from 'react-native';
@@ -14,14 +13,12 @@ const ProgressOverviewSection = () => {
             <SmallText text="Weekly Goal" />
             <SmallText text="7/10 quizzes" />
           </View>
-          <ProgressBar precentOfProgress={10} />
         </View>
         <View style={{ gap: 4 }}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
             <SmallText text="Average Score" />
             <SmallText text="85" />
           </View>
-          <ProgressBar precentOfProgress={85} />
         </View>
       </View>
     </View>
