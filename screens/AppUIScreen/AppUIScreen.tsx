@@ -7,6 +7,7 @@ import { ScrollView, Text, View } from 'react-native';
 import { ProgressBar } from 'react-native-paper';
 import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
 import AntDesign from '@expo/vector-icons/AntDesign';
+import { Card } from 'components/Card';
 
 const AppUIScreen = () => {
   return (
@@ -18,20 +19,10 @@ const AppUIScreen = () => {
         </View>
         <View style={{ gap: 20 }}>
           <Title titleText="Button types" />
-          <CustomButton buttonText="Active button" icon={<></>} onPress={() => console.log('')} style={{ backgroundColor: colors.activeButtonBackground }} />
-          <CustomButton
-            buttonText="Cancel or regular button"
-            icon={<></>}
-            onPress={() => console.log('')}
-            style={{ backgroundColor: colors.optionButtonBackground, borderColor: colors.defaultborderButton, borderWidth: 1 }}
-          />
-          <CustomButton buttonText="warning or cancel button" icon={<></>} onPress={() => console.log('')} style={{ backgroundColor: colors.wrongOrWarning }} />
-          <CustomButton
-            buttonText="correct or confirm button"
-            icon={<></>}
-            onPress={() => console.log('')}
-            style={{ backgroundColor: colors.correctOrConfirm }}
-          />
+          <CustomButton buttonText="button" icon={<></>} onPress={() => console.log('')} buttonType="success" />
+          <CustomButton buttonText="button" icon={<></>} onPress={() => console.log('')} buttonType="warning" />
+          <CustomButton buttonText="button" icon={<></>} onPress={() => console.log('')} buttonType="default" />
+          <CustomButton buttonType="confirmation" buttonText="button" icon={<></>} onPress={() => console.log('')} />
         </View>
         <View style={{ gap: 10, flex: 1 }}>
           <Title titleText="Progress bar" />
@@ -39,18 +30,9 @@ const AppUIScreen = () => {
         </View>
         <View style={{ gap: 10, flex: 1 }}>
           <Title titleText="Card Componenet" />
-          <View
-            style={{
-              justifyContent: 'center',
-              alignItems: 'center',
-              height: 200,
-              borderColor: colors.defaultborderButton,
-              borderWidth: 1,
-              borderRadius: 16,
-              backgroundColor: colors.cardBackground,
-            }}>
-            <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 20 }}>Card example</Text>
-          </View>
+          <Card>
+            <Paragraph text={'Card Example'} />
+          </Card>
         </View>
         <View style={{ gap: 10 }}>
           <Title titleText="inputs" />
