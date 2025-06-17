@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 import { Pressable, StyleProp, Text, TextStyle, View } from 'react-native';
 import { ActivityIndicator } from 'react-native-paper';
 
-const getButtonStyleByType = (buttonType: string, extraStyle?: StyleProp<TextStyle>) => {
+const getButtonStyleByType = (buttonType: string, extraStyle?: any) => {
   switch (buttonType) {
     case 'success':
       return { backgroundColor: colors.correctOrConfirm };
