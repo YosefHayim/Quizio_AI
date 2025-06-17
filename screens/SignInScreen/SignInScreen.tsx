@@ -1,4 +1,4 @@
-import { Alert, Pressable, View } from 'react-native';
+import { Pressable, View } from 'react-native';
 import { Title } from 'components/Title';
 import { colors } from 'constants/colors';
 import { CustomButton } from 'components/CustomButton';
@@ -7,9 +7,9 @@ import { useState } from 'react';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { Paragraph } from 'components/Paragraph';
 import Svg, { Path } from 'react-native-svg';
-import CustomScreen from 'components/CustomScreen/CustomScreen';
 import useSignIn from 'hooks/useSignin';
 import handleSignin from 'handlers/handleSignin';
+import { CustomScreen } from 'components/CustomScreen';
 
 const SignInScreen = () => {
   const [emailOrPhone, setEmailOrPhone] = useState('');

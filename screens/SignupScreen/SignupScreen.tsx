@@ -1,6 +1,5 @@
 import { CustomButton } from 'components/CustomButton';
 import { CustomInput } from 'components/CustomInput';
-import CustomScreen from 'components/CustomScreen/CustomScreen';
 import { Paragraph } from 'components/Paragraph';
 import { Title } from 'components/Title';
 import { colors } from 'constants/colors';
@@ -10,6 +9,7 @@ import { Pressable, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import handleSignup from 'handlers/handleSignup';
+import { CustomScreen } from 'components/CustomScreen';
 
 const SignupScreen = () => {
   const [emailOrPhone, setEmailOrPhone] = useState('');

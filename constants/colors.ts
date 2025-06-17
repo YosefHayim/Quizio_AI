@@ -12,6 +12,6 @@ export const colors = {
   darkButton: '1F2125',
   inputBackground: '#161618',
   placehoolderInputText: '#767678',
-  notificationText: '#EED34F',
+  notificationOrPargraph: '#EED34F',
   progressBar: '#3E5BC3',
 };
