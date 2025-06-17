@@ -5,14 +5,14 @@ import DrawerStack from './DrawerStack';
 
 const Stack = createNativeStackNavigator();
 
-const Sidebar: React.FC<{ isAuth: boolean }> = ({ isAuth }) => {
+const RootLayout: React.FC<{ isAuth: boolean; isFirstTime: boolean }> = ({ isAuth, isFirstTime }) => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="welcome" screenOptions={{ headerShown: false }}>
-        {isAuth ? <Stack.Screen name="drawer" component={DrawerStack} /> : <Stack.Screen name="welcome" component={WelcomeScreen} />}
+        {isAuth && !isFirstTime ? <Stack.Screen name="drawer" component={DrawerStack} /> : <Stack.Screen name="welcome" component={WelcomeScreen} />}
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
-export default Sidebar;
+export default RootLayout;
