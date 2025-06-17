@@ -1,4 +1,4 @@
-import { SmallText } from 'components/SmallText';
+import { SmallText } from 'components/Paragraph';
 import { Text, View } from 'react-native';
 import Feather from '@expo/vector-icons/Feather';
 

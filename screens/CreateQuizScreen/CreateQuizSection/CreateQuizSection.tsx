@@ -2,7 +2,7 @@ import { ScreenHeader } from 'components/ScreenHeader';
 import { Alert, ScrollView, View } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { CustomInput } from 'components/CustomInput';
-import { SmallText } from 'components/SmallText';
+import { SmallText } from 'components/Paragraph';
 import { CustomButton } from 'components/CustomButton';
 import { ChooseAmountOfQuestions } from './ChooseAmountOfQuestions';
 import { ChooseDifficulty } from './ChooseDifficulty';

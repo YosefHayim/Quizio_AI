@@ -1,5 +1,5 @@
 import { RecentQuizCard } from 'components/RecentQuizCard';
-import { SmallText } from 'components/SmallText';
+import { SmallText } from 'components/Paragraph';
 import { colors } from 'constants/colors';
 import { useState } from 'react';
 import { View, ScrollView } from 'react-native';

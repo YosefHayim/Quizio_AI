@@ -1,4 +1,4 @@
-import { SmallText } from 'components/SmallText';
+import { SmallText } from 'components/Paragraph';
 import { Title } from 'components/Title';
 import { View } from 'react-native';
 

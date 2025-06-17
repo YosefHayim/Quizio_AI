@@ -1,6 +1,6 @@
 import { CustomButton } from 'components/CustomButton';
 import { CustomInput } from 'components/CustomInput';
-import { SmallText } from 'components/SmallText';
+import { Paragraph } from 'components/Paragraph';
 import { Title } from 'components/Title';
 import { colors } from 'constants/colors';
 import { ScrollView, Text, View } from 'react-native';
@@ -13,46 +13,32 @@ const AppUIScreen = () => {
     <ScrollView style={{ padding: 26, backgroundColor: colors.darkTheme }}>
       <View style={{ flex: 1, gap: 20 }}>
         <View style={{ gap: 10 }}>
-          <Title titleText="Small texts" style={{ fontWeight: 'bold', color: 'white', fontSize: 30 }} />
-          <SmallText text={'paragraph text'} style={{ fontWeight: 'light', color: 'white', fontSize: 15 }} />
+          <Title titleText="Small texts" />
+          <Paragraph text="paragraph text" />
         </View>
         <View style={{ gap: 20 }}>
-          <Title titleText="Button types" style={{ fontWeight: 'bold', color: 'white', fontSize: 30 }} />
-          <CustomButton
-            buttonText="Active button"
-            icon={<></>}
-            onPress={() => console.log('')}
-            style={{ backgroundColor: colors.activeButtonBackground, borderRadius: 16, padding: 16 }}
-            styleText={{ fontSize: 20, fontWeight: 'light', color: 'white' }}
-          />
+          <Title titleText="Button types" />
+          <CustomButton buttonText="Active button" icon={<></>} onPress={() => console.log('')} style={{ backgroundColor: colors.activeButtonBackground }} />
           <CustomButton
             buttonText="Cancel or regular button"
             icon={<></>}
             onPress={() => console.log('')}
-            style={{ backgroundColor: colors.optionButtonBackground, borderRadius: 16, padding: 16, borderColor: colors.defaultborderButton, borderWidth: 1 }}
-            styleText={{ fontSize: 20, fontWeight: 'light', color: 'white' }}
+            style={{ backgroundColor: colors.optionButtonBackground, borderColor: colors.defaultborderButton, borderWidth: 1 }}
           />
-          <CustomButton
-            buttonText="warning or cancel button"
-            icon={<></>}
-            onPress={() => console.log('')}
-            style={{ backgroundColor: colors.wrongOrWarning, borderRadius: 16, padding: 16 }}
-            styleText={{ fontSize: 20, fontWeight: 'light', color: 'white' }}
-          />
+          <CustomButton buttonText="warning or cancel button" icon={<></>} onPress={() => console.log('')} style={{ backgroundColor: colors.wrongOrWarning }} />
           <CustomButton
             buttonText="correct or confirm button"
             icon={<></>}
             onPress={() => console.log('')}
-            style={{ backgroundColor: colors.correctOrConfirm, borderRadius: 16, padding: 16 }}
-            styleText={{ fontSize: 20, fontWeight: 'light', color: 'white' }}
+            style={{ backgroundColor: colors.correctOrConfirm }}
           />
         </View>
         <View style={{ gap: 10, flex: 1 }}>
-          <Title titleText="Progress bar" style={{ fontWeight: 'bold', color: 'white', fontSize: 30 }} />
+          <Title titleText="Progress bar" />
           <ProgressBar progress={0.5} color={colors.progressBar} />
         </View>
         <View style={{ gap: 10, flex: 1 }}>
-          <Title titleText="Card Componenet" style={{ fontWeight: 'bold', color: 'white', fontSize: 30 }} />
+          <Title titleText="Card Componenet" />
           <View
             style={{
               justifyContent: 'center',
@@ -67,7 +53,7 @@ const AppUIScreen = () => {
           </View>
         </View>
         <View style={{ gap: 10 }}>
-          <Title titleText="inputs" style={{ fontWeight: 'bold', color: 'white', fontSize: 30 }} />
+          <Title titleText="inputs" />
           <CustomInput
             state=""
             showPasswordIcon={true}
@@ -109,7 +95,7 @@ const AppUIScreen = () => {
         </View>
       </View>
       <View style={{ gap: 10, flex: 1 }}>
-        <Title titleText="Icons for tabs and more" style={{ fontWeight: 'bold', color: 'white', fontSize: 30 }} />
+        <Title titleText="Icons for tabs and more" />
         <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center' }}>
           <SimpleLineIcons name="home" size={30} color="white" />
           <SimpleLineIcons name="clock" size={30} color="white" />
