@@ -1,16 +1,15 @@
 import { ReactNode, useState } from 'react';
 import { Pressable, StyleProp, TextInput, TextStyle, View } from 'react-native';
 import Entypo from '@expo/vector-icons/Entypo';
+import { colors } from 'constants/colors';
 
 interface TextInputProps {
   placeholderText: string;
-  placeholderTextColor: string;
   state: string;
   isPassword: boolean;
   showPasswordIcon?: boolean;
   handleInputFn: (v: string) => void;
-  containerStyle?: StyleProp<TextStyle>;
-  textInputStyle?: StyleProp<TextStyle>;
+  extraStyle?: StyleProp<TextStyle>;
   icon?: ReactNode;
 }
 
@@ -18,19 +17,29 @@ const CustomInput: React.FC<TextInputProps> = ({ ...props }) => {
   const [isVisible, setVisible] = useState(false);
 
   return (
-    <View style={props.containerStyle}>
+    <View
+      style={{
+        borderRadius: 16,
+        borderWidth: 1,
+        backgroundColor: colors.cardBackground,
+        borderColor: colors.defaultborderButton,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: 16,
+        flexDirection: 'row',
+      }}>
       <TextInput
         secureTextEntry={props.isPassword && !isVisible}
         placeholder={props.placeholderText}
-        placeholderTextColor={props.placeholderTextColor}
+        placeholderTextColor={colors.placehoolderInputText}
         autoCorrect={false}
-        style={props.textInputStyle}
+        style={{ borderRadius: 16, color: 'white', fontSize: 12, flex: 1 }}
         onChangeText={props.handleInputFn}
         value={props.state}
       />
       {props.showPasswordIcon && (
         <Pressable onPress={() => setVisible((prev) => !prev)}>
-          {isVisible ? <Entypo name="eye-with-line" size={24} color="white" /> : <Entypo name="eye" size={24} color="white" />}
+          {isVisible ? <Entypo name="eye-with-line" size={20} color="white" /> : <Entypo name="eye" size={20} color="white" />}
         </Pressable>
       )}
       <> {props.icon}</>

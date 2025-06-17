@@ -1,6 +1,6 @@
 import { Title } from 'components/Title';
-import { ScrollView, View } from 'react-native';
-import { SmallText } from 'components/Paragraph';
+import { Keyboard, KeyboardAvoidingView, Platform, ScrollView, TouchableWithoutFeedback, View } from 'react-native';
+import { Paragraph, SmallText } from 'components/Paragraph';
 import { colors } from 'constants/colors';
 import { CustomButton } from 'components/CustomButton';
 import { CustomInput } from 'components/CustomInput';
@@ -38,7 +38,23 @@ const SignInScreen = () => {
       setLoading(false);
     }
   };
-  return <ScrollView keyboardDismissMode="on-drag" style={{ flex: 1, backgroundColor: colors.darkTheme, padding: 20 }}></ScrollView>;
+  return (
+    <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{ flex: 1 }}>
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss} style={{ flex: 1 }}>
+        <View style={{ flex: 1, backgroundColor: colors.darkTheme, padding: 20 }}>
+          <View style={{ flex: 1, justifyContent: 'space-evenly', alignItems: 'center' }}>
+            <View style={{ marginVertical: 10 }}>
+              <Title titleText="Login" />
+            </View>
+            <CustomInput isPassword={false} showPasswordIcon={false} handleInputFn={(v) => setEmail(v)} state={email} placeholderText="Email or phone" />
+            <CustomInput state={password} showPasswordIcon={true} isPassword={true} handleInputFn={(v) => setPassword(v)} placeholderText="Password" />
+            <CustomButton buttonText={'Forget Password?'} buttonType="default" />
+            <CustomButton buttonText="Login" buttonType="confirmation" onPress={() => console.log('')} icon={<></>} />
+          </View>
+        </View>
+      </TouchableWithoutFeedback>
+    </KeyboardAvoidingView>
+  );
 };
 
 export default SignInScreen;

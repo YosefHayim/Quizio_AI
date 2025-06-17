@@ -27,9 +27,9 @@ interface CustomButtonProps {
 
 const CustomButton: React.FC<CustomButtonProps> = ({ ...props }) => {
   return (
-    <View>
-      <Pressable onPress={props.onPress} style={[getButtonStyleByType(props.buttonType), { borderRadius: 16, padding: 16 }]}>
-        <View style={{ flexDirection: 'row', justifyContent: 'center', gap: 8, alignItems: 'center' }}>
+    <View style={[getButtonStyleByType(props.buttonType), { borderRadius: 16, padding: 16, width: '100%' }]}>
+      <Pressable onPress={props.onPress}>
+        <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
           {props.icon}
           <Text style={{ fontSize: 20, fontWeight: 'light', color: 'white' }}>{props.buttonText}</Text>
         </View>

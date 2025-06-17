@@ -3,7 +3,7 @@ import { CustomInput } from 'components/CustomInput';
 import { Paragraph } from 'components/Paragraph';
 import { Title } from 'components/Title';
 import { colors } from 'constants/colors';
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { ProgressBar } from 'react-native-paper';
 import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
 import AntDesign from '@expo/vector-icons/AntDesign';
@@ -36,44 +36,8 @@ const AppUIScreen = () => {
         </View>
         <View style={{ gap: 10 }}>
           <Title titleText="inputs" />
-          <CustomInput
-            state=""
-            showPasswordIcon={true}
-            isPassword={true}
-            handleInputFn={() => console.log('')}
-            placeholderText="Password"
-            placeholderTextColor={colors.placehoolderInputText}
-            containerStyle={{
-              borderRadius: 16,
-              borderWidth: 1,
-              backgroundColor: colors.cardBackground,
-              borderColor: colors.defaultborderButton,
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              padding: 16,
-              flexDirection: 'row',
-            }}
-            textInputStyle={{ borderRadius: 16, color: 'white', fontSize: 12 }}
-          />
-          <CustomInput
-            state=""
-            showPasswordIcon={false}
-            isPassword={false}
-            handleInputFn={() => console.log('')}
-            placeholderText="Email"
-            placeholderTextColor={colors.placehoolderInputText}
-            containerStyle={{
-              borderRadius: 16,
-              borderWidth: 1,
-              backgroundColor: colors.cardBackground,
-              borderColor: colors.defaultborderButton,
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              padding: 16,
-              flexDirection: 'row',
-            }}
-            textInputStyle={{ borderRadius: 16, color: 'white', fontSize: 12 }}
-          />
+          <CustomInput state="" showPasswordIcon={true} isPassword={true} handleInputFn={() => console.log('')} placeholderText="Password" />
+          <CustomInput state="" showPasswordIcon={false} isPassword={false} handleInputFn={() => console.log('')} placeholderText="Email" />
         </View>
       </View>
       <View style={{ gap: 10, flex: 1 }}>

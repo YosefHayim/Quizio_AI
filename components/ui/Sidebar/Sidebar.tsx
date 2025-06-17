@@ -10,7 +10,7 @@ const RootLayout: React.FC<{ isAuth: boolean; isFirstTime: boolean }> = ({ isAut
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="signin" screenOptions={{ headerShown: false }}>
-        {isAuth && !isFirstTime ? <Stack.Screen name="drawer" component={DrawerStack} /> : <Stack.Screen name="signin" component={AppUIScreen} />}
+        {isAuth && !isFirstTime ? <Stack.Screen name="drawer" component={DrawerStack} /> : <Stack.Screen name="signin" component={SignInScreen} />}
       </Stack.Navigator>
     </NavigationContainer>
   );
