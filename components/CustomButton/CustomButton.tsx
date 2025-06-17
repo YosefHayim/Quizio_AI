@@ -24,16 +24,18 @@ const getButtonStyleByType = (buttonType: string, extraStyle?: StyleProp<TextSty
 interface CustomButtonProps {
   buttonText: string;
   onPress: () => void;
+  isPending: boolean;
+  buttonType: 'confirmation' | 'success' | 'warning' | 'default' | 'custom';
   buttonTextColor?: string;
   extraStyle?: StyleProp<TextStyle>;
-  buttonType: 'confirmation' | 'success' | 'warning' | 'default' | 'custom';
-  icon: ReactNode;
+  icon?: ReactNode;
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({ ...props }) => {
   return (
-    <View style={[getButtonStyleByType(props.buttonType, props.extraStyle), { borderRadius: 16, padding: 16, width: '100%' }]}>
-      <Pressable onPress={props.onPress}>
+    <View
+      style={[getButtonStyleByType(props.buttonType, props.extraStyle), { borderRadius: 16, padding: 16, width: '100%', opacity: props.isPending ? 0.5 : 1 }]}>
+      <Pressable onPress={props.onPress} disabled={props.isPending}>
         <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 8 }}>
           {props.icon}
           <Text style={{ fontSize: 20, fontWeight: 'light', color: props.buttonTextColor ? props.buttonTextColor : 'white' }}>{props.buttonText}</Text>

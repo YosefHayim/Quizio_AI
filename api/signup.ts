@@ -1,9 +1,7 @@
 import { supabase } from './configuration';
 
-type SignupInformation = {
-  full_name: string;
-  password: string;
-  email: string;
+export type SignupInformation = {
+  emailOrPhone: string;
 };
 
 const signup = async (info: SignupInformation) => {

@@ -1,45 +1,34 @@
 import { Title } from 'components/Title';
-import { Keyboard, KeyboardAvoidingView, Platform, TouchableWithoutFeedback, View } from 'react-native';
+import { Alert, Keyboard, KeyboardAvoidingView, Platform, Pressable, TouchableWithoutFeedback, View } from 'react-native';
 import { colors } from 'constants/colors';
 import { CustomButton } from 'components/CustomButton';
 import { CustomInput } from 'components/CustomInput';
 import { useState } from 'react';
-import signup from 'api/signup';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { Paragraph } from 'components/Paragraph';
 import Svg, { Path } from 'react-native-svg';
+import useSignup from 'hooks/useSignup';
 
 const SignInScreen = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [fullName, setFullName] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [emailOrPhone, setEmailOrPhone] = useState('');
+  const [submit, setSubmit] = useState(false);
 
-  const handleSignUp = async () => {
-    if (!email || !password || !fullName) {
-      alert('Please fill all fields');
-      return;
-    }
+  const { mutate: signupMutation, isPending } = useSignup();
 
-    setLoading(true);
-
+  const handleSignIn = () => {
     try {
-      const newUser = {
-        email,
-        full_name: fullName,
-        phone_number: '0546187549',
-      };
+      if (!emailOrPhone) Alert.alert('Invalid input', 'Please provide valid inputs', [{ text: 'Close' }]);
 
-      const data = await signup(newUser);
-      console.log(data);
-      // Optionally reset inputs or navigate
+      if (emailOrPhone.includes('@')) {
+        signupMutation({ email: emailOrPhone });
+      } else {
+        signupMutation({ phone_number: emailOrPhone });
+      }
     } catch (error) {
-      console.error('Signup error:', error);
-      alert('Signup failed: ' + error.message);
-    } finally {
-      setLoading(false);
+      console.error('Error durning sign in: ', error);
     }
   };
+
   return (
     <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{ flex: 1 }}>
       <TouchableWithoutFeedback onPress={Keyboard.dismiss} style={{ flex: 1 }}>
@@ -48,9 +37,15 @@ const SignInScreen = () => {
             <View style={{ marginVertical: 10 }}>
               <Title titleText="Login" />
             </View>
-            <CustomInput isPassword={false} showPasswordIcon={false} handleInputFn={(v) => setEmail(v)} state={email} placeholderText="Email or phone" />
-            <CustomInput state={password} showPasswordIcon={true} isPassword={true} handleInputFn={(v) => setPassword(v)} placeholderText="Password" />
-            <CustomButton buttonText="Login" buttonType="confirmation" onPress={() => console.log('')} icon={<></>} />
+            <CustomInput
+              isPassword={false}
+              showPasswordIcon={false}
+              handleInputFn={(v) => setEmailOrPhone(v)}
+              state={emailOrPhone}
+              placeholderText="emailOrPhone or phone"
+            />
+            isPending={isPending}
+            <CustomButton buttonText="Login" buttonType="confirmation" onPress={handleSignIn} isPending={isPending} />
             <Paragraph text={'Forget Password?'} colorText="gray" />
             <CustomButton
               buttonText={'Continue with Google'}
@@ -79,16 +74,21 @@ const SignInScreen = () => {
                 </Svg>
               }
             />
-            <CustomButton
-              buttonText={'Continue with Apple'}
-              buttonType="custom"
-              onPress={() => console.log('v')}
-              extraStyle={{ backgroundColor: '#1F2125' }}
-              icon={<AntDesign name="apple1" size={24} color="white" />}
-            />
+            <Pressable onPress={() => console.log('apple navigation')}>
+              <CustomButton
+                buttonText={'Continue with Apple'}
+                buttonType="custom"
+                isPending={isPending}
+                onPress={() => console.log('v')}
+                extraStyle={{ backgroundColor: '#1F2125' }}
+                icon={<AntDesign name="apple1" size={24} color="white" />}
+              />
+            </Pressable>
             <View style={{ flexDirection: 'row', gap: 12 }}>
               <Paragraph text={`Don׳t have an account?`} />
-              <Paragraph text={`Sign up`} colorText={colors.activeButtonBackground} />
+              <Pressable onPress={() => console.log('navigation to signup')}>
+                <Paragraph text={`Sign up`} colorText={colors.activeButtonBackground} />
+              </Pressable>
             </View>
           </View>
         </View>
