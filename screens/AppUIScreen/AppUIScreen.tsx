@@ -109,13 +109,15 @@ const AppUIScreen = () => {
         </View>
       </View>
       <View style={{ gap: 10, flex: 1 }}>
-        <Title titleText="Icons for tabs" style={{ fontWeight: 'bold', color: 'white', fontSize: 30 }} />
+        <Title titleText="Icons for tabs and more" style={{ fontWeight: 'bold', color: 'white', fontSize: 30 }} />
         <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center' }}>
           <SimpleLineIcons name="home" size={30} color="white" />
           <SimpleLineIcons name="clock" size={30} color="white" />
           <AntDesign name="plus" size={30} color="white" />
           <SimpleLineIcons name="trophy" size={30} color="white" />
           <SimpleLineIcons name="settings" size={30} color="white" />
+          <SimpleLineIcons name="check" size={24} color={colors.correctOrConfirm} />
+          <SimpleLineIcons name="check" size={24} color={colors.wrongOrWarning} />
         </View>
       </View>
     </ScrollView>
