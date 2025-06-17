@@ -25,9 +25,8 @@ const WelcomeScreen = () => {
     try {
       const newUser = {
         email,
-        password,
         full_name: fullName,
-        is_active: true,
+        phone_number: '0546187549',
       };
 
       const data = await signup(newUser);

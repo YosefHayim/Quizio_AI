@@ -4,7 +4,6 @@ type SignupInformation = {
   full_name: string;
   password: string;
   email: string;
-  is_active: boolean;
 };
 
 const signup = async (info: SignupInformation) => {
