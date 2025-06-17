@@ -3,17 +3,17 @@ import { CustomInput } from 'components/CustomInput';
 import { Paragraph } from 'components/Paragraph';
 import { Title } from 'components/Title';
 import { colors } from 'constants/colors';
-import useSignup from 'hooks/useSignup';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import AntDesign from '@expo/vector-icons/AntDesign';
-import handleSignup from 'handlers/handleSignup';
+import handleSignup from 'handlers/handleSignUpWithPhoneOrEmail';
 import { CustomScreen } from 'components/CustomScreen';
+import useSignUpWithPhoneOrEmail from 'hooks/useSignUpWithPhoneOrEmail';
 
 const SignupScreen = () => {
   const [emailOrPhone, setEmailOrPhone] = useState('');
-  const { mutate: signUpMutation, isPending } = useSignup();
+  const { mutate: signUpMutation, isPending } = useSignUpWithPhoneOrEmail();
 
   return (
     <CustomScreen>

@@ -3,15 +3,16 @@ import { CustomScreen } from 'components/CustomScreen';
 import { Paragraph } from 'components/Paragraph';
 import { Title } from 'components/Title';
 import { colors } from 'constants/colors';
-import useVerifyAuthOtp from 'hooks/useVerifyAuthOtp';
+import { useUserInfo } from 'context/userInfoContext';
+import { handleOtpVerification } from 'handlers/handleOtpVerification';
+import useVerifyAuthOtp from 'hooks/useVerifyoAuthOtp';
 import { useState } from 'react';
 import { View } from 'react-native';
 import { OtpInput } from 'react-native-otp-entry';
 
 const VerifyOTPScreen = () => {
+  const { user } = useUserInfo();
   const [otpInput, setOtpInput] = useState('');
-  const [isSubmitted, setSubmit] = useState(false);
-
   const { mutate: verifyAuthOtpMutation, isPending } = useVerifyAuthOtp();
 
   return (
@@ -38,7 +39,12 @@ const VerifyOTPScreen = () => {
         <Paragraph text={`Didn׳t recieve a code? Resend`} extraStyle={{ textAlign: 'center', color: colors.notificationOrPargraph }} />
       </View>
       <View>
-        <CustomButton buttonText="Verify" buttonType="confirmation" onPress={() => setSubmit(true)} isPending={} />
+        <CustomButton
+          buttonText="Verify"
+          buttonType="confirmation"
+          onPress={() => handleOtpVerification(otpInput, user?.phone ?? '', verifyAuthOtpMutation)}
+          isPending={isPending}
+        />
       </View>
     </CustomScreen>
   );

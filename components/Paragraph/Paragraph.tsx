@@ -3,7 +3,7 @@ import { StyleProp, Text, TextStyle } from 'react-native';
 interface ParagraphProps {
   text: string | number;
   colorText?: string;
-  extraStyle: StyleProp<TextStyle>;
+  extraStyle?: StyleProp<TextStyle>;
 }
 
 const Paragraph: React.FC<ParagraphProps> = ({ ...props }) => {

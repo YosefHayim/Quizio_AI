@@ -1,18 +1,18 @@
 import { supabase } from './configuration';
 
-export type SignInInformation = {
+export type SignUpInformation = {
   email?: string;
   phone?: string;
 };
 
-const signup = async (info: SignInInformation) => {
+const signUpWithPhoneOrEmail = async (info: SignUpInformation) => {
   try {
     let credentials;
 
     if (info.email) {
-      credentials = { email: info.email, password: 'placeholder' };
+      credentials = { email: info.email, password: '' };
     } else if (info.phone) {
-      credentials = { phone: info.phone, password: 'placeholder' };
+      credentials = { phone: info.phone, password: '' };
     } else {
       throw new Error('Either email or phone must be provided');
     }
@@ -23,8 +23,8 @@ const signup = async (info: SignInInformation) => {
     console.log(data);
     return data;
   } catch (error) {
-    console.error('signup failed:', error);
+    console.error('Signup With Phone Or Email failed:', error);
   }
 };
 
-export default signup;
+export default signUpWithPhoneOrEmail;

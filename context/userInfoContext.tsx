@@ -4,10 +4,7 @@ import { createContext, useContext, useState, ReactNode } from 'react';
 type UserInfo = {
   name?: string;
   email?: string;
-  theme?: 'light' | 'dark';
-  emailNotifciation?: boolean;
-  pushNotification?: boolean;
-  weeklyProgressNotification?: boolean;
+  phone?: string;
 };
 
 type UserInfoContextType = {

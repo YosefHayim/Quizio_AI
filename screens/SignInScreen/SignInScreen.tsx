@@ -7,13 +7,13 @@ import { useState } from 'react';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { Paragraph } from 'components/Paragraph';
 import Svg, { Path } from 'react-native-svg';
-import useSignIn from 'hooks/useSignin';
-import handleSignin from 'handlers/handleSignin';
+import handleSignin from 'handlers/handleSignInWithPhoneOrEmail';
 import { CustomScreen } from 'components/CustomScreen';
+import useSignUpWithPhoneOrEmail from 'hooks/useSignUpWithPhoneOrEmail';
 
 const SignInScreen = () => {
   const [emailOrPhone, setEmailOrPhone] = useState('');
-  const { mutate: signInMutation, isPending } = useSignIn();
+  const { mutate: signInMutation, isPending } = useSignUpWithPhoneOrEmail();
 
   return (
     <CustomScreen>

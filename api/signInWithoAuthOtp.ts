@@ -4,7 +4,7 @@ export type OtpCode = {
   phone: string;
 };
 
-const sendAuthOtp = async ({ phone }: OtpCode) => {
+const signInWithoAuthOtp = async ({ phone }: OtpCode) => {
   try {
     const { data, error } = await supabase.auth.signInWithOtp({
       phone,
@@ -19,4 +19,4 @@ const sendAuthOtp = async ({ phone }: OtpCode) => {
   }
 };
 
-export default sendAuthOtp;
+export default signInWithoAuthOtp;

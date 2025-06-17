@@ -6,7 +6,7 @@ export type OtpInfoRecieved = {
   type: 'sms';
 };
 
-const verifyAuthOtp = async (otpInfoRecieved: OtpInfoRecieved) => {
+const verifyoAuthOtp = async (otpInfoRecieved: OtpInfoRecieved) => {
   try {
     const {
       data: { session },
@@ -22,4 +22,4 @@ const verifyAuthOtp = async (otpInfoRecieved: OtpInfoRecieved) => {
   }
 };
 
-export default verifyAuthOtp;
+export default verifyoAuthOtp;
