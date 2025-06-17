@@ -19,10 +19,10 @@ const AppUIScreen = () => {
         </View>
         <View style={{ gap: 20 }}>
           <Title titleText="Button types" />
-          <CustomButton buttonText="button" icon={<></>} onPress={() => console.log('')} buttonType="success" />
-          <CustomButton buttonText="button" icon={<></>} onPress={() => console.log('')} buttonType="warning" />
-          <CustomButton buttonText="button" icon={<></>} onPress={() => console.log('')} buttonType="default" />
-          <CustomButton buttonType="confirmation" buttonText="button" icon={<></>} onPress={() => console.log('')} />
+          <CustomButton buttonText="button" onPress={() => console.log('')} buttonType="success" />
+          <CustomButton buttonText="button" onPress={() => console.log('')} buttonType="warning" />
+          <CustomButton buttonText="button" onPress={() => console.log('')} buttonType="default" />
+          <CustomButton buttonType="confirmation" buttonText="button" onPress={() => console.log('')} />
         </View>
         <View style={{ gap: 10, flex: 1 }}>
           <Title titleText="Progress bar" />

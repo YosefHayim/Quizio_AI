@@ -1,13 +1,15 @@
 import { Alert } from 'react-native';
 
-const handleSignup = (inputProvided: string, signUpMutation: ({}) => void) => {
+const handleSignup = (emailOrPhone: string, signUpMutation: (emailOrPhone: string) => void) => {
   try {
-    if (!inputProvided) Alert.alert('Invalid input', 'Please provide valid inputs', [{ text: 'Close' }]);
+    if (!emailOrPhone) Alert.alert('Invalid input', 'Please provide valid inputs', [{ text: 'Close' }]);
 
-    if (inputProvided.includes('@')) {
-      signUpMutation({ email: inputProvided });
+    if (emailOrPhone.includes('@')) {
+      console.log('email recieved from input: ', emailOrPhone);
+      signUpMutation(emailOrPhone);
     } else {
-      signUpMutation({ phone: inputProvided });
+      console.log('phone recieved from input: ', emailOrPhone);
+      signUpMutation(emailOrPhone);
     }
   } catch (error) {
     console.error('Error durning sign in: ', error);

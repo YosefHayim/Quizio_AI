@@ -27,7 +27,18 @@ const SignupScreen = () => {
         state={emailOrPhone}
         placeholderText="Email or Phone"
       />
-      <CustomButton buttonText="Sign up" buttonType="confirmation" onPress={() => handleSignup(emailOrPhone, signUpMutation)} isPending={isPending} />
+      <CustomButton
+        buttonText="Sign up"
+        buttonType="confirmation"
+        onPress={() => {
+          if (emailOrPhone.includes('@')) {
+            handleSignup(emailOrPhone, signUpMutation);
+          } else {
+            handleSignup(emailOrPhone, signUpMutation);
+          }
+        }}
+        isPending={isPending}
+      />
       <CustomButton
         isPending={isPending}
         buttonText={'Continue with Google'}

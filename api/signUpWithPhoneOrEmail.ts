@@ -1,26 +1,20 @@
 import { supabase } from './configuration';
 
-export type SignUpInformation = {
-  email?: string;
-  phone?: string;
-};
-
-const signUpWithPhoneOrEmail = async (info: SignUpInformation) => {
+const signUpWithPhoneOrEmail = async (phoneOrEmail: string) => {
+  if (!phoneOrEmail) throw new Error(`Phone or email is undefiend: ${phoneOrEmail}`);
   try {
     let credentials;
-
-    if (info.email) {
-      credentials = { email: info.email, password: '' };
-    } else if (info.phone) {
-      credentials = { phone: info.phone, password: '' };
+    if (phoneOrEmail.includes('@')) {
+      credentials = { email: phoneOrEmail, password: 'placeholder' };
     } else {
-      throw new Error('Either email or phone must be provided');
+      credentials = { phone: phoneOrEmail, password: 'placeholder' };
     }
 
     const { data, error } = await supabase.auth.signUp(credentials);
+
     if (error) throw error;
 
-    console.log(data);
+    console.log('data recieved from request: ', data);
     return data;
   } catch (error) {
     console.error('Signup With Phone Or Email failed:', error);

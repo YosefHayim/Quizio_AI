@@ -2,7 +2,7 @@ import { ScreenHeader } from 'components/ScreenHeader';
 import { Alert, ScrollView, View } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { CustomInput } from 'components/CustomInput';
-import { SmallText } from 'components/Paragraph';
+import { Paragraph } from 'components/Paragraph';
 import { CustomButton } from 'components/CustomButton';
 import { ChooseAmountOfQuestions } from './ChooseAmountOfQuestions';
 import { ChooseDifficulty } from './ChooseDifficulty';
@@ -46,19 +46,19 @@ const CreateQuizSection = () => {
         />
         <View style={{ borderWidth: 1, padding: 20, gap: 6, borderRadius: 6 }}>
           <Title titleText="Video Preview" style={{ fontWeight: 'bold', textAlign: 'center' }} />
-          <SmallText text={`Preview of the video you'll create a quiz from`} style={{ textAlign: 'center' }} />
+          <Paragraph text={`Preview of the video you'll create a quiz from`} style={{ textAlign: 'center' }} />
           {verifiedUrl ? (
             <WebView source={{ uri: urlInput }} style={{ height: 200, borderRadius: 6 }} />
           ) : (
             <View style={{ borderWidth: 1, borderStyle: 'dashed', padding: 10, gap: 4, alignItems: 'center', justifyContent: 'center', height: 200 }}>
               <MaterialIcons name="ondemand-video" size={24} color={'gray'} />
-              <SmallText text={`Enter a YouTube URL to see video preview`} style={{ textAlign: 'center' }} />
+              <Paragraph text={`Enter a YouTube URL to see video preview`} style={{ textAlign: 'center' }} />
             </View>
           )}
         </View>
 
         <CustomInput placeholderText="https://www.youtube.com/watch?v=..." handleInputFn={(v) => setUrlInput(v)} state={urlInput} />
-        <SmallText text="URL of the YouTube video you want to create a quiz" />
+        <Paragraph text="URL of the YouTube video you want to create a quiz" />
 
         <View style={{ justifyContent: 'space-between', alignItems: 'center', flexDirection: 'row' }}>
           <CustomButton
@@ -98,7 +98,7 @@ const CreateQuizSection = () => {
         />
         <View style={{ gap: 4 }}>
           <Title titleText="How It Works" style={{ textAlign: 'center', fontWeight: 'bold' }} />
-          <SmallText text="Our AI-powered system creates personalized quizzes in seconds" style={{ textAlign: 'center' }} />
+          <Paragraph text="Our AI-powered system creates personalized quizzes in seconds" style={{ textAlign: 'center' }} />
           <View style={{ flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center' }}>
             <StepHowItWork stepNumber={1} stepText="Paste URL" displayArrow={true} />
             <StepHowItWork stepNumber={2} stepText="AI Analysis" displayArrow={true} />

@@ -64,7 +64,11 @@ const SignInScreen = () => {
         isPending={isPending}
         onPress={() => console.log('v')}
         extraStyle={{ backgroundColor: '#1F2125' }}
-        icon={<AntDesign name="apple1" size={24} color="white" />}
+        icon={
+          <>
+            <AntDesign name="apple1" size={24} color="white" />
+          </>
+        }
       />
       <View style={{ flexDirection: 'row', gap: 12 }}>
         <Paragraph text={`Don׳t have an account?`} />

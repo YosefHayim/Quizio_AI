@@ -38,7 +38,7 @@ const VerifyOTPScreen = () => {
       <View>
         <Paragraph text={`Didn׳t recieve a code? Resend`} extraStyle={{ textAlign: 'center', color: colors.notificationOrPargraph }} />
       </View>
-      <View>
+      <View style={{ width: '100%' }}>
         <CustomButton
           buttonText="Verify"
           buttonType="confirmation"

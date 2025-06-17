@@ -1,4 +1,4 @@
-import { ReactNode, useState } from 'react';
+import { ReactElement, useState } from 'react';
 import { Pressable, StyleProp, TextInput, TextStyle, View } from 'react-native';
 import Entypo from '@expo/vector-icons/Entypo';
 import { colors } from 'constants/colors';
@@ -10,7 +10,7 @@ interface TextInputProps {
   handleInputFn: (v: string) => void;
   placeholderText?: string;
   extraStyle?: StyleProp<TextStyle>;
-  icon?: ReactNode;
+  icon?: ReactElement;
 }
 
 const CustomInput: React.FC<TextInputProps> = ({ ...props }) => {
