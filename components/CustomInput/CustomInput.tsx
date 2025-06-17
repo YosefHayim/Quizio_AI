@@ -1,5 +1,5 @@
 import { ReactNode, useState } from 'react';
-import { Pressable, TextInput, View } from 'react-native';
+import { Pressable, StyleProp, TextInput, TextStyle, View } from 'react-native';
 import Entypo from '@expo/vector-icons/Entypo';
 import { colors } from 'constants/colors';
 
@@ -9,6 +9,7 @@ interface TextInputProps {
   showPasswordIcon?: boolean;
   handleInputFn: (v: string) => void;
   placeholderText?: string;
+  extraStyle?: StyleProp<TextStyle>;
   icon?: ReactNode;
 }
 
@@ -32,7 +33,7 @@ const CustomInput: React.FC<TextInputProps> = ({ ...props }) => {
         placeholder={props.placeholderText}
         placeholderTextColor={colors.placehoolderInputText}
         autoCorrect={false}
-        style={[{ borderRadius: 16, color: 'white', fontSize: 16, flex: 1 }]}
+        style={[{ borderRadius: 16, color: 'white', fontSize: 16 }, props.extraStyle]}
         onChangeText={props.handleInputFn}
         value={props.state}
       />
