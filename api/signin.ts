@@ -5,7 +5,7 @@ export type SignInInformation = {
   phone?: string;
 };
 
-const signup = async (info: SignInInformation) => {
+const signin = async (info: SignInInformation) => {
   try {
     let credentials;
 
@@ -17,14 +17,14 @@ const signup = async (info: SignInInformation) => {
       throw new Error('Either email or phone must be provided');
     }
 
-    const { data, error } = await supabase.auth.signUp(credentials);
+    const { data, error } = await supabase.auth.signInWithPassword(credentials);
     if (error) throw error;
 
     console.log(data);
     return data;
   } catch (error) {
-    console.error('signup failed:', error);
+    console.error('signin failed:', error);
   }
 };
 
-export default signup;
+export default signin;
