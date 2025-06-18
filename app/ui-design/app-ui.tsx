@@ -1,13 +1,13 @@
 import { ScrollView, View } from 'react-native';
 
 import AntDesign from '@expo/vector-icons/AntDesign';
-import { Card } from 'components/Card';
-import { CustomButton } from 'components/CustomButton';
-import { CustomInput } from 'components/CustomInput';
-import { Paragraph } from 'components/Paragraph';
+import Card from 'components/Card';
+import CustomButton from 'components/CustomButton';
+import CustomInput from 'components/CustomInput';
+import Paragraph from 'components/Paragraph';
 import { ProgressBar } from 'react-native-paper';
 import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
-import { Title } from 'components/Title';
+import Title from 'components/Title';
 import { colors } from 'constants/colors';
 
 const AppUIScreen = () => {

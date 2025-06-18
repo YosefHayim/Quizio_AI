@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "AI Tube Quiz",
-    "slug": "ai-tube-quiz",
+    "name": "Quizai",
+    "scheme": "quizai",
+    "slug": "Quizai",
     "version": "1.0.0",
     "web": {
       "favicon": "./assets/favicon.png"

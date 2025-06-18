@@ -1,11 +1,11 @@
-import { NavigationProp } from '@react-navigation/native';
-import { useMutation } from '@tanstack/react-query';
+import { Router } from 'expo-router';
 import signInOrRegisterWithoAuthOtp from 'api/signInOrRegisterWithoAuthOtp';
+import { useMutation } from '@tanstack/react-query';
 
-const useSignInOrRegisterWithoAuthOtp = (navigation: NavigationProp<any>) => {
+const useSignInOrRegisterWithoAuthOtp = (router: Router) => {
   return useMutation({
     mutationFn: (phone: string) => signInOrRegisterWithoAuthOtp(phone),
-    onSuccess: () => navigation.navigate('verify-otp-screen'),
+    onSuccess: () => router.replace('/auth/verify-otp'),
     onError: (error) => console.error('useSignUp:', error),
   });
 };

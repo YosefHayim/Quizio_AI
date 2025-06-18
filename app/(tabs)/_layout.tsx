@@ -5,7 +5,7 @@ import { Tabs } from 'expo-router';
 
 const TabsStack = () => {
   return (
-    <Tabs screenOptions={{}}>
+    <Tabs initialRouteName="dashboard" screenOptions={{}}>
       <Tabs.Screen
         name="dashboard"
         options={{

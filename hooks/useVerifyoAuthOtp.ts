@@ -1,11 +1,12 @@
-import { NavigationProp } from '@react-navigation/native';
-import { useMutation } from '@tanstack/react-query';
 import verifyAuthOtp, { OtpInfoRecieved } from 'api/verifyoAuthOtp';
 
-const useVerifyoAuthOtp = (navigation: NavigationProp<any>) => {
+import { Router } from 'expo-router';
+import { useMutation } from '@tanstack/react-query';
+
+const useVerifyoAuthOtp = (router: Router) => {
   return useMutation({
     mutationFn: (OtpInfoRecieved: OtpInfoRecieved) => verifyAuthOtp(OtpInfoRecieved),
-    onSuccess: () => navigation.navigate('dashboard'),
+    onSuccess: () => router.replace('/dashboard'),
     onError: (error) => console.error('Signup error:', error),
   });
 };

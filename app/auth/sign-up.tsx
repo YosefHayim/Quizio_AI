@@ -2,20 +2,19 @@ import { Pressable, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
 import AntDesign from '@expo/vector-icons/AntDesign';
-import { CustomButton } from 'components/CustomButton';
-import { CustomInput } from 'components/CustomInput';
-import { CustomScreen } from 'components/CustomScreen';
-import { Paragraph } from 'components/Paragraph';
-import { Title } from 'components/Title';
+import CustomButton from 'components/CustomButton';
+import CustomInput from 'components/CustomInput';
+import CustomScreen from 'components/CustomScreen';
+import Paragraph from 'components/Paragraph';
+import Title from 'components/Title';
 import { colors } from 'constants/colors';
 import handleSignInOrRegisterWithoAuthOtp from 'handlers/handleSignInOrRegisterWithoAuthOtp';
-import { useNavigation } from 'expo-router';
+import { router } from 'expo-router';
 import useSignUpWithPhoneOrEmail from 'hooks/useSignInOrRegisterWithoAuthOtp';
 import { useState } from 'react';
 
 const SignUpScreen = () => {
-  const navigation = useNavigation();
-  const { mutate, isPending } = useSignUpWithPhoneOrEmail(navigation);
+  const { mutate, isPending } = useSignUpWithPhoneOrEmail(router);
   const [phone, setPhone] = useState('');
 
   return (

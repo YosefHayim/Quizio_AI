@@ -1,23 +1,22 @@
 import { useEffect, useState } from 'react';
 
-import { CustomButton } from 'components/CustomButton';
-import { CustomScreen } from 'components/CustomScreen';
+import CustomButton from 'components/CustomButton';
+import CustomScreen from 'components/CustomScreen';
 import { OtpInput } from 'react-native-otp-entry';
-import { Paragraph } from 'components/Paragraph';
-import { Title } from 'components/Title';
+import Paragraph from 'components/Paragraph';
+import Title from 'components/Title';
 import { View } from 'react-native';
 import { colors } from 'constants/colors';
 import { formatCountdown } from 'utils/formatCountdown';
 import { handleOtpVerification } from 'handlers/handleOtpVerification';
-import { useNavigation } from 'expo-router';
+import { router } from 'expo-router';
 import { useUserInfo } from 'context/userInfoContext';
 import useVerifyAuthOtp from 'hooks/useVerifyoAuthOtp';
 
 const VerifyOTPScreen = () => {
-  const navigation = useNavigation();
   const { user } = useUserInfo();
   const [otpInput, setOtpInput] = useState('');
-  const { mutate: verifyAuthOtpMutation, isPending } = useVerifyAuthOtp(navigation);
+  const { mutate: verifyAuthOtpMutation, isPending } = useVerifyAuthOtp(router);
   const [countdown, setCountdown] = useState(300);
 
   useEffect(() => {

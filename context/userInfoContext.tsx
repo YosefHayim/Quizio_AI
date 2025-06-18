@@ -1,5 +1,5 @@
 // UserInfoContext.tsx
-import { createContext, useContext, useState, ReactNode } from 'react';
+import { ReactNode, createContext, useContext, useState } from 'react';
 
 type UserInfo = {
   name?: string;
