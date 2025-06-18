@@ -25,8 +25,8 @@ const getButtonStyleByType = (buttonType: string, extraStyle?: any) => {
 interface CustomButtonProps {
   buttonText: string;
   onPress: () => void;
-  isPending: boolean;
   buttonType: 'confirmation' | 'success' | 'warning' | 'default' | 'custom';
+  isPending?: boolean;
   buttonTextColor?: string;
   extraStyle?: StyleProp<TextStyle>;
   icon?: ReactNode;

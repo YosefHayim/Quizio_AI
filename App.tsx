@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native';
 import { PaperProvider } from 'react-native-paper';
 import { UserInfoProvider } from 'context/userInfoContext';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import RootLayout from 'components/ui/Sidebar/Sidebar';
+import RootLayout from 'components/ui/Sidebar/RootLayout';
 import { useState } from 'react';
 
 const queryClient = new QueryClient();

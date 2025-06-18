@@ -12,12 +12,7 @@ const Drawer = createDrawerNavigator();
 
 const DrawerStack = () => {
   return (
-    <Drawer.Navigator
-      initialRouteName="dashboard"
-      screenOptions={{
-        drawerActiveBackgroundColor: colors.gray,
-        drawerActiveTintColor: colors.red,
-      }}>
+    <Drawer.Navigator initialRouteName="dashboard" screenOptions={{}}>
       <Drawer.Screen
         name="dashboard"
         component={DashboardScreen}
