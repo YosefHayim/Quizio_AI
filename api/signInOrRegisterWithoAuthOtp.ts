@@ -1,10 +1,6 @@
 import { supabase } from './configuration';
 
-export type OtpCode = {
-  phone: string;
-};
-
-const signInWithoAuthOtp = async ({ phone }: OtpCode) => {
+const signInOrRegisterWithoAuthOtp = async (phone: string) => {
   try {
     const { data, error } = await supabase.auth.signInWithOtp({
       phone,
@@ -19,4 +15,4 @@ const signInWithoAuthOtp = async ({ phone }: OtpCode) => {
   }
 };
 
-export default signInWithoAuthOtp;
+export default signInOrRegisterWithoAuthOtp;

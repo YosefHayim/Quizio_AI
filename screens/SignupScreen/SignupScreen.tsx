@@ -7,36 +7,24 @@ import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import AntDesign from '@expo/vector-icons/AntDesign';
-import handleSignup from 'handlers/handleSignUpWithPhoneOrEmail';
 import { CustomScreen } from 'components/CustomScreen';
-import useSignUpWithPhoneOrEmail from 'hooks/useSignUpWithPhoneOrEmail';
+import useSignUpWithPhoneOrEmail from 'hooks/useSignInOrRegisterWithoAuthOtp';
+import handleSignInOrRegisterWithoAuthOtp from 'handlers/handleSignInOrRegisterWithoAuthOtp';
 
 const SignupScreen = () => {
-  const [emailOrPhone, setEmailOrPhone] = useState('');
-  const { mutate: signUpMutation, isPending } = useSignUpWithPhoneOrEmail();
+  const [phone, setPhone] = useState('');
+  const { mutate: signInOrRegisterWithoAuthOtp, isPending } = useSignUpWithPhoneOrEmail();
 
   return (
     <CustomScreen>
       <View style={{ marginVertical: 10 }}>
         <Title titleText="Sign Up" />
       </View>
-      <CustomInput
-        isPassword={false}
-        showPasswordIcon={false}
-        handleInputFn={(v) => setEmailOrPhone(v)}
-        state={emailOrPhone}
-        placeholderText="Email or Phone"
-      />
+      <CustomInput isPassword={false} showPasswordIcon={false} handleInputFn={(v) => setPhone(v)} state={phone} placeholderText="Email or Phone" />
       <CustomButton
         buttonText="Sign up"
         buttonType="confirmation"
-        onPress={() => {
-          if (emailOrPhone.includes('@')) {
-            handleSignup(emailOrPhone, signUpMutation);
-          } else {
-            handleSignup(emailOrPhone, signUpMutation);
-          }
-        }}
+        onPress={() => handleSignInOrRegisterWithoAuthOtp(phone, signInOrRegisterWithoAuthOtp)}
         isPending={isPending}
       />
       <CustomButton

@@ -7,13 +7,13 @@ import { useState } from 'react';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { Paragraph } from 'components/Paragraph';
 import Svg, { Path } from 'react-native-svg';
-import handleSignin from 'handlers/handleSignInWithPhoneOrEmail';
 import { CustomScreen } from 'components/CustomScreen';
-import useSignUpWithPhoneOrEmail from 'hooks/useSignUpWithPhoneOrEmail';
+import useSignInOrRegisterWithoAuthOtp from 'hooks/useSignInOrRegisterWithoAuthOtp';
+import handleSignInOrRegisterWithoAuthOtp from 'handlers/handleSignInOrRegisterWithoAuthOtp';
 
 const SignInScreen = () => {
   const [emailOrPhone, setEmailOrPhone] = useState('');
-  const { mutate: signInMutation, isPending } = useSignUpWithPhoneOrEmail();
+  const { mutate: signInOrRegisterWithoAuthOtp, isPending } = useSignInOrRegisterWithoAuthOtp();
 
   return (
     <CustomScreen>
@@ -28,7 +28,12 @@ const SignInScreen = () => {
         placeholderText="Email or Phone"
       />
       isPending={isPending}
-      <CustomButton buttonText="Login" buttonType="confirmation" onPress={() => handleSignin(emailOrPhone, signInMutation)} isPending={isPending} />
+      <CustomButton
+        buttonText="Login"
+        buttonType="confirmation"
+        onPress={() => handleSignInOrRegisterWithoAuthOtp(emailOrPhone, signInOrRegisterWithoAuthOtp)}
+        isPending={isPending}
+      />
       <Paragraph text={'Forget Password?'} colorText="gray" />
       <CustomButton
         isPending={isPending}
