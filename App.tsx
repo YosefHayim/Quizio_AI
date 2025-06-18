@@ -3,7 +3,7 @@ import './global.css';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 import { PaperProvider } from 'react-native-paper';
-import RootLayout from 'components/ui/Sidebar/RootLayout';
+import RootLayout from 'app/_layout';
 import { SafeAreaView } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { UserInfoProvider } from 'context/userInfoContext';
