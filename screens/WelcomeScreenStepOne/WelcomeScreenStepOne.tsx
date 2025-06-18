@@ -24,9 +24,9 @@ const WelcomeScreenStepOne = () => {
 
 const styles = StyleSheet.create({
   background: {
+    height: 900,
     flex: 1,
-    paddingTop: 20,
-    paddingBottom: 20,
+    padding: 20,
     backgroundColor: '#000614',
   },
   container: {

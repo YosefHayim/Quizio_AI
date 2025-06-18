@@ -19,11 +19,11 @@ const SignInScreen = () => {
 
   return (
     <CustomScreen>
-      <View style={{ marginVertical: 10 }}>
+      <View style={{ justifyContent: 'center' }}>
         <Title titleText="Sign In" />
+        <Paragraph text={'Turn Views into Skills.'} extraStyle={{ textAlign: 'center' }} />
       </View>
       <CustomInput isPassword={false} showPasswordIcon={false} handleInputFn={(v) => setPhone(v)} state={phone} placeholderText="Email or Phone" />
-      isPending={isPending}
       <CustomButton buttonText="Login" buttonType="confirmation" onPress={() => handleSignInOrRegisterWithoAuthOtp(phone, mutate)} isPending={isPending} />
       <Paragraph text={'Forget Password?'} colorText="gray" />
       <CustomButton
