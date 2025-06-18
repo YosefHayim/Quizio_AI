@@ -15,7 +15,7 @@ type UserInfoContextType = {
 const UserInfoContext = createContext<UserInfoContextType | null>(null);
 
 export const UserInfoProvider = ({ children }: { children: ReactNode }) => {
-  const [user, setUser] = useState<UserInfo | null>(null);
+  const [user, setUser] = useState<UserInfo | null>({ phone: '', email: '', name: '' });
 
   return <UserInfoContext.Provider value={{ user, setUser }}>{children}</UserInfoContext.Provider>;
 };

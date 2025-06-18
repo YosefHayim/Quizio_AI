@@ -6,6 +6,7 @@ export const handleOtpVerification = (token: string, phone: string, verifyAuthOt
     Alert.alert('Invalid input!', 'Please enter all six digits.', [{ text: 'Okay' }]);
     return;
   }
+  console.log('recieved data for verifying:', phone, token);
 
   verifyAuthOtpMutation({
     phone,

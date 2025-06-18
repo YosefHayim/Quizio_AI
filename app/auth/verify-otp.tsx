@@ -33,6 +33,16 @@ const VerifyOTPScreen = () => {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (otpInput.length === 6 && !isPending) {
+        handleOtpVerification(otpInput, user!.phone!, verifyAuthOtpMutation);
+      }
+    }, 300);
+
+    return () => clearTimeout(timeout);
+  }, [otpInput]);
+
   return (
     <CustomScreen>
       <View>
@@ -48,7 +58,7 @@ const VerifyOTPScreen = () => {
           secureTextEntry={false}
           theme={{
             focusStickStyle: { backgroundColor: 'white' },
-            pinCodeTextStyle: { color: colors.activeButtonBackground },
+            pinCodeTextStyle: { color: 'white' },
             focusedPinCodeContainerStyle: { borderColor: 'white' },
           }}
         />
@@ -63,7 +73,7 @@ const VerifyOTPScreen = () => {
         <CustomButton
           buttonText="Verify"
           buttonType="confirmation"
-          onPress={() => handleOtpVerification(otpInput, user?.phone ?? '', verifyAuthOtpMutation)}
+          onPress={() => handleOtpVerification(otpInput, user!.phone!, verifyAuthOtpMutation)}
           isPending={isPending}
         />
       </View>
