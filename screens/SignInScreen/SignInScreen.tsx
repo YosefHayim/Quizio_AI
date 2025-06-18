@@ -1,16 +1,17 @@
 import { Pressable, View } from 'react-native';
-import { Title } from 'components/Title';
-import { colors } from 'constants/colors';
+import Svg, { Path } from 'react-native-svg';
+
+import AntDesign from '@expo/vector-icons/AntDesign';
 import { CustomButton } from 'components/CustomButton';
 import { CustomInput } from 'components/CustomInput';
-import { useState } from 'react';
-import AntDesign from '@expo/vector-icons/AntDesign';
-import { Paragraph } from 'components/Paragraph';
-import Svg, { Path } from 'react-native-svg';
 import { CustomScreen } from 'components/CustomScreen';
-import useSignInOrRegisterWithoAuthOtp from 'hooks/useSignInOrRegisterWithoAuthOtp';
+import { Paragraph } from 'components/Paragraph';
+import { Title } from 'components/Title';
+import { colors } from 'constants/colors';
 import handleSignInOrRegisterWithoAuthOtp from 'handlers/handleSignInOrRegisterWithoAuthOtp';
 import { useNavigation } from 'expo-router';
+import useSignInOrRegisterWithoAuthOtp from 'hooks/useSignInOrRegisterWithoAuthOtp';
+import { useState } from 'react';
 
 const SignInScreen = () => {
   const navigation = useNavigation();

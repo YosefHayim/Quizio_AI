@@ -1,8 +1,9 @@
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
+import { CustomScreen } from 'components/CustomScreen';
+import { Title } from 'components/Title';
 import { useNavigation } from '@react-navigation/native';
 import { useUserInfo } from 'context/userInfoContext';
-import { CustomScreen } from 'components/CustomScreen';
 
 const DashboardScreen = () => {
   const navigation = useNavigation();
@@ -10,7 +11,9 @@ const DashboardScreen = () => {
 
   return (
     <CustomScreen>
-      <Text>dashboard screen</Text>
+      <View>
+        <Title titleText={`Welcome back${userInfo.user?.name}`} />
+      </View>
     </CustomScreen>
   );
 };
