@@ -4,8 +4,22 @@ import CustomButton from 'components/CustomButton';
 import Paragraph from 'components/Paragraph';
 import Title from 'components/Title';
 import { router } from 'expo-router';
+import { useAsyncStorage } from '@react-native-async-storage/async-storage';
+import { useEffect } from 'react';
 
 const WelcomeScreenStepThree = () => {
+  const { setItem } = useAsyncStorage('hasCompletedOnboarding');
+
+  useEffect(() => {
+    (async () => {
+      try {
+        await setItem('true');
+      } catch (e) {
+        console.error('Error setting has completed unboarding to true', e);
+      }
+    })();
+  }, []);
+
   return (
     <ImageBackground source={require('../../assets/step-3.png')} style={styles.background} resizeMode="cover">
       <View style={styles.container}>

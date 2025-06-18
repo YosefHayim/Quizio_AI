@@ -12,7 +12,7 @@ type UserInfoContextType = {
   setUser: (user: UserInfo | null) => void;
 };
 
-const UserInfoContext = createContext<UserInfoContextType | undefined>(undefined);
+const UserInfoContext = createContext<UserInfoContextType | null>(null);
 
 export const UserInfoProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<UserInfo | null>(null);

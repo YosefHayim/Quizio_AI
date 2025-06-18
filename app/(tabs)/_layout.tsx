@@ -14,17 +14,17 @@ const TabsStack = () => {
         }}
       />
       <Tabs.Screen
-        name="create-quiz"
+        name="history"
         options={{
-          title: 'Create Quiz',
+          title: 'History',
           tabBarIcon: () => <AntDesign name="form" size={24} color="black" />,
         }}
       />
       <Tabs.Screen
-        name="history-quiz"
+        name="leaderboard"
         options={{
-          title: 'Quiz History',
-          tabBarIcon: () => <FontAwesome name="history" size={24} color="black" />,
+          title: 'Leaderboard',
+          tabBarIcon: () => <FontAwesome name="trophy" size={24} color="black" />,
         }}
       />
       <Tabs.Screen
