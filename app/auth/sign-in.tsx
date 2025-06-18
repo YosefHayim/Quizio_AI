@@ -1,4 +1,4 @@
-import { Pressable, View } from 'react-native';
+import { Image, Pressable, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
 import AntDesign from '@expo/vector-icons/AntDesign';
@@ -19,9 +19,10 @@ const SignInScreen = () => {
 
   return (
     <CustomScreen>
-      <View style={{ justifyContent: 'center' }}>
-        <Title titleText="Sign In" />
-        <Paragraph text={'Turn Views into Skills.'} extraStyle={{ textAlign: 'center' }} />
+      <View style={{ flex: 1, justifyContent: 'space-around', alignItems: 'center' }}>
+        <Title titleText="Quizio" extraStyle={{ color: '#5D90FE' }} />
+        <Paragraph text={'Learn Smarter. Play Harder.'} extraStyle={{ textAlign: 'center' }} />
+        <Image source={require('../../assets/logo.png')} style={{ height: 150, width: 150 }} />
       </View>
       <CustomInput
         isPassword={false}
