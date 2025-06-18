@@ -37,7 +37,7 @@ const SignInScreen = () => {
         onPress={() => handleSignInOrRegisterWithoAuthOtp(user!.phone!, mutate)}
         isPending={isPending}
       />
-      <Paragraph text={'Forget Password?'} colorText="gray" />
+      {/* <Paragraph text={'Forget Password?'} colorText="gray" /> */}
       <CustomButton
         isPending={isPending}
         buttonText={'Continue with Google'}
@@ -79,8 +79,8 @@ const SignInScreen = () => {
         }
       />
       <View style={{ flexDirection: 'row', gap: 12 }}>
-        <Paragraph text={`Don׳t have an account?`} />
-        <Pressable onPress={() => console.log('navigation to signup')}>
+        <Paragraph text={`have an account?`} />
+        <Pressable onPress={() => router.replace('/auth/sign-up')}>
           <Paragraph text={`Sign up`} colorText={colors.activeButtonBackground} />
         </Pressable>
       </View>

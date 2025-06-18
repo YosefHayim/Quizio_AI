@@ -1,4 +1,4 @@
-import { Pressable, View } from 'react-native';
+import { Image, Pressable, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
 import AntDesign from '@expo/vector-icons/AntDesign';
@@ -19,8 +19,10 @@ const SignUpScreen = () => {
 
   return (
     <CustomScreen>
-      <View style={{ marginVertical: 10 }}>
-        <Title titleText="Sign Up" />
+      <View style={{ flex: 1, justifyContent: 'space-around', alignItems: 'center' }}>
+        <Title titleText="Quizio" extraStyle={{ color: '#5D90FE' }} />
+        <Paragraph text={'Learn Smarter. Play Harder.'} extraStyle={{ textAlign: 'center' }} />
+        <Image source={require('../../assets/logo.png')} style={{ height: 150, width: 150 }} />
       </View>
       <CustomInput isPassword={false} showPasswordIcon={false} handleInputFn={(v) => setPhone(v)} state={phone} placeholderText="Email or Phone" />
       <CustomButton buttonText="Sign up" buttonType="confirmation" onPress={() => handleSignInOrRegisterWithoAuthOtp(phone, mutate)} isPending={isPending} />
@@ -61,9 +63,9 @@ const SignUpScreen = () => {
         icon={<AntDesign name="apple1" size={24} color="white" />}
       />
       <View style={{ flexDirection: 'row', gap: 12 }}>
-        <Paragraph text={`Don׳t have an account?`} />
-        <Pressable onPress={() => console.log('navigation to signup')}>
-          <Paragraph text={`Sign up`} colorText={colors.activeButtonBackground} />
+        <Paragraph text={`Already have an account?`} />
+        <Pressable onPress={() => router.replace('/auth/sign-in')}>
+          <Paragraph text={`Sign In`} colorText={colors.activeButtonBackground} />
         </Pressable>
       </View>
     </CustomScreen>
