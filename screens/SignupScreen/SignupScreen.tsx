@@ -12,7 +12,7 @@ import useSignUpWithPhoneOrEmail from 'hooks/useSignInOrRegisterWithoAuthOtp';
 import handleSignInOrRegisterWithoAuthOtp from 'handlers/handleSignInOrRegisterWithoAuthOtp';
 import { useNavigation } from 'expo-router';
 
-const SignupScreen = () => {
+const SignUpScreen = () => {
   const navigation = useNavigation();
   const { mutate, isPending } = useSignUpWithPhoneOrEmail(navigation);
   const [phone, setPhone] = useState('');
@@ -70,4 +70,4 @@ const SignupScreen = () => {
   );
 };
 
-export default SignupScreen;
+export default SignUpScreen;

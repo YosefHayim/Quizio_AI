@@ -3,9 +3,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SignInScreen } from 'screens/SignInScreen';
 import DrawerStack from './DrawerStack';
 import { AppUIScreen } from 'screens/AppUIScreen';
-import { SignupScreen } from 'screens/SignupScreen';
 import { VerifyOTPScreen } from 'screens/VerifyOTPScreen';
 import { DashboardScreen } from 'screens/DashboardScreen';
+import { WelcomeScreenStepThree } from 'screens/WelcomeScreenStepThree';
+import { WelcomeScreenStepTwo } from 'screens/WelcomeScreenStepTwo';
+import { WelcomeScreenStepOne } from 'screens/WelcomeScreenStepOne';
+import { SignUpScreen } from 'screens/SignUpScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,11 +16,14 @@ const RootLayout: React.FC<{ isAuth: boolean; isFirstTime: boolean }> = ({ isAut
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="signin" screenOptions={{ headerShown: false }}>
-        {isAuth && !isFirstTime ? <Stack.Screen name="drawer" component={DrawerStack} /> : <Stack.Screen name="signin" component={VerifyOTPScreen} />}
+        {isAuth && !isFirstTime ? <Stack.Screen name="drawer" component={DrawerStack} /> : <Stack.Screen name="step-1" component={WelcomeScreenStepOne} />}
         <Stack.Screen name="verify-otp-screen" component={VerifyOTPScreen} />
         <Stack.Screen name="sign-in" component={SignInScreen} />
+        <Stack.Screen name="sign-up" component={SignUpScreen} />
         <Stack.Screen name="app-ui" component={AppUIScreen} />
         <Stack.Screen name="dashboard" component={DashboardScreen} />
+        <Stack.Screen name="step-2" component={WelcomeScreenStepTwo} />
+        <Stack.Screen name="step-3" component={WelcomeScreenStepThree} />
       </Stack.Navigator>
     </NavigationContainer>
   );
