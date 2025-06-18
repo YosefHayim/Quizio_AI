@@ -10,10 +10,12 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 import { CustomScreen } from 'components/CustomScreen';
 import useSignUpWithPhoneOrEmail from 'hooks/useSignInOrRegisterWithoAuthOtp';
 import handleSignInOrRegisterWithoAuthOtp from 'handlers/handleSignInOrRegisterWithoAuthOtp';
+import { useNavigation } from 'expo-router';
 
 const SignupScreen = () => {
+  const navigation = useNavigation();
+  const { mutate, isPending } = useSignUpWithPhoneOrEmail(navigation);
   const [phone, setPhone] = useState('');
-  const { mutate: signInOrRegisterWithoAuthOtp, isPending } = useSignUpWithPhoneOrEmail();
 
   return (
     <CustomScreen>
@@ -21,12 +23,7 @@ const SignupScreen = () => {
         <Title titleText="Sign Up" />
       </View>
       <CustomInput isPassword={false} showPasswordIcon={false} handleInputFn={(v) => setPhone(v)} state={phone} placeholderText="Email or Phone" />
-      <CustomButton
-        buttonText="Sign up"
-        buttonType="confirmation"
-        onPress={() => handleSignInOrRegisterWithoAuthOtp(phone, signInOrRegisterWithoAuthOtp)}
-        isPending={isPending}
-      />
+      <CustomButton buttonText="Sign up" buttonType="confirmation" onPress={() => handleSignInOrRegisterWithoAuthOtp(phone, mutate)} isPending={isPending} />
       <CustomButton
         isPending={isPending}
         buttonText={'Continue with Google'}

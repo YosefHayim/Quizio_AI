@@ -4,16 +4,34 @@ import { Paragraph } from 'components/Paragraph';
 import { Title } from 'components/Title';
 import { colors } from 'constants/colors';
 import { useUserInfo } from 'context/userInfoContext';
+import { useNavigation } from 'expo-router';
 import { handleOtpVerification } from 'handlers/handleOtpVerification';
 import useVerifyAuthOtp from 'hooks/useVerifyoAuthOtp';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { View } from 'react-native';
 import { OtpInput } from 'react-native-otp-entry';
+import { formatCountdown } from 'utils/formatCountdown';
 
 const VerifyOTPScreen = () => {
+  const navigation = useNavigation();
   const { user } = useUserInfo();
   const [otpInput, setOtpInput] = useState('');
-  const { mutate: verifyAuthOtpMutation, isPending } = useVerifyAuthOtp();
+  const { mutate: verifyAuthOtpMutation, isPending } = useVerifyAuthOtp(navigation);
+  const [countdown, setCountdown] = useState(300);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCountdown((prev) => {
+        if (prev <= 1) {
+          clearInterval(interval);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <CustomScreen>
@@ -34,6 +52,9 @@ const VerifyOTPScreen = () => {
             focusedPinCodeContainerStyle: { borderColor: 'white' },
           }}
         />
+      </View>
+      <View>
+        <Paragraph text={formatCountdown(countdown)} extraStyle={{ fontWeight: 'bold' }} />
       </View>
       <View>
         <Paragraph text={`Didn׳t recieve a code? Resend`} extraStyle={{ textAlign: 'center', color: colors.notificationOrPargraph }} />

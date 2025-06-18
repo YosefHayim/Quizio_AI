@@ -1,6 +1,6 @@
-const handleSignInOrRegisterWithoAuthOtp = (phone: string, signInOrRegisterWithoAuthOtp: (phone: string) => void) => {
+const handleSignInOrRegisterWithoAuthOtp = (phone: string, signInOrRegisterWithoAuthOtpMutation: (phone: string) => void) => {
   try {
-    signInOrRegisterWithoAuthOtp(phone);
+    signInOrRegisterWithoAuthOtpMutation(phone);
   } catch (error) {
     console.error('Error durning sign in: ', error);
   }

@@ -10,30 +10,21 @@ import Svg, { Path } from 'react-native-svg';
 import { CustomScreen } from 'components/CustomScreen';
 import useSignInOrRegisterWithoAuthOtp from 'hooks/useSignInOrRegisterWithoAuthOtp';
 import handleSignInOrRegisterWithoAuthOtp from 'handlers/handleSignInOrRegisterWithoAuthOtp';
+import { useNavigation } from 'expo-router';
 
 const SignInScreen = () => {
-  const [emailOrPhone, setEmailOrPhone] = useState('');
-  const { mutate: signInOrRegisterWithoAuthOtp, isPending } = useSignInOrRegisterWithoAuthOtp();
+  const navigation = useNavigation();
+  const [phone, setPhone] = useState('');
+  const { mutate, isPending } = useSignInOrRegisterWithoAuthOtp(navigation);
 
   return (
     <CustomScreen>
       <View style={{ marginVertical: 10 }}>
         <Title titleText="Sign In" />
       </View>
-      <CustomInput
-        isPassword={false}
-        showPasswordIcon={false}
-        handleInputFn={(v) => setEmailOrPhone(v)}
-        state={emailOrPhone}
-        placeholderText="Email or Phone"
-      />
+      <CustomInput isPassword={false} showPasswordIcon={false} handleInputFn={(v) => setPhone(v)} state={phone} placeholderText="Email or Phone" />
       isPending={isPending}
-      <CustomButton
-        buttonText="Login"
-        buttonType="confirmation"
-        onPress={() => handleSignInOrRegisterWithoAuthOtp(emailOrPhone, signInOrRegisterWithoAuthOtp)}
-        isPending={isPending}
-      />
+      <CustomButton buttonText="Login" buttonType="confirmation" onPress={() => handleSignInOrRegisterWithoAuthOtp(phone, mutate)} isPending={isPending} />
       <Paragraph text={'Forget Password?'} colorText="gray" />
       <CustomButton
         isPending={isPending}
