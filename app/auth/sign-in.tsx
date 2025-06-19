@@ -114,7 +114,7 @@ const SignInScreen = () => {
       <Paragraph text={'Forget Password?'} colorText="gray" />
       <View style={{ position: 'absolute', flexDirection: 'row', gap: 12, bottom: 0 }}>
         <Paragraph text={`No account yet?`} colorText="black" />
-        <Pressable onPress={() => router.replace('/auth/sign-up')}>
+        <Pressable onPress={() => router.push('/auth/sign-up')}>
           <Paragraph text={`Sign up`} colorText={'black'} extraStyle={{ fontWeight: 'bold', textDecorationLine: 'underline' }} />
         </Pressable>
       </View>

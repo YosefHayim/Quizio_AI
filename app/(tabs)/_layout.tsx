@@ -5,12 +5,10 @@ import { Tabs } from 'expo-router';
 
 const TabsStack = () => {
   return (
-    <Tabs initialRouteName="dashboard" screenOptions={{}}>
+    <Tabs initialRouteName="dashboard" screenOptions={{ tabBarActiveTintColor: 'black', headerBackButtonDisplayMode: 'minimal', animation: 'shift' }}>
       <Tabs.Screen
         name="dashboard"
         options={{
-          animation: 'fade',
-          headerShown: false,
           title: 'Dashboard',
           tabBarIcon: () => <AntDesign name="home" size={24} color="black" />,
         }}

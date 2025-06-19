@@ -16,11 +16,11 @@ export default function Index() {
         const accessToken = await AsyncStorage.getItem('accessToken');
 
         if (!onboardingDone) {
-          router.replace('/on-board/step-1');
+          // router.push('/on-board/step-1');
+          router.push('/dashboard');
+          // router.push('/auth/sign-in');
         } else if (!accessToken) {
-          router.replace('/auth/sign-in');
         } else {
-          router.replace('/(tabs)/dashboard');
         }
       } catch (e) {
         console.error('Routing error:', e);

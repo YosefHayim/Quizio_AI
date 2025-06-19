@@ -29,7 +29,7 @@ const WelcomeScreenStepThree = () => {
           <Paragraph text="improvement and keep learning" extraStyle={{ textAlign: 'center' }} />
         </View>
         <View style={styles.buttonContainer}>
-          <CustomButton buttonText="Get Started" buttonType="confirmation" onPress={() => router.replace('/auth/sign-in')} />
+          <CustomButton buttonText="Get Started" buttonType="confirmation" onPress={() => router.push('/auth/sign-in')} />
         </View>
       </View>
     </ImageBackground>

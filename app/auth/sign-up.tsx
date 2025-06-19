@@ -80,7 +80,7 @@ const SignUpScreen = () => {
         <Paragraph text={'OR'} colorText="gray" />
         <View style={{ width: '40%', height: 1, backgroundColor: 'gray' }} />
       </View>
-      <CustomButton buttonText="Continue with email" buttonType="confirmation" onPress={() => router.replace('/auth/fill-signup-form')} />
+      <CustomButton buttonText="Continue with email" buttonType="confirmation" onPress={() => router.push('/auth/fill-signup-form')} />
     </CustomScreen>
   );
 };

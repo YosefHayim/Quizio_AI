@@ -75,7 +75,7 @@ const FillSignUpForm = () => {
       </View>
       <View style={{ flexDirection: 'row', gap: 8, justifyContent: 'center' }}>
         <Paragraph text={'Exisiting User?'} />
-        <Pressable onPress={() => router.replace('/auth/sign-in')}>
+        <Pressable onPress={() => router.push('/auth/sign-in')}>
           <Paragraph text={'Log in'} extraStyle={{ textDecorationLine: 'underline', fontWeight: 'bold' }} />
         </Pressable>
       </View>

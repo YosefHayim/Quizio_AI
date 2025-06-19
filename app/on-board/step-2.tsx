@@ -14,7 +14,7 @@ const WelcomeScreenStepTwo = () => {
           <Paragraph text="Paste a link or choose a trending video AI will handle the rest." extraStyle={{ textAlign: 'center' }} />
         </View>
         <View style={styles.buttonContainer}>
-          <CustomButton buttonText="Next" buttonType="confirmation" onPress={() => router.replace('/on-board/step-3')} />
+          <CustomButton buttonText="Next" buttonType="confirmation" onPress={() => router.push('/on-board/step-3')} />
         </View>
       </View>
     </ImageBackground>

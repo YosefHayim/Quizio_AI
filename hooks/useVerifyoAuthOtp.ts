@@ -11,7 +11,7 @@ const useVerifyoAuthOtp = (router: Router) => {
     mutationFn: (OtpInfoRecieved: OtpInfoRecieved) => verifyAuthOtp(OtpInfoRecieved),
     onSuccess: (session) => {
       if (session?.access_token) setItem(session.access_token);
-      router.replace('/dashboard');
+      router.push('/dashboard');
     },
     onError: (error) => console.error('useVerifyoAuthOtp error:', error),
   });

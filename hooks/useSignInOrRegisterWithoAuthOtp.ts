@@ -7,7 +7,7 @@ const useSignInOrRegisterWithoAuthOtp = (router: Router) => {
   return useMutation({
     mutationFn: (form: FormProps) => signInOrRegisterWithoAuthOtp(form),
     onSuccess: (data) => {
-      router.replace('/auth/verify-otp');
+      router.push('/auth/verify-otp');
     },
     onError: (error) => console.error('useSignInOrRegisterWithoAuthOtp error:', error),
   });
