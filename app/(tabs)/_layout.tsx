@@ -9,6 +9,7 @@ const TabsStack = () => {
       <Tabs.Screen
         name="dashboard"
         options={{
+          animation: 'fade',
           headerShown: false,
           title: 'Dashboard',
           tabBarIcon: () => <AntDesign name="home" size={24} color="black" />,

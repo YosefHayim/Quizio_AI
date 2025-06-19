@@ -12,9 +12,9 @@ import { useState } from 'react';
 export interface FormProps {
   email: string;
   password: string;
-  firstName: string;
-  lastName: string;
-  age: string;
+  firstName?: string;
+  lastName?: string;
+  age?: string;
 }
 
 const FillSignUpForm = () => {

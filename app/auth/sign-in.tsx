@@ -11,10 +11,11 @@ import { colors } from 'constants/colors';
 import handleSignInOrRegisterWithoAuthOtp from 'handlers/handleSignInOrRegisterWithoAuthOtp';
 import { router } from 'expo-router';
 import useSignInOrRegisterWithoAuthOtp from 'hooks/useSignInOrRegisterWithoAuthOtp';
-import { useUserInfo } from 'context/userInfoContext';
+import { useState } from 'react';
 
 const SignInScreen = () => {
-  const { user, setUser } = useUserInfo();
+  const [form, setForm] = useState({ email: '', password: '' });
+  const [isInputsEmpty, setInputsEmpty] = useState(true);
   const { mutate, isPending } = useSignInOrRegisterWithoAuthOtp(router);
 
   return (
@@ -92,15 +93,22 @@ const SignInScreen = () => {
       <CustomInput
         isPassword={false}
         showPasswordIcon={false}
-        handleInputFn={(v) => setUser({ ...user, phone: v })}
-        state={`${user?.phone}`}
-        placeholderText="Email or Phone"
+        handleInputFn={(v) => setForm({ ...form, email: v })}
+        state={`${form?.email}`}
+        placeholderText="Email"
+      />
+      <CustomInput
+        isPassword={true}
+        showPasswordIcon={true}
+        handleInputFn={(v) => setForm({ ...form, password: v })}
+        state={`${form?.password}`}
+        placeholderText="Password"
       />
       <CustomButton
         buttonText="Login"
         buttonType="confirmation"
-        onPress={() => handleSignInOrRegisterWithoAuthOtp(user!.phone!, mutate)}
-        isPending={isPending}
+        onPress={() => handleSignInOrRegisterWithoAuthOtp(form, mutate)}
+        isPending={isPending || (isInputsEmpty && form.email.length > 1 && form.password.length > 1)}
         extraStyle={{ flex: 1 }}
       />
       <Paragraph text={'Forget Password?'} colorText="gray" />
