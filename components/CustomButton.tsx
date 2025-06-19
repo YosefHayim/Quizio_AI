@@ -19,7 +19,11 @@ const getButtonStyleByType = (buttonType: string, extraStyle?: any) => {
       return { ...extraStyle };
 
     default:
-      return { backgroundColor: colors.optionButtonBackground, borderColor: colors.defaultborderButton, borderWidth: 1 };
+      return {
+        backgroundColor: colors.optionButtonBackground,
+        borderColor: colors.defaultborderButton,
+        borderWidth: 1,
+      };
   }
 };
 
@@ -35,14 +39,31 @@ interface CustomButtonProps {
 
 const CustomButton: React.FC<CustomButtonProps> = ({ ...props }) => {
   return (
-    <View style={[getButtonStyleByType(props.buttonType, props.extraStyle), { borderRadius: 100, padding: 14, width: '100%' }]}>
+    <View
+      style={[
+        getButtonStyleByType(props.buttonType, props.extraStyle),
+        { borderRadius: 100, padding: 14, width: '100%' },
+      ]}>
       {props.isPending ? (
         <ActivityIndicator color={colors.defaultborderButton} />
       ) : (
         <Pressable onPress={props.onPress} disabled={props.isPending}>
-          <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 8 }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: 8,
+            }}>
             {props.icon}
-            <Text style={{ fontSize: 14, fontWeight: 'light', color: props.buttonTextColor ? props.buttonTextColor : 'white' }}>{props.buttonText}</Text>
+            <Text
+              style={{
+                fontSize: 14,
+                fontWeight: 'light',
+                color: props.buttonTextColor ? props.buttonTextColor : 'white',
+              }}>
+              {props.buttonText}
+            </Text>
           </View>
         </Pressable>
       )}

@@ -30,7 +30,11 @@ const CustomInput: React.FC<TextInputProps> = ({ ...props }) => {
       />
       {props.showPasswordIcon && (
         <Pressable onPress={() => setVisible((prev) => !prev)}>
-          {isVisible ? <Entypo name="eye-with-line" size={20} color="black" /> : <Entypo name="eye" size={20} color="black" />}
+          {isVisible ? (
+            <Entypo name="eye-with-line" size={20} color="black" />
+          ) : (
+            <Entypo name="eye" size={20} color="black" />
+          )}
         </Pressable>
       )}
       <View>{props.icon}</View>

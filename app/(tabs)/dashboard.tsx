@@ -1,12 +1,15 @@
 import { Text, View } from 'react-native';
 
+import AntDesign from '@expo/vector-icons/AntDesign';
 import CustomButton from 'components/CustomButton';
 import CustomScreen from 'components/CustomScreen';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import Paragraph from 'components/Paragraph';
+import { ProgressBar } from 'react-native-paper';
 import Title from 'components/Title';
+import { router } from 'expo-router';
 
 const DashboardScreen = () => {
   return (
@@ -100,48 +103,82 @@ const DashboardScreen = () => {
           </View>
         </View>
         <View>
-          <CustomButton buttonType="confirmaiton" buttonText="Start Daily Challenge" />
+          <CustomButton buttonType="confirmation" buttonText="Start Daily Challenge" />
         </View>
       </View>
-      <View style={{ flex: 1, width: '100%' }}>
+      <View style={{ borderRadius: 15, borderWidth: 0.2, padding: 20 }}>
+        <ProgressBar color="black" progress={0.1} style={{ height: 10, borderRadius: 100 }} />
         <View
           style={{
-            backgroundColor: 'black',
             width: '100%',
-            height: 10,
-            borderRadius: 100,
-          }}
-        />
-        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
-          <View style={{ gap: 8 }}>
+            flexDirection: 'row',
+            justifyContent: 'space-evenly',
+          }}>
+          <View style={{ gap: 8, justifyContent: 'center', alignItems: 'center' }}>
             <Text>Su</Text>
+            <View
+              style={{
+                borderRadius: 100,
+                padding: 10,
+                backgroundColor: 'black',
+                width: 5,
+              }}
+            />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
             <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
           </View>
-          <View style={{ gap: 8 }}>
+          <View style={{ gap: 8, justifyContent: 'center', alignItems: 'center' }}>
             <Text>Mo</Text>
             <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
           </View>
-          <View style={{ gap: 8 }}>
+          <View style={{ gap: 8, justifyContent: 'center', alignItems: 'center' }}>
             <Text>Tu</Text>
             <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
-          </View>
-          <View style={{ gap: 8 }}>
-            <Text>Wed</Text>
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
             <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
           </View>
-          <View style={{ gap: 8 }}>
-            <Text>Thu</Text>
+          <View style={{ gap: 8, justifyContent: 'center', alignItems: 'center' }}>
+            <Text>We</Text>
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
             <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
           </View>
-          <View style={{ gap: 8 }}>
+          <View style={{ gap: 8, justifyContent: 'center', alignItems: 'center' }}>
+            <Text>Th</Text>
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+          </View>
+          <View style={{ gap: 8, justifyContent: 'center', alignItems: 'center' }}>
             <Text>Fr</Text>
             <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
           </View>
-          <View style={{ gap: 8 }}>
-            <Text>Sat</Text>
+          <View style={{ gap: 8, justifyContent: 'center', alignItems: 'center' }}>
+            <Text>Sa</Text>
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
             <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
           </View>
         </View>
+      </View>
+      <View style={{ width: '100%', paddingBottom: 20 }}>
+        <CustomButton
+          onPress={() => router.replace('create-quiz')}
+          buttonType="confirmation"
+          buttonText="Create Quiz"
+          icon={<AntDesign name="plus" size={24} color="white" />}
+        />
       </View>
     </CustomScreen>
   );
