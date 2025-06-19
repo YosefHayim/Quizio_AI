@@ -103,6 +103,46 @@ const DashboardScreen = () => {
           <CustomButton buttonType="confirmaiton" buttonText="Start Daily Challenge" />
         </View>
       </View>
+      <View style={{ flex: 1, width: '100%' }}>
+        <View
+          style={{
+            backgroundColor: 'black',
+            width: '100%',
+            height: 10,
+            borderRadius: 100,
+          }}
+        />
+        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
+          <View style={{ gap: 8 }}>
+            <Text>Su</Text>
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+          </View>
+          <View style={{ gap: 8 }}>
+            <Text>Mo</Text>
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+          </View>
+          <View style={{ gap: 8 }}>
+            <Text>Tu</Text>
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+          </View>
+          <View style={{ gap: 8 }}>
+            <Text>Wed</Text>
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+          </View>
+          <View style={{ gap: 8 }}>
+            <Text>Thu</Text>
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+          </View>
+          <View style={{ gap: 8 }}>
+            <Text>Fr</Text>
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+          </View>
+          <View style={{ gap: 8 }}>
+            <Text>Sat</Text>
+            <View style={{ borderRadius: 100, padding: 10, backgroundColor: 'black', width: 5 }} />
+          </View>
+        </View>
+      </View>
     </CustomScreen>
   );
 };
