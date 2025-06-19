@@ -12,11 +12,11 @@ export default function Index() {
     const checkStatus = async () => {
       try {
         const onboardingDone = await AsyncStorage.getItem('hasCompletedOnboarding');
-        const userToken = await AsyncStorage.getItem('userToken');
+        const accessToken = await AsyncStorage.getItem('accessToken');
 
         if (!onboardingDone) {
           router.replace('/on-board/step-1');
-        } else if (!userToken) {
+        } else if (!accessToken) {
           router.replace('/auth/sign-in');
         } else {
           router.replace('/(tabs)/dashboard');

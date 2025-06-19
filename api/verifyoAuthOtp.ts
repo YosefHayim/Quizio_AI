@@ -14,7 +14,7 @@ const verifyoAuthOtp = async (otpInfoRecieved: OtpInfoRecieved) => {
     } = await supabase.auth.verifyOtp(otpInfoRecieved);
 
     if (error) throw error;
-
+    console.log(session);
     return session;
   } catch (error) {
     console.error('Error while verifying OTP code:', error);

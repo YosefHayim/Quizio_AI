@@ -7,7 +7,7 @@ const signInOrRegisterWithoAuthOtp = async (phone: string) => {
     });
 
     if (error) throw error;
-
+    console.log(data);
     return data;
   } catch (error) {
     console.error('Error while sign in or sign up to get OTP code:', error);

@@ -10,7 +10,6 @@ const useVerifyoAuthOtp = (router: Router) => {
   return useMutation({
     mutationFn: (OtpInfoRecieved: OtpInfoRecieved) => verifyAuthOtp(OtpInfoRecieved),
     onSuccess: (session) => {
-      console.log(session);
       if (session?.access_token) setItem(session.access_token);
       router.replace('/dashboard');
     },
