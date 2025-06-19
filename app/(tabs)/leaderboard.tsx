@@ -2,7 +2,7 @@ import CustomScreen from 'components/CustomScreen';
 import Title from 'components/Title';
 import { useUserInfo } from 'context/userInfoContext';
 
-const DashboardScreen = () => {
+const LeaderboardScreen = () => {
   const userInfo = useUserInfo();
 
   return (
@@ -12,4 +12,4 @@ const DashboardScreen = () => {
   );
 };
 
-export default DashboardScreen;
+export default LeaderboardScreen;
