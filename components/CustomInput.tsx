@@ -50,5 +50,5 @@ const styles = StyleSheet.create({
     padding: 14,
     flexDirection: 'row',
   },
-  textInput: { borderRadius: 16, color: 'white', fontSize: 14, flex: 1 },
+  textInput: { borderRadius: 16, color: 'black', fontSize: 14, flex: 1 },
 });

@@ -1,9 +1,8 @@
-import { ScrollView, View } from 'react-native';
-
 import CustomScreen from 'components/CustomScreen';
 import LinkRow from 'components/LinkRow';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { View } from 'react-native';
 import { router } from 'expo-router';
 
 const SettingsScreen = () => {

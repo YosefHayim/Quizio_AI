@@ -1,8 +1,9 @@
+import { Tabs, router } from 'expo-router';
+
 import AntDesign from '@expo/vector-icons/AntDesign';
 import CustomHeader from 'components/CustomHeader';
 import Feather from '@expo/vector-icons/Feather';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Tabs } from 'expo-router';
 
 const TabsStack = () => {
   return (
@@ -18,7 +19,7 @@ const TabsStack = () => {
         options={{
           headerBackButtonDisplayMode: 'default',
           title: 'Dashboard',
-          header: () => <CustomHeader headerName="Dashboard" />,
+          header: () => <CustomHeader headerName="Dashboard" navigateBackTo={() => null} />,
 
           tabBarIcon: () => <AntDesign name="home" size={24} color="black" />,
         }}
@@ -27,7 +28,7 @@ const TabsStack = () => {
         name="history"
         options={{
           title: 'History',
-          header: () => <CustomHeader headerName="History" />,
+          header: () => <CustomHeader headerName="History" navigateBackTo={() => router.back()} />,
           tabBarIcon: () => <AntDesign name="form" size={24} color="black" />,
         }}
       />
@@ -35,7 +36,7 @@ const TabsStack = () => {
         name="leaderboard"
         options={{
           title: 'Leaderboard',
-          header: () => <CustomHeader headerName="Leaderboard" />,
+          header: () => <CustomHeader headerName="Leaderboard" navigateBackTo={() => router.back()} />,
 
           tabBarIcon: () => <FontAwesome name="trophy" size={24} color="black" />,
         }}
@@ -44,7 +45,7 @@ const TabsStack = () => {
         name="settings"
         options={{
           title: 'Settings',
-          header: () => <CustomHeader headerName="Settings" />,
+          header: () => <CustomHeader headerName="Settings" navigateBackTo={() => router.back()} />,
           tabBarIcon: () => <Feather name="settings" size={24} color="black" />,
         }}
       />

@@ -10,14 +10,26 @@ const AccountScreen = () => {
     <CustomScreen>
       <CustomHeader headerName="Account" navigateBackTo={() => router.replace('/settings')} />
       <View style={{ flex: 1, justifyContent: 'space-around' }}>
-        <LinkRow rowName="Name" showArrow={true} extraStyle={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+        <LinkRow
+          rowName="Name"
+          onPress={() => router.navigate('/account/name')}
+          showArrow={true}
+          extraStyle={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Text style={{ marginRight: 10, opacity: 0.5 }}>יוסף סבג</Text>
         </LinkRow>
-        <LinkRow rowName="Age" showArrow={true} extraStyle={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+        <LinkRow
+          onPress={() => router.navigate('/account/age')}
+          rowName="Age"
+          showArrow={true}
+          extraStyle={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Text style={{ marginRight: 10, opacity: 0.5 }}>25</Text>
         </LinkRow>
         <View style={{ height: 0.5, backgroundColor: 'gray', opacity: 0.5 }} />
-        <LinkRow rowName="Email" showArrow={true} extraStyle={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+        <LinkRow
+          onPress={() => router.navigate('/account/email')}
+          rowName="Email"
+          showArrow={true}
+          extraStyle={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Text style={{ marginRight: 10, opacity: 0.5 }} numberOfLines={1}>
             yosefisabag@gmail.com
           </Text>
