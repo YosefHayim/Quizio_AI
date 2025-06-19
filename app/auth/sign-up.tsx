@@ -1,22 +1,15 @@
-import { Pressable, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
 import AntDesign from '@expo/vector-icons/AntDesign';
 import CustomButton from 'components/CustomButton';
-import CustomInput from 'components/CustomInput';
 import CustomScreen from 'components/CustomScreen';
 import Paragraph from 'components/Paragraph';
 import Title from 'components/Title';
+import { View } from 'react-native';
 import { colors } from 'constants/colors';
-import handleSignInOrRegisterWithoAuthOtp from 'handlers/handleSignInOrRegisterWithoAuthOtp';
 import { router } from 'expo-router';
-import useSignUpWithPhoneOrEmail from 'hooks/useSignInOrRegisterWithoAuthOtp';
-import { useState } from 'react';
 
 const SignUpScreen = () => {
-  const { mutate, isPending } = useSignUpWithPhoneOrEmail(router);
-  const [phone, setPhone] = useState('');
-
   return (
     <CustomScreen>
       <View style={{ justifyContent: 'space-around', alignItems: 'center' }}>
@@ -24,7 +17,6 @@ const SignUpScreen = () => {
       </View>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', gap: 16 }}>
         <CustomButton
-          isPending={isPending}
           buttonType="custom"
           buttonTextColor={colors.darkButton}
           onPress={() => console.log('v')}
@@ -63,7 +55,6 @@ const SignUpScreen = () => {
         />
         <CustomButton
           buttonType="custom"
-          isPending={isPending}
           onPress={() => console.log('v')}
           extraStyle={{
             justifyContent: 'center',
@@ -89,12 +80,7 @@ const SignUpScreen = () => {
         <Paragraph text={'OR'} colorText="gray" />
         <View style={{ width: '40%', height: 1, backgroundColor: 'gray' }} />
       </View>
-      <CustomButton
-        buttonText="Continue with email"
-        buttonType="confirmation"
-        onPress={() => handleSignInOrRegisterWithoAuthOtp(phone, mutate)}
-        isPending={isPending}
-      />
+      <CustomButton buttonText="Continue with email" buttonType="confirmation" onPress={() => router.replace('/auth/fill-signup-form')} />
     </CustomScreen>
   );
 };

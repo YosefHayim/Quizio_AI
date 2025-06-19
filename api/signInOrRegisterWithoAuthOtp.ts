@@ -1,9 +1,10 @@
+import { FormProps } from 'app/auth/fill-signup-form';
 import { supabase } from './configuration';
 
-const signInOrRegisterWithoAuthOtp = async (phone: string) => {
+const signInOrRegisterWithoAuthOtp = async (form: FormProps) => {
   try {
     const { data, error } = await supabase.auth.signInWithOtp({
-      phone,
+      form,
     });
 
     if (error) throw error;

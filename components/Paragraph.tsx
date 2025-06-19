@@ -1,5 +1,4 @@
 import { StyleProp, Text, TextStyle } from 'react-native';
-
 interface ParagraphProps {
   text: string | number;
   colorText?: string;
