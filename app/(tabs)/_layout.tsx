@@ -17,10 +17,9 @@ const TabsStack = () => {
       <Tabs.Screen
         name="dashboard"
         options={{
-          headerBackButtonDisplayMode: 'default',
+          headerBackButtonDisplayMode: 'generic',
           title: 'Dashboard',
           header: () => <CustomHeader headerName="Dashboard" navigateBackTo={() => null} />,
-
           tabBarIcon: () => <AntDesign name="home" size={24} color="black" />,
         }}
       />
@@ -36,14 +35,16 @@ const TabsStack = () => {
         name="leaderboard"
         options={{
           title: 'Leaderboard',
-          header: () => <CustomHeader headerName="Leaderboard" navigateBackTo={() => router.back()} />,
-
+          header: () => (
+            <CustomHeader headerName="Leaderboard" navigateBackTo={() => router.back()} />
+          ),
           tabBarIcon: () => <FontAwesome name="trophy" size={24} color="black" />,
         }}
       />
       <Tabs.Screen
         name="settings"
         options={{
+          headerBackButtonDisplayMode: 'generic',
           title: 'Settings',
           header: () => <CustomHeader headerName="Settings" navigateBackTo={() => router.back()} />,
           tabBarIcon: () => <Feather name="settings" size={24} color="black" />,

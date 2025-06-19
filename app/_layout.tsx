@@ -1,9 +1,10 @@
+import { ActivityIndicator, PaperProvider } from 'react-native-paper';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-import { PaperProvider } from 'react-native-paper';
 import { SafeAreaView } from 'react-native';
 import { Slot } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
+import { Suspense } from 'react';
 import { UserInfoProvider } from 'context/userInfoContext';
 import { colors } from 'constants/colors';
 
@@ -16,7 +17,9 @@ export default function RootLayout() {
         <PaperProvider>
           <StatusBar style="auto" />
           <SafeAreaView style={{ flex: 1, backgroundColor: colors.lightTheme }}>
-            <Slot />
+            <Suspense fallback={<ActivityIndicator color="#5C6BC0" size="large" />}>
+              <Slot />
+            </Suspense>
           </SafeAreaView>
         </PaperProvider>
       </UserInfoProvider>

@@ -1,49 +1,96 @@
-import { Image, View } from 'react-native';
+import { Text, View } from 'react-native';
 
-import Card from 'components/Card';
 import CustomButton from 'components/CustomButton';
 import CustomScreen from 'components/CustomScreen';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import Paragraph from 'components/Paragraph';
-import { ProgressBar } from 'react-native-paper';
+import Title from 'components/Title';
 import { colors } from 'constants/colors';
 
 const DashboardScreen = () => {
   return (
     <CustomScreen>
-      <Card extraStyle={{ gap: 16 }}>
-        <View style={{ justifyContent: 'space-between', alignItems: 'center', flexDirection: 'row' }}>
-          <Paragraph text={'PERFORMENCE'} extraStyle={{ color: 'gray' }} />
-          <Paragraph text={'Level 5'} />
+      <View style={{ width: '100%' }}>
+        <Title titleText="Hello, Jospeh" />
+        <Paragraph text={'Keep up the great work'} extraStyle={{ textAlign: 'center' }} />
+      </View>
+      <View style={{ width: '100%' }}>
+        <CustomButton buttonType="confirmaiton" buttonText="Start Daily Challenge" />
+      </View>
+      <View
+        style={{
+          width: '100%',
+          justifyContent: 'space-evenly',
+          alignItems: 'center',
+          flexDirection: 'row',
+          borderRadius: 122,
+          padding: 10,
+        }}>
+        <View
+          style={{
+            alignItems: 'center',
+            backgroundColor: '#F5F5F5',
+            padding: 5,
+            width: 60,
+            borderRadius: 12,
+            shadowOpacity: 0.3,
+            shadowOffset: { width: 2, height: 2 },
+            elevation: 5,
+          }}>
+          <Text>XP</Text>
+          <MaterialCommunityIcons name="brain" size={24} color="black" />
+          <Text>3</Text>
         </View>
-        <ProgressBar progress={0.5} color={colors.progressBar} style={{ height: 10, borderRadius: 75 }} />
-        <Card extraStyle={{ backgroundColor: '#232431', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', padding: 10 }}>
-          <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-            <MaterialCommunityIcons name="clipboard-list" size={24} color="#fff" />
-            <Paragraph text={'25'} />
-          </View>
-          <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-            <MaterialCommunityIcons name="progress-check" size={24} color="#4caf50" />
-            <Paragraph text={'25'} />
-          </View>
-          <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-            <MaterialCommunityIcons name="star-circle" size={24} color="#fdd835" />
-            <Paragraph text={'25'} />
-          </View>
-        </Card>
-      </Card>
-      <Card extraStyle={{ flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center', gap: 8 }}>
-        <View>
-          <Image source={require('../../assets/step-1.png')} style={{ height: 75, width: 75, borderRadius: 10 }} />
+        <View
+          style={{
+            width: 60,
+            justifyContent: 'center',
+            alignItems: 'center',
+            backgroundColor: '#F5F5F5',
+            padding: 5,
+            borderRadius: 12,
+            shadowOpacity: 0.3,
+            shadowOffset: { width: 2, height: 2 },
+            elevation: 5,
+          }}>
+          <Text>Streak</Text>
+          <MaterialCommunityIcons name="fire-circle" size={24} color="black" />
+          <Text>3</Text>
         </View>
-        <View style={{ flex: 1 }}>
-          <Paragraph text={'The Solar System Explained'} />
-          <ProgressBar progress={0.5} color={colors.progressBar} style={{ height: 10, borderRadius: 75 }} />
+        <View
+          style={{
+            justifyContent: 'center',
+            alignItems: 'center',
+            backgroundColor: '#F5F5F5',
+            padding: 5,
+            borderRadius: 12,
+            shadowOpacity: 0.3,
+            shadowOffset: { width: 2, height: 2 },
+            elevation: 5,
+          }}>
+          <Text>Ranking</Text>
+          <FontAwesome6 name="ranking-star" size={24} color="black" />
+          <Text>3</Text>
         </View>
-        <View>
-          <CustomButton buttonType="confirmation" buttonText="Continue" />
+        <View
+          style={{
+            justifyContent: 'center',
+            alignItems: 'center',
+            backgroundColor: '#F5F5F5',
+            padding: 5,
+            width: 60,
+            borderRadius: 12,
+            shadowOpacity: 0.3,
+            shadowOffset: { width: 2, height: 2 },
+            elevation: 5,
+          }}>
+          <Text>Total</Text>
+          <MaterialIcons name="question-answer" size={24} color="black" />
+          <Text>3</Text>
         </View>
-      </Card>
+      </View>
     </CustomScreen>
   );
 };
