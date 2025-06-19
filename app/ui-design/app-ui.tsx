@@ -12,7 +12,7 @@ import { colors } from 'constants/colors';
 
 const AppUIScreen = () => {
   return (
-    <ScrollView style={{ padding: 26, backgroundColor: colors.darkTheme }}>
+    <ScrollView style={{ padding: 26, backgroundColor: colors.lightTheme }}>
       <View style={{ flex: 1, gap: 20 }}>
         <View style={{ gap: 10 }}>
           <Title titleText="Small texts" />

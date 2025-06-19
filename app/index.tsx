@@ -11,6 +11,7 @@ export default function Index() {
   useEffect(() => {
     const checkStatus = async () => {
       try {
+        await AsyncStorage.multiRemove(['hasCompletedOnboarding', 'accessToken']);
         const onboardingDone = await AsyncStorage.getItem('hasCompletedOnboarding');
         const accessToken = await AsyncStorage.getItem('accessToken');
 

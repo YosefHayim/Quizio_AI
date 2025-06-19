@@ -15,7 +15,7 @@ export default function RootLayout() {
       <UserInfoProvider>
         <PaperProvider>
           <StatusBar style="auto" />
-          <SafeAreaView style={{ flex: 1, backgroundColor: colors.darkTheme }}>
+          <SafeAreaView style={{ flex: 1, backgroundColor: colors.lightTheme }}>
             <Slot />
           </SafeAreaView>
         </PaperProvider>

@@ -11,7 +11,7 @@ const CustomScreen: React.FC<CustomScreenProps> = ({ children }) => {
   return (
     <KeyboardAvoidingView style={{ flex: 1 }}>
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-        <View style={{ flex: 1, backgroundColor: colors.darkTheme, padding: 20 }}>
+        <View style={{ flex: 1, backgroundColor: colors.lightTheme, padding: 20 }}>
           <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', gap: 16 }}>{children}</View>
         </View>
       </TouchableWithoutFeedback>

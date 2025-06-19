@@ -42,14 +42,13 @@ export default CustomInput;
 
 const styles = StyleSheet.create({
   rootContainer: {
-    borderRadius: 16,
+    borderRadius: 14,
     borderWidth: 1,
-    backgroundColor: colors.cardBackground,
-    borderColor: colors.defaultborderButton,
+    borderColor: 'gray',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 20,
+    padding: 14,
     flexDirection: 'row',
   },
-  textInput: { borderRadius: 16, color: 'white', fontSize: 16, flex: 1 },
+  textInput: { borderRadius: 16, color: 'white', fontSize: 14, flex: 1 },
 });

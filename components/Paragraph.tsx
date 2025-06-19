@@ -7,7 +7,7 @@ interface ParagraphProps {
 }
 
 const Paragraph: React.FC<ParagraphProps> = ({ ...props }) => {
-  return <Text style={[{ fontWeight: 'light', color: props.colorText ? props.colorText : 'white', fontSize: 15 }, props.extraStyle]}>{props.text}</Text>;
+  return <Text style={[{ fontWeight: 'light', color: props.colorText ? props.colorText : 'black', fontSize: 15 }, props.extraStyle]}>{props.text}</Text>;
 };
 
 export default Paragraph;
