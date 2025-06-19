@@ -1,9 +1,8 @@
 import AntDesign from '@expo/vector-icons/AntDesign';
+import CustomHeader from 'components/CustomHeader';
 import Feather from '@expo/vector-icons/Feather';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs } from 'expo-router';
-import Title from 'components/Title';
-import { View } from 'react-native';
 
 const TabsStack = () => {
   return (
@@ -17,13 +16,10 @@ const TabsStack = () => {
       <Tabs.Screen
         name="dashboard"
         options={{
+          headerBackButtonDisplayMode: 'default',
           title: 'Dashboard',
-          header: () => (
-            <View style={{ padding: 10 }}>
-              <Title titleText="Dashboard" extraStyle={{ padding: 10 }} />
-              <View style={{ height: 0.5, backgroundColor: 'gray', opacity: 0.5 }} />
-            </View>
-          ),
+          header: () => <CustomHeader headerName="Dashboard" />,
+
           tabBarIcon: () => <AntDesign name="home" size={24} color="black" />,
         }}
       />
@@ -31,12 +27,7 @@ const TabsStack = () => {
         name="history"
         options={{
           title: 'History',
-          header: () => (
-            <View style={{ padding: 10 }}>
-              <Title titleText="History" extraStyle={{ padding: 10 }} />
-              <View style={{ height: 0.5, backgroundColor: 'gray', opacity: 0.5 }} />
-            </View>
-          ),
+          header: () => <CustomHeader headerName="History" />,
           tabBarIcon: () => <AntDesign name="form" size={24} color="black" />,
         }}
       />
@@ -44,12 +35,8 @@ const TabsStack = () => {
         name="leaderboard"
         options={{
           title: 'Leaderboard',
-          header: () => (
-            <View style={{ padding: 10 }}>
-              <Title titleText="Leaderboard" extraStyle={{ padding: 10 }} />
-              <View style={{ height: 0.5, backgroundColor: 'gray', opacity: 0.5 }} />
-            </View>
-          ),
+          header: () => <CustomHeader headerName="Leaderboard" />,
+
           tabBarIcon: () => <FontAwesome name="trophy" size={24} color="black" />,
         }}
       />
@@ -57,12 +44,7 @@ const TabsStack = () => {
         name="settings"
         options={{
           title: 'Settings',
-          header: () => (
-            <View style={{ padding: 10 }}>
-              <Title titleText="Settings" extraStyle={{ padding: 10 }} />
-              <View style={{ height: 0.5, backgroundColor: 'gray', opacity: 0.5 }} />
-            </View>
-          ),
+          header: () => <CustomHeader headerName="Settings" />,
           tabBarIcon: () => <Feather name="settings" size={24} color="black" />,
         }}
       />

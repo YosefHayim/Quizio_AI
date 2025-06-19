@@ -1,16 +1,14 @@
 import { Text, View } from 'react-native';
 
+import CustomHeader from 'components/CustomHeader';
 import CustomScreen from 'components/CustomScreen';
 import LinkRow from 'components/LinkRow';
-import Title from 'components/Title';
+import { router } from 'expo-router';
 
 const AccountScreen = () => {
   return (
     <CustomScreen>
-      <View style={{ width: '100%' }}>
-        <Title titleText="Account" />
-        <View style={{ height: 0.5, backgroundColor: 'gray', opacity: 0.5 }} />
-      </View>
+      <CustomHeader headerName="Account" navigateBackTo={() => router.replace('/settings')} />
       <View style={{ flex: 1, justifyContent: 'space-around' }}>
         <LinkRow rowName="Name" showArrow={true} extraStyle={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Text style={{ marginRight: 10, opacity: 0.5 }}>יוסף סבג</Text>

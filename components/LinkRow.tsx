@@ -20,7 +20,7 @@ const LinkRow: React.FC<LinkRowProps> = ({ icon, rowName, children, showArrow = 
         <Text style={styles.label}>{rowName}</Text>
         <View style={styles.spacer} />
         {children && <View>{children}</View>}
-        {showArrow && <AntDesign name="right" size={16} color="gray" />}{' '}
+        {showArrow && <AntDesign name="right" size={16} color="gray" />}
       </View>
     </Pressable>
   );

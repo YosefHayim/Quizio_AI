@@ -13,7 +13,7 @@ const SettingsScreen = () => {
         <LinkRow
           rowName={'Account'}
           icon={<MaterialCommunityIcons name="account" size={24} color="black" />}
-          onPress={() => router.push('/settings/account')}
+          onPress={() => router.push('/settings/account', { withAnchor: true })}
         />
         <LinkRow
           rowName={'Premium'}
