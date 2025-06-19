@@ -17,7 +17,7 @@ export default function Index() {
 
         if (!onboardingDone) {
           // router.push('/on-board/step-1');
-          router.push('/dashboard');
+          router.replace('/dashboard');
           // router.push('/auth/sign-in');
         } else if (!accessToken) {
         } else {

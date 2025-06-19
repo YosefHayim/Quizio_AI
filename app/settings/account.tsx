@@ -1,12 +1,7 @@
 import CustomScreen from 'components/CustomScreen';
-import { Text } from 'react-native';
 
 const AccountScreen = () => {
-  return (
-    <CustomScreen>
-      <Text>sss</Text>
-    </CustomScreen>
-  );
+  return <CustomScreen></CustomScreen>;
 };
 
 export default AccountScreen;
