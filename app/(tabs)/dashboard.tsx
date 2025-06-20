@@ -174,7 +174,7 @@ const DashboardScreen = () => {
       </View>
       <View style={{ width: '100%', paddingBottom: 20 }}>
         <CustomButton
-          onPress={() => router.replace('create-quiz')}
+          onPress={() => router.replace('/quiz/create')}
           buttonType="confirmation"
           buttonText="Create Quiz"
           icon={<AntDesign name="plus" size={24} color="white" />}

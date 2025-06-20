@@ -1,7 +1,6 @@
 import { StyleProp, StyleSheet, TextStyle, View } from 'react-native';
 
 import { ReactNode } from 'react';
-import { colors } from 'constants/colors';
 
 interface CardProps {
   children: ReactNode;
@@ -18,9 +17,8 @@ const styles = StyleSheet.create({
   rootContainer: {
     width: '100%',
     padding: 20,
-    borderColor: colors.defaultborderButton,
+    borderColor: 'black',
     borderWidth: 1,
     borderRadius: 16,
-    backgroundColor: colors.cardBackground,
   },
 });

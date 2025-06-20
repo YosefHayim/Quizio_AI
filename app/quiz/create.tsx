@@ -14,7 +14,9 @@ const CreateQuizScreen = () => {
   const [url, setUrl] = useState('');
   const [numberOfQuestions, setNumberOfQuestions] = useState(1);
 
-  const handleExtractYoutubeCaptions = () => {};
+  const handleExtractYoutubeCaptions = () => {
+    router.replace('/quiz/play');
+  };
 
   const handlePasteYtUrl = async () => {
     const copiedUrl = await Clipboard.getStringAsync();
