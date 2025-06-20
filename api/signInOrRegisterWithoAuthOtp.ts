@@ -14,6 +14,7 @@ const signInOrRegisterWithoAuthOtp = async (phone: string) => {
     return data;
   } catch (error) {
     console.error('Error at signInOrRegisterWithoAuthOtp function: ', error);
+    throw error;
   }
 };
 

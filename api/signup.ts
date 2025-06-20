@@ -13,7 +13,7 @@ const signup = async ({ email, password, firstName, lastName }: SignupFormProps)
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
-      options: { data: { firstName, lastName } },
+      options: { data: { first_name: firstName, last_name: lastName } },
     });
 
     if (error) throw error;
@@ -22,6 +22,7 @@ const signup = async ({ email, password, firstName, lastName }: SignupFormProps)
     return data;
   } catch (error) {
     console.error('Error at signup function: ', error);
+    throw error;
   }
 };
 

@@ -7,7 +7,7 @@ export interface SignInProps {
 
 const signin = async ({ email, password }: SignInProps) => {
   try {
-    const { data, error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
@@ -18,6 +18,7 @@ const signin = async ({ email, password }: SignInProps) => {
     return data;
   } catch (error) {
     console.error('Error at signin function: ', error);
+    throw error
   }
 };
 
