@@ -1,10 +1,10 @@
 import verifyAuthOtp, { OtpInfoRecieved } from 'api/verifyoAuthOtp';
 
-import { Router } from 'expo-router';
+import { router } from 'expo-router';
 import { useAsyncStorage } from '@react-native-async-storage/async-storage';
 import { useMutation } from '@tanstack/react-query';
 
-const useVerifyoAuthOtp = (router: Router) => {
+const useVerifyoAuthOtp = () => {
   const { setItem } = useAsyncStorage('accessToken');
 
   return useMutation({
@@ -13,7 +13,7 @@ const useVerifyoAuthOtp = (router: Router) => {
       if (session?.access_token) setItem(session.access_token);
       router.push('/dashboard');
     },
-    onError: (error) => console.error('useVerifyoAuthOtp error:', error),
+    onError: (error) => console.error('useVerifyoAuthOtp function error:', error),
   });
 };
 

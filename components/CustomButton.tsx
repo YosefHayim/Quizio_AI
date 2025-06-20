@@ -45,7 +45,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({ ...props }) => {
         { borderRadius: 100, padding: 14, width: '100%' },
       ]}>
       {props.isPending ? (
-        <ActivityIndicator color={colors.defaultborderButton} />
+        <ActivityIndicator color={'white'} />
       ) : (
         <Pressable onPress={props.onPress} disabled={props.isPending}>
           <View

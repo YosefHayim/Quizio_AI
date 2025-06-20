@@ -11,14 +11,13 @@ export default function Index() {
   useEffect(() => {
     const checkStatus = async () => {
       try {
-        await AsyncStorage.multiRemove(['hasCompletedOnboarding', 'accessToken']);
         const onboardingDone = await AsyncStorage.getItem('hasCompletedOnboarding');
         const accessToken = await AsyncStorage.getItem('accessToken');
 
         if (!onboardingDone) {
-          // router.push('/on-board/step-1');
+          router.push('/on-board/step-1');
           router.replace('/dashboard');
-          // router.push('/auth/sign-in');
+          router.push('/auth/sign-in');
         } else if (!accessToken) {
         } else {
         }

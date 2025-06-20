@@ -4,23 +4,17 @@ import CustomButton from 'components/CustomButton';
 import CustomInput from 'components/CustomInput';
 import CustomScreen from 'components/CustomScreen';
 import Paragraph from 'components/Paragraph';
-import handleSignInOrRegisterWithoAuthOtp from 'handlers/handleSignInOrRegisterWithoAuthOtp';
+import { SignupFormProps } from 'api/signup';
+import Title from 'components/Title';
+import { handleRegularSignup } from 'handlers/handleRegularSignUp';
 import { router } from 'expo-router';
-import useSignInOrRegisterWithoAuthOtp from 'hooks/useSignInOrRegisterWithoAuthOtp';
+import useSignupRegular from 'hooks/useSignupRegular';
 import { useState } from 'react';
 
-export interface FormProps {
-  email: string;
-  password: string;
-  firstName?: string;
-  lastName?: string;
-  age?: string;
-}
-
 const FillSignUpForm = () => {
-  const { mutate, isPending } = useSignInOrRegisterWithoAuthOtp(router);
+  const { mutate, isPending } = useSignupRegular();
 
-  const [form, setForm] = useState<FormProps>({
+  const [form, setForm] = useState<SignupFormProps>({
     email: '',
     password: '',
     firstName: '',
@@ -30,7 +24,9 @@ const FillSignUpForm = () => {
 
   return (
     <CustomScreen>
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', width: '100%', gap: 12 }}>
+      <View
+        style={{ flex: 1, justifyContent: 'center', alignItems: 'center', width: '100%', gap: 12 }}>
+        <Title titleText="Sign up" />
         <CustomInput
           isPassword={false}
           showPasswordIcon={false}
@@ -66,9 +62,9 @@ const FillSignUpForm = () => {
           </View>
         </View>
         <CustomButton
-          buttonText="Login"
+          buttonText="Submit"
           buttonType="confirmation"
-          onPress={() => handleSignInOrRegisterWithoAuthOtp(form, mutate)}
+          onPress={() => handleRegularSignup(form, mutate)}
           isPending={isPending}
           extraStyle={{ flex: 1 }}
         />
@@ -76,7 +72,10 @@ const FillSignUpForm = () => {
       <View style={{ flexDirection: 'row', gap: 8, justifyContent: 'center' }}>
         <Paragraph text={'Exisiting User?'} />
         <Pressable onPress={() => router.push('/auth/sign-in')}>
-          <Paragraph text={'Log in'} extraStyle={{ textDecorationLine: 'underline', fontWeight: 'bold' }} />
+          <Paragraph
+            text={'Log in'}
+            extraStyle={{ textDecorationLine: 'underline', fontWeight: 'bold' }}
+          />
         </Pressable>
       </View>
       <View>

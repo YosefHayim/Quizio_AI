@@ -1,15 +1,14 @@
-import { FormProps } from 'app/auth/fill-signup-form';
-import { Router } from 'expo-router';
+import { router } from 'expo-router';
 import signInOrRegisterWithoAuthOtp from 'api/signInOrRegisterWithoAuthOtp';
 import { useMutation } from '@tanstack/react-query';
 
-const useSignInOrRegisterWithoAuthOtp = (router: Router) => {
+const useSignInOrRegisterWithoAuthOtp = () => {
   return useMutation({
-    mutationFn: (form: FormProps) => signInOrRegisterWithoAuthOtp(form),
-    onSuccess: (data) => {
+    mutationFn: (phone: string) => signInOrRegisterWithoAuthOtp(phone),
+    onSuccess: () => {
       router.push('/auth/verify-otp');
     },
-    onError: (error) => console.error('useSignInOrRegisterWithoAuthOtp error:', error),
+    onError: (error) => console.error('useSignInOrRegisterWithoAuthOtp function error:', error),
   });
 };
 

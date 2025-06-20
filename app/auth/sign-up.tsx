@@ -75,12 +75,22 @@ const SignUpScreen = () => {
           }
         />
       </View>
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 16 }}>
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          gap: 16,
+        }}>
         <View style={{ width: '40%', height: 1, backgroundColor: 'gray' }} />
         <Paragraph text={'OR'} colorText="gray" />
         <View style={{ width: '40%', height: 1, backgroundColor: 'gray' }} />
       </View>
-      <CustomButton buttonText="Continue with email" buttonType="confirmation" onPress={() => router.push('/auth/fill-signup-form')} />
+      <CustomButton
+        buttonText="Continue with email"
+        buttonType="confirmation"
+        onPress={() => router.push('/auth/fill-signup-form')}
+      />
     </CustomScreen>
   );
 };

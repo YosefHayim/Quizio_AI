@@ -8,15 +8,15 @@ import CustomScreen from 'components/CustomScreen';
 import Paragraph from 'components/Paragraph';
 import Title from 'components/Title';
 import { colors } from 'constants/colors';
-import handleSignInOrRegisterWithoAuthOtp from 'handlers/handleSignInOrRegisterWithoAuthOtp';
+import handleRegularSignIn from 'handlers/handleRegularSignIn';
 import { router } from 'expo-router';
-import useSignInOrRegisterWithoAuthOtp from 'hooks/useSignInOrRegisterWithoAuthOtp';
+import useSigninRegular from 'hooks/useSigninRegular';
 import { useState } from 'react';
 
 const SignInScreen = () => {
   const [form, setForm] = useState({ email: '', password: '' });
   const [isInputsEmpty, setInputsEmpty] = useState(true);
-  const { mutate, isPending } = useSignInOrRegisterWithoAuthOtp(router);
+  const { mutate, isPending } = useSigninRegular();
 
   return (
     <CustomScreen>
@@ -85,7 +85,13 @@ const SignInScreen = () => {
           }
         />
       </View>
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 16 }}>
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          gap: 16,
+        }}>
         <View style={{ width: '40%', height: 1, backgroundColor: 'gray' }} />
         <Paragraph text={'OR'} colorText="gray" />
         <View style={{ width: '40%', height: 1, backgroundColor: 'gray' }} />
@@ -107,15 +113,21 @@ const SignInScreen = () => {
       <CustomButton
         buttonText="Login"
         buttonType="confirmation"
-        onPress={() => handleSignInOrRegisterWithoAuthOtp(form, mutate)}
-        isPending={isPending || (isInputsEmpty && form.email.length > 1 && form.password.length > 1)}
+        onPress={() => handleRegularSignIn(form, mutate)}
+        isPending={
+          isPending || (isInputsEmpty && form.email.length > 1 && form.password.length > 1)
+        }
         extraStyle={{ flex: 1 }}
       />
       <Paragraph text={'Forget Password?'} colorText="gray" />
       <View style={{ position: 'absolute', flexDirection: 'row', gap: 12, bottom: 0 }}>
         <Paragraph text={`No account yet?`} colorText="black" />
         <Pressable onPress={() => router.push('/auth/sign-up')}>
-          <Paragraph text={`Sign up`} colorText={'black'} extraStyle={{ fontWeight: 'bold', textDecorationLine: 'underline' }} />
+          <Paragraph
+            text={`Sign up`}
+            colorText={'black'}
+            extraStyle={{ fontWeight: 'bold', textDecorationLine: 'underline' }}
+          />
         </Pressable>
       </View>
     </CustomScreen>

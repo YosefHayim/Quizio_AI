@@ -1,10 +1,11 @@
-import { FormProps } from 'app/auth/fill-signup-form';
-
-const handleSignInOrRegisterWithoAuthOtp = (form: FormProps, signInOrRegisterWithoAuthOtpMutation: (form: FormProps) => void) => {
-  console.log('phone input recieved: ', form);
+const handleSignInOrRegisterWithoAuthOtp = (
+  phone: string,
+  signInOrRegisterWithoAuthOtpMutation: (phone: string) => void
+) => {
+  console.log('phone input recieved: ', phone);
 
   try {
-    signInOrRegisterWithoAuthOtpMutation(form);
+    signInOrRegisterWithoAuthOtpMutation(phone);
   } catch (error) {
     console.error('Error durning sign in: ', error);
   }

@@ -17,7 +17,7 @@ const verifyoAuthOtp = async (otpInfoRecieved: OtpInfoRecieved) => {
     console.log(session);
     return session;
   } catch (error) {
-    console.error('Error while verifying OTP code:', error);
+    console.error('Error at verifyoAuthOtp function: ', error);
   }
 };
 
