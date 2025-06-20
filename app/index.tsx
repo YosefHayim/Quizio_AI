@@ -15,9 +15,9 @@ export default function Index() {
         const accessToken = await AsyncStorage.getItem('accessToken');
 
         if (!onboardingDone) {
-          router.push('/on-board/step-1');
+          // router.push('/on-board/step-1');
           router.replace('/dashboard');
-          router.push('/auth/sign-in');
+          // router.push('/auth/sign-in');
         } else if (!accessToken) {
         } else {
         }

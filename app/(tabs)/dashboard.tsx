@@ -172,7 +172,7 @@ const DashboardScreen = () => {
           </View>
         </View>
       </View>
-      <View style={{ width: '100%', paddingBottom: 20 }}>
+      <View style={{ width: '100%', paddingBottom: 150 }}>
         <CustomButton
           onPress={() => router.replace('/quiz/create')}
           buttonType="confirmation"
