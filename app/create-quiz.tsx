@@ -18,7 +18,15 @@ const CreateQuizScreen = () => {
 
   const handlePasteYtUrl = async () => {
     const copiedUrl = await Clipboard.getStringAsync();
-    setUrl(copiedUrl);
+    if (copiedUrl) {
+      setUrl(copiedUrl);
+    } else {
+      alert('Clipboard is empty or no valid URL found.');
+    }
+  };
+
+  const handleClear = () => {
+    setUrl('');
   };
 
   return (
@@ -41,13 +49,26 @@ const CreateQuizScreen = () => {
         </View>
       </View>
       <View style={{ gap: 12, width: '100%' }}>
-        <CustomInput isPassword={false} state={url} placeholderText="https://youtube.com/watch?v" />
-        <CustomButton
-          onPress={handlePasteYtUrl}
-          buttonType="confirmation"
-          buttonText="Paste"
-          icon={<FontAwesome5 name="paste" size={24} color="white" />}
+        <CustomInput
+          isPassword={false}
+          state={url}
+          placeholderText="https://youtube.com/watch?v"
+          handleInputFn={(v) => setUrl(v)}
         />
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            gap: 30,
+          }}>
+          <View style={{ flex: 1 }}>
+            <CustomButton onPress={handlePasteYtUrl} buttonType="confirmation" buttonText="Paste" />
+          </View>
+          <View style={{ flex: 1 }}>
+            <CustomButton onPress={handleClear} buttonType="confirmation" buttonText="Clear" />
+          </View>
+        </View>
       </View>
       <View>
         <Paragraph text={'Number Of Questions To Generate'} />
