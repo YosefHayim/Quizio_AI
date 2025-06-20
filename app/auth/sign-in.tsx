@@ -114,9 +114,7 @@ const SignInScreen = () => {
         buttonText="Login"
         buttonType="confirmation"
         onPress={() => handleRegularSignIn(form, mutate)}
-        isPending={
-          isPending || (isInputsEmpty && form.email.length > 1 && form.password.length > 1)
-        }
+        isPending={isPending}
         extraStyle={{ flex: 1 }}
       />
       <Paragraph text={'Forget Password?'} colorText="gray" />
