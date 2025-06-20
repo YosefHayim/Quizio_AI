@@ -65,6 +65,8 @@ const quizQuestions = [
 const PlayQuizScreen = () => {
   const [currentQuestionNumber, setCurrentQuestionNumber] = useState(1);
   const [userScore, setUserScore] = useState(0);
+  const [countdown, setCountdown] = useState(60);
+  const [totalTime, setTotalTime] = useState(0);
 
   const handleUserAnswer = (answer: string) => {
     if (answer === quizQuestions[currentQuestionNumber].correctAnswer) {
@@ -74,7 +76,31 @@ const PlayQuizScreen = () => {
     setCurrentQuestionNumber((prev) => (prev += 1));
   };
 
-  if (currentQuestionNumber === quizQuestions.length) {
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCountdown((prev) => {
+        if (prev > 1) return prev - 1;
+
+        // Move to next question when time runs out
+        setCurrentQuestionNumber((q) => q + 1);
+        setCountdown(60); // reset timer for next question
+        return 60; // or 0 if you want no reset
+      });
+
+      setTotalTime((prev) => prev + 1);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    if (currentQuestionNumber >= quizQuestions.length) {
+      // Stop everything
+      setCountdown(0);
+    }
+  }, [currentQuestionNumber]);
+
+  if (currentQuestionNumber >= quizQuestions.length) {
     return (
       <CustomScreen>
         <View style={{ flex: 1, width: '100%' }}>
@@ -82,8 +108,9 @@ const PlayQuizScreen = () => {
             headerName="Quiz Results"
             navigateBackTo={() => router.replace('dashboard')}
           />
-          <Text>userScore: {userScore}</Text>
-          <Text>wrong guesses: {quizQuestions.length - userScore}</Text>
+          <Text>Total Questions: {quizQuestions.length}</Text>
+          <Text>Correct Answers: {userScore}</Text>
+          <Text>Wrong Answers: {quizQuestions.length - userScore}</Text>
           <CustomButton
             buttonType="confirmation"
             onPress={() => console.log('')}
@@ -108,6 +135,12 @@ const PlayQuizScreen = () => {
             style={{ backgroundColor: 'white' }}
             fillStyle={{ backgroundColor: 'black' }}
           />
+        </View>
+        <View>
+          <Text>
+            Current question: {currentQuestionNumber} : {quizQuestions.length}
+          </Text>
+          <Text>Until next question: {countdown}</Text>
         </View>
       </View>
       <View style={{ flex: 1, width: '100%', justifyContent: 'space-evenly' }}>
