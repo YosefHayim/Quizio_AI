@@ -15,7 +15,7 @@ const DashboardScreen = () => {
   return (
     <CustomScreen>
       <View style={{ width: '100%' }}>
-        <Title titleText="Hello, Jospeh" />
+        <Title titleText="Hello, Jospeh" extraStyle={{ marginTop: 100 }} />
         <Paragraph text={'Keep up the great work'} extraStyle={{ textAlign: 'center' }} />
       </View>
       <View
