@@ -1,6 +1,6 @@
 import dotenv from 'dotenv'
 
-dotenv.config({ path: './.env' })
+dotenv.config()
 
 export const CONFIG = {
   client_id: process.env.CLIENT_ID,

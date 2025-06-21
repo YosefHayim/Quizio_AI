@@ -1,9 +1,7 @@
-import 'dotenv/config'
-
 import { CONFIG } from './config'
-import authRoute from './routes/auth'
+import authRoute from './routes/authRoute'
 import express from 'express'
-import youtubeRoute from './routes/youtube'
+import youtubeRoute from './routes/youtubeRoute'
 
 const app = express()
 
