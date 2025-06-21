@@ -1,14 +1,10 @@
-import dotenv from 'dotenv'
+import { CONFIG } from '../config'
 import { google } from 'googleapis'
 
-dotenv.config({ path: '../.env' })
-
-console.log(process.env.CLIENT_ID, process.env.CLIENT_SECRET, process.env.REDIRECT_URL)
-
 const oauth2Client = new google.auth.OAuth2(
-  process.env.CLIENT_ID,
-  process.env.CLIENT_SECRET,
-  process.env.LOCAL_REDIRECT_URL
+  CONFIG.client_id,
+  CONFIG.client_secret,
+  CONFIG.local_redirect_url
 )
 google.options({
   auth: oauth2Client

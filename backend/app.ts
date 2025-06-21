@@ -1,11 +1,11 @@
 import 'dotenv/config'
 
+import { CONFIG } from './config'
 import authRoute from './routes/auth'
 import express from 'express'
 import youtubeRoute from './routes/youtube'
 
 const app = express()
-const PORT = 3000
 
 app.get('/', (req, res) => {
   res.json({
@@ -17,6 +17,6 @@ app.get('/', (req, res) => {
 app.use('/api/youtube', youtubeRoute)
 app.use('/api/auth', authRoute)
 
-app.listen(PORT, () => {
-  console.log(`Running on port: http://localhost:${PORT}`)
+app.listen(CONFIG.port, () => {
+  console.log(`Running on port: http://localhost:${CONFIG.port}`)
 })
