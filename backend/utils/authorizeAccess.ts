@@ -1,20 +1,16 @@
 import { google } from 'googleapis'
 
-// const extractVideosCaptions = () => {}
-
-// export default extractVideosCaptions
+const oauth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL)
+google.options({
+  auth: oauth2Client
+})
 
 const generateAuthUrl = () => {
-  const oauth2Client = new google.auth.OAuth2(
-    process.env.CLIENT_ID,
-    process.env.CLIENT_SECRET,
-    process.env.REDIRECT_URL
-  )
-
   // generate a url that asks permissions for Blogger and Google Calendar scopes
   const scopes = [
-    'https://www.googleapis.com/auth/blogger',
-    'https://www.googleapis.com/auth/calendar'
+    'https://www.googleapis.com/auth/youtube.readonly',
+    'https://www.googleapis.com/auth/youtube.upload',
+    'https://www.googleapis.com/auth/youtubepartner'
   ]
 
   const url = oauth2Client.generateAuthUrl({
@@ -24,6 +20,8 @@ const generateAuthUrl = () => {
     // If you only need one scope, you can pass it as a string
     scope: scopes
   })
+  // console.log(`oAuthClient: `, oauth2Client)
+  console.log('Url recieved: ', url)
 }
 
 generateAuthUrl()
