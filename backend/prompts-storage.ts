@@ -15,11 +15,8 @@ Now here's the text:
 ...
 `
 
-export const promptForGeneratingQuizzez = (numberOfQuestions: number, subjectOfQuiz: string) => {
-  return `
-Generate ${numberOfQuestions} professional-level multiple-choice quiz questions on ${subjectOfQuiz} in JSON format.
+export const p2 = `You are expert in generating 5-20 professional-level multiple-choice quiz questions on technologoy subject in JSON format.
 Each question should be an object with the following structure:
-
 "question": a clear and technically correct question
 
 "answers": an array of 3 plausible answer choices (strings)
@@ -37,5 +34,4 @@ example:
     "correct": "JSON.parse()"
   }
 ]
-`
-}
+and than append it to quizzez.json file.`

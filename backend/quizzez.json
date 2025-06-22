@@ -298,5 +298,85 @@
       ],
       "correct": "They inherit `this` from the parent scope"
     }
+  ],
+  [
+    {
+      "question": "What is the primary difference between optimistic and pessimistic locking in database concurrency control?",
+      "answers": [
+        "Optimistic locking defers conflict detection until commit, pessimistic locking acquires locks before access",
+        "Optimistic locking uses row-level locks, pessimistic locking uses table-level locks",
+        "Optimistic locking uses multiversion concurrency, pessimistic locking uses timestamp ordering"
+      ],
+      "correct": "Optimistic locking defers conflict detection until commit, pessimistic locking acquires locks before access"
+    },
+    {
+      "question": "In Kubernetes, what is the purpose of a DaemonSet?",
+      "answers": [
+        "Ensure a copy of a pod runs on each node",
+        "Scale pods based on CPU usage",
+        "Manage stateful distributed applications"
+      ],
+      "correct": "Ensure a copy of a pod runs on each node"
+    },
+    {
+      "question": "Which AWS service provides serverless, event-driven compute capabilities?",
+      "answers": [
+        "AWS Lambda",
+        "Amazon EC2 Auto Scaling",
+        "Amazon Elastic Container Service (ECS)"
+      ],
+      "correct": "AWS Lambda"
+    },
+    {
+      "question": "What does the 'P' stand for in the CAP theorem?",
+      "answers": ["Partition tolerance", "Performance", "Persistence"],
+      "correct": "Partition tolerance"
+    },
+    {
+      "question": "Which consensus mechanism does Bitcoin primarily use?",
+      "answers": ["Proof of Work", "Proof of Stake", "Delegated Proof of Authority"],
+      "correct": "Proof of Work"
+    },
+    {
+      "question": "What is homomorphic encryption?",
+      "answers": [
+        "Encryption that allows computations on ciphertexts without decryption",
+        "A method that uses homomorphic keys for symmetric encryption",
+        "Encryption that automatically corrects errors in ciphertext"
+      ],
+      "correct": "Encryption that allows computations on ciphertexts without decryption"
+    },
+    {
+      "question": "What is the role of the Container Runtime Interface (CRI) in Kubernetes?",
+      "answers": [
+        "Provide a standardized interface between kubelet and container runtimes",
+        "Serve as a load balancer for container network traffic",
+        "Manage persistent storage volumes for pods"
+      ],
+      "correct": "Provide a standardized interface between kubelet and container runtimes"
+    },
+    {
+      "question": "Which layer of the OSI model is responsible for end-to-end error detection and flow control?",
+      "answers": ["Transport layer", "Data Link layer", "Network layer"],
+      "correct": "Transport layer"
+    },
+    {
+      "question": "What is the main advantage of the RISC-V architecture?",
+      "answers": [
+        "It is open-source and extensible",
+        "It uses a microkernel design for all implementations",
+        "It enforces backward compatibility with ARM instructions"
+      ],
+      "correct": "It is open-source and extensible"
+    },
+    {
+      "question": "What are GPU tensor cores optimized for?",
+      "answers": [
+        "High-throughput matrix multiply-accumulate operations for deep learning",
+        "Real-time ray tracing and shader compilation",
+        "General-purpose parallel integer arithmetic"
+      ],
+      "correct": "High-throughput matrix multiply-accumulate operations for deep learning"
+    }
   ]
 ]

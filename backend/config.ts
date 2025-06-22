@@ -9,5 +9,6 @@ export const CONFIG = {
   redirect_url: process.env.REDIRECT_URL,
   supabaseUrl: process.env.SUPABASE_URL,
   supabaseKey: process.env.SUPABASE_KEY,
-  port: 3000
+  openAiKey: process.env.OPENAI_API_KEY,
+  port: process.env.PORT
 }
