@@ -2,32 +2,56 @@
   [
     {
       "question": "Which keyword is used to declare a constant in JavaScript?",
-      "answers": ["const", "var", "let"],
+      "answers": [
+        "const",
+        "var",
+        "let"
+      ],
       "correct": "const"
     },
     {
       "question": "What will `typeof null` return in JavaScript?",
-      "answers": ["null", "object", "undefined"],
+      "answers": [
+        "null",
+        "object",
+        "undefined"
+      ],
       "correct": "object"
     },
     {
       "question": "Which method is used to convert a JSON string into a JavaScript object?",
-      "answers": ["JSON.stringify()", "JSON.parse()", "parseJSON()"],
+      "answers": [
+        "JSON.stringify()",
+        "JSON.parse()",
+        "parseJSON()"
+      ],
       "correct": "JSON.parse()"
     },
     {
       "question": "What is the output of `2 + '2'` in JavaScript?",
-      "answers": ["4", "22", "NaN"],
+      "answers": [
+        "4",
+        "22",
+        "NaN"
+      ],
       "correct": "22"
     },
     {
       "question": "Which of the following is a JavaScript framework?",
-      "answers": ["Django", "React", "Laravel"],
+      "answers": [
+        "Django",
+        "React",
+        "Laravel"
+      ],
       "correct": "React"
     },
     {
       "question": "What does the `===` operator check in JavaScript?",
-      "answers": ["Value only", "Type only", "Value and type"],
+      "answers": [
+        "Value only",
+        "Type only",
+        "Value and type"
+      ],
       "correct": "Value and type"
     },
     {
@@ -41,7 +65,11 @@
     },
     {
       "question": "Which object is at the top of the JavaScript scope chain in browsers?",
-      "answers": ["window", "document", "global"],
+      "answers": [
+        "window",
+        "document",
+        "global"
+      ],
       "correct": "window"
     },
     {
@@ -55,44 +83,76 @@
     },
     {
       "question": "Which array method creates a new array with elements that pass a test?",
-      "answers": ["map()", "filter()", "forEach()"],
+      "answers": [
+        "map()",
+        "filter()",
+        "forEach()"
+      ],
       "correct": "filter()"
     }
   ],
   [
     {
       "question": "Which of the following is used to define a function expression in JavaScript?",
-      "answers": ["function myFunc() {}", "const myFunc = function() {}", "def myFunc() {}"],
+      "answers": [
+        "function myFunc() {}",
+        "const myFunc = function() {}",
+        "def myFunc() {}"
+      ],
       "correct": "const myFunc = function() {}"
     },
     {
       "question": "What will `[] + []` evaluate to in JavaScript?",
-      "answers": ["0", "[]", "'' (empty string)"],
+      "answers": [
+        "0",
+        "[]",
+        "'' (empty string)"
+      ],
       "correct": "'' (empty string)"
     },
     {
       "question": "Which method would you use to combine two arrays?",
-      "answers": ["concat()", "combine()", "append()"],
+      "answers": [
+        "concat()",
+        "combine()",
+        "append()"
+      ],
       "correct": "concat()"
     },
     {
       "question": "Which of the following is a primitive type in JavaScript?",
-      "answers": ["Object", "String", "Array"],
+      "answers": [
+        "Object",
+        "String",
+        "Array"
+      ],
       "correct": "String"
     },
     {
       "question": "Which method stops further execution of an event in event bubbling?",
-      "answers": ["stopImmediatePropagation()", "stopPropagation()", "preventDefault()"],
+      "answers": [
+        "stopImmediatePropagation()",
+        "stopPropagation()",
+        "preventDefault()"
+      ],
       "correct": "stopPropagation()"
     },
     {
       "question": "What does `this` refer to inside a regular function (non-arrow) by default?",
-      "answers": ["The window object", "The function itself", "The global `this` context"],
+      "answers": [
+        "The window object",
+        "The function itself",
+        "The global `this` context"
+      ],
       "correct": "The window object"
     },
     {
       "question": "What is the result of `'5' == 5`?",
-      "answers": ["true", "false", "TypeError"],
+      "answers": [
+        "true",
+        "false",
+        "TypeError"
+      ],
       "correct": "true"
     },
     {
@@ -106,49 +166,85 @@
     },
     {
       "question": "Which object method returns the keys of an object?",
-      "answers": ["Object.keys()", "Object.values()", "Object.entries()"],
+      "answers": [
+        "Object.keys()",
+        "Object.values()",
+        "Object.entries()"
+      ],
       "correct": "Object.keys()"
     },
     {
       "question": "What value does `Boolean('false')` return?",
-      "answers": ["false", "true", "NaN"],
+      "answers": [
+        "false",
+        "true",
+        "NaN"
+      ],
       "correct": "true"
     }
   ],
   [
     {
       "question": "Which of the following is used to define a function expression in JavaScript?",
-      "answers": ["function myFunc() {}", "const myFunc = function() {}", "def myFunc() {}"],
+      "answers": [
+        "function myFunc() {}",
+        "const myFunc = function() {}",
+        "def myFunc() {}"
+      ],
       "correct": "const myFunc = function() {}"
     },
     {
       "question": "What will `[] + []` evaluate to in JavaScript?",
-      "answers": ["0", "[]", "'' (empty string)"],
+      "answers": [
+        "0",
+        "[]",
+        "'' (empty string)"
+      ],
       "correct": "'' (empty string)"
     },
     {
       "question": "Which method would you use to combine two arrays?",
-      "answers": ["concat()", "combine()", "append()"],
+      "answers": [
+        "concat()",
+        "combine()",
+        "append()"
+      ],
       "correct": "concat()"
     },
     {
       "question": "Which of the following is a primitive type in JavaScript?",
-      "answers": ["Object", "String", "Array"],
+      "answers": [
+        "Object",
+        "String",
+        "Array"
+      ],
       "correct": "String"
     },
     {
       "question": "Which method stops further execution of an event in event bubbling?",
-      "answers": ["stopImmediatePropagation()", "stopPropagation()", "preventDefault()"],
+      "answers": [
+        "stopImmediatePropagation()",
+        "stopPropagation()",
+        "preventDefault()"
+      ],
       "correct": "stopPropagation()"
     },
     {
       "question": "What does `this` refer to inside a regular function (non-arrow) by default?",
-      "answers": ["The window object", "The function itself", "The global `this` context"],
+      "answers": [
+        "The window object",
+        "The function itself",
+        "The global `this` context"
+      ],
       "correct": "The window object"
     },
     {
       "question": "What is the result of `'5' == 5`?",
-      "answers": ["true", "false", "TypeError"],
+      "answers": [
+        "true",
+        "false",
+        "TypeError"
+      ],
       "correct": "true"
     },
     {
@@ -162,12 +258,20 @@
     },
     {
       "question": "Which object method returns the keys of an object?",
-      "answers": ["Object.keys()", "Object.values()", "Object.entries()"],
+      "answers": [
+        "Object.keys()",
+        "Object.values()",
+        "Object.entries()"
+      ],
       "correct": "Object.keys()"
     },
     {
       "question": "What value does `Boolean('false')` return?",
-      "answers": ["false", "true", "NaN"],
+      "answers": [
+        "false",
+        "true",
+        "NaN"
+      ],
       "correct": "true"
     }
   ],
@@ -183,42 +287,74 @@
     },
     {
       "question": "What will be the output of `typeof function() {}`?",
-      "answers": ["object", "function", "undefined"],
+      "answers": [
+        "object",
+        "function",
+        "undefined"
+      ],
       "correct": "function"
     },
     {
       "question": "Which keyword is used to handle errors in JavaScript?",
-      "answers": ["try", "catch", "Both try and catch"],
+      "answers": [
+        "try",
+        "catch",
+        "Both try and catch"
+      ],
       "correct": "Both try and catch"
     },
     {
       "question": "Which method adds one or more elements to the end of an array?",
-      "answers": ["push()", "pop()", "unshift()"],
+      "answers": [
+        "push()",
+        "pop()",
+        "unshift()"
+      ],
       "correct": "push()"
     },
     {
       "question": "How do you check if a variable is `undefined`?",
-      "answers": ["typeof x === 'undefined'", "x == undefined", "x === null"],
+      "answers": [
+        "typeof x === 'undefined'",
+        "x == undefined",
+        "x === null"
+      ],
       "correct": "typeof x === 'undefined'"
     },
     {
       "question": "What is the result of `[1, 2] == '1,2'`?",
-      "answers": ["true", "false", "TypeError"],
+      "answers": [
+        "true",
+        "false",
+        "TypeError"
+      ],
       "correct": "true"
     },
     {
       "question": "Which statement creates a class in JavaScript?",
-      "answers": ["function MyClass() {}", "class MyClass {}", "object MyClass = {}"],
+      "answers": [
+        "function MyClass() {}",
+        "class MyClass {}",
+        "object MyClass = {}"
+      ],
       "correct": "class MyClass {}"
     },
     {
       "question": "What will `Number('123abc')` return?",
-      "answers": ["123", "NaN", "undefined"],
+      "answers": [
+        "123",
+        "NaN",
+        "undefined"
+      ],
       "correct": "NaN"
     },
     {
       "question": "Which method removes the last element from an array?",
-      "answers": ["pop()", "shift()", "splice()"],
+      "answers": [
+        "pop()",
+        "shift()",
+        "splice()"
+      ],
       "correct": "pop()"
     },
     {
@@ -243,17 +379,29 @@
     },
     {
       "question": "Which symbol is used to define a template literal?",
-      "answers": ["'", "`", "\""],
+      "answers": [
+        "'",
+        "`",
+        "\""
+      ],
       "correct": "`"
     },
     {
       "question": "What will be the result of `'10' - 5`?",
-      "answers": ["5", "105", "NaN"],
+      "answers": [
+        "5",
+        "105",
+        "NaN"
+      ],
       "correct": "5"
     },
     {
       "question": "Which JavaScript feature allows you to write asynchronous code that looks synchronous?",
-      "answers": ["Promises", "setTimeout", "async/await"],
+      "answers": [
+        "Promises",
+        "setTimeout",
+        "async/await"
+      ],
       "correct": "async/await"
     },
     {
@@ -267,12 +415,20 @@
     },
     {
       "question": "Which keyword is used to create a block-scoped variable?",
-      "answers": ["var", "const", "let"],
+      "answers": [
+        "var",
+        "const",
+        "let"
+      ],
       "correct": "let"
     },
     {
       "question": "How can you prevent an object from being modified?",
-      "answers": ["Object.preventChanges()", "Object.freeze()", "Object.seal()"],
+      "answers": [
+        "Object.preventChanges()",
+        "Object.freeze()",
+        "Object.seal()"
+      ],
       "correct": "Object.freeze()"
     },
     {
@@ -286,7 +442,11 @@
     },
     {
       "question": "What will be the value of `typeof NaN`?",
-      "answers": ["NaN", "number", "undefined"],
+      "answers": [
+        "NaN",
+        "number",
+        "undefined"
+      ],
       "correct": "number"
     },
     {
@@ -329,12 +489,20 @@
     },
     {
       "question": "What does the 'P' stand for in the CAP theorem?",
-      "answers": ["Partition tolerance", "Performance", "Persistence"],
+      "answers": [
+        "Partition tolerance",
+        "Performance",
+        "Persistence"
+      ],
       "correct": "Partition tolerance"
     },
     {
       "question": "Which consensus mechanism does Bitcoin primarily use?",
-      "answers": ["Proof of Work", "Proof of Stake", "Delegated Proof of Authority"],
+      "answers": [
+        "Proof of Work",
+        "Proof of Stake",
+        "Delegated Proof of Authority"
+      ],
       "correct": "Proof of Work"
     },
     {
@@ -357,7 +525,11 @@
     },
     {
       "question": "Which layer of the OSI model is responsible for end-to-end error detection and flow control?",
-      "answers": ["Transport layer", "Data Link layer", "Network layer"],
+      "answers": [
+        "Transport layer",
+        "Data Link layer",
+        "Network layer"
+      ],
       "correct": "Transport layer"
     },
     {
@@ -377,6 +549,466 @@
         "General-purpose parallel integer arithmetic"
       ],
       "correct": "High-throughput matrix multiply-accumulate operations for deep learning"
+    }
+  ],
+  [
+    {
+      "question": "In Express.js, what distinguishes an error-handling middleware function from a standard middleware function?",
+      "answers": [
+        "It uses four arguments (err, req, res, next) instead of three",
+        "It must be the first middleware registered",
+        "It returns a promise instead of calling next()"
+      ],
+      "correct": "It uses four arguments (err, req, res, next) instead of three"
+    },
+    {
+      "question": "Which advantage does GraphQL offer over traditional REST APIs?",
+      "answers": [
+        "It enforces a strict schema on the client side",
+        "It allows clients to request multiple resources in a single query",
+        "It automatically caches all responses on the server"
+      ],
+      "correct": "It allows clients to request multiple resources in a single query"
+    },
+    {
+      "question": "What is the primary purpose of a CORS preflight request?",
+      "answers": [
+        "To verify that the server supports cookies from the origin",
+        "To check server credentials before establishing a WebSocket",
+        "To determine whether the actual request is safe to send based on allowed methods and headers"
+      ],
+      "correct": "To determine whether the actual request is safe to send based on allowed methods and headers"
+    },
+    {
+      "question": "Why is connection pooling important in a Node.js application interacting with a relational database?",
+      "answers": [
+        "It encrypts each query automatically",
+        "It reuses database connections to reduce overhead and improve performance",
+        "It prevents SQL injection by isolating queries"
+      ],
+      "correct": "It reuses database connections to reduce overhead and improve performance"
+    },
+    {
+      "question": "Which practice enhances security when using JWTs for authentication in a full-stack application?",
+      "answers": [
+        "Storing the JWT in localStorage only",
+        "Using short-lived access tokens with refresh tokens stored in HTTP-only cookies",
+        "Embedding user passwords in the token payload for quick verification"
+      ],
+      "correct": "Using short-lived access tokens with refresh tokens stored in HTTP-only cookies"
+    },
+    {
+      "question": "In React Native, how do you expose a native Android module to JavaScript?",
+      "answers": [
+        "Create a class extending ReactContextBaseJavaModule and annotate exported methods with @ReactMethod",
+        "Implement a JNI bridge and call System.loadLibrary",
+        "Write the module in Swift and import it in AndroidManifest.xml"
+      ],
+      "correct": "Create a class extending ReactContextBaseJavaModule and annotate exported methods with @ReactMethod"
+    },
+    {
+      "question": "What is the default flexDirection in React Native’s Flexbox layout?",
+      "answers": [
+        "column",
+        "row-reverse",
+        "row"
+      ],
+      "correct": "column"
+    },
+    {
+      "question": "Which technique helps prevent unnecessary re-renders of functional components in React Native?",
+      "answers": [
+        "Wrapping the component with React.PureComponent",
+        "Using React.memo and the useCallback or useMemo hooks",
+        "Always passing new object literals as props"
+      ],
+      "correct": "Using React.memo and the useCallback or useMemo hooks"
+    },
+    {
+      "question": "What distinguishes Fast Refresh from Live Reload in React Native development?",
+      "answers": [
+        "Fast Refresh preserves component state while updating code; Live Reload restarts the entire app",
+        "Live Reload only refreshes JS files; Fast Refresh works only with native modules",
+        "Fast Refresh reloads on save; Live Reload requires manual triggers"
+      ],
+      "correct": "Fast Refresh preserves component state while updating code; Live Reload restarts the entire app"
+    },
+    {
+      "question": "When choosing storage solutions in React Native, which is a key advantage of using SecureStore (or similar secure key-value storage) over AsyncStorage?",
+      "answers": [
+        "It handles large binary file storage more efficiently",
+        "It provides encrypted storage backed by the device’s secure hardware",
+        "It automatically synchronizes data across devices"
+      ],
+      "correct": "It provides encrypted storage backed by the device’s secure hardware"
+    }
+  ],
+  [
+    {
+      "question": "In RESTful API design, which HTTP method is not considered idempotent?",
+      "answers": [
+        "GET",
+        "PUT",
+        "POST"
+      ],
+      "correct": "POST"
+    },
+    {
+      "question": "What is the primary purpose of a CORS preflight (OPTIONS) request?",
+      "answers": [
+        "Authenticate user credentials",
+        "Determine allowed HTTP methods and headers",
+        "Cache server responses"
+      ],
+      "correct": "Determine allowed HTTP methods and headers"
+    },
+    {
+      "question": "Which Webpack feature eliminates unused code from the bundle during build time?",
+      "answers": [
+        "Code Splitting",
+        "Tree Shaking",
+        "Module Concatenation"
+      ],
+      "correct": "Tree Shaking"
+    },
+    {
+      "question": "In GraphQL, which operation type is used to modify server-side data?",
+      "answers": [
+        "query",
+        "mutation",
+        "subscription"
+      ],
+      "correct": "mutation"
+    },
+    {
+      "question": "Which characteristic is typical of NoSQL databases compared to relational databases?",
+      "answers": [
+        "Fixed schema",
+        "Horizontal scalability",
+        "Strong ACID compliance"
+      ],
+      "correct": "Horizontal scalability"
+    },
+    {
+      "question": "In React Native, which component is specifically designed to handle basic touch interactions?",
+      "answers": [
+        "TouchableHighlight",
+        "View",
+        "ScrollView"
+      ],
+      "correct": "TouchableHighlight"
+    },
+    {
+      "question": "What role does the JavaScript bridge play in React Native?",
+      "answers": [
+        "Transpile JavaScript to native bytecode",
+        "Facilitate communication between JavaScript and native modules",
+        "Optimize garbage collection in the JavaScript engine"
+      ],
+      "correct": "Facilitate communication between JavaScript and native modules"
+    },
+    {
+      "question": "What distinguishes Fast Refresh from the older Hot Reloading in React Native?",
+      "answers": [
+        "Fast Refresh performs a full reload of the app on every change",
+        "Fast Refresh combines Hot Reloading and Live Reload, preserving component state and recovering from errors",
+        "There is no difference; they are aliases"
+      ],
+      "correct": "Fast Refresh combines Hot Reloading and Live Reload, preserving component state and recovering from errors"
+    },
+    {
+      "question": "Which Flexbox property in React Native controls the distribution of space along the main axis?",
+      "answers": [
+        "justifyContent",
+        "alignItems",
+        "alignContent"
+      ],
+      "correct": "justifyContent"
+    },
+    {
+      "question": "In React Native Reanimated v2, which hook is used to create an animated shared value?",
+      "answers": [
+        "useAnimatedStyle",
+        "useSharedValue",
+        "useDerivedValue"
+      ],
+      "correct": "useSharedValue"
+    }
+  ],
+  [
+    {
+      "question": "What is the primary purpose of using JWT refresh tokens in an Express.js authentication flow?",
+      "answers": [
+        "To grant long-term authentication without requiring the user to re-enter credentials",
+        "To securely store session data on the server",
+        "To encode user permissions in the access token"
+      ],
+      "correct": "To grant long-term authentication without requiring the user to re-enter credentials"
+    },
+    {
+      "question": "In relational databases, which concurrency control technique helps prevent lost updates during concurrent transactions?",
+      "answers": [
+        "Optimistic locking",
+        "Dirty reads",
+        "Event sourcing"
+      ],
+      "correct": "Optimistic locking"
+    },
+    {
+      "question": "Which HTTP status code should an API return when the client is authenticated but does not have permission to access the requested resource?",
+      "answers": [
+        "401 Unauthorized",
+        "403 Forbidden",
+        "404 Not Found"
+      ],
+      "correct": "403 Forbidden"
+    },
+    {
+      "question": "In a microservices architecture, which pattern enables services to dynamically discover network locations of other services?",
+      "answers": [
+        "API Gateway",
+        "Service Registry",
+        "Circuit Breaker"
+      ],
+      "correct": "Service Registry"
+    },
+    {
+      "question": "In Next.js, which data fetching method allows pages to be statically generated at build time, preventing additional server requests during client-side navigation?",
+      "answers": [
+        "getStaticProps",
+        "getServerSideProps",
+        "getInitialProps"
+      ],
+      "correct": "getStaticProps"
+    },
+    {
+      "question": "In React Native, which component is optimized for rendering large scrollable lists efficiently?",
+      "answers": [
+        "ScrollView",
+        "FlatList",
+        "SectionList"
+      ],
+      "correct": "FlatList"
+    },
+    {
+      "question": "How does React Native's JavaScript bridge architecture communicate between JS and native modules?",
+      "answers": [
+        "Direct synchronous function calls",
+        "Asynchronous batched messaging over the bridge",
+        "Shared memory access"
+      ],
+      "correct": "Asynchronous batched messaging over the bridge"
+    },
+    {
+      "question": "Which tool can be used to inspect the UI layout and debug a React Native app on both Android and iOS?",
+      "answers": [
+        "Redux DevTools",
+        "Flipper",
+        "Reactotron"
+      ],
+      "correct": "Flipper"
+    },
+    {
+      "question": "What is the primary benefit of using the useMemo hook in a React Native component?",
+      "answers": [
+        "Automatically caches network requests",
+        "Prevents unnecessary recalculation of expensive values",
+        "Ensures the effect hook runs on every render"
+      ],
+      "correct": "Prevents unnecessary recalculation of expensive values"
+    },
+    {
+      "question": "In React Native styling, which property controls the alignment of children along the cross-axis in a flex container?",
+      "answers": [
+        "justifyContent",
+        "alignItems",
+        "flexWrap"
+      ],
+      "correct": "alignItems"
+    }
+  ],
+  [
+    {
+      "question": "In an Express.js application using PostgreSQL, how can you mitigate SQL injection attacks when executing raw SQL queries?",
+      "answers": [
+        "Manually sanitize inputs with regex",
+        "Use parameterized queries with placeholders",
+        "Escape all user input using escape function"
+      ],
+      "correct": "Use parameterized queries with placeholders"
+    },
+    {
+      "question": "Which HTTP status code best indicates that a RESTful API request succeeded but returns no content in the response body?",
+      "answers": [
+        "200 OK",
+        "204 No Content",
+        "201 Created"
+      ],
+      "correct": "204 No Content"
+    },
+    {
+      "question": "What is the primary advantage of implementing server-side rendering (SSR) in a React web application?",
+      "answers": [
+        "Improved SEO and faster initial page load",
+        "Simplified state management on the client",
+        "Reduced bundle size for production"
+      ],
+      "correct": "Improved SEO and faster initial page load"
+    },
+    {
+      "question": "In a GraphQL API, how do you typically retrieve multiple related resources in a single request?",
+      "answers": [
+        "Batch multiple HTTP requests",
+        "Use nested queries in a single GraphQL operation",
+        "Call multiple endpoints sequentially"
+      ],
+      "correct": "Use nested queries in a single GraphQL operation"
+    },
+    {
+      "question": "In AWS Elastic Beanstalk deployments, which directory is used to include custom environment configuration and container commands?",
+      "answers": [
+        ".ebextensions",
+        "beanstalk.config",
+        "env.setup"
+      ],
+      "correct": ".ebextensions"
+    },
+    {
+      "question": "Which library is the de facto standard for navigation in cross-platform React Native applications?",
+      "answers": [
+        "React Navigation",
+        "React Router Native",
+        "React Native Navigation"
+      ],
+      "correct": "React Navigation"
+    },
+    {
+      "question": "What component should you use for efficiently rendering large scrollable lists in React Native?",
+      "answers": [
+        "ScrollView",
+        "FlatList",
+        "SectionList"
+      ],
+      "correct": "FlatList"
+    },
+    {
+      "question": "When creating and registering a custom native module for iOS in React Native, which file must be modified to register the module with the React Native bridge?",
+      "answers": [
+        "AppDelegate.m",
+        "MainActivity.java",
+        "Info.plist"
+      ],
+      "correct": "AppDelegate.m"
+    },
+    {
+      "question": "What role does the Metro bundler play in the React Native development workflow?",
+      "answers": [
+        "Transforms and bundles JavaScript code for the app",
+        "Compiles native iOS and Android binaries",
+        "Manages over-the-air updates for production releases"
+      ],
+      "correct": "Transforms and bundles JavaScript code for the app"
+    },
+    {
+      "question": "Which approach can you use to preload images and improve image loading performance in React Native?",
+      "answers": [
+        "Use Image.prefetch before rendering",
+        "Load all images using require at the top of the file",
+        "Wrap images in Animated.Image for faster rendering"
+      ],
+      "correct": "Use Image.prefetch before rendering"
+    }
+  ],
+  [
+    {
+      "question": "In React Native, which method schedules a function to run after all animations and interactions have completed?",
+      "answers": [
+        "InteractionManager.runAfterInteractions",
+        "setTimeout",
+        "requestAnimationFrame"
+      ],
+      "correct": "InteractionManager.runAfterInteractions"
+    },
+    {
+      "question": "Which HTTP status code is conventionally used to indicate that a resource has been created successfully?",
+      "answers": [
+        "201 Created",
+        "200 OK",
+        "204 No Content"
+      ],
+      "correct": "201 Created"
+    },
+    {
+      "question": "In Node.js, which built-in module provides utilities for handling and transforming file system paths?",
+      "answers": [
+        "path",
+        "fs",
+        "os"
+      ],
+      "correct": "path"
+    },
+    {
+      "question": "In GraphQL, what is the primary purpose of a resolver function?",
+      "answers": [
+        "To fetch and return data for a specific field",
+        "To encrypt query responses",
+        "To generate schemas at runtime"
+      ],
+      "correct": "To fetch and return data for a specific field"
+    },
+    {
+      "question": "When using React Native’s FlatList component, which prop can significantly improve performance by providing the height of each item?",
+      "answers": [
+        "getItemLayout",
+        "renderItem",
+        "ItemSeparatorComponent"
+      ],
+      "correct": "getItemLayout"
+    },
+    {
+      "question": "Which JavaScript bundler does React Native use by default to package the app for development?",
+      "answers": [
+        "Metro Bundler",
+        "Webpack",
+        "Parcel"
+      ],
+      "correct": "Metro Bundler"
+    },
+    {
+      "question": "In Express.js, which function is used to apply middleware to all incoming requests?",
+      "answers": [
+        "app.use()",
+        "app.get()",
+        "app.listen()"
+      ],
+      "correct": "app.use()"
+    },
+    {
+      "question": "What is the key difference between SQL and NoSQL databases?",
+      "answers": [
+        "SQL databases are relational with structured schemas, NoSQL are non-relational and schema-less",
+        "SQL databases always scale horizontally, NoSQL always scales vertically",
+        "SQL only supports JSON data, NoSQL only supports XML data"
+      ],
+      "correct": "SQL databases are relational with structured schemas, NoSQL are non-relational and schema-less"
+    },
+    {
+      "question": "In React Native on Android, how do you expose a native module to JavaScript?",
+      "answers": [
+        "Create a class extending ReactContextBaseJavaModule and register it in a ReactPackage",
+        "Write Kotlin functions and call them directly from JavaScript",
+        "Use react-native-cli to automatically generate the bridge"
+      ],
+      "correct": "Create a class extending ReactContextBaseJavaModule and register it in a ReactPackage"
+    },
+    {
+      "question": "When deploying a Node.js application in production, which process manager is commonly used to keep it alive and manage automatic restarts?",
+      "answers": [
+        "PM2",
+        "nodemon",
+        "webpack-dev-server"
+      ],
+      "correct": "PM2"
     }
   ]
 ]

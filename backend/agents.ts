@@ -1,34 +1,25 @@
-import { Agent, run, setDefaultOpenAIKey } from '@openai/agents'
-import seedQuizTool, { seedQuizToolAgentParamters } from './tools'
+import { run, setDefaultOpenAIKey } from '@openai/agents'
+import { seedQuizAgent, validateQuizJsonFileAgent } from './agents/seed-quiz-agent'
 
 import { CONFIG } from './config'
-import { p2 } from './prompts-storage'
 
 setDefaultOpenAIKey(CONFIG.openAiKey!)
 
 if (!CONFIG.openAiKey) throw new Error('Missing OPENAI API Key')
 
-const seedQuizAgent = new Agent({
-  name: 'Generator Quizz Bot',
-  model: 'o4-mini',
-  instructions: p2,
-  tools: [seedQuizTool],
-  outputType: seedQuizToolAgentParamters
-})
-
 const runAgents = async () => {
-  const results = []
-
-  for (let i = 0; i < 20; i++) {
-    const r = await run(
+  for (let i = 0; i < 1; i++) {
+    const insertQuizzez = await run(
       seedQuizAgent,
       'create me a new quiz of full stack web development and react native subjects, 10 questions'
     )
-    results.push(r.rawResponses)
+    console.log(insertQuizzez.history)
   }
-
-  console.log('All quizzes generated:')
-  console.log(results)
+  const validateQuizJson = await run(
+    validateQuizJsonFileAgent,
+    'Validate if the sturcture is the same across all the file if so tell me'
+  )
+  console.log(validateQuizJson.history)
 }
 
 runAgents()

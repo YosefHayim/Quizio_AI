@@ -4,7 +4,7 @@ import fs from 'fs'
 import path from 'path'
 import { tool } from '@openai/agents'
 
-const FILEPATH = path.join(__dirname, './quizzez.json')
+const FILEPATH = path.join(__dirname, '../quizzez.json')
 
 export const seedQuizToolAgentParamters = z.object({
   quizArr: z.array(
