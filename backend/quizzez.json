@@ -1,0 +1,302 @@
+[
+  [
+    {
+      "question": "Which keyword is used to declare a constant in JavaScript?",
+      "answers": ["const", "var", "let"],
+      "correct": "const"
+    },
+    {
+      "question": "What will `typeof null` return in JavaScript?",
+      "answers": ["null", "object", "undefined"],
+      "correct": "object"
+    },
+    {
+      "question": "Which method is used to convert a JSON string into a JavaScript object?",
+      "answers": ["JSON.stringify()", "JSON.parse()", "parseJSON()"],
+      "correct": "JSON.parse()"
+    },
+    {
+      "question": "What is the output of `2 + '2'` in JavaScript?",
+      "answers": ["4", "22", "NaN"],
+      "correct": "22"
+    },
+    {
+      "question": "Which of the following is a JavaScript framework?",
+      "answers": ["Django", "React", "Laravel"],
+      "correct": "React"
+    },
+    {
+      "question": "What does the `===` operator check in JavaScript?",
+      "answers": ["Value only", "Type only", "Value and type"],
+      "correct": "Value and type"
+    },
+    {
+      "question": "What is a closure in JavaScript?",
+      "answers": [
+        "A function having access to its own scope only",
+        "A function having access to the parent scope even after the parent function has closed",
+        "A way to close the browser tab using JS"
+      ],
+      "correct": "A function having access to the parent scope even after the parent function has closed"
+    },
+    {
+      "question": "Which object is at the top of the JavaScript scope chain in browsers?",
+      "answers": ["window", "document", "global"],
+      "correct": "window"
+    },
+    {
+      "question": "What is the purpose of the `use strict` directive?",
+      "answers": [
+        "To enable ES6 features",
+        "To disable JavaScript errors",
+        "To enforce stricter parsing and error handling"
+      ],
+      "correct": "To enforce stricter parsing and error handling"
+    },
+    {
+      "question": "Which array method creates a new array with elements that pass a test?",
+      "answers": ["map()", "filter()", "forEach()"],
+      "correct": "filter()"
+    }
+  ],
+  [
+    {
+      "question": "Which of the following is used to define a function expression in JavaScript?",
+      "answers": ["function myFunc() {}", "const myFunc = function() {}", "def myFunc() {}"],
+      "correct": "const myFunc = function() {}"
+    },
+    {
+      "question": "What will `[] + []` evaluate to in JavaScript?",
+      "answers": ["0", "[]", "'' (empty string)"],
+      "correct": "'' (empty string)"
+    },
+    {
+      "question": "Which method would you use to combine two arrays?",
+      "answers": ["concat()", "combine()", "append()"],
+      "correct": "concat()"
+    },
+    {
+      "question": "Which of the following is a primitive type in JavaScript?",
+      "answers": ["Object", "String", "Array"],
+      "correct": "String"
+    },
+    {
+      "question": "Which method stops further execution of an event in event bubbling?",
+      "answers": ["stopImmediatePropagation()", "stopPropagation()", "preventDefault()"],
+      "correct": "stopPropagation()"
+    },
+    {
+      "question": "What does `this` refer to inside a regular function (non-arrow) by default?",
+      "answers": ["The window object", "The function itself", "The global `this` context"],
+      "correct": "The window object"
+    },
+    {
+      "question": "What is the result of `'5' == 5`?",
+      "answers": ["true", "false", "TypeError"],
+      "correct": "true"
+    },
+    {
+      "question": "What is the purpose of `bind()` in JavaScript?",
+      "answers": [
+        "To attach an event listener",
+        "To permanently set the value of `this` for a function",
+        "To clone an object"
+      ],
+      "correct": "To permanently set the value of `this` for a function"
+    },
+    {
+      "question": "Which object method returns the keys of an object?",
+      "answers": ["Object.keys()", "Object.values()", "Object.entries()"],
+      "correct": "Object.keys()"
+    },
+    {
+      "question": "What value does `Boolean('false')` return?",
+      "answers": ["false", "true", "NaN"],
+      "correct": "true"
+    }
+  ],
+  [
+    {
+      "question": "Which of the following is used to define a function expression in JavaScript?",
+      "answers": ["function myFunc() {}", "const myFunc = function() {}", "def myFunc() {}"],
+      "correct": "const myFunc = function() {}"
+    },
+    {
+      "question": "What will `[] + []` evaluate to in JavaScript?",
+      "answers": ["0", "[]", "'' (empty string)"],
+      "correct": "'' (empty string)"
+    },
+    {
+      "question": "Which method would you use to combine two arrays?",
+      "answers": ["concat()", "combine()", "append()"],
+      "correct": "concat()"
+    },
+    {
+      "question": "Which of the following is a primitive type in JavaScript?",
+      "answers": ["Object", "String", "Array"],
+      "correct": "String"
+    },
+    {
+      "question": "Which method stops further execution of an event in event bubbling?",
+      "answers": ["stopImmediatePropagation()", "stopPropagation()", "preventDefault()"],
+      "correct": "stopPropagation()"
+    },
+    {
+      "question": "What does `this` refer to inside a regular function (non-arrow) by default?",
+      "answers": ["The window object", "The function itself", "The global `this` context"],
+      "correct": "The window object"
+    },
+    {
+      "question": "What is the result of `'5' == 5`?",
+      "answers": ["true", "false", "TypeError"],
+      "correct": "true"
+    },
+    {
+      "question": "What is the purpose of `bind()` in JavaScript?",
+      "answers": [
+        "To attach an event listener",
+        "To permanently set the value of `this` for a function",
+        "To clone an object"
+      ],
+      "correct": "To permanently set the value of `this` for a function"
+    },
+    {
+      "question": "Which object method returns the keys of an object?",
+      "answers": ["Object.keys()", "Object.values()", "Object.entries()"],
+      "correct": "Object.keys()"
+    },
+    {
+      "question": "What value does `Boolean('false')` return?",
+      "answers": ["false", "true", "NaN"],
+      "correct": "true"
+    }
+  ],
+  [
+    {
+      "question": "What does the `setTimeout` function do?",
+      "answers": [
+        "Repeats a function continuously",
+        "Executes a function after a delay",
+        "Pauses the script"
+      ],
+      "correct": "Executes a function after a delay"
+    },
+    {
+      "question": "What will be the output of `typeof function() {}`?",
+      "answers": ["object", "function", "undefined"],
+      "correct": "function"
+    },
+    {
+      "question": "Which keyword is used to handle errors in JavaScript?",
+      "answers": ["try", "catch", "Both try and catch"],
+      "correct": "Both try and catch"
+    },
+    {
+      "question": "Which method adds one or more elements to the end of an array?",
+      "answers": ["push()", "pop()", "unshift()"],
+      "correct": "push()"
+    },
+    {
+      "question": "How do you check if a variable is `undefined`?",
+      "answers": ["typeof x === 'undefined'", "x == undefined", "x === null"],
+      "correct": "typeof x === 'undefined'"
+    },
+    {
+      "question": "What is the result of `[1, 2] == '1,2'`?",
+      "answers": ["true", "false", "TypeError"],
+      "correct": "true"
+    },
+    {
+      "question": "Which statement creates a class in JavaScript?",
+      "answers": ["function MyClass() {}", "class MyClass {}", "object MyClass = {}"],
+      "correct": "class MyClass {}"
+    },
+    {
+      "question": "What will `Number('123abc')` return?",
+      "answers": ["123", "NaN", "undefined"],
+      "correct": "NaN"
+    },
+    {
+      "question": "Which method removes the last element from an array?",
+      "answers": ["pop()", "shift()", "splice()"],
+      "correct": "pop()"
+    },
+    {
+      "question": "What is hoisting in JavaScript?",
+      "answers": [
+        "Moving variables to the end of scope",
+        "Compiling code before execution",
+        "Variable and function declarations are moved to the top of their scope"
+      ],
+      "correct": "Variable and function declarations are moved to the top of their scope"
+    }
+  ],
+  [
+    {
+      "question": "What does the `map()` method do in JavaScript?",
+      "answers": [
+        "Filters an array based on a condition",
+        "Creates a new array by transforming each element",
+        "Sorts the array in place"
+      ],
+      "correct": "Creates a new array by transforming each element"
+    },
+    {
+      "question": "Which symbol is used to define a template literal?",
+      "answers": ["'", "`", "\""],
+      "correct": "`"
+    },
+    {
+      "question": "What will be the result of `'10' - 5`?",
+      "answers": ["5", "105", "NaN"],
+      "correct": "5"
+    },
+    {
+      "question": "Which JavaScript feature allows you to write asynchronous code that looks synchronous?",
+      "answers": ["Promises", "setTimeout", "async/await"],
+      "correct": "async/await"
+    },
+    {
+      "question": "What does the `reduce()` method return?",
+      "answers": [
+        "A filtered array",
+        "A single accumulated value",
+        "A new array with modified elements"
+      ],
+      "correct": "A single accumulated value"
+    },
+    {
+      "question": "Which keyword is used to create a block-scoped variable?",
+      "answers": ["var", "const", "let"],
+      "correct": "let"
+    },
+    {
+      "question": "How can you prevent an object from being modified?",
+      "answers": ["Object.preventChanges()", "Object.freeze()", "Object.seal()"],
+      "correct": "Object.freeze()"
+    },
+    {
+      "question": "What is a pure function in JavaScript?",
+      "answers": [
+        "A function that modifies external state",
+        "A function with no return value",
+        "A function that returns the same output for the same input and causes no side effects"
+      ],
+      "correct": "A function that returns the same output for the same input and causes no side effects"
+    },
+    {
+      "question": "What will be the value of `typeof NaN`?",
+      "answers": ["NaN", "number", "undefined"],
+      "correct": "number"
+    },
+    {
+      "question": "Which statement is true about arrow functions?",
+      "answers": [
+        "They have their own `this` context",
+        "They inherit `this` from the parent scope",
+        "They can be used as constructors"
+      ],
+      "correct": "They inherit `this` from the parent scope"
+    }
+  ]
+]
