@@ -1,6 +1,7 @@
 import { CONFIG } from './config'
 import authRoute from './routes/authRoute'
 import express from 'express'
+import userRoute from './routes/userRoute'
 import youtubeRoute from './routes/youtubeRoute'
 
 const app = express()
@@ -14,6 +15,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/youtube', youtubeRoute)
 app.use('/api/auth', authRoute)
+app.use('/api/users', userRoute)
 
 app.listen(CONFIG.port, () => {
   console.log(`Running on port: http://localhost:${CONFIG.port}`)
