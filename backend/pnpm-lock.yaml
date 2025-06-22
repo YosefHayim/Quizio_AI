@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@openai/agents':
+        specifier: ^0.0.9
+        version: 0.0.9(ws@8.18.2)(zod@3.25.67)
       '@supabase/supabase-js':
         specifier: ^2.50.0
         version: 2.50.0
@@ -37,7 +40,10 @@ importers:
         version: 8.1.0
       openai:
         specifier: ^5.6.0
-        version: 5.6.0(ws@8.18.2)
+        version: 5.6.0(ws@8.18.2)(zod@3.25.67)
+      zod:
+        specifier: ^3.25.67
+        version: 3.25.67
     devDependencies:
       '@eslint/js':
         specifier: ^9.29.0
@@ -152,6 +158,10 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
+  '@modelcontextprotocol/sdk@1.13.0':
+    resolution: {integrity: sha512-P5FZsXU0kY881F6Hbk9GhsYx02/KgWK1DYf7/tyE/1lcFKhDYPQR9iYjhQXJn+Sg6hQleMo3DB7h7+p4wgp2Lw==}
+    engines: {node: '>=18'}
+
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -163,6 +173,23 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
+
+  '@openai/agents-core@0.0.9':
+    resolution: {integrity: sha512-n7vftCMIBNNbhHSs6SAr0mU99YDD8CH2wRoGZ016nqgl1X9SZsfdQyZvpMMypWrGQ+bqke+jUtXCVnOhKXISFQ==}
+    peerDependencies:
+      zod: ^3.25.40
+    peerDependenciesMeta:
+      zod:
+        optional: true
+
+  '@openai/agents-openai@0.0.9':
+    resolution: {integrity: sha512-JfTuFaswJUmzVVEEseH+uQHLeHv3ED+X8E0pNE868FwKe1+vd9elzD9uCqRolMAtkBfk8AemHzkZlYl2nuG1sg==}
+
+  '@openai/agents-realtime@0.0.9':
+    resolution: {integrity: sha512-WpAoYG3zOq1U7ljyERxChMXOgnzaRaHqbU4gPMQUmEBD48MHpA0uro6VZTk83Vs6J8JfuS+fGxF11WiR2UlTCg==}
+
+  '@openai/agents@0.0.9':
+    resolution: {integrity: sha512-JAZLqovH4MLGflwm7BZKjqW7ejhfGAoS7eyXkgfXh4oh/DtWbMr5hmK/Ha0jeqb1+xKY5ULbmikKDTPmHflW7g==}
 
   '@supabase/auth-js@2.70.0':
     resolution: {integrity: sha512-BaAK/tOAZFJtzF1sE3gJ2FwTjLf4ky3PSvcvLGEgEmO4BSBkwWKu8l67rLLIBZPDnCyV7Owk2uPyKHa0kj5QGg==}
@@ -583,6 +610,20 @@ packages:
   etag@1.8.1:
     resolution: {integrity: sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==}
     engines: {node: '>= 0.6'}
+
+  eventsource-parser@3.0.2:
+    resolution: {integrity: sha512-6RxOBZ/cYgd8usLwsEl+EC09Au/9BcmCKYF2/xbml6DNczf7nv0MQb+7BA2F+li6//I+28VNlQR37XfQtcAJuA==}
+    engines: {node: '>=18.0.0'}
+
+  eventsource@3.0.7:
+    resolution: {integrity: sha512-CRT1WTyuQoD771GW56XEZFQ/ZoSfWid1alKGDYMmkt2yl8UXrVR4pspqWNEcqKvVIzg6PAltWjxcSSPrboA4iA==}
+    engines: {node: '>=18.0.0'}
+
+  express-rate-limit@7.5.1:
+    resolution: {integrity: sha512-7iN8iPMDzOMHPUYllBEsQdWVB6fPDMPqwjBaFrgr4Jgr/+okjvzAy+UHlYYL/Vs0OsOrMkwS6PJDkFlJwoxUnw==}
+    engines: {node: '>= 16'}
+    peerDependencies:
+      express: '>= 4.11'
 
   express-session@1.18.1:
     resolution: {integrity: sha512-a5mtTqEaZvBCL9A9aqkrtfz+3SMDhOVUnjafjo+s7A9Txkq+SVX2DLvSp1Zrv4uCXa3lMSK3viWnh9Gg07PBUA==}
@@ -1012,6 +1053,10 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
+  pkce-challenge@5.0.0:
+    resolution: {integrity: sha512-ueGLflrrnvwB3xuo/uGob5pd5FN7l0MsLf0Z87o/UQmRtwjvfylfc9MurIxRAWywCYTgrvpXBcqjV4OfCYGCIQ==}
+    engines: {node: '>=16.20.0'}
+
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
@@ -1300,6 +1345,14 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
+  zod-to-json-schema@3.24.5:
+    resolution: {integrity: sha512-/AuWwMP+YqiPbsJx5D6TfgRTc4kTLjsh5SOcd4bLsfUg2RcEXrFMJl1DGgdHy2aCfsIA/cr/1JM0xcB2GZji8g==}
+    peerDependencies:
+      zod: ^3.24.1
+
+  zod@3.25.67:
+    resolution: {integrity: sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==}
+
 snapshots:
 
   '@cspotcode/source-map-support@0.8.1':
@@ -1378,6 +1431,23 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
+  '@modelcontextprotocol/sdk@1.13.0':
+    dependencies:
+      ajv: 6.12.6
+      content-type: 1.0.5
+      cors: 2.8.5
+      cross-spawn: 7.0.6
+      eventsource: 3.0.7
+      express: 5.1.0
+      express-rate-limit: 7.5.1(express@5.1.0)
+      pkce-challenge: 5.0.0
+      raw-body: 3.0.0
+      zod: 3.25.67
+      zod-to-json-schema: 3.24.5(zod@3.25.67)
+    transitivePeerDependencies:
+      - supports-color
+    optional: true
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -1389,6 +1459,56 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
+
+  '@openai/agents-core@0.0.9(ws@8.18.2)(zod@3.25.67)':
+    dependencies:
+      '@openai/zod': zod@3.25.67
+      debug: 4.4.1
+      openai: 5.6.0(ws@8.18.2)(zod@3.25.67)
+    optionalDependencies:
+      '@modelcontextprotocol/sdk': 1.13.0
+      zod: 3.25.67
+    transitivePeerDependencies:
+      - supports-color
+      - ws
+
+  '@openai/agents-openai@0.0.9(ws@8.18.2)(zod@3.25.67)':
+    dependencies:
+      '@openai/agents-core': 0.0.9(ws@8.18.2)(zod@3.25.67)
+      '@openai/zod': zod@3.25.67
+      debug: 4.4.1
+      openai: 5.6.0(ws@8.18.2)(zod@3.25.67)
+    transitivePeerDependencies:
+      - supports-color
+      - ws
+      - zod
+
+  '@openai/agents-realtime@0.0.9(zod@3.25.67)':
+    dependencies:
+      '@openai/agents-core': 0.0.9(ws@8.18.2)(zod@3.25.67)
+      '@openai/zod': zod@3.25.67
+      '@types/ws': 8.18.1
+      debug: 4.4.1
+      ws: 8.18.2
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+      - zod
+
+  '@openai/agents@0.0.9(ws@8.18.2)(zod@3.25.67)':
+    dependencies:
+      '@openai/agents-core': 0.0.9(ws@8.18.2)(zod@3.25.67)
+      '@openai/agents-openai': 0.0.9(ws@8.18.2)(zod@3.25.67)
+      '@openai/agents-realtime': 0.0.9(zod@3.25.67)
+      debug: 4.4.1
+      openai: 5.6.0(ws@8.18.2)(zod@3.25.67)
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+      - ws
+      - zod
 
   '@supabase/auth-js@2.70.0':
     dependencies:
@@ -1873,6 +1993,19 @@ snapshots:
 
   etag@1.8.1: {}
 
+  eventsource-parser@3.0.2:
+    optional: true
+
+  eventsource@3.0.7:
+    dependencies:
+      eventsource-parser: 3.0.2
+    optional: true
+
+  express-rate-limit@7.5.1(express@5.1.0):
+    dependencies:
+      express: 5.1.0
+    optional: true
+
   express-session@1.18.1:
     dependencies:
       cookie: 0.7.2
@@ -2280,9 +2413,10 @@ snapshots:
     dependencies:
       wrappy: 1.0.2
 
-  openai@5.6.0(ws@8.18.2):
+  openai@5.6.0(ws@8.18.2)(zod@3.25.67):
     optionalDependencies:
       ws: 8.18.2
+      zod: 3.25.67
 
   optionator@0.9.4:
     dependencies:
@@ -2318,6 +2452,9 @@ snapshots:
   path-to-regexp@8.2.0: {}
 
   picomatch@2.3.1: {}
+
+  pkce-challenge@5.0.0:
+    optional: true
 
   prelude-ls@1.2.1: {}
 
@@ -2592,3 +2729,10 @@ snapshots:
   yn@3.1.1: {}
 
   yocto-queue@0.1.0: {}
+
+  zod-to-json-schema@3.24.5(zod@3.25.67):
+    dependencies:
+      zod: 3.25.67
+    optional: true
+
+  zod@3.25.67: {}
