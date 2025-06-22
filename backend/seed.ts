@@ -2,7 +2,9 @@ import { CONFIG } from './config'
 import axios from 'axios'
 import { createClient } from '@supabase/supabase-js'
 import { faker } from '@faker-js/faker'
+import fs from 'fs'
 
+const QUIZZEZ_DATA = JSON.parse(fs.readFileSync('./quizzez.json', 'utf8'))
 const supabase = createClient(CONFIG.supabaseUrl!, CONFIG.supabaseKey!)
 
 if (!CONFIG.supabaseUrl! && !CONFIG.supabaseKey) throw new Error('Not loaded')
@@ -61,4 +63,42 @@ const uploadUserImgToBucket = async (imageUrl: string, userId: string) => {
   }
 }
 
-createUsers(50)
+const uploadQuizzez = async () => {
+  try {
+    for (let i = 36; i < QUIZZEZ_DATA.length; i++) {
+      const quizzArr = QUIZZEZ_DATA[i]
+      console.log(`Quizz injectin number ${i}: ${quizzArr}`)
+      const { data, error } = await supabase
+        .from('quizzes')
+        .insert({ generated_quiz: quizzArr, is_file: false })
+        .select()
+      if (error) throw error
+      console.log(data)
+    }
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+const deleteDataBySpecificTableName = async (tableName: string) => {
+  try {
+    const r = await supabase.from(tableName).delete().not('id', 'is', null)
+    if (r) console.log(r)
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+const main = async (
+  amountOfUsers: number,
+  tableName: string,
+  uploadQuiz: boolean,
+  generaeteNewUsers: boolean
+) => {
+  if (tableName.length > 1) return deleteDataBySpecificTableName(tableName)
+  if (generaeteNewUsers) return await createUsers(amountOfUsers)
+  if (uploadQuiz) return await uploadQuizzez()
+}
+
+// main(0, 'quizzes', false, false)
+main(0, '', true, false)
