@@ -1,0 +1,2270 @@
+[
+  [
+    {
+      "question": "Which keyword is used to declare a constant in JavaScript?",
+      "answers": ["const", "var", "let"],
+      "correct": "const"
+    },
+    {
+      "question": "What will `typeof null` return in JavaScript?",
+      "answers": ["null", "object", "undefined"],
+      "correct": "object"
+    },
+    {
+      "question": "Which method is used to convert a JSON string into a JavaScript object?",
+      "answers": ["JSON.stringify()", "JSON.parse()", "parseJSON()"],
+      "correct": "JSON.parse()"
+    },
+    {
+      "question": "What is the output of `2 + '2'` in JavaScript?",
+      "answers": ["4", "22", "NaN"],
+      "correct": "22"
+    },
+    {
+      "question": "Which of the following is a JavaScript framework?",
+      "answers": ["Django", "React", "Laravel"],
+      "correct": "React"
+    },
+    {
+      "question": "What does the `===` operator check in JavaScript?",
+      "answers": ["Value only", "Type only", "Value and type"],
+      "correct": "Value and type"
+    },
+    {
+      "question": "What is a closure in JavaScript?",
+      "answers": [
+        "A function having access to its own scope only",
+        "A function having access to the parent scope even after the parent function has closed",
+        "A way to close the browser tab using JS"
+      ],
+      "correct": "A function having access to the parent scope even after the parent function has closed"
+    },
+    {
+      "question": "Which object is at the top of the JavaScript scope chain in browsers?",
+      "answers": ["window", "document", "global"],
+      "correct": "window"
+    },
+    {
+      "question": "What is the purpose of the `use strict` directive?",
+      "answers": [
+        "To enable ES6 features",
+        "To disable JavaScript errors",
+        "To enforce stricter parsing and error handling"
+      ],
+      "correct": "To enforce stricter parsing and error handling"
+    },
+    {
+      "question": "Which array method creates a new array with elements that pass a test?",
+      "answers": ["map()", "filter()", "forEach()"],
+      "correct": "filter()"
+    }
+  ],
+  [
+    {
+      "question": "Which of the following is used to define a function expression in JavaScript?",
+      "answers": ["function myFunc() {}", "const myFunc = function() {}", "def myFunc() {}"],
+      "correct": "const myFunc = function() {}"
+    },
+    {
+      "question": "What will `[] + []` evaluate to in JavaScript?",
+      "answers": ["0", "[]", "'' (empty string)"],
+      "correct": "'' (empty string)"
+    },
+    {
+      "question": "Which method would you use to combine two arrays?",
+      "answers": ["concat()", "combine()", "append()"],
+      "correct": "concat()"
+    },
+    {
+      "question": "Which of the following is a primitive type in JavaScript?",
+      "answers": ["Object", "String", "Array"],
+      "correct": "String"
+    },
+    {
+      "question": "Which method stops further execution of an event in event bubbling?",
+      "answers": ["stopImmediatePropagation()", "stopPropagation()", "preventDefault()"],
+      "correct": "stopPropagation()"
+    },
+    {
+      "question": "What does `this` refer to inside a regular function (non-arrow) by default?",
+      "answers": ["The window object", "The function itself", "The global `this` context"],
+      "correct": "The window object"
+    },
+    {
+      "question": "What is the result of `'5' == 5`?",
+      "answers": ["true", "false", "TypeError"],
+      "correct": "true"
+    },
+    {
+      "question": "What is the purpose of `bind()` in JavaScript?",
+      "answers": [
+        "To attach an event listener",
+        "To permanently set the value of `this` for a function",
+        "To clone an object"
+      ],
+      "correct": "To permanently set the value of `this` for a function"
+    },
+    {
+      "question": "Which object method returns the keys of an object?",
+      "answers": ["Object.keys()", "Object.values()", "Object.entries()"],
+      "correct": "Object.keys()"
+    },
+    {
+      "question": "What value does `Boolean('false')` return?",
+      "answers": ["false", "true", "NaN"],
+      "correct": "true"
+    }
+  ],
+  [
+    {
+      "question": "Which of the following is used to define a function expression in JavaScript?",
+      "answers": ["function myFunc() {}", "const myFunc = function() {}", "def myFunc() {}"],
+      "correct": "const myFunc = function() {}"
+    },
+    {
+      "question": "What will `[] + []` evaluate to in JavaScript?",
+      "answers": ["0", "[]", "'' (empty string)"],
+      "correct": "'' (empty string)"
+    },
+    {
+      "question": "Which method would you use to combine two arrays?",
+      "answers": ["concat()", "combine()", "append()"],
+      "correct": "concat()"
+    },
+    {
+      "question": "Which of the following is a primitive type in JavaScript?",
+      "answers": ["Object", "String", "Array"],
+      "correct": "String"
+    },
+    {
+      "question": "Which method stops further execution of an event in event bubbling?",
+      "answers": ["stopImmediatePropagation()", "stopPropagation()", "preventDefault()"],
+      "correct": "stopPropagation()"
+    },
+    {
+      "question": "What does `this` refer to inside a regular function (non-arrow) by default?",
+      "answers": ["The window object", "The function itself", "The global `this` context"],
+      "correct": "The window object"
+    },
+    {
+      "question": "What is the result of `'5' == 5`?",
+      "answers": ["true", "false", "TypeError"],
+      "correct": "true"
+    },
+    {
+      "question": "What is the purpose of `bind()` in JavaScript?",
+      "answers": [
+        "To attach an event listener",
+        "To permanently set the value of `this` for a function",
+        "To clone an object"
+      ],
+      "correct": "To permanently set the value of `this` for a function"
+    },
+    {
+      "question": "Which object method returns the keys of an object?",
+      "answers": ["Object.keys()", "Object.values()", "Object.entries()"],
+      "correct": "Object.keys()"
+    },
+    {
+      "question": "What value does `Boolean('false')` return?",
+      "answers": ["false", "true", "NaN"],
+      "correct": "true"
+    }
+  ],
+  [
+    {
+      "question": "What does the `setTimeout` function do?",
+      "answers": [
+        "Repeats a function continuously",
+        "Executes a function after a delay",
+        "Pauses the script"
+      ],
+      "correct": "Executes a function after a delay"
+    },
+    {
+      "question": "What will be the output of `typeof function() {}`?",
+      "answers": ["object", "function", "undefined"],
+      "correct": "function"
+    },
+    {
+      "question": "Which keyword is used to handle errors in JavaScript?",
+      "answers": ["try", "catch", "Both try and catch"],
+      "correct": "Both try and catch"
+    },
+    {
+      "question": "Which method adds one or more elements to the end of an array?",
+      "answers": ["push()", "pop()", "unshift()"],
+      "correct": "push()"
+    },
+    {
+      "question": "How do you check if a variable is `undefined`?",
+      "answers": ["typeof x === 'undefined'", "x == undefined", "x === null"],
+      "correct": "typeof x === 'undefined'"
+    },
+    {
+      "question": "What is the result of `[1, 2] == '1,2'`?",
+      "answers": ["true", "false", "TypeError"],
+      "correct": "true"
+    },
+    {
+      "question": "Which statement creates a class in JavaScript?",
+      "answers": ["function MyClass() {}", "class MyClass {}", "object MyClass = {}"],
+      "correct": "class MyClass {}"
+    },
+    {
+      "question": "What will `Number('123abc')` return?",
+      "answers": ["123", "NaN", "undefined"],
+      "correct": "NaN"
+    },
+    {
+      "question": "Which method removes the last element from an array?",
+      "answers": ["pop()", "shift()", "splice()"],
+      "correct": "pop()"
+    },
+    {
+      "question": "What is hoisting in JavaScript?",
+      "answers": [
+        "Moving variables to the end of scope",
+        "Compiling code before execution",
+        "Variable and function declarations are moved to the top of their scope"
+      ],
+      "correct": "Variable and function declarations are moved to the top of their scope"
+    }
+  ],
+  [
+    {
+      "question": "What does the `map()` method do in JavaScript?",
+      "answers": [
+        "Filters an array based on a condition",
+        "Creates a new array by transforming each element",
+        "Sorts the array in place"
+      ],
+      "correct": "Creates a new array by transforming each element"
+    },
+    {
+      "question": "Which symbol is used to define a template literal?",
+      "answers": ["'", "`", "\""],
+      "correct": "`"
+    },
+    {
+      "question": "What will be the result of `'10' - 5`?",
+      "answers": ["5", "105", "NaN"],
+      "correct": "5"
+    },
+    {
+      "question": "Which JavaScript feature allows you to write asynchronous code that looks synchronous?",
+      "answers": ["Promises", "setTimeout", "async/await"],
+      "correct": "async/await"
+    },
+    {
+      "question": "What does the `reduce()` method return?",
+      "answers": [
+        "A filtered array",
+        "A single accumulated value",
+        "A new array with modified elements"
+      ],
+      "correct": "A single accumulated value"
+    },
+    {
+      "question": "Which keyword is used to create a block-scoped variable?",
+      "answers": ["var", "const", "let"],
+      "correct": "let"
+    },
+    {
+      "question": "How can you prevent an object from being modified?",
+      "answers": ["Object.preventChanges()", "Object.freeze()", "Object.seal()"],
+      "correct": "Object.freeze()"
+    },
+    {
+      "question": "What is a pure function in JavaScript?",
+      "answers": [
+        "A function that modifies external state",
+        "A function with no return value",
+        "A function that returns the same output for the same input and causes no side effects"
+      ],
+      "correct": "A function that returns the same output for the same input and causes no side effects"
+    },
+    {
+      "question": "What will be the value of `typeof NaN`?",
+      "answers": ["NaN", "number", "undefined"],
+      "correct": "number"
+    },
+    {
+      "question": "Which statement is true about arrow functions?",
+      "answers": [
+        "They have their own `this` context",
+        "They inherit `this` from the parent scope",
+        "They can be used as constructors"
+      ],
+      "correct": "They inherit `this` from the parent scope"
+    }
+  ],
+  [
+    {
+      "question": "What is the primary difference between optimistic and pessimistic locking in database concurrency control?",
+      "answers": [
+        "Optimistic locking defers conflict detection until commit, pessimistic locking acquires locks before access",
+        "Optimistic locking uses row-level locks, pessimistic locking uses table-level locks",
+        "Optimistic locking uses multiversion concurrency, pessimistic locking uses timestamp ordering"
+      ],
+      "correct": "Optimistic locking defers conflict detection until commit, pessimistic locking acquires locks before access"
+    },
+    {
+      "question": "In Kubernetes, what is the purpose of a DaemonSet?",
+      "answers": [
+        "Ensure a copy of a pod runs on each node",
+        "Scale pods based on CPU usage",
+        "Manage stateful distributed applications"
+      ],
+      "correct": "Ensure a copy of a pod runs on each node"
+    },
+    {
+      "question": "Which AWS service provides serverless, event-driven compute capabilities?",
+      "answers": [
+        "AWS Lambda",
+        "Amazon EC2 Auto Scaling",
+        "Amazon Elastic Container Service (ECS)"
+      ],
+      "correct": "AWS Lambda"
+    },
+    {
+      "question": "What does the 'P' stand for in the CAP theorem?",
+      "answers": ["Partition tolerance", "Performance", "Persistence"],
+      "correct": "Partition tolerance"
+    },
+    {
+      "question": "Which consensus mechanism does Bitcoin primarily use?",
+      "answers": ["Proof of Work", "Proof of Stake", "Delegated Proof of Authority"],
+      "correct": "Proof of Work"
+    },
+    {
+      "question": "What is homomorphic encryption?",
+      "answers": [
+        "Encryption that allows computations on ciphertexts without decryption",
+        "A method that uses homomorphic keys for symmetric encryption",
+        "Encryption that automatically corrects errors in ciphertext"
+      ],
+      "correct": "Encryption that allows computations on ciphertexts without decryption"
+    },
+    {
+      "question": "What is the role of the Container Runtime Interface (CRI) in Kubernetes?",
+      "answers": [
+        "Provide a standardized interface between kubelet and container runtimes",
+        "Serve as a load balancer for container network traffic",
+        "Manage persistent storage volumes for pods"
+      ],
+      "correct": "Provide a standardized interface between kubelet and container runtimes"
+    },
+    {
+      "question": "Which layer of the OSI model is responsible for end-to-end error detection and flow control?",
+      "answers": ["Transport layer", "Data Link layer", "Network layer"],
+      "correct": "Transport layer"
+    },
+    {
+      "question": "What is the main advantage of the RISC-V architecture?",
+      "answers": [
+        "It is open-source and extensible",
+        "It uses a microkernel design for all implementations",
+        "It enforces backward compatibility with ARM instructions"
+      ],
+      "correct": "It is open-source and extensible"
+    },
+    {
+      "question": "What are GPU tensor cores optimized for?",
+      "answers": [
+        "High-throughput matrix multiply-accumulate operations for deep learning",
+        "Real-time ray tracing and shader compilation",
+        "General-purpose parallel integer arithmetic"
+      ],
+      "correct": "High-throughput matrix multiply-accumulate operations for deep learning"
+    }
+  ],
+  [
+    {
+      "question": "In Express.js, what distinguishes an error-handling middleware function from a standard middleware function?",
+      "answers": [
+        "It uses four arguments (err, req, res, next) instead of three",
+        "It must be the first middleware registered",
+        "It returns a promise instead of calling next()"
+      ],
+      "correct": "It uses four arguments (err, req, res, next) instead of three"
+    },
+    {
+      "question": "Which advantage does GraphQL offer over traditional REST APIs?",
+      "answers": [
+        "It enforces a strict schema on the client side",
+        "It allows clients to request multiple resources in a single query",
+        "It automatically caches all responses on the server"
+      ],
+      "correct": "It allows clients to request multiple resources in a single query"
+    },
+    {
+      "question": "What is the primary purpose of a CORS preflight request?",
+      "answers": [
+        "To verify that the server supports cookies from the origin",
+        "To check server credentials before establishing a WebSocket",
+        "To determine whether the actual request is safe to send based on allowed methods and headers"
+      ],
+      "correct": "To determine whether the actual request is safe to send based on allowed methods and headers"
+    },
+    {
+      "question": "Why is connection pooling important in a Node.js application interacting with a relational database?",
+      "answers": [
+        "It encrypts each query automatically",
+        "It reuses database connections to reduce overhead and improve performance",
+        "It prevents SQL injection by isolating queries"
+      ],
+      "correct": "It reuses database connections to reduce overhead and improve performance"
+    },
+    {
+      "question": "Which practice enhances security when using JWTs for authentication in a full-stack application?",
+      "answers": [
+        "Storing the JWT in localStorage only",
+        "Using short-lived access tokens with refresh tokens stored in HTTP-only cookies",
+        "Embedding user passwords in the token payload for quick verification"
+      ],
+      "correct": "Using short-lived access tokens with refresh tokens stored in HTTP-only cookies"
+    },
+    {
+      "question": "In React Native, how do you expose a native Android module to JavaScript?",
+      "answers": [
+        "Create a class extending ReactContextBaseJavaModule and annotate exported methods with @ReactMethod",
+        "Implement a JNI bridge and call System.loadLibrary",
+        "Write the module in Swift and import it in AndroidManifest.xml"
+      ],
+      "correct": "Create a class extending ReactContextBaseJavaModule and annotate exported methods with @ReactMethod"
+    },
+    {
+      "question": "What is the default flexDirection in React Native’s Flexbox layout?",
+      "answers": ["column", "row-reverse", "row"],
+      "correct": "column"
+    },
+    {
+      "question": "Which technique helps prevent unnecessary re-renders of functional components in React Native?",
+      "answers": [
+        "Wrapping the component with React.PureComponent",
+        "Using React.memo and the useCallback or useMemo hooks",
+        "Always passing new object literals as props"
+      ],
+      "correct": "Using React.memo and the useCallback or useMemo hooks"
+    },
+    {
+      "question": "What distinguishes Fast Refresh from Live Reload in React Native development?",
+      "answers": [
+        "Fast Refresh preserves component state while updating code; Live Reload restarts the entire app",
+        "Live Reload only refreshes JS files; Fast Refresh works only with native modules",
+        "Fast Refresh reloads on save; Live Reload requires manual triggers"
+      ],
+      "correct": "Fast Refresh preserves component state while updating code; Live Reload restarts the entire app"
+    },
+    {
+      "question": "When choosing storage solutions in React Native, which is a key advantage of using SecureStore (or similar secure key-value storage) over AsyncStorage?",
+      "answers": [
+        "It handles large binary file storage more efficiently",
+        "It provides encrypted storage backed by the device’s secure hardware",
+        "It automatically synchronizes data across devices"
+      ],
+      "correct": "It provides encrypted storage backed by the device’s secure hardware"
+    }
+  ],
+  [
+    {
+      "question": "In RESTful API design, which HTTP method is not considered idempotent?",
+      "answers": ["GET", "PUT", "POST"],
+      "correct": "POST"
+    },
+    {
+      "question": "What is the primary purpose of a CORS preflight (OPTIONS) request?",
+      "answers": [
+        "Authenticate user credentials",
+        "Determine allowed HTTP methods and headers",
+        "Cache server responses"
+      ],
+      "correct": "Determine allowed HTTP methods and headers"
+    },
+    {
+      "question": "Which Webpack feature eliminates unused code from the bundle during build time?",
+      "answers": ["Code Splitting", "Tree Shaking", "Module Concatenation"],
+      "correct": "Tree Shaking"
+    },
+    {
+      "question": "In GraphQL, which operation type is used to modify server-side data?",
+      "answers": ["query", "mutation", "subscription"],
+      "correct": "mutation"
+    },
+    {
+      "question": "Which characteristic is typical of NoSQL databases compared to relational databases?",
+      "answers": ["Fixed schema", "Horizontal scalability", "Strong ACID compliance"],
+      "correct": "Horizontal scalability"
+    },
+    {
+      "question": "In React Native, which component is specifically designed to handle basic touch interactions?",
+      "answers": ["TouchableHighlight", "View", "ScrollView"],
+      "correct": "TouchableHighlight"
+    },
+    {
+      "question": "What role does the JavaScript bridge play in React Native?",
+      "answers": [
+        "Transpile JavaScript to native bytecode",
+        "Facilitate communication between JavaScript and native modules",
+        "Optimize garbage collection in the JavaScript engine"
+      ],
+      "correct": "Facilitate communication between JavaScript and native modules"
+    },
+    {
+      "question": "What distinguishes Fast Refresh from the older Hot Reloading in React Native?",
+      "answers": [
+        "Fast Refresh performs a full reload of the app on every change",
+        "Fast Refresh combines Hot Reloading and Live Reload, preserving component state and recovering from errors",
+        "There is no difference; they are aliases"
+      ],
+      "correct": "Fast Refresh combines Hot Reloading and Live Reload, preserving component state and recovering from errors"
+    },
+    {
+      "question": "Which Flexbox property in React Native controls the distribution of space along the main axis?",
+      "answers": ["justifyContent", "alignItems", "alignContent"],
+      "correct": "justifyContent"
+    },
+    {
+      "question": "In React Native Reanimated v2, which hook is used to create an animated shared value?",
+      "answers": ["useAnimatedStyle", "useSharedValue", "useDerivedValue"],
+      "correct": "useSharedValue"
+    }
+  ],
+  [
+    {
+      "question": "What is the primary purpose of using JWT refresh tokens in an Express.js authentication flow?",
+      "answers": [
+        "To grant long-term authentication without requiring the user to re-enter credentials",
+        "To securely store session data on the server",
+        "To encode user permissions in the access token"
+      ],
+      "correct": "To grant long-term authentication without requiring the user to re-enter credentials"
+    },
+    {
+      "question": "In relational databases, which concurrency control technique helps prevent lost updates during concurrent transactions?",
+      "answers": ["Optimistic locking", "Dirty reads", "Event sourcing"],
+      "correct": "Optimistic locking"
+    },
+    {
+      "question": "Which HTTP status code should an API return when the client is authenticated but does not have permission to access the requested resource?",
+      "answers": ["401 Unauthorized", "403 Forbidden", "404 Not Found"],
+      "correct": "403 Forbidden"
+    },
+    {
+      "question": "In a microservices architecture, which pattern enables services to dynamically discover network locations of other services?",
+      "answers": ["API Gateway", "Service Registry", "Circuit Breaker"],
+      "correct": "Service Registry"
+    },
+    {
+      "question": "In Next.js, which data fetching method allows pages to be statically generated at build time, preventing additional server requests during client-side navigation?",
+      "answers": ["getStaticProps", "getServerSideProps", "getInitialProps"],
+      "correct": "getStaticProps"
+    },
+    {
+      "question": "In React Native, which component is optimized for rendering large scrollable lists efficiently?",
+      "answers": ["ScrollView", "FlatList", "SectionList"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "How does React Native's JavaScript bridge architecture communicate between JS and native modules?",
+      "answers": [
+        "Direct synchronous function calls",
+        "Asynchronous batched messaging over the bridge",
+        "Shared memory access"
+      ],
+      "correct": "Asynchronous batched messaging over the bridge"
+    },
+    {
+      "question": "Which tool can be used to inspect the UI layout and debug a React Native app on both Android and iOS?",
+      "answers": ["Redux DevTools", "Flipper", "Reactotron"],
+      "correct": "Flipper"
+    },
+    {
+      "question": "What is the primary benefit of using the useMemo hook in a React Native component?",
+      "answers": [
+        "Automatically caches network requests",
+        "Prevents unnecessary recalculation of expensive values",
+        "Ensures the effect hook runs on every render"
+      ],
+      "correct": "Prevents unnecessary recalculation of expensive values"
+    },
+    {
+      "question": "In React Native styling, which property controls the alignment of children along the cross-axis in a flex container?",
+      "answers": ["justifyContent", "alignItems", "flexWrap"],
+      "correct": "alignItems"
+    }
+  ],
+  [
+    {
+      "question": "In an Express.js application using PostgreSQL, how can you mitigate SQL injection attacks when executing raw SQL queries?",
+      "answers": [
+        "Manually sanitize inputs with regex",
+        "Use parameterized queries with placeholders",
+        "Escape all user input using escape function"
+      ],
+      "correct": "Use parameterized queries with placeholders"
+    },
+    {
+      "question": "Which HTTP status code best indicates that a RESTful API request succeeded but returns no content in the response body?",
+      "answers": ["200 OK", "204 No Content", "201 Created"],
+      "correct": "204 No Content"
+    },
+    {
+      "question": "What is the primary advantage of implementing server-side rendering (SSR) in a React web application?",
+      "answers": [
+        "Improved SEO and faster initial page load",
+        "Simplified state management on the client",
+        "Reduced bundle size for production"
+      ],
+      "correct": "Improved SEO and faster initial page load"
+    },
+    {
+      "question": "In a GraphQL API, how do you typically retrieve multiple related resources in a single request?",
+      "answers": [
+        "Batch multiple HTTP requests",
+        "Use nested queries in a single GraphQL operation",
+        "Call multiple endpoints sequentially"
+      ],
+      "correct": "Use nested queries in a single GraphQL operation"
+    },
+    {
+      "question": "In AWS Elastic Beanstalk deployments, which directory is used to include custom environment configuration and container commands?",
+      "answers": [".ebextensions", "beanstalk.config", "env.setup"],
+      "correct": ".ebextensions"
+    },
+    {
+      "question": "Which library is the de facto standard for navigation in cross-platform React Native applications?",
+      "answers": ["React Navigation", "React Router Native", "React Native Navigation"],
+      "correct": "React Navigation"
+    },
+    {
+      "question": "What component should you use for efficiently rendering large scrollable lists in React Native?",
+      "answers": ["ScrollView", "FlatList", "SectionList"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "When creating and registering a custom native module for iOS in React Native, which file must be modified to register the module with the React Native bridge?",
+      "answers": ["AppDelegate.m", "MainActivity.java", "Info.plist"],
+      "correct": "AppDelegate.m"
+    },
+    {
+      "question": "What role does the Metro bundler play in the React Native development workflow?",
+      "answers": [
+        "Transforms and bundles JavaScript code for the app",
+        "Compiles native iOS and Android binaries",
+        "Manages over-the-air updates for production releases"
+      ],
+      "correct": "Transforms and bundles JavaScript code for the app"
+    },
+    {
+      "question": "Which approach can you use to preload images and improve image loading performance in React Native?",
+      "answers": [
+        "Use Image.prefetch before rendering",
+        "Load all images using require at the top of the file",
+        "Wrap images in Animated.Image for faster rendering"
+      ],
+      "correct": "Use Image.prefetch before rendering"
+    }
+  ],
+  [
+    {
+      "question": "In React Native, which method schedules a function to run after all animations and interactions have completed?",
+      "answers": ["InteractionManager.runAfterInteractions", "setTimeout", "requestAnimationFrame"],
+      "correct": "InteractionManager.runAfterInteractions"
+    },
+    {
+      "question": "Which HTTP status code is conventionally used to indicate that a resource has been created successfully?",
+      "answers": ["201 Created", "200 OK", "204 No Content"],
+      "correct": "201 Created"
+    },
+    {
+      "question": "In Node.js, which built-in module provides utilities for handling and transforming file system paths?",
+      "answers": ["path", "fs", "os"],
+      "correct": "path"
+    },
+    {
+      "question": "In GraphQL, what is the primary purpose of a resolver function?",
+      "answers": [
+        "To fetch and return data for a specific field",
+        "To encrypt query responses",
+        "To generate schemas at runtime"
+      ],
+      "correct": "To fetch and return data for a specific field"
+    },
+    {
+      "question": "When using React Native’s FlatList component, which prop can significantly improve performance by providing the height of each item?",
+      "answers": ["getItemLayout", "renderItem", "ItemSeparatorComponent"],
+      "correct": "getItemLayout"
+    },
+    {
+      "question": "Which JavaScript bundler does React Native use by default to package the app for development?",
+      "answers": ["Metro Bundler", "Webpack", "Parcel"],
+      "correct": "Metro Bundler"
+    },
+    {
+      "question": "In Express.js, which function is used to apply middleware to all incoming requests?",
+      "answers": ["app.use()", "app.get()", "app.listen()"],
+      "correct": "app.use()"
+    },
+    {
+      "question": "What is the key difference between SQL and NoSQL databases?",
+      "answers": [
+        "SQL databases are relational with structured schemas, NoSQL are non-relational and schema-less",
+        "SQL databases always scale horizontally, NoSQL always scales vertically",
+        "SQL only supports JSON data, NoSQL only supports XML data"
+      ],
+      "correct": "SQL databases are relational with structured schemas, NoSQL are non-relational and schema-less"
+    },
+    {
+      "question": "In React Native on Android, how do you expose a native module to JavaScript?",
+      "answers": [
+        "Create a class extending ReactContextBaseJavaModule and register it in a ReactPackage",
+        "Write Kotlin functions and call them directly from JavaScript",
+        "Use react-native-cli to automatically generate the bridge"
+      ],
+      "correct": "Create a class extending ReactContextBaseJavaModule and register it in a ReactPackage"
+    },
+    {
+      "question": "When deploying a Node.js application in production, which process manager is commonly used to keep it alive and manage automatic restarts?",
+      "answers": ["PM2", "nodemon", "webpack-dev-server"],
+      "correct": "PM2"
+    }
+  ],
+  [
+    {
+      "question": "Which phase of the Node.js event loop executes callbacks scheduled by setImmediate()?",
+      "answers": ["Timers", "Poll", "Check"],
+      "correct": "Check"
+    },
+    {
+      "question": "In Express.js, how do you define an error-handling middleware function?",
+      "answers": ["(req, res, next)", "(err, req, res, next)", "(error, request, response)"],
+      "correct": "(err, req, res, next)"
+    },
+    {
+      "question": "In Webpack, which configuration property enables code splitting for shared vendor modules?",
+      "answers": ["optimization.splitChunks", "module.rules", "output.library"],
+      "correct": "optimization.splitChunks"
+    },
+    {
+      "question": "Which Mongoose method would you use to atomically update a document and return the modified version?",
+      "answers": ["updateOne()", "findOneAndUpdate()", "save()"],
+      "correct": "findOneAndUpdate()"
+    },
+    {
+      "question": "Which file is used by Docker Compose to define multi-container applications?",
+      "answers": ["docker-compose.yml", "Dockerfile", "compose.json"],
+      "correct": "docker-compose.yml"
+    },
+    {
+      "question": "Which library is most commonly used for declarative navigation in React Native apps?",
+      "answers": ["React Router", "React Navigation", "React Native Navigation"],
+      "correct": "React Navigation"
+    },
+    {
+      "question": "Which React Native component is optimized for rendering large flat lists of data?",
+      "answers": ["ScrollView", "FlatList", "VirtualizedList"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "How can you apply platform-specific styles in React Native using the StyleSheet API?",
+      "answers": [
+        "Using Platform.select inside StyleSheet.create()",
+        "Creating separate .styles.js files for each platform",
+        "Using inline JavaScript objects exclusively"
+      ],
+      "correct": "Using Platform.select inside StyleSheet.create()"
+    },
+    {
+      "question": "Which command scaffolds a new native module when using the React Native CLI?",
+      "answers": [
+        "npx create-react-native-module",
+        "react-native init-module",
+        "npm generate rn-module"
+      ],
+      "correct": "npx create-react-native-module"
+    },
+    {
+      "question": "Which tool integrated with React Native allows inspection of UI components and layout at runtime?",
+      "answers": ["Chrome DevTools", "Flipper", "Redux DevTools"],
+      "correct": "Flipper"
+    }
+  ],
+  [
+    {
+      "question": "Which npm package is commonly used in an Express.js application to enable Cross-Origin Resource Sharing (CORS)?",
+      "answers": ["cors", "helmet", "body-parser"],
+      "correct": "cors"
+    },
+    {
+      "question": "In a MERN stack application, what is the recommended way to store JSON Web Tokens on the client to mitigate XSS vulnerabilities?",
+      "answers": ["HttpOnly cookies", "LocalStorage", "SessionStorage"],
+      "correct": "HttpOnly cookies"
+    },
+    {
+      "question": "What is the primary purpose of using NGINX as a reverse proxy in production web deployments?",
+      "answers": [
+        "Load balancing and serving static assets",
+        "Managing database connections",
+        "Rendering server-side templates"
+      ],
+      "correct": "Load balancing and serving static assets"
+    },
+    {
+      "question": "In GraphQL, what is the role of a resolver function?",
+      "answers": [
+        "Fetch and return data for a specific field",
+        "Define the schema types",
+        "Handle client authentication"
+      ],
+      "correct": "Fetch and return data for a specific field"
+    },
+    {
+      "question": "In RESTful API design, the HTTP PUT method is generally used to:",
+      "answers": [
+        "Update or create a resource at a specific URI",
+        "Partially modify a resource",
+        "Delete a resource"
+      ],
+      "correct": "Update or create a resource at a specific URI"
+    },
+    {
+      "question": "Which library should you use in React Native to achieve native-driven gesture handling and avoid the 60fps JavaScript thread bottleneck?",
+      "answers": ["react-native-gesture-handler", "PanResponder", "Animated API"],
+      "correct": "react-native-gesture-handler"
+    },
+    {
+      "question": "What performance benefit does StyleSheet.create provide in React Native?",
+      "answers": [
+        "It freezes style objects and reduces allocation overhead",
+        "It enables dynamic theming at runtime",
+        "It converts styles to CSS for web compatibility"
+      ],
+      "correct": "It freezes style objects and reduces allocation overhead"
+    },
+    {
+      "question": "Which feature in React Native allows you to apply code changes without recompiling native modules?",
+      "answers": ["Fast Refresh", "Live Reload", "Hot Module Replacement"],
+      "correct": "Fast Refresh"
+    },
+    {
+      "question": "When using React Navigation v5, which function creates a stack navigator for screen transitions?",
+      "answers": ["createStackNavigator", "StackNavigatorIOS", "createNativeStack"],
+      "correct": "createStackNavigator"
+    },
+    {
+      "question": "Which community-maintained package has replaced the deprecated AsyncStorage module in React Native core?",
+      "answers": [
+        "@react-native-async-storage/async-storage",
+        "react-native-storage",
+        "async-storage"
+      ],
+      "correct": "@react-native-async-storage/async-storage"
+    }
+  ],
+  [
+    {
+      "question": "In Express.js, what is the primary difference between application-level middleware and router-level middleware?",
+      "answers": [
+        "Application-level middleware is defined before specifying routes, while router-level is defined after",
+        "Application-level middleware is bound to the app object and executed for every request, router-level is bound to a specific express.Router() and executed only for routes on that router",
+        "Application-level middleware automatically handles errors, router-level does not"
+      ],
+      "correct": "Application-level middleware is bound to the app object and executed for every request, router-level is bound to a specific express.Router() and executed only for routes on that router"
+    },
+    {
+      "question": "In a RESTful API, which HTTP status code is most appropriate when a DELETE request successfully removes a resource and returns no content?",
+      "answers": ["200 OK", "204 No Content", "202 Accepted"],
+      "correct": "204 No Content"
+    },
+    {
+      "question": "What is a key advantage of GraphQL over traditional REST APIs?",
+      "answers": [
+        "It strictly follows CRUD operations mapping to HTTP verbs",
+        "It allows clients to request exactly the data they need, avoiding over-fetching",
+        "It requires separate endpoints for each resource type to improve caching"
+      ],
+      "correct": "It allows clients to request exactly the data they need, avoiding over-fetching"
+    },
+    {
+      "question": "In Docker, what best describes the relationship between images and containers?",
+      "answers": [
+        "An image is a running instance of a container",
+        "A container is a writable instantiation of an image",
+        "A container is a pre-configured template, while an image is a runtime instance"
+      ],
+      "correct": "A container is a writable instantiation of an image"
+    },
+    {
+      "question": "In a CI/CD pipeline, what is the purpose of a canary deployment?",
+      "answers": [
+        "To deploy new features to a small subset of users before full roll-out",
+        "To roll back all changes automatically if any tests fail",
+        "To run integration tests in a simulated production environment"
+      ],
+      "correct": "To deploy new features to a small subset of users before full roll-out"
+    },
+    {
+      "question": "In React Native, what is the primary purpose of the JavaScript bridge?",
+      "answers": [
+        "To enable synchronous communication between JavaScript and native modules only",
+        "To facilitate asynchronous communication between JavaScript code and native platform APIs",
+        "To compile JavaScript code into native binaries for performance"
+      ],
+      "correct": "To facilitate asynchronous communication between JavaScript code and native platform APIs"
+    },
+    {
+      "question": "When optimizing a large list in React Native, which component is recommended and why?",
+      "answers": [
+        "ScrollView, because it loads all items at once for smoother scrolling",
+        "FlatList, because it renders only visible items and supports windowing",
+        "ListView, because it automatically batches network requests"
+      ],
+      "correct": "FlatList, because it renders only visible items and supports windowing"
+    },
+    {
+      "question": "How do you register a custom native module on the Android side for React Native?",
+      "answers": [
+        "By adding the module in the MainActivity.java within onCreate method",
+        "By creating a ReactPackage that includes the module and registering it in MainApplication.java",
+        "By listing the module in the AndroidManifest.xml under application tag"
+      ],
+      "correct": "By creating a ReactPackage that includes the module and registering it in MainApplication.java"
+    },
+    {
+      "question": "In React Native navigation, what is the purpose of deep linking configuration?",
+      "answers": [
+        "To enable navigation state persistence across app restarts",
+        "To allow the app to respond to specific URLs and navigate to corresponding screens",
+        "To prefetch screens in the background for faster navigation"
+      ],
+      "correct": "To allow the app to respond to specific URLs and navigate to corresponding screens"
+    },
+    {
+      "question": "In React Native hooks, why is it important to include cleanup logic in useEffect?",
+      "answers": [
+        "To prevent memory leaks by removing subscriptions and event listeners when the component unmounts",
+        "To ensure useEffect runs after every render even if dependencies haven't changed",
+        "To batch multiple state updates into a single render cycle"
+      ],
+      "correct": "To prevent memory leaks by removing subscriptions and event listeners when the component unmounts"
+    }
+  ],
+  [
+    {
+      "question": "In Node.js, which mechanism enables the handling of asynchronous I/O operations without blocking the main execution thread?",
+      "answers": ["Event loop", "Thread pool", "Process forking"],
+      "correct": "Event loop"
+    },
+    {
+      "question": "Which HTTP response header must be set by a server to permit cross-origin requests from a web application hosted on a different domain?",
+      "answers": [
+        "Access-Control-Allow-Origin",
+        "Cross-Origin-Allow-Host",
+        "X-Permitted-Cross-Domain"
+      ],
+      "correct": "Access-Control-Allow-Origin"
+    },
+    {
+      "question": "In Next.js, which data fetching method combined with the \"revalidate\" property enables incremental static regeneration?",
+      "answers": ["getStaticProps", "getServerSideProps", "getInitialProps"],
+      "correct": "getStaticProps"
+    },
+    {
+      "question": "Which container orchestration platform uses Pods as the smallest deployable units and supports declarative configuration via YAML?",
+      "answers": ["Kubernetes", "Docker Swarm", "Apache Mesos"],
+      "correct": "Kubernetes"
+    },
+    {
+      "question": "In the SQL standard, which isolation level prevents non-repeatable reads but still allows phantom reads?",
+      "answers": ["Read Committed", "Repeatable Read", "Serializable"],
+      "correct": "Repeatable Read"
+    },
+    {
+      "question": "In React Native, what is the primary mechanism for integrating native Objective-C or Java code with JavaScript?",
+      "answers": ["Native Modules", "TurboModules", "JSI Bindings"],
+      "correct": "Native Modules"
+    },
+    {
+      "question": "Which open-source library is recommended for handling complex gesture interactions and animations in React Native?",
+      "answers": [
+        "react-native-gesture-handler",
+        "react-native-reanimated",
+        "react-native-animatable"
+      ],
+      "correct": "react-native-gesture-handler"
+    },
+    {
+      "question": "Which bundler does React Native use by default to transform and serve JavaScript modules?",
+      "answers": ["Metro", "Webpack", "Browserify"],
+      "correct": "Metro"
+    },
+    {
+      "question": "What is the primary benefit of enabling the Hermes JavaScript engine in a React Native Android application?",
+      "answers": [
+        "Reduced app size and faster startup",
+        "Enhanced JSX compilation",
+        "Automatic memory management"
+      ],
+      "correct": "Reduced app size and faster startup"
+    },
+    {
+      "question": "Which service can be used to deploy over-the-air updates to a React Native app without going through the app store review process?",
+      "answers": ["CodePush", "App Center Distribute", "Expo Publish"],
+      "correct": "CodePush"
+    }
+  ],
+  [
+    {
+      "question": "In Next.js, which data fetching method generates static HTML at build time?",
+      "answers": ["getServerSideProps", "getStaticProps", "getInitialProps"],
+      "correct": "getStaticProps"
+    },
+    {
+      "question": "Which PostgreSQL index type is optimized for full-text search?",
+      "answers": ["B-Tree", "GiST", "GIN"],
+      "correct": "GIN"
+    },
+    {
+      "question": "In RESTful API design, which HTTP method is most appropriate for partial updates of a resource?",
+      "answers": ["PUT", "PATCH", "POST"],
+      "correct": "PATCH"
+    },
+    {
+      "question": "In a Dockerfile, which instruction sets environment variables available during both build and runtime?",
+      "answers": ["ARG", "ENV", "LABEL"],
+      "correct": "ENV"
+    },
+    {
+      "question": "In GitLab CI/CD, which keyword specifies that a job should only run on certain branches?",
+      "answers": ["rules", "only", "except"],
+      "correct": "only"
+    },
+    {
+      "question": "Which Webpack plugin is commonly used to extract CSS into separate files in production builds?",
+      "answers": ["StyleLoader", "MiniCssExtractPlugin", "CssMinimizerPlugin"],
+      "correct": "MiniCssExtractPlugin"
+    },
+    {
+      "question": "In React Native Android modules, which base class should native modules extend to bridge with JavaScript?",
+      "answers": ["ReactActivity", "ReactContextBaseJavaModule", "ReactNativeHost"],
+      "correct": "ReactContextBaseJavaModule"
+    },
+    {
+      "question": "Which React Native component is recommended for efficiently rendering large, scrollable lists?",
+      "answers": ["ScrollView", "VirtualizedList", "FlatList"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "For handling complex gestures in React Native, which library is preferred over the built-in PanResponder?",
+      "answers": [
+        "react-native-gesture-handler",
+        "react-native-animatable",
+        "react-navigation-gesture"
+      ],
+      "correct": "react-native-gesture-handler"
+    },
+    {
+      "question": "Which React Native API provides support for handling deep links and universal links?",
+      "answers": ["Linking", "DeepLink", "URLHandler"],
+      "correct": "Linking"
+    }
+  ],
+  [
+    {
+      "question": "In a typical full-stack Next.js application, which method fetches data server-side on each request?",
+      "answers": ["getStaticProps", "getServerSideProps", "getInitialProps"],
+      "correct": "getServerSideProps"
+    },
+    {
+      "question": "Which Node.js module supports clustering to utilize multiple CPU cores?",
+      "answers": ["cluster", "worker_threads", "child_process"],
+      "correct": "cluster"
+    },
+    {
+      "question": "In RESTful design, which HTTP status code indicates successful deletion?",
+      "answers": ["204 No Content", "200 OK", "202 Accepted"],
+      "correct": "204 No Content"
+    },
+    {
+      "question": "Which pattern helps manage state in a microservices architecture by storing events?",
+      "answers": ["Event Sourcing", "Circuit Breaker", "Service Registry"],
+      "correct": "Event Sourcing"
+    },
+    {
+      "question": "In a CI/CD pipeline using Jenkins, which component defines the pipeline as code?",
+      "answers": ["Jenkinsfile", "job DSL", "config.xml"],
+      "correct": "Jenkinsfile"
+    },
+    {
+      "question": "In React Native, which API is used to perform native module calls on the UI thread?",
+      "answers": ["InteractionManager", "NativeModules", "UIManager"],
+      "correct": "UIManager"
+    },
+    {
+      "question": "Which library is commonly used for navigation in React Native apps?",
+      "answers": ["react-navigation", "react-router-native", "react-native-navigator"],
+      "correct": "react-navigation"
+    },
+    {
+      "question": "On Android in React Native, to request permissions at runtime, which module is used?",
+      "answers": ["PermissionsAndroid", "Permissions", "ReactNativePermissions"],
+      "correct": "PermissionsAndroid"
+    },
+    {
+      "question": "When using FlatList, which prop improves performance by specifying item height?",
+      "answers": ["getItemLayout", "initialNumToRender", "keyExtractor"],
+      "correct": "getItemLayout"
+    },
+    {
+      "question": "Which attribute in StyleSheet defines Flexbox layout direction in React Native?",
+      "answers": ["flexDirection", "direction", "layoutDirection"],
+      "correct": "flexDirection"
+    }
+  ],
+  [
+    {
+      "question": "In RESTful API design, which HTTP method is idempotent and typically used to update or replace an entire resource?",
+      "answers": ["PUT", "PATCH", "POST"],
+      "correct": "PUT"
+    },
+    {
+      "question": "Which HTTP header is required in a WebSocket handshake request with the value \"websocket\"?",
+      "answers": ["Upgrade", "Sec-WebSocket-Key", "Origin"],
+      "correct": "Upgrade"
+    },
+    {
+      "question": "In Node.js, in which event loop phase are callbacks passed to setImmediate() executed?",
+      "answers": ["Check", "Timers", "Poll"],
+      "correct": "Check"
+    },
+    {
+      "question": "Which React Native component is optimized for rendering long, scrollable lists by lazily loading rows?",
+      "answers": ["ScrollView", "ListView", "FlatList"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "Which style property in React Native controls the direction in which child components are laid out along the main axis?",
+      "answers": ["flexDirection", "justifyContent", "alignContent"],
+      "correct": "flexDirection"
+    },
+    {
+      "question": "In NestJS GraphQL using the code-first approach with decorators, which decorator defines a GraphQL query resolver method?",
+      "answers": ["@Resolver()", "@Query()", "@Mutation()"],
+      "correct": "@Query()"
+    },
+    {
+      "question": "What primary benefit do multistage builds in Docker provide?",
+      "answers": [
+        "Reduced final image size",
+        "Parallel container startup",
+        "Improved network isolation"
+      ],
+      "correct": "Reduced final image size"
+    },
+    {
+      "question": "Which HTTP header can be used to mitigate Cross-Site Scripting (XSS) attacks by specifying allowable script sources?",
+      "answers": ["X-Content-Type-Options", "Content-Security-Policy", "X-Frame-Options"],
+      "correct": "Content-Security-Policy"
+    },
+    {
+      "question": "Which JavaScript bundler does React Native use by default to package application code?",
+      "answers": ["Webpack", "Metro", "Browserify"],
+      "correct": "Metro"
+    },
+    {
+      "question": "Which continuous integration service uses a .gitlab-ci.yml file at the root of the repository for its pipeline definitions?",
+      "answers": ["GitHub Actions", "Travis CI", "GitLab CI"],
+      "correct": "GitLab CI"
+    }
+  ],
+  [
+    {
+      "question": "In Node.js, in which event loop phase are callbacks scheduled by setImmediate() executed?",
+      "answers": ["Timers phase", "Poll phase", "Check phase"],
+      "correct": "Check phase"
+    },
+    {
+      "question": "In Express.js, which middleware function is used to serve static files?",
+      "answers": ["express.static()", "serveStatic()", "staticFiles()"],
+      "correct": "express.static()"
+    },
+    {
+      "question": "Which HTTP method is defined as idempotent?",
+      "answers": ["POST", "PUT", "PATCH"],
+      "correct": "PUT"
+    },
+    {
+      "question": "Which of the following is a core feature of GraphQL compared to REST?",
+      "answers": [
+        "Single endpoint for all queries",
+        "Automatic HTTP caching",
+        "Implicit data normalization"
+      ],
+      "correct": "Single endpoint for all queries"
+    },
+    {
+      "question": "MongoDB is primarily which type of database?",
+      "answers": ["Relational", "Document-oriented", "Key-value"],
+      "correct": "Document-oriented"
+    },
+    {
+      "question": "In React, which hook is recommended for performing side effects such as data fetching?",
+      "answers": ["useEffect()", "useState()", "useContext()"],
+      "correct": "useEffect()"
+    },
+    {
+      "question": "In React Native, which component is optimized for rendering large scrollable lists?",
+      "answers": ["ScrollView", "FlatList", "ListView"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "What is the primary purpose of the React Native bridge?",
+      "answers": [
+        "Handling network requests",
+        "Facilitating communication between JavaScript and native modules",
+        "Managing component rendering lifecycle"
+      ],
+      "correct": "Facilitating communication between JavaScript and native modules"
+    },
+    {
+      "question": "Which tool allows you to debug JavaScript code running in a React Native application?",
+      "answers": ["Chrome DevTools Remote Debugging", "Xcode Instruments", "Android Profiler"],
+      "correct": "Chrome DevTools Remote Debugging"
+    },
+    {
+      "question": "Which library is most commonly used for navigation in React Native applications?",
+      "answers": ["React Navigation", "React Native Navigation", "React Router"],
+      "correct": "React Navigation"
+    }
+  ],
+  [
+    {
+      "question": "In RESTful API design, which HTTP method is semantically correct for partially updating a resource?",
+      "answers": ["PUT", "PATCH", "POST"],
+      "correct": "PATCH"
+    },
+    {
+      "question": "In Node.js, what is the primary reason to use the cluster module?",
+      "answers": [
+        "Run multiple Node.js instances across CPU cores",
+        "Optimize memory usage automatically",
+        "Manage asynchronous event loop tasks"
+      ],
+      "correct": "Run multiple Node.js instances across CPU cores"
+    },
+    {
+      "question": "Which indexing strategy in MongoDB is specifically optimized for performing full-text search?",
+      "answers": ["B-Tree Indexes", "Text Indexes", "Hash Indexes"],
+      "correct": "Text Indexes"
+    },
+    {
+      "question": "What is the main advantage of using JSON Web Tokens (JWT) over traditional server-side sessions?",
+      "answers": [
+        "Stateless authentication",
+        "Built-in encryption of payload",
+        "Automatic session invalidation"
+      ],
+      "correct": "Stateless authentication"
+    },
+    {
+      "question": "In a MERN stack application, where should sensitive environment variables like database credentials be stored?",
+      "answers": [
+        "Client-side .env bundled with React",
+        "Server-side process.env loaded from a .env file",
+        "Hardcoded in deployment scripts"
+      ],
+      "correct": "Server-side process.env loaded from a .env file"
+    },
+    {
+      "question": "In React Native, which component is used to ensure UI respects the safe area boundaries on iOS devices like the iPhone X?",
+      "answers": ["SafeAreaView", "View", "StatusBar"],
+      "correct": "SafeAreaView"
+    },
+    {
+      "question": "For optimizing the rendering of large scrollable lists in React Native, which component is most appropriate?",
+      "answers": ["ScrollView", "FlatList", "VirtualizedList"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "Which command is typically used to assemble a production-ready Android APK in a React Native project?",
+      "answers": [
+        "react-native bundle --platform android --dev false",
+        "./gradlew assembleRelease",
+        "react-native run-android --variant=release"
+      ],
+      "correct": "./gradlew assembleRelease"
+    },
+    {
+      "question": "How can you call a method exposed by a native module from Java or Objective-C in React Native?",
+      "answers": [
+        "NativeModules.ModuleName.method()",
+        "requireNativeComponent('ModuleName')",
+        "NativeAppEventEmitter.emit('ModuleName')"
+      ],
+      "correct": "NativeModules.ModuleName.method()"
+    },
+    {
+      "question": "When using React Navigation, which navigator should you choose for implementing bottom tab navigation?",
+      "answers": ["createBottomTabNavigator", "createStackNavigator", "createDrawerNavigator"],
+      "correct": "createBottomTabNavigator"
+    }
+  ],
+  [
+    {
+      "question": "In a MERN stack application, which component is responsible for defining schemas and interacting with the MongoDB database?",
+      "answers": ["Mongoose", "Express", "React"],
+      "correct": "Mongoose"
+    },
+    {
+      "question": "When an API implements rate limiting, which HTTP status code is typically returned to indicate too many requests?",
+      "answers": ["429 Too Many Requests", "503 Service Unavailable", "401 Unauthorized"],
+      "correct": "429 Too Many Requests"
+    },
+    {
+      "question": "According to the CAP theorem, which property ensures that every read receives the most recent write in a distributed system?",
+      "answers": ["Consistency", "Availability", "Partition tolerance"],
+      "correct": "Consistency"
+    },
+    {
+      "question": "In OAuth 2.0, what is the primary purpose of a refresh token?",
+      "answers": [
+        "Obtain new access tokens after expiration",
+        "Authenticate the user’s credentials",
+        "Grant access to protected resources"
+      ],
+      "correct": "Obtain new access tokens after expiration"
+    },
+    {
+      "question": "During a CORS preflight request, which HTTP method does the browser use to check server permissions?",
+      "answers": ["OPTIONS", "GET", "POST"],
+      "correct": "OPTIONS"
+    },
+    {
+      "question": "In React Native, what is the primary role of the Bridge?",
+      "answers": [
+        "Enable communication between JavaScript and native modules",
+        "Handle navigation between screens",
+        "Render UI components directly"
+      ],
+      "correct": "Enable communication between JavaScript and native modules"
+    },
+    {
+      "question": "Which React Native component is most suitable for efficiently rendering large, scrollable lists of data?",
+      "answers": ["FlatList", "ScrollView", "ListView"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "Which React hook should you use to manage side effects like fetching data or subscribing to events in a functional component?",
+      "answers": ["useEffect", "useState", "useContext"],
+      "correct": "useEffect"
+    },
+    {
+      "question": "For improved caching and performance of images in React Native, which library is commonly recommended?",
+      "answers": [
+        "react-native-fast-image",
+        "react-native-image-header",
+        "react-native-image-scroller"
+      ],
+      "correct": "react-native-fast-image"
+    },
+    {
+      "question": "Which navigation library for React Native uses native navigation primitives on both iOS and Android for better performance?",
+      "answers": ["React Native Navigation", "React Navigation", "React Native Router Flux"],
+      "correct": "React Native Navigation"
+    }
+  ],
+  [
+    {
+      "question": "In Express.js, where must an error-handling middleware be placed to ensure it catches errors from other middleware and routes?",
+      "answers": [
+        "Before defining any routes",
+        "After defining all routes",
+        "Between router and static middleware"
+      ],
+      "correct": "After defining all routes"
+    },
+    {
+      "question": "Which HTTP header is primarily included by browsers in a CORS preflight (OPTIONS) request to indicate the HTTP method to be used?",
+      "answers": [
+        "Access-Control-Request-Method",
+        "Access-Control-Allow-Origin",
+        "Access-Control-Allow-Methods"
+      ],
+      "correct": "Access-Control-Request-Method"
+    },
+    {
+      "question": "In server-side rendering of a React application, which method is used on the client to attach event listeners and hydrate the markup?",
+      "answers": ["ReactDOM.hydrate()", "ReactDOM.renderToString()", "ReactDOM.createPortal()"],
+      "correct": "ReactDOM.hydrate()"
+    },
+    {
+      "question": "What is the main advantage of using a connection pool for a relational database in a full stack web application?",
+      "answers": [
+        "Reuses active connections to reduce latency",
+        "Automatically scales the number of database instances",
+        "Encrypts connections by default"
+      ],
+      "correct": "Reuses active connections to reduce latency"
+    },
+    {
+      "question": "In a GraphQL server implementation, which technique helps mitigate the N+1 query problem when resolving relational fields?",
+      "answers": ["Batching with DataLoader", "Caching with Redis", "Using REST endpoints"],
+      "correct": "Batching with DataLoader"
+    },
+    {
+      "question": "What is a primary performance benefit of enabling the Hermes engine in a React Native Android build?",
+      "answers": ["Faster JavaScript startup time", "Automatic JIT compilation", "Larger APK size"],
+      "correct": "Faster JavaScript startup time"
+    },
+    {
+      "question": "When creating a native module for iOS in React Native, which macro must you use to expose the module to JavaScript?",
+      "answers": ["RCT_EXPORT_MODULE()", "RN_EXPORT_MODULE()", "RCT_MODULE_EXPORT()"],
+      "correct": "RCT_EXPORT_MODULE()"
+    },
+    {
+      "question": "For optimizing rendering of large lists in React Native, which FlatList prop can you implement to skip dynamic height measurement of items?",
+      "answers": ["getItemLayout", "windowSize", "ListHeaderComponent"],
+      "correct": "getItemLayout"
+    },
+    {
+      "question": "In React Navigation v5 and above, what does the 'replace' method do differently compared to 'navigate'?",
+      "answers": [
+        "Replaces the current route without adding to history",
+        "Clears the entire navigation stack",
+        "Navigates back to the top of the stack"
+      ],
+      "correct": "Replaces the current route without adding to history"
+    },
+    {
+      "question": "Which API is used to memoize a functional component in React Native to prevent unnecessary re-renders?",
+      "answers": ["React.memo()", "useMemo()", "PureComponent"],
+      "correct": "React.memo()"
+    }
+  ],
+  [
+    {
+      "question": "In a React Native app using Redux, which middleware is commonly used for handling asynchronous actions?",
+      "answers": ["redux-thunk", "redux-saga", "redux-logger"],
+      "correct": "redux-thunk"
+    },
+    {
+      "question": "Which command initializes a new Express application with default configurations?",
+      "answers": ["npx express-generator", "express init", "npm create express-app"],
+      "correct": "npx express-generator"
+    },
+    {
+      "question": "In React Native, which API would you use to enable gesture handling for swipable views?",
+      "answers": ["PanResponder", "GestureDetector", "TouchableWithoutFeedback"],
+      "correct": "PanResponder"
+    },
+    {
+      "question": "In a MERN stack application, which of the following is used to model application data?",
+      "answers": ["Sequelize", "Mongoose", "TypeORM"],
+      "correct": "Mongoose"
+    },
+    {
+      "question": "Which HTTP status code indicates that a request has been accepted for processing but is not yet complete?",
+      "answers": ["200 OK", "202 Accepted", "207 Multi-Status"],
+      "correct": "202 Accepted"
+    },
+    {
+      "question": "In React Native, to improve list rendering performance with large data sets, which component should you use?",
+      "answers": ["ScrollView", "FlatList", "ListView"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "In a typical Node.js Express middleware chain, what does calling next() do?",
+      "answers": [
+        "Terminates the request-response cycle",
+        "Passes control to the next middleware",
+        "Sends response to the client"
+      ],
+      "correct": "Passes control to the next middleware"
+    },
+    {
+      "question": "Which bundler is used by default in React Native projects?",
+      "answers": ["Metro", "Webpack", "Rollup"],
+      "correct": "Metro"
+    },
+    {
+      "question": "When implementing JWT authentication in a full-stack application, which header is conventionally used to send the token?",
+      "answers": ["Authorization", "X-Auth-Token", "Cookie"],
+      "correct": "Authorization"
+    },
+    {
+      "question": "In React Native styling, which property would you use to apply shadows on Android?",
+      "answers": ["shadowOpacity", "elevation", "boxShadow"],
+      "correct": "elevation"
+    }
+  ],
+  [
+    {
+      "question": "Which Express.js middleware function signature is used for error handling?",
+      "answers": [
+        "function(err, req, res, next)",
+        "function(req, res, next)",
+        "function(req, res)"
+      ],
+      "correct": "function(err, req, res, next)"
+    },
+    {
+      "question": "In a Node.js application using Mongoose, which method is used to establish a connection to a MongoDB database?",
+      "answers": ["mongoose.connect(uri, options)", "mongoose.open(uri)", "mongoose.init(uri)"],
+      "correct": "mongoose.connect(uri, options)"
+    },
+    {
+      "question": "In a RESTful API, which HTTP status code should be returned after successfully creating a new resource?",
+      "answers": ["201 Created", "200 OK", "204 No Content"],
+      "correct": "201 Created"
+    },
+    {
+      "question": "In GraphQL, what is the primary role of a resolver?",
+      "answers": [
+        "To fetch and return data for a specific field",
+        "To define the schema types and fields",
+        "To validate client-side queries before execution"
+      ],
+      "correct": "To fetch and return data for a specific field"
+    },
+    {
+      "question": "Which React Native component is optimized for rendering large lists of data efficiently?",
+      "answers": ["FlatList", "ScrollView", "ListView"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "Which library provides a JavaScript-based navigation stack with native-like animations in React Native?",
+      "answers": ["react-navigation", "react-native-navigation", "react-router-native"],
+      "correct": "react-navigation"
+    },
+    {
+      "question": "To register a custom native Android module in a React Native app, which file must you modify?",
+      "answers": ["MainApplication.java", "MainActivity.java", "settings.gradle"],
+      "correct": "MainApplication.java"
+    },
+    {
+      "question": "What is the purpose of StyleSheet.create in React Native?",
+      "answers": [
+        "Validates and freezes styles for performance",
+        "Dynamically injects styles into native code",
+        "Automatically prefixes vendor-specific properties"
+      ],
+      "correct": "Validates and freezes styles for performance"
+    },
+    {
+      "question": "Which debugging tool is integrated by default for inspecting React Native UI, network, and performance on both iOS and Android?",
+      "answers": ["Flipper", "Reactotron", "Chrome DevTools"],
+      "correct": "Flipper"
+    },
+    {
+      "question": "When deploying containerized full-stack applications on AWS, which service is designed specifically for container orchestration?",
+      "answers": ["Amazon ECS", "AWS Lambda", "Amazon EC2 Auto Scaling"],
+      "correct": "Amazon ECS"
+    }
+  ],
+  [
+    {
+      "question": "In React Native, what is the primary advantage of using createNativeStackNavigator over createStackNavigator from @react-navigation/stack?",
+      "answers": [
+        "It provides built-in theming support",
+        "It uses platform-native primitives for better performance",
+        "It automatically generates deep links"
+      ],
+      "correct": "It uses platform-native primitives for better performance"
+    },
+    {
+      "question": "Which hook provided by @react-navigation/native allows you to run side effects when a screen is focused?",
+      "answers": ["useEffect", "useIsFocused", "useFocusEffect"],
+      "correct": "useFocusEffect"
+    },
+    {
+      "question": "In React Native's FlatList component, which prop can you implement to improve performance by providing item measurements ahead of time?",
+      "answers": ["getItemLayout", "initialNumToRender", "maxToRenderPerBatch"],
+      "correct": "getItemLayout"
+    },
+    {
+      "question": "In Node.js, what is the difference between process.nextTick() and setImmediate() in the event loop?",
+      "answers": [
+        "nextTick callbacks execute before the next event loop phase and setImmediate callbacks execute on the following iteration",
+        "nextTick callbacks execute during IO callbacks and setImmediate executes before timers",
+        "They are aliases and behave the same"
+      ],
+      "correct": "nextTick callbacks execute before the next event loop phase and setImmediate callbacks execute on the following iteration"
+    },
+    {
+      "question": "In GraphQL resolvers, what is the purpose of the context argument?",
+      "answers": [
+        "To define the return type of fields",
+        "To share per-request data like authentication info or database connections",
+        "To specify validation rules for inputs"
+      ],
+      "correct": "To share per-request data like authentication info or database connections"
+    },
+    {
+      "question": "What Webpack feature enables the removal of unused exports during a production build?",
+      "answers": ["code splitting", "tree shaking", "asset hashing"],
+      "correct": "tree shaking"
+    },
+    {
+      "question": "In Next.js, what does the term 'hydration' refer to?",
+      "answers": [
+        "Fetching initial props during server rendering",
+        "Attaching React event handlers on the client to server-rendered HTML",
+        "Preloading dynamic routes before navigation"
+      ],
+      "correct": "Attaching React event handlers on the client to server-rendered HTML"
+    },
+    {
+      "question": "Why is using a database connection pool important in a Node.js application with PostgreSQL?",
+      "answers": [
+        "It encrypts queries for security",
+        "It limits total connections and reuses them to reduce overhead",
+        "It automatically backs up the database regularly"
+      ],
+      "correct": "It limits total connections and reuses them to reduce overhead"
+    },
+    {
+      "question": "In React Native's new architecture, which technology replaces the legacy NativeModules system for more efficient communication?",
+      "answers": ["TurboModules", "JSI Bridges", "NativeEventEmitter"],
+      "correct": "TurboModules"
+    },
+    {
+      "question": "In Express.js middleware, what is the role of the next() function?",
+      "answers": [
+        "To send the HTTP response to the client",
+        "To pass control to the next middleware or route handler",
+        "To terminate the application process"
+      ],
+      "correct": "To pass control to the next middleware or route handler"
+    }
+  ],
+  [
+    {
+      "question": "What is the main advantage of server-side rendering (SSR) over client-side rendering (CSR) in a React web application?",
+      "answers": [
+        "Improved SEO and faster initial load times",
+        "Reduced server load due to client processing",
+        "Simplified client codebase without hydration"
+      ],
+      "correct": "Improved SEO and faster initial load times"
+    },
+    {
+      "question": "Which HTTP status code indicates that a request was successful and resulted in the creation of a new resource in a RESTful API?",
+      "answers": ["200 OK", "201 Created", "204 No Content"],
+      "correct": "201 Created"
+    },
+    {
+      "question": "In Node.js, which concept allows handling large data transfers efficiently by processing chunks of data as they arrive?",
+      "answers": ["Buffers", "Streams", "Callbacks"],
+      "correct": "Streams"
+    },
+    {
+      "question": "Which header must be configured on a server to allow cross-origin requests from a specific domain?",
+      "answers": ["Access-Control-Allow-Origin", "X-Frame-Options", "Content-Security-Policy"],
+      "correct": "Access-Control-Allow-Origin"
+    },
+    {
+      "question": "Which database type is most suitable for storing hierarchical JSON documents in a full-stack JavaScript application?",
+      "answers": [
+        "Relational SQL database",
+        "Document-oriented NoSQL database",
+        "In-memory key-value store"
+      ],
+      "correct": "Document-oriented NoSQL database"
+    },
+    {
+      "question": "In React Native, which component is recommended for efficiently rendering large lists of variable-length items?",
+      "answers": ["ScrollView", "FlatList", "SectionList"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "Which hook is used in React Native functional components to perform side effects such as fetching data?",
+      "answers": ["useState", "useEffect", "useContext"],
+      "correct": "useEffect"
+    },
+    {
+      "question": "In React Native styling, what unit of measurement is used by default for defining layout dimensions?",
+      "answers": ["dp (density-independent pixels)", "px (pixels)", "% (percentage)"],
+      "correct": "dp (density-independent pixels)"
+    },
+    {
+      "question": "Which library is commonly used to handle navigation in React Native apps?",
+      "answers": ["react-native-router-flux", "react-navigation", "react-native-navigation"],
+      "correct": "react-navigation"
+    },
+    {
+      "question": "How can you enable debugging of JavaScript code in a React Native app running on an Android emulator?",
+      "answers": [
+        "Use Chrome DevTools by selecting 'Debug JS Remotely'",
+        "Connect via Android Studio's Logcat",
+        "Use Xcode's debugger"
+      ],
+      "correct": "Use Chrome DevTools by selecting 'Debug JS Remotely'"
+    }
+  ],
+  [
+    {
+      "question": "In GraphQL, what technique is commonly used to batch and cache database queries to prevent the N+1 problem?",
+      "answers": ["DataLoader", "Apollo Federation", "GraphQL Subscriptions"],
+      "correct": "DataLoader"
+    },
+    {
+      "question": "Which Node.js module provides the ability to create worker processes that share the same server port for better scalability?",
+      "answers": ["cluster", "child_process", "worker_threads"],
+      "correct": "cluster"
+    },
+    {
+      "question": "When a browser sends a CORS preflight request, which HTTP method does it use by default?",
+      "answers": ["OPTIONS", "GET", "HEAD"],
+      "correct": "OPTIONS"
+    },
+    {
+      "question": "Which HTTP/2 feature allows multiple streams to be interleaved over a single TCP connection?",
+      "answers": ["Multiplexing", "Pipelining", "Chunked encoding"],
+      "correct": "Multiplexing"
+    },
+    {
+      "question": "In Socket.IO, what transport method is used as a fallback when WebSocket connections cannot be established?",
+      "answers": ["Long polling", "Server-Sent Events", "HTTP/2 streaming"],
+      "correct": "Long polling"
+    },
+    {
+      "question": "In React Native, which component is recommended for rendering large lists with optimized performance?",
+      "answers": ["FlatList", "ScrollView", "ListView"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "Which React Native API is typically used for simple asynchronous persistent storage of key-value pairs?",
+      "answers": ["AsyncStorage", "SQLite", "Realm"],
+      "correct": "AsyncStorage"
+    },
+    {
+      "question": "What is the recommended approach for integrating a native iOS library into a React Native application?",
+      "answers": [
+        "Creating a Native Module Bridge",
+        "Embedding a WebView",
+        "Using React Native Paper"
+      ],
+      "correct": "Creating a Native Module Bridge"
+    },
+    {
+      "question": "Which tool allows React Native developers to deploy over-the-air JavaScript updates without App Store re-submission?",
+      "answers": ["CodePush", "Fastlane", "Expo Go"],
+      "correct": "CodePush"
+    },
+    {
+      "question": "In React Native’s Flexbox implementation, which style property controls how items shrink to prevent overflow?",
+      "answers": ["flexShrink", "flexGrow", "flexBasis"],
+      "correct": "flexShrink"
+    }
+  ],
+  [
+    {
+      "question": "In Node.js, the event loop delegates I/O operations to which component to avoid blocking?",
+      "answers": ["Worker Thread Pool", "Main Thread", "Callback Queue"],
+      "correct": "Worker Thread Pool"
+    },
+    {
+      "question": "Which of the following is a primary advantage of GraphQL over REST?",
+      "answers": [
+        "Single endpoint reducing overfetching",
+        "Built-in HTTP caching",
+        "Automatic request authentication"
+      ],
+      "correct": "Single endpoint reducing overfetching"
+    },
+    {
+      "question": "When using Docker for full stack deployment, which instruction creates an immutable base layer that remains unchanged when application code updates?",
+      "answers": ["FROM", "COPY", "RUN npm install"],
+      "correct": "FROM"
+    },
+    {
+      "question": "In a RESTful API, which HTTP status code is most appropriate for a successful update operation that returns no content?",
+      "answers": ["204 No Content", "201 Created", "200 OK"],
+      "correct": "204 No Content"
+    },
+    {
+      "question": "In Next.js, which function is used to fetch data at build time for static site generation?",
+      "answers": ["getStaticProps", "getServerSideProps", "getInitialProps"],
+      "correct": "getStaticProps"
+    },
+    {
+      "question": "In React Native's original architecture, which mechanism facilitates asynchronous communication between JavaScript and native modules?",
+      "answers": ["Bridge", "TurboModule", "JSI"],
+      "correct": "Bridge"
+    },
+    {
+      "question": "Which styling property is NOT supported in React Native compared to standard CSS?",
+      "answers": ["float", "flexDirection", "alignItems"],
+      "correct": "float"
+    },
+    {
+      "question": "Which library is widely recommended for handling navigation patterns in React Native applications?",
+      "answers": ["React Navigation", "React Router", "Redux Navigation"],
+      "correct": "React Navigation"
+    },
+    {
+      "question": "When profiling JavaScript performance in a React Native app, which tool provides an integrated profiling interface?",
+      "answers": ["Flipper", "Xcode Instruments", "Chrome DevTools"],
+      "correct": "Flipper"
+    },
+    {
+      "question": "For declarative gesture handling in React Native, which library is specifically designed for robust gesture detection?",
+      "answers": ["react-native-gesture-handler", "PanResponder", "Animated API"],
+      "correct": "react-native-gesture-handler"
+    }
+  ],
+  [
+    {
+      "question": "What is the main advantage of using GraphQL over REST for API design?",
+      "answers": [
+        "Reducing over-fetching by allowing clients to request only needed fields",
+        "Simpler caching since each endpoint corresponds to a single resource",
+        "Built-in support for WebSocket subscriptions without additional setup"
+      ],
+      "correct": "Reducing over-fetching by allowing clients to request only needed fields"
+    },
+    {
+      "question": "In a production Node.js application, which pattern is recommended to achieve true horizontal scaling across multiple servers?",
+      "answers": [
+        "Using the built-in cluster module",
+        "Running multiple instances behind a load balancer",
+        "Forking child processes manually"
+      ],
+      "correct": "Running multiple instances behind a load balancer"
+    },
+    {
+      "question": "When implementing user authentication in a MERN stack, what is a key security benefit of using HTTP-only cookies for storing JWTs instead of localStorage?",
+      "answers": [
+        "They're automatically sent with cross-site requests",
+        "They cannot be accessed via JavaScript, mitigating XSS risks",
+        "They allow larger payloads than localStorage"
+      ],
+      "correct": "They cannot be accessed via JavaScript, mitigating XSS risks"
+    },
+    {
+      "question": "Which technique helps improve initial load performance in single-page applications by splitting code into smaller chunks loaded on demand?",
+      "answers": ["Tree shaking", "Code splitting", "Minification"],
+      "correct": "Code splitting"
+    },
+    {
+      "question": "In PostgreSQL, what is the advantage of using database transactions with isolation level SERIALIZABLE?",
+      "answers": [
+        "Highest level of isolation preventing phantom reads but may reduce concurrency",
+        "Allows dirty reads for faster performance",
+        "Automatically scales horizontally without manual sharding"
+      ],
+      "correct": "Highest level of isolation preventing phantom reads but may reduce concurrency"
+    },
+    {
+      "question": "In React Native, which component is recommended for handling complex gestures with native performance?",
+      "answers": ["PanResponder", "TouchableOpacity", "React Native Gesture Handler"],
+      "correct": "React Native Gesture Handler"
+    },
+    {
+      "question": "What is the primary purpose of the React Native bridge?",
+      "answers": [
+        "To compile JavaScript to native binaries",
+        "To facilitate asynchronous communication between JavaScript and native modules",
+        "To manage application state across components"
+      ],
+      "correct": "To facilitate asynchronous communication between JavaScript and native modules"
+    },
+    {
+      "question": "In an Expo-managed workflow, what is a common limitation compared to a bare workflow?",
+      "answers": [
+        "Access to over-the-air updates",
+        "Ability to use custom native modules without ejecting",
+        "Automated app signing and build service"
+      ],
+      "correct": "Ability to use custom native modules without ejecting"
+    },
+    {
+      "question": "Which library would you choose for performant animations in React Native that run on the native UI thread?",
+      "answers": ["React Native Animated API", "React Native Reanimated", "LayoutAnimation"],
+      "correct": "React Native Reanimated"
+    },
+    {
+      "question": "When deploying over-the-air updates in React Native, which service allows you to push JS bundle updates without app store approval?",
+      "answers": ["App Center CodePush", "Fastlane", "TestFlight"],
+      "correct": "App Center CodePush"
+    }
+  ],
+  [
+    {
+      "question": "What HTTP method is considered idempotent?",
+      "answers": ["GET", "POST", "PATCH"],
+      "correct": "GET"
+    },
+    {
+      "question": "In relational databases, what is the primary purpose of an index?",
+      "answers": [
+        "Optimize query performance",
+        "Ensure referential integrity",
+        "Provide data replication"
+      ],
+      "correct": "Optimize query performance"
+    },
+    {
+      "question": "Which GraphQL operation type is used to modify server-side data?",
+      "answers": ["Query", "Mutation", "Subscription"],
+      "correct": "Mutation"
+    },
+    {
+      "question": "In Express.js, which middleware package is specifically designed to handle CORS?",
+      "answers": ["body-parser", "helmet", "cors"],
+      "correct": "cors"
+    },
+    {
+      "question": "What is a primary benefit of server-side rendering compared to client-side rendering?",
+      "answers": ["Improved SEO", "Reduced server load", "Enhanced real-time updates"],
+      "correct": "Improved SEO"
+    },
+    {
+      "question": "Which React Native component is used to render a container for other views?",
+      "answers": ["Container", "View", "Layout"],
+      "correct": "View"
+    },
+    {
+      "question": "Which library is the de facto standard for navigation in React Native apps?",
+      "answers": ["react-navigation", "react-router-native", "navigation-react"],
+      "correct": "react-navigation"
+    },
+    {
+      "question": "How do you expose native iOS functionality to JavaScript in React Native?",
+      "answers": [
+        "Create an Objective-C class conforming to RCTBridgeModule",
+        "Use a SwiftUI view exported via RCTViewManager",
+        "Implement a Java module extending ReactContextBaseJavaModule"
+      ],
+      "correct": "Create an Objective-C class conforming to RCTBridgeModule"
+    },
+    {
+      "question": "Which animation library offers better performance through native-driven animations in React Native?",
+      "answers": ["Animated API", "LayoutAnimation API", "react-native-reanimated"],
+      "correct": "react-native-reanimated"
+    },
+    {
+      "question": "Which service enables over-the-air updates for React Native apps?",
+      "answers": ["CodePush", "App Center Build", "TestFlight"],
+      "correct": "CodePush"
+    }
+  ],
+  [
+    {
+      "question": "In an Express.js application, which method allows you to apply middleware to routes starting with \"/api\"?",
+      "answers": [
+        "app.use('/api', middleware)",
+        "app.get('/api', middleware)",
+        "app.route('/api').use(middleware)"
+      ],
+      "correct": "app.use('/api', middleware)"
+    },
+    {
+      "question": "In RESTful API design, which HTTP method is idempotent but not safe?",
+      "answers": ["PUT", "GET", "POST"],
+      "correct": "PUT"
+    },
+    {
+      "question": "In a microservices architecture, what pattern uses a lightweight proxy to provide a single external entry point for multiple services?",
+      "answers": ["API Gateway", "Service Mesh", "Circuit Breaker"],
+      "correct": "API Gateway"
+    },
+    {
+      "question": "In relational databases, which transaction isolation level can still experience phantom reads?",
+      "answers": ["Repeatable Read", "Serializable", "Read Committed"],
+      "correct": "Repeatable Read"
+    },
+    {
+      "question": "In Docker, which type of mount stores data in a Docker-managed directory on the host and persists independent of a container's lifecycle?",
+      "answers": ["Named volume", "Bind mount", "tmpfs mount"],
+      "correct": "Named volume"
+    },
+    {
+      "question": "In React Native, which component is recommended for handling press interactions with built-in feedback and accessibility?",
+      "answers": ["Pressable", "TouchableOpacity", "TouchableWithoutFeedback"],
+      "correct": "Pressable"
+    },
+    {
+      "question": "In React Native, what role does the \"bridge\" layer play?",
+      "answers": [
+        "Facilitates communication between the JavaScript thread and native modules",
+        "Manages navigation state across screens",
+        "Optimizes image rendering on different devices"
+      ],
+      "correct": "Facilitates communication between the JavaScript thread and native modules"
+    },
+    {
+      "question": "Which React Native navigation library uses the platform's native navigation stack on iOS and Android while providing a React API?",
+      "answers": ["React Native Navigation", "React Navigation", "React Router"],
+      "correct": "React Native Navigation"
+    },
+    {
+      "question": "Which Microsoft service enables over-the-air updates for React Native apps without resubmission to the app stores?",
+      "answers": ["CodePush", "Expo CLI", "Fastlane"],
+      "correct": "CodePush"
+    },
+    {
+      "question": "In React Native styling, how do you apply multiple style objects to a single component?",
+      "answers": [
+        "style={[styles.container, styles.primary]}",
+        "style={styles.container & styles.primary}",
+        "style={merge(styles.container, styles.primary)}"
+      ],
+      "correct": "style={[styles.container, styles.primary]}"
+    }
+  ],
+  [
+    {
+      "question": "What is the primary advantage of using server-side rendering (SSR) in Next.js over client-side rendering (CSR) in React?",
+      "answers": [
+        "Reduced bundle size",
+        "Improved SEO and initial load performance",
+        "Simplified state management"
+      ],
+      "correct": "Improved SEO and initial load performance"
+    },
+    {
+      "question": "Which HTTP status code is most appropriate for a successful DELETE operation in a RESTful API?",
+      "answers": ["200 OK", "201 Created", "204 No Content"],
+      "correct": "204 No Content"
+    },
+    {
+      "question": "When implementing JWT-based authentication in a React front-end and Express back-end, where should the JWT be stored to mitigate XSS attacks?",
+      "answers": ["localStorage", "sessionStorage", "httpOnly cookie"],
+      "correct": "httpOnly cookie"
+    },
+    {
+      "question": "Which indexing strategy is best suited for optimizing queries that filter on both fields A and B in MongoDB?",
+      "answers": [
+        "Separate single-field indexes on A and B",
+        "Compound index on A and B",
+        "Text index on combined A and B"
+      ],
+      "correct": "Compound index on A and B"
+    },
+    {
+      "question": "In RESTful API design, what is the primary purpose of an HTTP PATCH request?",
+      "answers": [
+        "Create a new resource",
+        "Fully replace an existing resource",
+        "Apply partial modifications to a resource"
+      ],
+      "correct": "Apply partial modifications to a resource"
+    },
+    {
+      "question": "Which React Native component is recommended for efficiently rendering large, scrollable lists?",
+      "answers": ["ScrollView", "VirtualizedList", "FlatList"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "In React Native architecture, what is the primary purpose of the bridge?",
+      "answers": [
+        "To transpile JavaScript into native bytecode",
+        "To enable asynchronous communication between JavaScript and native modules",
+        "To handle styling of components at runtime"
+      ],
+      "correct": "To enable asynchronous communication between JavaScript and native modules"
+    },
+    {
+      "question": "Which library is most commonly used for handling navigation in React Native applications?",
+      "answers": ["React Router", "React Native Navigation", "React Navigation"],
+      "correct": "React Navigation"
+    },
+    {
+      "question": "What is a recommended approach for managing native device permissions (e.g., camera or location) in React Native?",
+      "answers": [
+        "Modify AndroidManifest.xml and Info.plist manually",
+        "Use the PermissionsAndroid/PermissionsIOS built-in APIs",
+        "Use a dedicated library like react-native-permissions"
+      ],
+      "correct": "Use a dedicated library like react-native-permissions"
+    },
+    {
+      "question": "Which build tool is primarily used for bundling JavaScript code in React Native apps?",
+      "answers": ["Webpack", "Metro bundler", "Rollup"],
+      "correct": "Metro bundler"
+    }
+  ],
+  [
+    {
+      "question": "Which HTTP status code indicates that a request was successful and a new resource was created?",
+      "answers": ["200 OK", "201 Created", "204 No Content"],
+      "correct": "201 Created"
+    },
+    {
+      "question": "In a webpack configuration, which property specifies the entry file that webpack should start bundling from?",
+      "answers": ["output", "entry", "module"],
+      "correct": "entry"
+    },
+    {
+      "question": "Which Node.js module allows you to work with the file system?",
+      "answers": ["fs", "path", "http"],
+      "correct": "fs"
+    },
+    {
+      "question": "In MongoDB, what operator is used to match documents where the field value is greater than a specified value?",
+      "answers": ["$gt", "$gte", "$lt"],
+      "correct": "$gt"
+    },
+    {
+      "question": "Which component in React Native should you use for rendering performance-optimized lists?",
+      "answers": ["ScrollView", "FlatList", "ListView"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "Which styling approach is commonly used in React Native to define component styles?",
+      "answers": ["CSS Stylesheet", "StyleSheet.create", "Inline CSS"],
+      "correct": "StyleSheet.create"
+    },
+    {
+      "question": "Which authentication strategy is based on sending a signed token with each request?",
+      "answers": ["Session-based", "OAuth2", "JWT"],
+      "correct": "JWT"
+    },
+    {
+      "question": "What feature of Next.js allows pre-rendering pages at build time?",
+      "answers": ["getStaticProps", "getServerSideProps", "getInitialProps"],
+      "correct": "getStaticProps"
+    },
+    {
+      "question": "Which API is used in React Native to handle asynchronous storage?",
+      "answers": ["AsyncStorage", "LocalStorage", "SessionStorage"],
+      "correct": "AsyncStorage"
+    },
+    {
+      "question": "In GraphQL, what is the purpose of a resolver function?",
+      "answers": ["Define the schema", "Fetch and return data for a field", "Validate queries"],
+      "correct": "Fetch and return data for a field"
+    }
+  ],
+  [
+    {
+      "question": "In Node.js, which event on the http.IncomingMessage object is emitted when the request body has been fully received?",
+      "answers": ["finish", "end", "close"],
+      "correct": "end"
+    },
+    {
+      "question": "In Sequelize, which association method defines a one-to-many relationship between two models?",
+      "answers": ["belongsTo", "hasMany", "belongsToMany"],
+      "correct": "hasMany"
+    },
+    {
+      "question": "Which HTTP response header should a server include to allow cross-origin GET requests from any domain?",
+      "answers": [
+        "Access-Control-Allow-Methods",
+        "Access-Control-Allow-Credentials",
+        "Access-Control-Allow-Origin"
+      ],
+      "correct": "Access-Control-Allow-Origin"
+    },
+    {
+      "question": "In a JSON Web Token (JWT), which segment stores custom claims and standard fields like issuer and expiration date?",
+      "answers": ["payload", "header", "signature"],
+      "correct": "payload"
+    },
+    {
+      "question": "Which GraphQL operation is used to subscribe to real-time data updates from the server?",
+      "answers": ["query", "mutation", "subscription"],
+      "correct": "subscription"
+    },
+    {
+      "question": "In React Native, which component is recommended for rendering large, scrollable lists to optimize performance?",
+      "answers": ["ScrollView", "FlatList", "SectionList"],
+      "correct": "FlatList"
+    },
+    {
+      "question": "Which underlying layout engine does React Native use to calculate Flexbox layouts?",
+      "answers": ["Flexbox.css", "CSSLayout", "Yoga"],
+      "correct": "Yoga"
+    },
+    {
+      "question": "Which JavaScript engine is optimized for React Native on Android to improve startup performance?",
+      "answers": ["V8", "Hermes", "JavaScriptCore"],
+      "correct": "Hermes"
+    },
+    {
+      "question": "When deploying React Native apps, which Microsoft service enables over-the-air updates through CodePush?",
+      "answers": ["Expo", "Firebase", "App Center"],
+      "correct": "App Center"
+    },
+    {
+      "question": "In React Native, which API allows scheduling tasks to run after all ongoing interactions and animations have completed?",
+      "answers": ["setImmediate", "requestAnimationFrame", "InteractionManager"],
+      "correct": "InteractionManager"
+    }
+  ],
+  [
+    {
+      "question": "What is the primary benefit of using a GraphQL API over a traditional REST API?",
+      "answers": [
+        "Reduced overfetching of data",
+        "Built-in real-time subscriptions",
+        "Simpler server implementation"
+      ],
+      "correct": "Reduced overfetching of data"
+    },
+    {
+      "question": "In Node.js, which mechanism allows handling high concurrency without blocking the event loop?",
+      "answers": [
+        "Asynchronous non-blocking I/O callbacks",
+        "Multithreading with worker threads",
+        "Synchronous file system operations"
+      ],
+      "correct": "Asynchronous non-blocking I/O callbacks"
+    },
+    {
+      "question": "Which feature in webpack enables eliminating unused JavaScript code from the production bundle?",
+      "answers": ["Tree shaking", "Code splitting", "Hot module replacement"],
+      "correct": "Tree shaking"
+    },
+    {
+      "question": "In full stack development, what does SSR (Server-Side Rendering) improve compared to CSR?",
+      "answers": [
+        "Faster initial page load and better SEO",
+        "Reduced server bandwidth usage",
+        "Simplified client-side routing"
+      ],
+      "correct": "Faster initial page load and better SEO"
+    },
+    {
+      "question": "Which of the following is a NoSQL database?",
+      "answers": ["MongoDB", "PostgreSQL", "MySQL"],
+      "correct": "MongoDB"
+    },
+    {
+      "question": "In React Native, which component allows integrating native platform functionality via Objective-C/Java?",
+      "answers": ["Native Modules", "JSX Components", "Styled Components"],
+      "correct": "Native Modules"
+    },
+    {
+      "question": "What layout system does React Native use for component positioning?",
+      "answers": ["Flexbox", "Grid", "BoxModel"],
+      "correct": "Flexbox"
+    },
+    {
+      "question": "In state management for React Native, what is the primary purpose of Redux middleware like redux-thunk?",
+      "answers": [
+        "To handle asynchronous actions before reaching reducers",
+        "To persist state to local storage automatically",
+        "To connect React components to the Redux store"
+      ],
+      "correct": "To handle asynchronous actions before reaching reducers"
+    },
+    {
+      "question": "Which tool can be used for continuous integration and deployment of a Node.js full stack application?",
+      "answers": ["GitHub Actions", "ESLint", "Prettier"],
+      "correct": "GitHub Actions"
+    },
+    {
+      "question": "In React Native, what is the function of the Metro bundler?",
+      "answers": [
+        "Transforms and serves JavaScript code to the app",
+        "Handles HTTP routing in Express.js",
+        "Minifies CSS stylesheets"
+      ],
+      "correct": "Transforms and serves JavaScript code to the app"
+    }
+  ]
+]
