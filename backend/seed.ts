@@ -7,14 +7,21 @@ import fs from 'fs'
 const QUIZZEZ_DATA = JSON.parse(fs.readFileSync('./quizzez.json', 'utf8'))
 const supabase = createClient(CONFIG.supabaseUrl!, CONFIG.supabaseKey!)
 
-if (!CONFIG.supabaseUrl! && !CONFIG.supabaseKey) throw new Error('Not loaded')
+const adminSupbase = createClient(CONFIG.supabaseUrl!, CONFIG.supabaseServiceRole!, {
+  auth: {
+    autoRefreshToken: false,
+    persistSession: false
+  }
+})
+
+if (!CONFIG.supabaseUrl! && !CONFIG.supabaseKey) throw new Error('Public Client Not loaded')
+if (!CONFIG.supabaseServiceRole) throw new Error('Service role Not loaded')
 
 const createUsers = async (amount: number) => {
   try {
-    const firstName = faker.person.firstName()
-    const lastName = faker.person.lastName()
-
     for (let i = 0; i < amount; i++) {
+      const firstName = faker.person.firstName()
+      const lastName = faker.person.lastName()
       console.log('Uploading user number: ', i)
 
       const userInfo = {
@@ -89,6 +96,22 @@ const deleteDataBySpecificTableName = async (tableName: string) => {
   }
 }
 
+const deleteAllUsers = async () => {
+  const { data: users, error: listError } = await adminSupbase.auth.admin.listUsers()
+  if (listError) throw listError
+
+  for (const user of users.users) {
+    const { error } = await adminSupbase.auth.admin.deleteUser(user.id)
+    if (error) {
+      console.error(`Failed to delete user ${user.id}:`, error)
+    } else {
+      console.log(`Deleted user: ${user.id}`)
+    }
+  }
+}
+
+deleteAllUsers()
+
 const main = async (
   amountOfUsers: number,
   tableName: string,
@@ -100,5 +123,4 @@ const main = async (
   if (uploadQuiz) return await uploadQuizzez()
 }
 
-// main(0, 'quizzes', false, false)
-main(0, '', true, false)
+// main(0, 'users', false, false)

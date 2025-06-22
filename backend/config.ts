@@ -10,5 +10,6 @@ export const CONFIG = {
   supabaseUrl: process.env.SUPABASE_URL,
   supabaseKey: process.env.SUPABASE_KEY,
   openAiKey: process.env.OPENAI_API_KEY,
+  supabaseServiceRole: process.env.SUPABASE_SERVICE_ROLE,
   port: process.env.PORT
 }
