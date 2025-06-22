@@ -1,24 +1,28 @@
 import { Request, Response } from 'express'
 
 import crypto from 'crypto'
+import fs from 'fs'
 import { oauth2Client } from '../oAuth'
+import path from 'path'
+
+const FILEPATH = path.join(__dirname, './credentails.json')
 
 export const getAccessToken = async (req: Request, res: Response): Promise<any> => {
   try {
     const { code } = req.query
-    console.log('code received: ', code)
 
-    if (!code || typeof code !== 'string') {
+    if (!code || typeof code !== 'string')
       return res.status(400).json({ error: 'Invalid or missing code' })
-    }
 
     const { tokens } = await oauth2Client.getToken(code)
 
-    if (!tokens) {
-      return res.status(400).json({ error: 'Invalid or missing tokens' })
-    }
+    if (!tokens) return res.status(400).json({ error: 'Invalid or missing tokens' })
 
     oauth2Client.setCredentials(tokens)
+
+    fs.writeFile(FILEPATH, JSON.stringify(tokens), (err) => {
+      console.error(err)
+    })
 
     return res.status(200).json({ message: 'Access token received', tokens })
   } catch (error) {
@@ -40,7 +44,7 @@ export const getAuthUrl = (req: Request, res: Response): void => {
       state: crypto.randomBytes(32).toString('hex')
     })
 
-    if (!url) res.send(`Invalid, url is empty: ${url}`)
+    if (!url) res.status(404).send(`Invalid, url is empty: ${url}`)
 
     res.send(`<button><a href=${url}>Redirect to get access</a></button>`)
   } catch (error) {
