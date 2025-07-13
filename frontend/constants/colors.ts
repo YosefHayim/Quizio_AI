@@ -15,4 +15,7 @@ export const colors = {
   placehoolderInputText: '#767678',
   notificationOrPargraph: '#EED34F',
   progressBar: '#3E5BC3',
+  // new colors of the new ui
+  magicBlue: '#0021C5',
+  paper: '#FFFFFF',
 };
