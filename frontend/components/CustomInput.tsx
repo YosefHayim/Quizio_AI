@@ -1,56 +1,32 @@
-import { Pressable, StyleProp, StyleSheet, TextInput, TextStyle, View } from 'react-native';
 import { ReactElement, useState } from 'react';
+import { StyleProp, TextInput, TextStyle } from 'react-native';
 
-import Entypo from '@expo/vector-icons/Entypo';
 import { colors } from 'constants/colors';
 
-interface TextInputProps {
+interface CustomInputProps {
   state: string;
-  isPassword: boolean;
   showPasswordIcon?: boolean;
-  handleInputFn: (v: string) => void;
+  onChangeInput: (v: string) => void;
+  isPassword?: boolean;
   placeholderText?: string;
-  extraStyle?: StyleProp<TextStyle>;
+  extraStyle?: string;
   icon?: ReactElement;
 }
 
-const CustomInput: React.FC<TextInputProps> = ({ ...props }) => {
+const CustomInput: React.FC<CustomInputProps> = (props) => {
   const [isVisible, setVisible] = useState(false);
 
   return (
-    <View style={[styles.rootContainer, { width: '100%' }]}>
-      <TextInput
-        secureTextEntry={props.isPassword && !isVisible}
-        placeholder={props.placeholderText}
-        placeholderTextColor={colors.placehoolderInputText}
-        autoCorrect={false}
-        style={[styles.textInput, props.extraStyle]}
-        onChangeText={props.handleInputFn}
-        value={props.state}
-      />
-      {props.showPasswordIcon && (
-        <Pressable onPress={() => setVisible((prev) => !prev)}>
-          {isVisible ? (
-            <Entypo name="eye-with-line" size={20} color="black" />
-          ) : (
-            <Entypo name="eye" size={20} color="black" />
-          )}
-        </Pressable>
-      )}
-      <View>{props.icon}</View>
-    </View>
+    <TextInput
+      secureTextEntry={props.isPassword && !isVisible}
+      placeholder={props.placeholderText}
+      placeholderTextColor={colors.placehoolderInputText}
+      autoCorrect={false}
+      className={` bg-cloud_gray w-full items-center rounded-md p-3 text-xl font-bold text-black ${props.extraStyle}`}
+      onChangeText={props.onChangeInput}
+      value={props.state}
+    />
   );
 };
 
 export default CustomInput;
-
-const styles = StyleSheet.create({
-  rootContainer: {
-    borderRadius: 8,
-    height: 50,
-    padding: 10,
-    alignItems: 'center',
-    backgroundColor: '#E3E3E3',
-  },
-  textInput: { borderRadius: 16, color: 'black', fontSize: 18, flex: 1, fontWeight: 600 },
-});

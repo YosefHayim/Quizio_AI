@@ -46,7 +46,7 @@ const WelcomeScreenStepFour = () => {
         </View>
       ))}
 
-      <CustomButton buttonText="Join Now" onPress={() => router.push('/on-board/final-step')} />
+      <CustomButton buttonText="Join Now" onPress={() => router.push('/auth/sign-up')} />
       <ClapSvg />
     </CustomScreen>
   );

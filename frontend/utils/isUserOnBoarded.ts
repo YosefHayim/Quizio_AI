@@ -10,7 +10,7 @@ export const isUserOnBoraded = async () => {
       // router.push('/on-board/step-1');
     } else if (!accessToken) {
       // router.push('/auth/sign-in');
-      router.push('/on-board/step-1');
+      router.push('/on-board/step-6');
     } else {
       // router.push('/dashboard');
     }

@@ -11,7 +11,7 @@ interface CustomScreenProps {
   children: ReactNode;
 }
 
-const CustomScreen: React.FC<CustomScreenProps> = (props) => {
+const CustomScreen: React.FC<CustomScreenProps> = ({ children }) => {
   return (
     <ScrollView
       className="w-full"
@@ -19,7 +19,7 @@ const CustomScreen: React.FC<CustomScreenProps> = (props) => {
       <KeyboardAvoidingView className="flex-1">
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <View className="bg-light_theme flex-1 p-5">
-            <View className="flex-1 items-center justify-center gap-5">{props.children}</View>
+            <View className="flex-1 items-center justify-center gap-5">{children}</View>
           </View>
         </TouchableWithoutFeedback>
       </KeyboardAvoidingView>

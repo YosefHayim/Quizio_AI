@@ -4,7 +4,6 @@ import CustomButton from 'components/CustomButton';
 import CustomInput from 'components/CustomInput';
 import CustomText from 'components/CustomText';
 import OnBoardingProgressIcon from 'components/OnBoardingProgressIcon';
-import { Picker } from '@react-native-picker/picker';
 import { colors } from 'constants/colors';
 import { useState } from 'react';
 
@@ -34,13 +33,6 @@ const AppUIScreen = () => {
         />
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
           <CustomText text="I׳m" />
-          <Picker
-            style={{ flex: 1 }}
-            selectedValue={selectedUserRole}
-            onValueChange={(itemValue) => setSelectedUserRole(itemValue)}>
-            <Picker.Item label="Student" value="student" />
-            <Picker.Item label="Teacher" value="teacher" />
-          </Picker>
         </View>
       </View>
       <View

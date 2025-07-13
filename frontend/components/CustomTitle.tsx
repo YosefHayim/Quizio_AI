@@ -7,7 +7,8 @@ interface CustomTitleProps {
 
 const CustomTitle: React.FC<CustomTitleProps> = (props) => {
   return (
-    <Text className={`text-center text-3xl font-bold text-black ${props.extraStyle}`}>
+    <Text
+      className={`font-poppins_100 text-center text-3xl font-bold text-black ${props.extraStyle}`}>
       {props.titleText}
     </Text>
   );
