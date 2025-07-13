@@ -4,7 +4,7 @@ import CustomButton from 'components/CustomButton';
 import CustomScreen from 'components/CustomScreen';
 import { OtpInput } from 'react-native-otp-entry';
 import Paragraph from 'components/Paragraph';
-import Title from 'components/Title';
+import Title from 'components/CustomTitle';
 import { View } from 'react-native';
 import { colors } from 'constants/colors';
 import { formatCountdown } from 'utils/formatCountdown';

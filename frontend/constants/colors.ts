@@ -19,4 +19,5 @@ export const colors = {
   blue: '#0021C5',
   paper: '#FFFFFF',
   green: '#3CE300',
+  black: '#000000',
 };

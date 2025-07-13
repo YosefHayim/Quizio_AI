@@ -8,7 +8,7 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import Paragraph from 'components/Paragraph';
 import { ProgressBar } from 'react-native-paper';
-import Title from 'components/Title';
+import Title from 'components/CustomTitle';
 import { router } from 'expo-router';
 
 const DashboardScreen = () => {

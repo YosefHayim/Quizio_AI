@@ -1,7 +1,16 @@
-import { Text } from 'react-native';
+import { StyleProp, Text, TextStyle } from 'react-native';
 
-const CustomText: React.FC<{ text: string }> = ({ text }) => {
-  return <Text style={{ fontFamily: 'poppins', fontSize: 18, fontWeight: 600 }}>{text}</Text>;
+interface CustomTextProps {
+  text: string;
+  style?: StyleProp<TextStyle>;
+}
+
+const CustomText: React.FC<CustomTextProps> = (props) => {
+  return (
+    <Text style={[props.style, { fontFamily: 'poppins', fontSize: 18, fontWeight: 600 }]}>
+      {props.text}
+    </Text>
+  );
 };
 
 export default CustomText;

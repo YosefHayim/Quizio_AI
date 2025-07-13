@@ -2,12 +2,21 @@ import { Pressable, View } from 'react-native';
 
 import AntDesign from '@expo/vector-icons/AntDesign';
 import React from 'react';
-import Title from './Title';
+import Title from './CustomTitle';
 
-const CustomHeader: React.FC<{ headerName: string; navigateBackTo: () => void }> = ({ headerName, navigateBackTo }) => {
+const CustomHeader: React.FC<{ headerName: string; navigateBackTo: () => void }> = ({
+  headerName,
+  navigateBackTo,
+}) => {
   return (
     <View style={{ width: '100%' }}>
-      <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 10 }}>
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: 10,
+        }}>
         <Pressable style={{ position: 'absolute', left: 0 }} onPress={() => navigateBackTo()}>
           <AntDesign name="arrowleft" size={24} color="black" />
         </Pressable>

@@ -5,7 +5,7 @@ import CustomInput from 'components/CustomInput';
 import CustomScreen from 'components/CustomScreen';
 import Paragraph from 'components/Paragraph';
 import { SignupFormProps } from 'api/signup';
-import Title from 'components/Title';
+import Title from 'components/CustomTitle';
 import { handleRegularSignup } from 'handlers/handleRegularSignUp';
 import { router } from 'expo-router';
 import useSignupRegular from 'hooks/useSignupRegular';

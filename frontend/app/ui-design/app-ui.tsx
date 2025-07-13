@@ -1,9 +1,10 @@
-import { Picker, PickerIOS } from '@react-native-picker/picker';
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 
 import CustomButton from 'components/CustomButton';
 import CustomInput from 'components/CustomInput';
 import CustomText from 'components/CustomText';
+import OnBoardingProgressIcon from 'components/OnBoardingProgressIcon';
+import { Picker } from '@react-native-picker/picker';
 import { colors } from 'constants/colors';
 import { useState } from 'react';
 
@@ -11,7 +12,7 @@ const AppUIScreen = () => {
   const [selectedUserRole, setSelectedUserRole] = useState('Student');
 
   return (
-    <ScrollView>
+    <ScrollView style={{ flex: 1, padding: 20 }}>
       <View
         style={{
           padding: 26,
@@ -23,7 +24,13 @@ const AppUIScreen = () => {
           showPasswordIcon={false}
           handleInputFn={(v) => console.log(v)}
           isPassword={false}
-          placeholderText="Placeholder"
+          placeholderText="Username"
+        />
+        <CustomInput
+          showPasswordIcon={false}
+          handleInputFn={(v) => console.log(v)}
+          isPassword={false}
+          placeholderText="Password"
         />
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
           <CustomText text="I׳m" />
@@ -35,7 +42,17 @@ const AppUIScreen = () => {
             <Picker.Item label="Teacher" value="teacher" />
           </Picker>
         </View>
-        <View style={{ height: 1, backgroundColor: 'black' }} />
+      </View>
+      <View
+        style={{
+          gap: 10,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <OnBoardingProgressIcon bg={colors.blue} size={25} />
+        <OnBoardingProgressIcon bg={colors.black} size={15} />
+        <OnBoardingProgressIcon bg={colors.black} size={15} />
+        <OnBoardingProgressIcon bg={colors.black} size={15} />
       </View>
     </ScrollView>
   );

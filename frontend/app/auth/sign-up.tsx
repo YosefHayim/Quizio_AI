@@ -4,7 +4,7 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 import CustomButton from 'components/CustomButton';
 import CustomScreen from 'components/CustomScreen';
 import Paragraph from 'components/Paragraph';
-import Title from 'components/Title';
+import Title from 'components/CustomTitle';
 import { View } from 'react-native';
 import { colors } from 'constants/colors';
 import { router } from 'expo-router';

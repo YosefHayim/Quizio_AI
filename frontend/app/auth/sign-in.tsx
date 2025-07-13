@@ -6,7 +6,7 @@ import CustomButton from 'components/CustomButton';
 import CustomInput from 'components/CustomInput';
 import CustomScreen from 'components/CustomScreen';
 import Paragraph from 'components/Paragraph';
-import Title from 'components/Title';
+import Title from 'components/CustomTitle';
 import { colors } from 'constants/colors';
 import handleRegularSignIn from 'handlers/handleRegularSignIn';
 import { router } from 'expo-router';

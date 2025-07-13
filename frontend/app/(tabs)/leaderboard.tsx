@@ -1,5 +1,5 @@
 import CustomScreen from 'components/CustomScreen';
-import Title from 'components/Title';
+import Title from 'components/CustomTitle';
 import { useUserInfo } from 'context/userInfoContext';
 
 const LeaderboardScreen = () => {
