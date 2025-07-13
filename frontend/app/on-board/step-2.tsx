@@ -1,17 +1,19 @@
+import CustomButton from 'components/CustomButton';
 import CustomScreen from 'components/CustomScreen';
 import CustomText from 'components/CustomText';
 import CustomTitle from 'components/CustomTitle';
-import OnBoardingProgressIcon from 'components/OnBoardingProgressIcon';
+import OnBoardingProgress from 'components/OnBoardingProgress';
 import VidSvg from '../../assets/vid.svg';
-import { colors } from 'constants/colors';
+import { router } from 'expo-router';
 
 const WelcomeScreenStepTwo = () => {
   return (
     <CustomScreen>
-      <OnBoardingProgressIcon bg={colors.blue} size={35} />
+      <OnBoardingProgress currentStep={1} />
       <VidSvg />
       <CustomTitle titleText="Watch videos" />
       <CustomText text="Turn every video into a journey with AI powered quizzes" />
+      <CustomButton buttonText="Next" onPress={() => router.push('/on-board/step-2')} />
     </CustomScreen>
   );
 };

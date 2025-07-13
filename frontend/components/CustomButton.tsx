@@ -1,7 +1,5 @@
 import { Text, TouchableOpacity } from 'react-native';
 
-import { colors } from 'constants/colors';
-
 interface CustomButtonProps {
   onPress: () => void;
   buttonText: string;
@@ -10,16 +8,10 @@ interface CustomButtonProps {
 const CustomButton: React.FC<CustomButtonProps> = (props) => {
   return (
     <TouchableOpacity
+      className={`bg-blue_sky w-full items-center justify-center rounded-md p-3`}
       onPress={props.onPress}
-      activeOpacity={0.9}
-      style={{
-        backgroundColor: colors.blue,
-        borderRadius: 8,
-        padding: 15,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-      <Text style={{ color: colors.paper, fontSize: 15, fontWeight: 600 }}>{props.buttonText}</Text>
+      activeOpacity={0.8}>
+      <Text className={`text-paper_white text-xl font-semibold`}>{props.buttonText}</Text>
     </TouchableOpacity>
   );
 };

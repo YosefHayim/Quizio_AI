@@ -15,6 +15,12 @@ module.exports = {
         poppins_700: ['Poppins_700Bold'],
         poppins_800: ['Poppins_800ExtraBold'],
       },
+      colors: {
+        blue_sky: '#0021C5',
+        paper_white: '#FFFFFF',
+        green_seed: '#3CE300',
+        black_hole: '#000000',
+      },
     },
   },
   plugins: [],
