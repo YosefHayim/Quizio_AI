@@ -46,13 +46,11 @@ export default CustomInput;
 
 const styles = StyleSheet.create({
   rootContainer: {
-    borderRadius: 14,
-    borderWidth: 1,
-    borderColor: 'gray',
-    justifyContent: 'space-between',
+    borderRadius: 8,
+    height: 50,
+    padding: 10,
     alignItems: 'center',
-    padding: 14,
-    flexDirection: 'row',
+    backgroundColor: '#E3E3E3',
   },
-  textInput: { borderRadius: 16, color: 'black', fontSize: 14, flex: 1 },
+  textInput: { borderRadius: 16, color: 'black', fontSize: 18, flex: 1, fontWeight: 600 },
 });

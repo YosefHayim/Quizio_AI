@@ -12,10 +12,11 @@ export const colors = {
   lightTheme: '#f5f5f5',
   darkButton: '1F2125',
   inputBackground: '#161618',
-  placehoolderInputText: '#767678',
+  placehoolderInputText: '#5D5D5D',
   notificationOrPargraph: '#EED34F',
   progressBar: '#3E5BC3',
   // new colors of the new ui
-  magicBlue: '#0021C5',
+  blue: '#0021C5',
   paper: '#FFFFFF',
+  green: '#3CE300',
 };
