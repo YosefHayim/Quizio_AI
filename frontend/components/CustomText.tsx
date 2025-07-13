@@ -7,7 +7,9 @@ interface CustomTextProps {
 
 const CustomText: React.FC<CustomTextProps> = (props) => {
   return (
-    <Text className={`font-poppins_100 w-full text-xl ${props.extraStyle}`}>{props.text}</Text>
+    <Text className={`font-poppins_100 w-full text-center text-xl ${props.extraStyle}`}>
+      {props.text}
+    </Text>
   );
 };
 

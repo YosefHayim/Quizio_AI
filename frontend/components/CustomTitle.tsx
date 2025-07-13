@@ -1,18 +1,14 @@
-import { StyleProp, Text, TextStyle } from 'react-native';
+import { Text } from 'react-native';
 
 interface CustomTitleProps {
   titleText: string;
-  extraStyle?: StyleProp<TextStyle>;
+  extraStyle?: string;
 }
 
-const CustomTitle: React.FC<CustomTitleProps> = ({ titleText, extraStyle }) => {
+const CustomTitle: React.FC<CustomTitleProps> = (props) => {
   return (
-    <Text
-      style={[
-        { fontWeight: 'bold', color: 'black', fontSize: 25, textAlign: 'center' },
-        extraStyle,
-      ]}>
-      {titleText}
+    <Text className={`text-center text-3xl font-bold text-black ${props.extraStyle}`}>
+      {props.titleText}
     </Text>
   );
 };

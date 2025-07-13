@@ -12,8 +12,11 @@ const WelcomeScreenStepTwo = () => {
       <OnBoardingProgress currentStep={1} />
       <VidSvg />
       <CustomTitle titleText="Watch videos" />
-      <CustomText text="Turn every video into a journey with AI powered quizzes" />
-      <CustomButton buttonText="Next" onPress={() => router.push('/on-board/step-2')} />
+      <CustomText
+        text="Turn every video into a journey with AI powered quizzes"
+        extraStyle="text-center"
+      />
+      <CustomButton buttonText="Next" onPress={() => router.push('/on-board/step-3')} />
     </CustomScreen>
   );
 };

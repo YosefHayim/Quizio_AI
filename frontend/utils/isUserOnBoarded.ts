@@ -7,11 +7,12 @@ export const isUserOnBoraded = async () => {
     const accessToken = await AsyncStorage.getItem('accessToken');
 
     if (!onboardingDone) {
-      router.push('/on-board/step-1');
+      // router.push('/on-board/step-1');
     } else if (!accessToken) {
-      router.push('/auth/sign-in');
+      // router.push('/auth/sign-in');
+      router.push('/on-board/step-1');
     } else {
-      router.push('/dashboard');
+      // router.push('/dashboard');
     }
   } catch (e) {
     console.error('Routing error:', e);

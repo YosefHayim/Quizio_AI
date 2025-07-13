@@ -20,7 +20,7 @@ import { isUserOnBoraded } from 'utils/isUserOnBoarded';
 import { verifyInstallation } from 'nativewind';
 
 export default function Index() {
-  const [loading, setLoading] = useState(true);
+  const [loading, _] = useState(true);
   const [loaded, error] = useFonts([
     Poppins_100Thin,
     Poppins_200ExtraLight,

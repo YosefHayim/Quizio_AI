@@ -10,7 +10,7 @@ const OnBoardingProgress: React.FC<OnBoardingProgressProps> = (props) => {
   useEffect(() => {}, [props.currentStep]);
   return (
     <View className="w-full flex-row items-center justify-center gap-5">
-      {Array.from({ length: 6 }, (_, index) => (
+      {Array.from({ length: 5 }, (_, index) => (
         <OnBoardingProgressIcon
           key={`step-${index}`}
           bg={props.currentStep === index ? colors.blue : colors.black}

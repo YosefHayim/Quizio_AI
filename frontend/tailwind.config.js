@@ -20,6 +20,7 @@ module.exports = {
         paper_white: '#FFFFFF',
         green_seed: '#3CE300',
         black_hole: '#000000',
+        light_theme: '#f5f5f5',
       },
     },
   },
