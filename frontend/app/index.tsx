@@ -12,14 +12,14 @@ import {
   Poppins_800ExtraBold,
   useFonts,
 } from '@expo-google-fonts/dev';
-import { SplashScreen, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 
+import { SplashScreen } from 'expo-router';
+import { colors } from 'constants/colors';
 import { isUserOnBoraded } from 'utils/isUserOnBoarded';
 import { verifyInstallation } from 'nativewind';
 
 export default function Index() {
-  const router = useRouter();
   const [loading, setLoading] = useState(true);
   const [loaded, error] = useFonts([
     Poppins_100Thin,
@@ -50,7 +50,7 @@ export default function Index() {
   if (loading) {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <ActivityIndicator color="#5C6BC0" size="large" />
+        <ActivityIndicator color={colors.blue} size="large" />
       </View>
     );
   }

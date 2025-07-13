@@ -17,7 +17,7 @@ export default function RootLayout() {
         <PaperProvider>
           <StatusBar style="auto" />
           <SafeAreaView style={{ flex: 1, backgroundColor: colors.lightTheme }}>
-            <Suspense fallback={<ActivityIndicator color="#5C6BC0" size="large" />}>
+            <Suspense fallback={<ActivityIndicator color={colors.blue} size="large" />}>
               <Slot />
             </Suspense>
           </SafeAreaView>

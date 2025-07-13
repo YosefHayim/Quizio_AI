@@ -1,15 +1,13 @@
-import { StyleProp, Text, TextStyle } from 'react-native';
+import { Text } from 'react-native';
 
 interface CustomTextProps {
   text: string;
-  style?: StyleProp<TextStyle>;
+  extraStyle?: string;
 }
 
 const CustomText: React.FC<CustomTextProps> = (props) => {
   return (
-    <Text style={[props.style, { fontFamily: 'poppins', fontSize: 18, fontWeight: 600 }]}>
-      {props.text}
-    </Text>
+    <Text className={`font-poppins_100 w-full text-xl ${props.extraStyle}`}>{props.text}</Text>
   );
 };
 
