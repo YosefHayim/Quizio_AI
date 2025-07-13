@@ -20,6 +20,7 @@ const runAgents = async () => {
     'Validate if the sturcture is the same across all the file if so tell me'
   )
   console.log(validateQuizJson.history)
+  
 }
 
 runAgents()
