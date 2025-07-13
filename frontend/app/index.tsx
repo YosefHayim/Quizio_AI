@@ -15,12 +15,12 @@ import {
 import { SplashScreen, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { isUserOnBoraded } from 'utils/isUserOnBoarded';
 import { verifyInstallation } from 'nativewind';
 
 export default function Index() {
-  const [loading, setLoading] = useState(true);
   const router = useRouter();
+  const [loading, setLoading] = useState(true);
   const [loaded, error] = useFonts([
     Poppins_100Thin,
     Poppins_200ExtraLight,
@@ -34,26 +34,7 @@ export default function Index() {
 
   useEffect(() => {
     verifyInstallation();
-    const checkStatus = async () => {
-      try {
-        const onboardingDone = await AsyncStorage.getItem('hasCompletedOnboarding');
-        const accessToken = await AsyncStorage.getItem('accessToken');
-
-        if (!onboardingDone) {
-          // router.push('/on-board/step-1');
-          router.replace('/dashboard');
-          // router.push('/auth/sign-in');
-        } else if (!accessToken) {
-        } else {
-        }
-      } catch (e) {
-        console.error('Routing error:', e);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    checkStatus();
+    isUserOnBoraded();
   }, []);
 
   useEffect(() => {
