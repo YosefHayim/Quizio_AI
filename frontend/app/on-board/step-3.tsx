@@ -14,7 +14,7 @@ const WelcomeScreenStepThree = () => {
       <CustomTitle titleText="Enjoy the process" />
       <CustomText
         text="Have a fun learning experience anywhere and anytime"
-        extraStyle="text-center"
+        extraStyle="text-center text-xl font-light"
       />
       <CustomButton buttonText="Next" onPress={() => router.push('/on-board/step-4')} />
     </CustomScreen>

@@ -14,7 +14,7 @@ const WelcomeScreenStepOne = () => {
       <CustomTitle titleText="Plan your time" />
       <CustomText
         text="Stay organized with smart study plans tailored to your pace."
-        extraStyle="text-center"
+        extraStyle="text-center text-xl font-light"
       />
       <CustomButton buttonText="Next" onPress={() => router.push('/on-board/step-2')} />
     </CustomScreen>

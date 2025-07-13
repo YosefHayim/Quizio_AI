@@ -1,11 +1,13 @@
 import * as crypto from 'expo-crypto';
 
+import { FlatList, View } from 'react-native';
+
 import ClapSvg from '../../assets/clap.svg';
 import CustomButton from 'components/CustomButton';
 import CustomScreen from 'components/CustomScreen';
 import CustomText from 'components/CustomText';
 import CustomTitle from 'components/CustomTitle';
-import { FlatList } from 'react-native';
+import { Entypo } from '@expo/vector-icons';
 import OnBoardingProgress from 'components/OnBoardingProgress';
 import { router } from 'expo-router';
 import { useAsyncStorage } from '@react-native-async-storage/async-storage';
@@ -35,15 +37,14 @@ const WelcomeScreenStepFour = () => {
     <CustomScreen>
       <OnBoardingProgress currentStep={5} />
       <CustomTitle titleText="Premium members gain more " />
-      <CustomText text="2$ Monthly Subscription" />
+      <CustomText text="2$ Monthly Subscription" extraStyle="text-xl font-bold text-center" />
 
-      <FlatList
-        data={prosOfQuizio}
-        contentContainerStyle={{ alignItems: 'flex-start' }}
-        renderItem={({ item }) => (
-          <CustomText text={`* ${item.text}`} key={item.key} extraStyle="p-5" />
-        )}
-      />
+      {prosOfQuizio.map((item) => (
+        <View className="w-full flex-row items-center justify-start" key={item.key}>
+          <Entypo name="dot-single" size={25} className="w-min" />
+          <CustomText text={item.text} key={item.key} extraStyle="p-3" />
+        </View>
+      ))}
 
       <CustomButton buttonText="Join Now" onPress={() => router.push('/on-board/final-step')} />
       <ClapSvg />
