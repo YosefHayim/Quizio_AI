@@ -35,9 +35,8 @@ const WelcomeScreenStepFour = () => {
 
   return (
     <CustomScreen>
-      <OnBoardingProgress currentStep={5} />
-      <CustomTitle titleText="Premium members gain more " />
-      <CustomText text="2$ Monthly Subscription" extraStyle="text-xl font-bold text-center" />
+      <CustomTitle titleText="Premium members gain more" extraStyle="text-xl font-bold" />
+      <CustomText text="Only 2$ Monthly" extraStyle="text-xl text-center font-semibold" />
 
       {prosOfQuizio.map((item) => (
         <View className="w-full flex-row items-center justify-start" key={item.key}>

@@ -8,7 +8,7 @@ interface CustomButtonProps {
 const CustomButton: React.FC<CustomButtonProps> = (props) => {
   return (
     <TouchableOpacity
-      className={`bg-blue_sky w-full items-center justify-center rounded-md p-3`}
+      className={`bg-blue_sky w-full items-center justify-center rounded-md p-5`}
       onPress={props.onPress}
       activeOpacity={0.8}>
       <Text className={`text-paper_white text-xl font-semibold`}>{props.buttonText}</Text>

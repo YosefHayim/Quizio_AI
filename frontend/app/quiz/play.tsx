@@ -6,7 +6,6 @@ import CustomButton from 'components/CustomButton';
 import CustomHeader from 'components/CustomHeader';
 import CustomScreen from 'components/CustomScreen';
 import Paragraph from 'components/Paragraph';
-import { ProgressBar } from 'react-native-paper';
 import { router } from 'expo-router';
 
 const quizQuestions = [
@@ -128,14 +127,7 @@ const PlayQuizScreen = () => {
           headerName="Play Quiz Page"
           navigateBackTo={() => router.navigate('/dashboard')}
         />
-        <View>
-          <ProgressBar
-            progress={currentQuestionNumber / quizQuestions.length}
-            color="black"
-            style={{ backgroundColor: 'white' }}
-            fillStyle={{ backgroundColor: 'black' }}
-          />
-        </View>
+        <View></View>
         <View>
           <Text>
             Current question: {currentQuestionNumber} : {quizQuestions.length}
