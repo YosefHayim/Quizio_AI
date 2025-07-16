@@ -9,7 +9,11 @@ const validateQuizJsonFileTool = tool({
   name: 'validate_json_quizzes_file',
   description:
     'Your task is to read the entire file and make sure that the structure is valid by the parameters and if not report to me',
-  parameters: z.object({}),
+  parameters: z.object({
+    question: z.string(),
+    answers: z.array(z.string()).length(3),
+    correct: z.string()
+  }),
   execute: () => {
     return fs.readFileSync(FILEPATH, 'utf8')
   }
