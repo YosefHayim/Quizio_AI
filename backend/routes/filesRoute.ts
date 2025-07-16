@@ -10,11 +10,11 @@ import multer from 'multer'
 const router = express.Router()
 
 const uploadPdfs = multer({
-  dest: '../files/pdfs/'
+  dest: './files/pdfs/'
 })
 
 const uploadImgs = multer({
-  dest: '../files/images/'
+  dest: './files/images/'
 })
 
 router.get('/:fileId', getFileContentById)
