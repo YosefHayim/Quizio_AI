@@ -1,4 +1,4 @@
-import { extractDataFromImg, extractDataFromPdf } from '../controllers/pdfRoute'
+import { extractDataFromImg, extractDataFromPdf } from '../controllers/filesController'
 
 import express from 'express'
 import multer from 'multer'
