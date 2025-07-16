@@ -35,9 +35,6 @@ importers:
       express-session:
         specifier: ^1.18.1
         version: 1.18.1
-      form-data:
-        specifier: ^4.0.3
-        version: 4.0.3
       googleapis:
         specifier: ^150.0.1
         version: 150.0.1

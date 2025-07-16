@@ -10,7 +10,7 @@ import youtubeRoute from './routes/youtubeRoute'
 const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-app.use(morgan('tiny'))
+app.use(morgan('dev'))
 
 app.get('/', (req, res) => {
   res.json({

@@ -1,37 +1,29 @@
-import { CONFIG } from '../config'
-import FormData from 'form-data'
-import axios from 'axios'
+import { client } from '../config'
 import fs from 'fs'
 
-export const uploadFileToOpenAI = async (file: Express.Multer.File) => {
-  try {
-    const formData = new FormData()
+export const ocrParseAiFile = async (file: Express.Multer.File) => {
+  const data = fs.readFileSync(file.path)
+  const base64String = data.toString('base64')
 
-    formData.append('file', fs.createReadStream(file.path), file.originalname)
-
-    formData.append('purpose', 'assistants')
-
-    const response = await axios.post('https://api.openai.com/v1/files', formData, {
-      headers: {
-        Authorization: `Bearer ${CONFIG.openAiKey}`,
-        ...formData.getHeaders()
+  const response = await client.responses.create({
+    model: 'gpt-4.1',
+    input: [
+      {
+        role: 'user',
+        content: [
+          {
+            type: 'input_file',
+            filename: file.filename,
+            file_data: `data:application/pdf;base64,${base64String}`
+          },
+          {
+            type: 'input_text',
+            text: 'Please return all the data you find within this pdf file.'
+          }
+        ]
       }
-    })
-    return response.data.id
-  } catch (error) {
-    console.error('Error occurred during uploadFileToOpenAI:', error)
-    throw error
-  }
-}
-
-export const getFileContentByAI = async (fileId: string) => {
-  try {
-    const r = await axios.get(`https://api.openai.com/v1/files/${fileId}/content`, {
-      headers: { Authorization: `Bearer ${CONFIG.openAiKey}` }
-    })
-    console.log(r.data)
-    return r.data
-  } catch (error) {
-    console.error(`Error occured durning getFileContentByAI: ${error}`)
-  }
+    ]
+  })
+  console.log(response.output_text)
+  return response.output_text
 }
