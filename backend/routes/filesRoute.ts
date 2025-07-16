@@ -1,4 +1,8 @@
-import { extractDataFromImg, extractDataFromPdf } from '../controllers/filesController'
+import {
+  extractDataFromImg,
+  extractDataFromPdf,
+  getFileContentById
+} from '../controllers/filesController'
 
 import express from 'express'
 import multer from 'multer'
@@ -6,22 +10,14 @@ import multer from 'multer'
 const router = express.Router()
 
 const uploadPdfs = multer({
-  dest: '../files/pdfs/',
-  fileFilter: (req, file, cb) => {
-    if (!req.file) cb(null, false)
-    if (file.mimetype !== 'application/pdf') cb(null, false)
-    // if (file.size > 5 * 1024 * 1024) cb(null, false)
-  }
+  dest: '../files/pdfs/'
 })
 
 const uploadImgs = multer({
-  dest: '../files/images/',
-  fileFilter: (req, file, cb) => {
-    if (!req.file) cb(null, false)
-    if (file.mimetype !== 'image/jpeg') cb(null, false)
-    // if (file.size > 5 * 1024 * 1024) cb(null, false)
-  }
+  dest: '../files/images/'
 })
+
+router.get('/:fileId', getFileContentById)
 
 router.post('/upload-pdf', uploadPdfs.single('pdf'), extractDataFromPdf)
 
