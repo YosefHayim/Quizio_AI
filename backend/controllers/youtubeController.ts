@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 
 import { google } from 'googleapis'
-import { oauth2Client } from '../oAuth'
+import { oauth2Client } from '../config'
 
 const getCaptionsByVideoID = async (req: Request, res: Response): Promise<void> => {
   try {

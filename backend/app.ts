@@ -8,7 +8,7 @@ const app = express()
 
 app.get('/', (req, res) => {
   res.json({
-    status: 'active',
+    status: 'success',
     message: 'Backend of Quizio is running'
   })
 })

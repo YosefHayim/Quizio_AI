@@ -2,7 +2,7 @@ import { Request, Response } from 'express'
 
 import crypto from 'crypto'
 import fs from 'fs'
-import { oauth2Client } from '../oAuth'
+import { oauth2Client } from '../config'
 import path from 'path'
 
 const FILEPATH = path.join(__dirname, './credentails.json')
@@ -46,7 +46,7 @@ export const getAuthUrl = (req: Request, res: Response): void => {
 
     if (!url) res.status(404).send(`Invalid, url is empty: ${url}`)
 
-    res.send(`<button><a href=${url}>Redirect to get access</a></button>`)
+    res.redirect(url)
   } catch (error) {
     console.error('getAuthUrl fn: ', error)
     res.status(500).json({ error })
