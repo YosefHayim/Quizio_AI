@@ -1,28 +1,31 @@
-import { Request, Response } from 'express'
+import type { Request, Response } from 'express';
 
-import { google } from 'googleapis'
-import { oauth2Client } from '../config'
+import { google } from 'googleapis';
+import { oauth2Client } from '../config';
 
-const getCaptionsByVideoID = async (req: Request, res: Response): Promise<void> => {
+const getCaptionsByVideoID = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
   try {
-    const videoId = req.params.videoId
+    const videoId = req.params.videoId;
 
     const service = google.youtube({
       version: 'v3',
-      auth: oauth2Client
-    })
+      auth: oauth2Client,
+    });
 
     const result = await service.captions.list({
       videoId,
-      part: ['snippet']
-    })
-    console.log('Result: ', result)
+      part: ['snippet'],
+    });
+    console.log('Result: ', result);
 
-    res.status(200).json(result.data)
+    res.status(200).json(result.data);
   } catch (error) {
-    console.error('getCaptionsByVideoID fn:', error)
-    res.status(500).json({ error: 'Internal server error' })
+    console.error('getCaptionsByVideoID fn:', error);
+    res.status(500).json({ error: 'Internal server error' });
   }
-}
+};
 
-export default getCaptionsByVideoID
+export default getCaptionsByVideoID;

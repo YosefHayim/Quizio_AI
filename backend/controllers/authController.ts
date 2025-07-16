@@ -1,35 +1,38 @@
-import { Request, Response } from 'express'
+import crypto from 'crypto';
+import type { Request, Response } from 'express';
+import fs from 'fs';
+import path from 'path';
+import { oauth2Client } from '../config';
 
-import crypto from 'crypto'
-import fs from 'fs'
-import { oauth2Client } from '../config'
-import path from 'path'
+const FILEPATH = path.join(__dirname, './credentails.json');
 
-const FILEPATH = path.join(__dirname, './credentails.json')
-
-export const getAccessToken = async (req: Request, res: Response): Promise<any> => {
+export const getAccessToken = async (
+  req: Request,
+  res: Response
+): Promise<any> => {
   try {
-    const { code } = req.query
+    const { code } = req.query;
 
     if (!code || typeof code !== 'string')
-      return res.status(400).json({ error: 'Invalid or missing code' })
+      return res.status(400).json({ error: 'Invalid or missing code' });
 
-    const { tokens } = await oauth2Client.getToken(code)
+    const { tokens } = await oauth2Client.getToken(code);
 
-    if (!tokens) return res.status(400).json({ error: 'Invalid or missing tokens' })
+    if (!tokens)
+      return res.status(400).json({ error: 'Invalid or missing tokens' });
 
-    oauth2Client.setCredentials(tokens)
+    oauth2Client.setCredentials(tokens);
 
     fs.writeFile(FILEPATH, JSON.stringify(tokens), (err) => {
-      console.error(err)
-    })
+      console.error(err);
+    });
 
-    return res.status(200).json({ message: 'Access token received', tokens })
+    return res.status(200).json({ message: 'Access token received', tokens });
   } catch (error) {
-    console.error('Error durning getAccessToken fn: ', error)
-    res.status(500).json({ error })
+    console.error('Error durning getAccessToken fn: ', error);
+    res.status(500).json({ error });
   }
-}
+};
 
 export const getAuthUrl = (req: Request, res: Response): void => {
   try {
@@ -38,17 +41,17 @@ export const getAuthUrl = (req: Request, res: Response): void => {
       scope: [
         'https://www.googleapis.com/auth/youtube.readonly',
         'https://www.googleapis.com/auth/youtube.upload',
-        'https://www.googleapis.com/auth/youtubepartner'
+        'https://www.googleapis.com/auth/youtubepartner',
       ],
       include_granted_scopes: true,
-      state: crypto.randomBytes(32).toString('hex')
-    })
+      state: crypto.randomBytes(32).toString('hex'),
+    });
 
-    if (!url) res.status(404).send(`Invalid, url is empty: ${url}`)
+    if (!url) res.status(404).send(`Invalid, url is empty: ${url}`);
 
-    res.redirect(url)
+    res.redirect(url);
   } catch (error) {
-    console.error('getAuthUrl fn: ', error)
-    res.status(500).json({ error })
+    console.error('getAuthUrl fn: ', error);
+    res.status(500).json({ error });
   }
-}
+};

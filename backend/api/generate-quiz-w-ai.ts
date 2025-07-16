@@ -1,4 +1,4 @@
-import { client } from '../config'
+import { client } from '../config';
 
 const generateQuiz = async (content: string): Promise<string | undefined> => {
   try {
@@ -8,16 +8,18 @@ const generateQuiz = async (content: string): Promise<string | undefined> => {
       messages: [
         {
           role: 'user',
-          content
-        }
-      ]
-    })
+          content,
+        },
+      ],
+    });
 
-    console.log(response.choices[0].message.content)
-    return response.choices[0].message.content ?? 'No response has been received'
+    console.log(response.choices[0].message.content);
+    return (
+      response.choices[0].message.content ?? 'No response has been received'
+    );
   } catch (error) {
-    console.error('Error occurred during generateQuiz:', error)
+    console.error('Error occurred during generateQuiz:', error);
   }
-}
+};
 
-export default generateQuiz
+export default generateQuiz;

@@ -1,9 +1,9 @@
-import fs from 'fs'
-import path from 'path'
-import { tool } from '@openai/agents'
-import { z } from 'zod'
+import { tool } from '@openai/agents';
+import fs from 'fs';
+import path from 'path';
+import { z } from 'zod';
 
-const FILEPATH = path.join(__dirname, '../quizzez.json')
+const FILEPATH = path.join(__dirname, '../quizzez.json');
 
 const validateQuizJsonFileTool = tool({
   name: 'validate_json_quizzes_file',
@@ -12,11 +12,11 @@ const validateQuizJsonFileTool = tool({
   parameters: z.object({
     question: z.string(),
     answers: z.array(z.string()).length(3),
-    correct: z.string()
+    correct: z.string(),
   }),
   execute: () => {
-    return fs.readFileSync(FILEPATH, 'utf8')
-  }
-})
+    return fs.readFileSync(FILEPATH, 'utf8');
+  },
+});
 
-export default validateQuizJsonFileTool
+export default validateQuizJsonFileTool;

@@ -1,5 +1,5 @@
-import { Request, Response } from 'express'
+import type { Request, Response } from 'express';
 
-const getUserInfo = (req: Request, res: Response) => {}
+const getUserInfo = (req: Request, res: Response) => {};
 
-export default getUserInfo
+export default getUserInfo;

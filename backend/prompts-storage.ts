@@ -13,7 +13,7 @@ json
 
 Now here's the text:
 ...
-`
+`;
 
 export const p2 = `You are expert in generating 5-20 professional-level multiple-choice quiz questions on technologoy subject in JSON format.
 Each question should be an object with the following structure:
@@ -34,4 +34,4 @@ example:
     "correct": "JSON.parse()"
   }
 ]
-and than append it to quizzez.json file.`
+and than append it to quizzez.json file.`;

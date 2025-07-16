@@ -62,7 +62,11 @@
   [
     {
       "question": "Which of the following is used to define a function expression in JavaScript?",
-      "answers": ["function myFunc() {}", "const myFunc = function() {}", "def myFunc() {}"],
+      "answers": [
+        "function myFunc() {}",
+        "const myFunc = function() {}",
+        "def myFunc() {}"
+      ],
       "correct": "const myFunc = function() {}"
     },
     {
@@ -82,12 +86,20 @@
     },
     {
       "question": "Which method stops further execution of an event in event bubbling?",
-      "answers": ["stopImmediatePropagation()", "stopPropagation()", "preventDefault()"],
+      "answers": [
+        "stopImmediatePropagation()",
+        "stopPropagation()",
+        "preventDefault()"
+      ],
       "correct": "stopPropagation()"
     },
     {
       "question": "What does `this` refer to inside a regular function (non-arrow) by default?",
-      "answers": ["The window object", "The function itself", "The global `this` context"],
+      "answers": [
+        "The window object",
+        "The function itself",
+        "The global `this` context"
+      ],
       "correct": "The window object"
     },
     {
@@ -118,7 +130,11 @@
   [
     {
       "question": "Which of the following is used to define a function expression in JavaScript?",
-      "answers": ["function myFunc() {}", "const myFunc = function() {}", "def myFunc() {}"],
+      "answers": [
+        "function myFunc() {}",
+        "const myFunc = function() {}",
+        "def myFunc() {}"
+      ],
       "correct": "const myFunc = function() {}"
     },
     {
@@ -138,12 +154,20 @@
     },
     {
       "question": "Which method stops further execution of an event in event bubbling?",
-      "answers": ["stopImmediatePropagation()", "stopPropagation()", "preventDefault()"],
+      "answers": [
+        "stopImmediatePropagation()",
+        "stopPropagation()",
+        "preventDefault()"
+      ],
       "correct": "stopPropagation()"
     },
     {
       "question": "What does `this` refer to inside a regular function (non-arrow) by default?",
-      "answers": ["The window object", "The function itself", "The global `this` context"],
+      "answers": [
+        "The window object",
+        "The function itself",
+        "The global `this` context"
+      ],
       "correct": "The window object"
     },
     {
@@ -208,7 +232,11 @@
     },
     {
       "question": "Which statement creates a class in JavaScript?",
-      "answers": ["function MyClass() {}", "class MyClass {}", "object MyClass = {}"],
+      "answers": [
+        "function MyClass() {}",
+        "class MyClass {}",
+        "object MyClass = {}"
+      ],
       "correct": "class MyClass {}"
     },
     {
@@ -272,7 +300,11 @@
     },
     {
       "question": "How can you prevent an object from being modified?",
-      "answers": ["Object.preventChanges()", "Object.freeze()", "Object.seal()"],
+      "answers": [
+        "Object.preventChanges()",
+        "Object.freeze()",
+        "Object.seal()"
+      ],
       "correct": "Object.freeze()"
     },
     {
@@ -334,7 +366,11 @@
     },
     {
       "question": "Which consensus mechanism does Bitcoin primarily use?",
-      "answers": ["Proof of Work", "Proof of Stake", "Delegated Proof of Authority"],
+      "answers": [
+        "Proof of Work",
+        "Proof of Stake",
+        "Delegated Proof of Authority"
+      ],
       "correct": "Proof of Work"
     },
     {
@@ -494,7 +530,11 @@
     },
     {
       "question": "Which characteristic is typical of NoSQL databases compared to relational databases?",
-      "answers": ["Fixed schema", "Horizontal scalability", "Strong ACID compliance"],
+      "answers": [
+        "Fixed schema",
+        "Horizontal scalability",
+        "Strong ACID compliance"
+      ],
       "correct": "Horizontal scalability"
     },
     {
@@ -635,7 +675,11 @@
     },
     {
       "question": "Which library is the de facto standard for navigation in cross-platform React Native applications?",
-      "answers": ["React Navigation", "React Router Native", "React Native Navigation"],
+      "answers": [
+        "React Navigation",
+        "React Router Native",
+        "React Native Navigation"
+      ],
       "correct": "React Navigation"
     },
     {
@@ -670,7 +714,11 @@
   [
     {
       "question": "In React Native, which method schedules a function to run after all animations and interactions have completed?",
-      "answers": ["InteractionManager.runAfterInteractions", "setTimeout", "requestAnimationFrame"],
+      "answers": [
+        "InteractionManager.runAfterInteractions",
+        "setTimeout",
+        "requestAnimationFrame"
+      ],
       "correct": "InteractionManager.runAfterInteractions"
     },
     {
@@ -739,7 +787,11 @@
     },
     {
       "question": "In Express.js, how do you define an error-handling middleware function?",
-      "answers": ["(req, res, next)", "(err, req, res, next)", "(error, request, response)"],
+      "answers": [
+        "(req, res, next)",
+        "(err, req, res, next)",
+        "(error, request, response)"
+      ],
       "correct": "(err, req, res, next)"
     },
     {
@@ -759,7 +811,11 @@
     },
     {
       "question": "Which library is most commonly used for declarative navigation in React Native apps?",
-      "answers": ["React Router", "React Navigation", "React Native Navigation"],
+      "answers": [
+        "React Router",
+        "React Navigation",
+        "React Native Navigation"
+      ],
       "correct": "React Navigation"
     },
     {
@@ -831,7 +887,11 @@
     },
     {
       "question": "Which library should you use in React Native to achieve native-driven gesture handling and avoid the 60fps JavaScript thread bottleneck?",
-      "answers": ["react-native-gesture-handler", "PanResponder", "Animated API"],
+      "answers": [
+        "react-native-gesture-handler",
+        "PanResponder",
+        "Animated API"
+      ],
       "correct": "react-native-gesture-handler"
     },
     {
@@ -850,7 +910,11 @@
     },
     {
       "question": "When using React Navigation v5, which function creates a stack navigator for screen transitions?",
-      "answers": ["createStackNavigator", "StackNavigatorIOS", "createNativeStack"],
+      "answers": [
+        "createStackNavigator",
+        "StackNavigatorIOS",
+        "createNativeStack"
+      ],
       "correct": "createStackNavigator"
     },
     {
@@ -1048,7 +1112,11 @@
     },
     {
       "question": "In React Native Android modules, which base class should native modules extend to bridge with JavaScript?",
-      "answers": ["ReactActivity", "ReactContextBaseJavaModule", "ReactNativeHost"],
+      "answers": [
+        "ReactActivity",
+        "ReactContextBaseJavaModule",
+        "ReactNativeHost"
+      ],
       "correct": "ReactContextBaseJavaModule"
     },
     {
@@ -1104,12 +1172,20 @@
     },
     {
       "question": "Which library is commonly used for navigation in React Native apps?",
-      "answers": ["react-navigation", "react-router-native", "react-native-navigator"],
+      "answers": [
+        "react-navigation",
+        "react-router-native",
+        "react-native-navigator"
+      ],
       "correct": "react-navigation"
     },
     {
       "question": "On Android in React Native, to request permissions at runtime, which module is used?",
-      "answers": ["PermissionsAndroid", "Permissions", "ReactNativePermissions"],
+      "answers": [
+        "PermissionsAndroid",
+        "Permissions",
+        "ReactNativePermissions"
+      ],
       "correct": "PermissionsAndroid"
     },
     {
@@ -1165,7 +1241,11 @@
     },
     {
       "question": "Which HTTP header can be used to mitigate Cross-Site Scripting (XSS) attacks by specifying allowable script sources?",
-      "answers": ["X-Content-Type-Options", "Content-Security-Policy", "X-Frame-Options"],
+      "answers": [
+        "X-Content-Type-Options",
+        "Content-Security-Policy",
+        "X-Frame-Options"
+      ],
       "correct": "Content-Security-Policy"
     },
     {
@@ -1230,12 +1310,20 @@
     },
     {
       "question": "Which tool allows you to debug JavaScript code running in a React Native application?",
-      "answers": ["Chrome DevTools Remote Debugging", "Xcode Instruments", "Android Profiler"],
+      "answers": [
+        "Chrome DevTools Remote Debugging",
+        "Xcode Instruments",
+        "Android Profiler"
+      ],
       "correct": "Chrome DevTools Remote Debugging"
     },
     {
       "question": "Which library is most commonly used for navigation in React Native applications?",
-      "answers": ["React Navigation", "React Native Navigation", "React Router"],
+      "answers": [
+        "React Navigation",
+        "React Native Navigation",
+        "React Router"
+      ],
       "correct": "React Navigation"
     }
   ],
@@ -1307,7 +1395,11 @@
     },
     {
       "question": "When using React Navigation, which navigator should you choose for implementing bottom tab navigation?",
-      "answers": ["createBottomTabNavigator", "createStackNavigator", "createDrawerNavigator"],
+      "answers": [
+        "createBottomTabNavigator",
+        "createStackNavigator",
+        "createDrawerNavigator"
+      ],
       "correct": "createBottomTabNavigator"
     }
   ],
@@ -1319,7 +1411,11 @@
     },
     {
       "question": "When an API implements rate limiting, which HTTP status code is typically returned to indicate too many requests?",
-      "answers": ["429 Too Many Requests", "503 Service Unavailable", "401 Unauthorized"],
+      "answers": [
+        "429 Too Many Requests",
+        "503 Service Unavailable",
+        "401 Unauthorized"
+      ],
       "correct": "429 Too Many Requests"
     },
     {
@@ -1371,7 +1467,11 @@
     },
     {
       "question": "Which navigation library for React Native uses native navigation primitives on both iOS and Android for better performance?",
-      "answers": ["React Native Navigation", "React Navigation", "React Native Router Flux"],
+      "answers": [
+        "React Native Navigation",
+        "React Navigation",
+        "React Native Router Flux"
+      ],
       "correct": "React Native Navigation"
     }
   ],
@@ -1396,7 +1496,11 @@
     },
     {
       "question": "In server-side rendering of a React application, which method is used on the client to attach event listeners and hydrate the markup?",
-      "answers": ["ReactDOM.hydrate()", "ReactDOM.renderToString()", "ReactDOM.createPortal()"],
+      "answers": [
+        "ReactDOM.hydrate()",
+        "ReactDOM.renderToString()",
+        "ReactDOM.createPortal()"
+      ],
       "correct": "ReactDOM.hydrate()"
     },
     {
@@ -1410,17 +1514,29 @@
     },
     {
       "question": "In a GraphQL server implementation, which technique helps mitigate the N+1 query problem when resolving relational fields?",
-      "answers": ["Batching with DataLoader", "Caching with Redis", "Using REST endpoints"],
+      "answers": [
+        "Batching with DataLoader",
+        "Caching with Redis",
+        "Using REST endpoints"
+      ],
       "correct": "Batching with DataLoader"
     },
     {
       "question": "What is a primary performance benefit of enabling the Hermes engine in a React Native Android build?",
-      "answers": ["Faster JavaScript startup time", "Automatic JIT compilation", "Larger APK size"],
+      "answers": [
+        "Faster JavaScript startup time",
+        "Automatic JIT compilation",
+        "Larger APK size"
+      ],
       "correct": "Faster JavaScript startup time"
     },
     {
       "question": "When creating a native module for iOS in React Native, which macro must you use to expose the module to JavaScript?",
-      "answers": ["RCT_EXPORT_MODULE()", "RN_EXPORT_MODULE()", "RCT_MODULE_EXPORT()"],
+      "answers": [
+        "RCT_EXPORT_MODULE()",
+        "RN_EXPORT_MODULE()",
+        "RCT_MODULE_EXPORT()"
+      ],
       "correct": "RCT_EXPORT_MODULE()"
     },
     {
@@ -1451,12 +1567,20 @@
     },
     {
       "question": "Which command initializes a new Express application with default configurations?",
-      "answers": ["npx express-generator", "express init", "npm create express-app"],
+      "answers": [
+        "npx express-generator",
+        "express init",
+        "npm create express-app"
+      ],
       "correct": "npx express-generator"
     },
     {
       "question": "In React Native, which API would you use to enable gesture handling for swipable views?",
-      "answers": ["PanResponder", "GestureDetector", "TouchableWithoutFeedback"],
+      "answers": [
+        "PanResponder",
+        "GestureDetector",
+        "TouchableWithoutFeedback"
+      ],
       "correct": "PanResponder"
     },
     {
@@ -1511,7 +1635,11 @@
     },
     {
       "question": "In a Node.js application using Mongoose, which method is used to establish a connection to a MongoDB database?",
-      "answers": ["mongoose.connect(uri, options)", "mongoose.open(uri)", "mongoose.init(uri)"],
+      "answers": [
+        "mongoose.connect(uri, options)",
+        "mongoose.open(uri)",
+        "mongoose.init(uri)"
+      ],
       "correct": "mongoose.connect(uri, options)"
     },
     {
@@ -1535,12 +1663,20 @@
     },
     {
       "question": "Which library provides a JavaScript-based navigation stack with native-like animations in React Native?",
-      "answers": ["react-navigation", "react-native-navigation", "react-router-native"],
+      "answers": [
+        "react-navigation",
+        "react-native-navigation",
+        "react-router-native"
+      ],
       "correct": "react-navigation"
     },
     {
       "question": "To register a custom native Android module in a React Native app, which file must you modify?",
-      "answers": ["MainApplication.java", "MainActivity.java", "settings.gradle"],
+      "answers": [
+        "MainApplication.java",
+        "MainActivity.java",
+        "settings.gradle"
+      ],
       "correct": "MainApplication.java"
     },
     {
@@ -1661,7 +1797,11 @@
     },
     {
       "question": "Which header must be configured on a server to allow cross-origin requests from a specific domain?",
-      "answers": ["Access-Control-Allow-Origin", "X-Frame-Options", "Content-Security-Policy"],
+      "answers": [
+        "Access-Control-Allow-Origin",
+        "X-Frame-Options",
+        "Content-Security-Policy"
+      ],
       "correct": "Access-Control-Allow-Origin"
     },
     {
@@ -1685,12 +1825,20 @@
     },
     {
       "question": "In React Native styling, what unit of measurement is used by default for defining layout dimensions?",
-      "answers": ["dp (density-independent pixels)", "px (pixels)", "% (percentage)"],
+      "answers": [
+        "dp (density-independent pixels)",
+        "px (pixels)",
+        "% (percentage)"
+      ],
       "correct": "dp (density-independent pixels)"
     },
     {
       "question": "Which library is commonly used to handle navigation in React Native apps?",
-      "answers": ["react-native-router-flux", "react-navigation", "react-native-navigation"],
+      "answers": [
+        "react-native-router-flux",
+        "react-navigation",
+        "react-native-navigation"
+      ],
       "correct": "react-navigation"
     },
     {
@@ -1811,7 +1959,11 @@
     },
     {
       "question": "For declarative gesture handling in React Native, which library is specifically designed for robust gesture detection?",
-      "answers": ["react-native-gesture-handler", "PanResponder", "Animated API"],
+      "answers": [
+        "react-native-gesture-handler",
+        "PanResponder",
+        "Animated API"
+      ],
       "correct": "react-native-gesture-handler"
     }
   ],
@@ -1859,7 +2011,11 @@
     },
     {
       "question": "In React Native, which component is recommended for handling complex gestures with native performance?",
-      "answers": ["PanResponder", "TouchableOpacity", "React Native Gesture Handler"],
+      "answers": [
+        "PanResponder",
+        "TouchableOpacity",
+        "React Native Gesture Handler"
+      ],
       "correct": "React Native Gesture Handler"
     },
     {
@@ -1882,7 +2038,11 @@
     },
     {
       "question": "Which library would you choose for performant animations in React Native that run on the native UI thread?",
-      "answers": ["React Native Animated API", "React Native Reanimated", "LayoutAnimation"],
+      "answers": [
+        "React Native Animated API",
+        "React Native Reanimated",
+        "LayoutAnimation"
+      ],
       "correct": "React Native Reanimated"
     },
     {
@@ -1918,7 +2078,11 @@
     },
     {
       "question": "What is a primary benefit of server-side rendering compared to client-side rendering?",
-      "answers": ["Improved SEO", "Reduced server load", "Enhanced real-time updates"],
+      "answers": [
+        "Improved SEO",
+        "Reduced server load",
+        "Enhanced real-time updates"
+      ],
       "correct": "Improved SEO"
     },
     {
@@ -1928,7 +2092,11 @@
     },
     {
       "question": "Which library is the de facto standard for navigation in React Native apps?",
-      "answers": ["react-navigation", "react-router-native", "navigation-react"],
+      "answers": [
+        "react-navigation",
+        "react-router-native",
+        "navigation-react"
+      ],
       "correct": "react-navigation"
     },
     {
@@ -1942,7 +2110,11 @@
     },
     {
       "question": "Which animation library offers better performance through native-driven animations in React Native?",
-      "answers": ["Animated API", "LayoutAnimation API", "react-native-reanimated"],
+      "answers": [
+        "Animated API",
+        "LayoutAnimation API",
+        "react-native-reanimated"
+      ],
       "correct": "react-native-reanimated"
     },
     {
@@ -1997,7 +2169,11 @@
     },
     {
       "question": "Which React Native navigation library uses the platform's native navigation stack on iOS and Android while providing a React API?",
-      "answers": ["React Native Navigation", "React Navigation", "React Router"],
+      "answers": [
+        "React Native Navigation",
+        "React Navigation",
+        "React Router"
+      ],
       "correct": "React Native Navigation"
     },
     {
@@ -2069,7 +2245,11 @@
     },
     {
       "question": "Which library is most commonly used for handling navigation in React Native applications?",
-      "answers": ["React Router", "React Native Navigation", "React Navigation"],
+      "answers": [
+        "React Router",
+        "React Native Navigation",
+        "React Navigation"
+      ],
       "correct": "React Navigation"
     },
     {
@@ -2135,7 +2315,11 @@
     },
     {
       "question": "In GraphQL, what is the purpose of a resolver function?",
-      "answers": ["Define the schema", "Fetch and return data for a field", "Validate queries"],
+      "answers": [
+        "Define the schema",
+        "Fetch and return data for a field",
+        "Validate queries"
+      ],
       "correct": "Fetch and return data for a field"
     }
   ],
@@ -2191,7 +2375,11 @@
     },
     {
       "question": "In React Native, which API allows scheduling tasks to run after all ongoing interactions and animations have completed?",
-      "answers": ["setImmediate", "requestAnimationFrame", "InteractionManager"],
+      "answers": [
+        "setImmediate",
+        "requestAnimationFrame",
+        "InteractionManager"
+      ],
       "correct": "InteractionManager"
     }
   ],
