@@ -1,12 +1,13 @@
+import OpenAI from 'openai'
 import { client } from '../config'
 import fs from 'fs'
 
-export const ocrParseAiFile = async (file: Express.Multer.File) => {
+export const ocrParseAiPdf = async (file: Express.Multer.File) => {
   const data = fs.readFileSync(file.path)
   const base64String = data.toString('base64')
 
   const response = await client.responses.create({
-    model: 'gpt-4.1',
+    model: 'gpt-4.1-nano-2025-04-14',
     input: [
       {
         role: 'user',
@@ -18,12 +19,32 @@ export const ocrParseAiFile = async (file: Express.Multer.File) => {
           },
           {
             type: 'input_text',
-            text: 'Please return all the data you find within this pdf file.'
+            text: `Read the content of this file and generate exactly 10 multiple-choice questions in JSON format. The output must be a single array of 10 objects. Each object must strictly follow this structure:
+{
+  "question": "A clear question based on the file content",
+  "answers": ["option A", "option B", "option C", "option D"],
+  "correct": "The exact text of the correct answer from the answers array"
+}`
           }
         ]
       }
     ]
   })
+  console.log(response.output_text)
+  return response.output_text
+}
+
+export const ocrParseAiImage = async (file: Express.Multer.File) => {
+  const response = await client.responses.create({
+    model: 'gpt-4.1-nano-2025-04-14',
+    input: [
+      {
+        role: 'user',
+        content: [{ type: 'input_image', detail: 'auto', image_url: file.path }]
+      }
+    ]
+  })
+
   console.log(response.output_text)
   return response.output_text
 }

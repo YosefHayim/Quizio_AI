@@ -1,15 +1,15 @@
-import seedQuizTool, { seedQuizToolAgentParamters } from '../agent-tools/seed-quiz-agent-tool'
+import seedQuizTool, { seedQuizToolAgentParameters } from './agent-tools/seed-quiz-agent-tool'
 
-import { Agent } from '@openai/agents'
-import { p2 } from '../prompts-storage'
-import validateQuizJsonFileTool from '../agent-tools/validate-quiz-json-file-tool'
+import { Agent } from 'http'
+import { p2 } from './prompts-storage'
+import validateQuizJsonFileTool from './agent-tools/validate-quiz-json-file-tool'
 
 export const seedQuizAgent = new Agent({
-  name: 'Generator Quizz Bot',
+  name: 'Generator Quiz Bot',
   model: 'o4-mini',
   instructions: p2,
   tools: [seedQuizTool],
-  outputType: seedQuizToolAgentParamters
+  outputType: seedQuizToolAgentParameters
 })
 
 export const validateQuizJsonFileAgent = new Agent({

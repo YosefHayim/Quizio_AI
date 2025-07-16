@@ -6,7 +6,7 @@ import { tool } from '@openai/agents'
 
 const FILEPATH = path.join(__dirname, '../quizzez.json')
 
-export const seedQuizToolAgentParamters = z.object({
+export const seedQuizToolAgentParameters = z.object({
   quizArr: z.array(
     z.object({
       question: z.string(),
@@ -48,7 +48,7 @@ const seedQuizTool = tool({
   name: 'generate_random_quiz',
   description:
     'Appends an entire new quiz array (array of questions) to the end of the root array in the JSON file.',
-  parameters: seedQuizToolAgentParamters,
+  parameters: seedQuizToolAgentParameters,
   execute: ({ quizArr }) => appendQuizToJsonFile(quizArr)
 })
 

@@ -14,7 +14,7 @@ const generateQuiz = async (content: string): Promise<string | undefined> => {
     })
 
     console.log(response.choices[0].message.content)
-    return response.choices[0].message.content ?? 'No response has been recieved'
+    return response.choices[0].message.content ?? 'No response has been received'
   } catch (error) {
     console.error('Error occurred during generateQuiz:', error)
   }
