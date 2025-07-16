@@ -81,6 +81,9 @@ importers:
       '@types/pdf-parse':
         specifier: ^1.1.5
         version: 1.1.5
+      '@types/xml2js':
+        specifier: ^0.4.14
+        version: 0.4.14
       globals:
         specifier: ^16.2.0
         version: 16.2.0
@@ -629,6 +632,9 @@ packages:
 
   '@types/ws@8.18.1':
     resolution: {integrity: sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==}
+
+  '@types/xml2js@0.4.14':
+    resolution: {integrity: sha512-4YnrRemBShWRO2QjvUin8ESA41rH+9nQGLUGZV/1IDhi3SL9OhdpNC/MrulTWuptXKwhx/aDxE7toV0f/ypIXQ==}
 
   '@typescript-eslint/eslint-plugin@8.34.1':
     resolution: {integrity: sha512-STXcN6ebF6li4PxwNeFnqF8/2BNDvBupf2OPx2yWNzr6mKNGF7q49VM00Pz5FaomJyqvbXpY6PhO+T9w139YEQ==}
@@ -2500,6 +2506,10 @@ snapshots:
   '@types/strip-json-comments@0.0.30': {}
 
   '@types/ws@8.18.1':
+    dependencies:
+      '@types/node': 24.0.3
+
+  '@types/xml2js@0.4.14':
     dependencies:
       '@types/node': 24.0.3
 

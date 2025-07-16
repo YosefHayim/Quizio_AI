@@ -1,10 +1,10 @@
+import getCaptionsByVideoID, { unAuthorizedCaptionsParserByVideoId } from "../controllers/youtubeController";
+
 // routes/youtube.ts
-import express from 'express';
-import getCaptionsByVideoID from '../controllers/youtubeController';
+import express from "express";
 
 const router = express.Router();
 
-// Accept video ID from th e URL
-router.get('/:videoId', getCaptionsByVideoID);
+router.get("/:videoId", unAuthorizedCaptionsParserByVideoId);
 
 export default router;
