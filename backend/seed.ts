@@ -4,7 +4,7 @@ import { createClient } from "@supabase/supabase-js";
 import { faker } from "@faker-js/faker";
 import fs from "fs";
 
-const QUIZZEZ_DATA = JSON.parse(fs.readFileSync("./quizzez.json", "utf8"));
+const QUIZZEZ_DATA = JSON.parse(fs.readFileSync("./quizzes.json", "utf8"));
 const supabase = createClient(CONFIG.supabaseUrl!, CONFIG.supabaseKey!);
 
 const adminSupbase = createClient(CONFIG.supabaseUrl!, CONFIG.supabaseServiceRole!, {

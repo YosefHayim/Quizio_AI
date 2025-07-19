@@ -46,11 +46,7 @@
     },
     {
       "question": "What is the purpose of the `use strict` directive?",
-      "answers": [
-        "To enable ES6 features",
-        "To disable JavaScript errors",
-        "To enforce stricter parsing and error handling"
-      ],
+      "answers": ["To enable ES6 features", "To disable JavaScript errors", "To enforce stricter parsing and error handling"],
       "correct": "To enforce stricter parsing and error handling"
     },
     {
@@ -62,11 +58,7 @@
   [
     {
       "question": "Which of the following is used to define a function expression in JavaScript?",
-      "answers": [
-        "function myFunc() {}",
-        "const myFunc = function() {}",
-        "def myFunc() {}"
-      ],
+      "answers": ["function myFunc() {}", "const myFunc = function() {}", "def myFunc() {}"],
       "correct": "const myFunc = function() {}"
     },
     {
@@ -86,20 +78,12 @@
     },
     {
       "question": "Which method stops further execution of an event in event bubbling?",
-      "answers": [
-        "stopImmediatePropagation()",
-        "stopPropagation()",
-        "preventDefault()"
-      ],
+      "answers": ["stopImmediatePropagation()", "stopPropagation()", "preventDefault()"],
       "correct": "stopPropagation()"
     },
     {
       "question": "What does `this` refer to inside a regular function (non-arrow) by default?",
-      "answers": [
-        "The window object",
-        "The function itself",
-        "The global `this` context"
-      ],
+      "answers": ["The window object", "The function itself", "The global `this` context"],
       "correct": "The window object"
     },
     {
@@ -109,11 +93,7 @@
     },
     {
       "question": "What is the purpose of `bind()` in JavaScript?",
-      "answers": [
-        "To attach an event listener",
-        "To permanently set the value of `this` for a function",
-        "To clone an object"
-      ],
+      "answers": ["To attach an event listener", "To permanently set the value of `this` for a function", "To clone an object"],
       "correct": "To permanently set the value of `this` for a function"
     },
     {
@@ -130,11 +110,7 @@
   [
     {
       "question": "Which of the following is used to define a function expression in JavaScript?",
-      "answers": [
-        "function myFunc() {}",
-        "const myFunc = function() {}",
-        "def myFunc() {}"
-      ],
+      "answers": ["function myFunc() {}", "const myFunc = function() {}", "def myFunc() {}"],
       "correct": "const myFunc = function() {}"
     },
     {
@@ -154,20 +130,12 @@
     },
     {
       "question": "Which method stops further execution of an event in event bubbling?",
-      "answers": [
-        "stopImmediatePropagation()",
-        "stopPropagation()",
-        "preventDefault()"
-      ],
+      "answers": ["stopImmediatePropagation()", "stopPropagation()", "preventDefault()"],
       "correct": "stopPropagation()"
     },
     {
       "question": "What does `this` refer to inside a regular function (non-arrow) by default?",
-      "answers": [
-        "The window object",
-        "The function itself",
-        "The global `this` context"
-      ],
+      "answers": ["The window object", "The function itself", "The global `this` context"],
       "correct": "The window object"
     },
     {
@@ -177,11 +145,7 @@
     },
     {
       "question": "What is the purpose of `bind()` in JavaScript?",
-      "answers": [
-        "To attach an event listener",
-        "To permanently set the value of `this` for a function",
-        "To clone an object"
-      ],
+      "answers": ["To attach an event listener", "To permanently set the value of `this` for a function", "To clone an object"],
       "correct": "To permanently set the value of `this` for a function"
     },
     {
@@ -198,11 +162,7 @@
   [
     {
       "question": "What does the `setTimeout` function do?",
-      "answers": [
-        "Repeats a function continuously",
-        "Executes a function after a delay",
-        "Pauses the script"
-      ],
+      "answers": ["Repeats a function continuously", "Executes a function after a delay", "Pauses the script"],
       "correct": "Executes a function after a delay"
     },
     {
@@ -232,11 +192,7 @@
     },
     {
       "question": "Which statement creates a class in JavaScript?",
-      "answers": [
-        "function MyClass() {}",
-        "class MyClass {}",
-        "object MyClass = {}"
-      ],
+      "answers": ["function MyClass() {}", "class MyClass {}", "object MyClass = {}"],
       "correct": "class MyClass {}"
     },
     {
@@ -262,11 +218,7 @@
   [
     {
       "question": "What does the `map()` method do in JavaScript?",
-      "answers": [
-        "Filters an array based on a condition",
-        "Creates a new array by transforming each element",
-        "Sorts the array in place"
-      ],
+      "answers": ["Filters an array based on a condition", "Creates a new array by transforming each element", "Sorts the array in place"],
       "correct": "Creates a new array by transforming each element"
     },
     {
@@ -286,11 +238,7 @@
     },
     {
       "question": "What does the `reduce()` method return?",
-      "answers": [
-        "A filtered array",
-        "A single accumulated value",
-        "A new array with modified elements"
-      ],
+      "answers": ["A filtered array", "A single accumulated value", "A new array with modified elements"],
       "correct": "A single accumulated value"
     },
     {
@@ -300,11 +248,7 @@
     },
     {
       "question": "How can you prevent an object from being modified?",
-      "answers": [
-        "Object.preventChanges()",
-        "Object.freeze()",
-        "Object.seal()"
-      ],
+      "answers": ["Object.preventChanges()", "Object.freeze()", "Object.seal()"],
       "correct": "Object.freeze()"
     },
     {
@@ -323,11 +267,7 @@
     },
     {
       "question": "Which statement is true about arrow functions?",
-      "answers": [
-        "They have their own `this` context",
-        "They inherit `this` from the parent scope",
-        "They can be used as constructors"
-      ],
+      "answers": ["They have their own `this` context", "They inherit `this` from the parent scope", "They can be used as constructors"],
       "correct": "They inherit `this` from the parent scope"
     }
   ],
@@ -343,20 +283,12 @@
     },
     {
       "question": "In Kubernetes, what is the purpose of a DaemonSet?",
-      "answers": [
-        "Ensure a copy of a pod runs on each node",
-        "Scale pods based on CPU usage",
-        "Manage stateful distributed applications"
-      ],
+      "answers": ["Ensure a copy of a pod runs on each node", "Scale pods based on CPU usage", "Manage stateful distributed applications"],
       "correct": "Ensure a copy of a pod runs on each node"
     },
     {
       "question": "Which AWS service provides serverless, event-driven compute capabilities?",
-      "answers": [
-        "AWS Lambda",
-        "Amazon EC2 Auto Scaling",
-        "Amazon Elastic Container Service (ECS)"
-      ],
+      "answers": ["AWS Lambda", "Amazon EC2 Auto Scaling", "Amazon Elastic Container Service (ECS)"],
       "correct": "AWS Lambda"
     },
     {
@@ -366,11 +298,7 @@
     },
     {
       "question": "Which consensus mechanism does Bitcoin primarily use?",
-      "answers": [
-        "Proof of Work",
-        "Proof of Stake",
-        "Delegated Proof of Authority"
-      ],
+      "answers": ["Proof of Work", "Proof of Stake", "Delegated Proof of Authority"],
       "correct": "Proof of Work"
     },
     {
@@ -511,11 +439,7 @@
     },
     {
       "question": "What is the primary purpose of a CORS preflight (OPTIONS) request?",
-      "answers": [
-        "Authenticate user credentials",
-        "Determine allowed HTTP methods and headers",
-        "Cache server responses"
-      ],
+      "answers": ["Authenticate user credentials", "Determine allowed HTTP methods and headers", "Cache server responses"],
       "correct": "Determine allowed HTTP methods and headers"
     },
     {
@@ -530,11 +454,7 @@
     },
     {
       "question": "Which characteristic is typical of NoSQL databases compared to relational databases?",
-      "answers": [
-        "Fixed schema",
-        "Horizontal scalability",
-        "Strong ACID compliance"
-      ],
+      "answers": ["Fixed schema", "Horizontal scalability", "Strong ACID compliance"],
       "correct": "Horizontal scalability"
     },
     {
@@ -608,11 +528,7 @@
     },
     {
       "question": "How does React Native's JavaScript bridge architecture communicate between JS and native modules?",
-      "answers": [
-        "Direct synchronous function calls",
-        "Asynchronous batched messaging over the bridge",
-        "Shared memory access"
-      ],
+      "answers": ["Direct synchronous function calls", "Asynchronous batched messaging over the bridge", "Shared memory access"],
       "correct": "Asynchronous batched messaging over the bridge"
     },
     {
@@ -638,11 +554,7 @@
   [
     {
       "question": "In an Express.js application using PostgreSQL, how can you mitigate SQL injection attacks when executing raw SQL queries?",
-      "answers": [
-        "Manually sanitize inputs with regex",
-        "Use parameterized queries with placeholders",
-        "Escape all user input using escape function"
-      ],
+      "answers": ["Manually sanitize inputs with regex", "Use parameterized queries with placeholders", "Escape all user input using escape function"],
       "correct": "Use parameterized queries with placeholders"
     },
     {
@@ -652,20 +564,12 @@
     },
     {
       "question": "What is the primary advantage of implementing server-side rendering (SSR) in a React web application?",
-      "answers": [
-        "Improved SEO and faster initial page load",
-        "Simplified state management on the client",
-        "Reduced bundle size for production"
-      ],
+      "answers": ["Improved SEO and faster initial page load", "Simplified state management on the client", "Reduced bundle size for production"],
       "correct": "Improved SEO and faster initial page load"
     },
     {
       "question": "In a GraphQL API, how do you typically retrieve multiple related resources in a single request?",
-      "answers": [
-        "Batch multiple HTTP requests",
-        "Use nested queries in a single GraphQL operation",
-        "Call multiple endpoints sequentially"
-      ],
+      "answers": ["Batch multiple HTTP requests", "Use nested queries in a single GraphQL operation", "Call multiple endpoints sequentially"],
       "correct": "Use nested queries in a single GraphQL operation"
     },
     {
@@ -675,11 +579,7 @@
     },
     {
       "question": "Which library is the de facto standard for navigation in cross-platform React Native applications?",
-      "answers": [
-        "React Navigation",
-        "React Router Native",
-        "React Native Navigation"
-      ],
+      "answers": ["React Navigation", "React Router Native", "React Native Navigation"],
       "correct": "React Navigation"
     },
     {
@@ -714,11 +614,7 @@
   [
     {
       "question": "In React Native, which method schedules a function to run after all animations and interactions have completed?",
-      "answers": [
-        "InteractionManager.runAfterInteractions",
-        "setTimeout",
-        "requestAnimationFrame"
-      ],
+      "answers": ["InteractionManager.runAfterInteractions", "setTimeout", "requestAnimationFrame"],
       "correct": "InteractionManager.runAfterInteractions"
     },
     {
@@ -733,11 +629,7 @@
     },
     {
       "question": "In GraphQL, what is the primary purpose of a resolver function?",
-      "answers": [
-        "To fetch and return data for a specific field",
-        "To encrypt query responses",
-        "To generate schemas at runtime"
-      ],
+      "answers": ["To fetch and return data for a specific field", "To encrypt query responses", "To generate schemas at runtime"],
       "correct": "To fetch and return data for a specific field"
     },
     {
@@ -787,11 +679,7 @@
     },
     {
       "question": "In Express.js, how do you define an error-handling middleware function?",
-      "answers": [
-        "(req, res, next)",
-        "(err, req, res, next)",
-        "(error, request, response)"
-      ],
+      "answers": ["(req, res, next)", "(err, req, res, next)", "(error, request, response)"],
       "correct": "(err, req, res, next)"
     },
     {
@@ -811,11 +699,7 @@
     },
     {
       "question": "Which library is most commonly used for declarative navigation in React Native apps?",
-      "answers": [
-        "React Router",
-        "React Navigation",
-        "React Native Navigation"
-      ],
+      "answers": ["React Router", "React Navigation", "React Native Navigation"],
       "correct": "React Navigation"
     },
     {
@@ -834,11 +718,7 @@
     },
     {
       "question": "Which command scaffolds a new native module when using the React Native CLI?",
-      "answers": [
-        "npx create-react-native-module",
-        "react-native init-module",
-        "npm generate rn-module"
-      ],
+      "answers": ["npx create-react-native-module", "react-native init-module", "npm generate rn-module"],
       "correct": "npx create-react-native-module"
     },
     {
@@ -860,38 +740,22 @@
     },
     {
       "question": "What is the primary purpose of using NGINX as a reverse proxy in production web deployments?",
-      "answers": [
-        "Load balancing and serving static assets",
-        "Managing database connections",
-        "Rendering server-side templates"
-      ],
+      "answers": ["Load balancing and serving static assets", "Managing database connections", "Rendering server-side templates"],
       "correct": "Load balancing and serving static assets"
     },
     {
       "question": "In GraphQL, what is the role of a resolver function?",
-      "answers": [
-        "Fetch and return data for a specific field",
-        "Define the schema types",
-        "Handle client authentication"
-      ],
+      "answers": ["Fetch and return data for a specific field", "Define the schema types", "Handle client authentication"],
       "correct": "Fetch and return data for a specific field"
     },
     {
       "question": "In RESTful API design, the HTTP PUT method is generally used to:",
-      "answers": [
-        "Update or create a resource at a specific URI",
-        "Partially modify a resource",
-        "Delete a resource"
-      ],
+      "answers": ["Update or create a resource at a specific URI", "Partially modify a resource", "Delete a resource"],
       "correct": "Update or create a resource at a specific URI"
     },
     {
       "question": "Which library should you use in React Native to achieve native-driven gesture handling and avoid the 60fps JavaScript thread bottleneck?",
-      "answers": [
-        "react-native-gesture-handler",
-        "PanResponder",
-        "Animated API"
-      ],
+      "answers": ["react-native-gesture-handler", "PanResponder", "Animated API"],
       "correct": "react-native-gesture-handler"
     },
     {
@@ -910,20 +774,12 @@
     },
     {
       "question": "When using React Navigation v5, which function creates a stack navigator for screen transitions?",
-      "answers": [
-        "createStackNavigator",
-        "StackNavigatorIOS",
-        "createNativeStack"
-      ],
+      "answers": ["createStackNavigator", "StackNavigatorIOS", "createNativeStack"],
       "correct": "createStackNavigator"
     },
     {
       "question": "Which community-maintained package has replaced the deprecated AsyncStorage module in React Native core?",
-      "answers": [
-        "@react-native-async-storage/async-storage",
-        "react-native-storage",
-        "async-storage"
-      ],
+      "answers": ["@react-native-async-storage/async-storage", "react-native-storage", "async-storage"],
       "correct": "@react-native-async-storage/async-storage"
     }
   ],
@@ -1023,11 +879,7 @@
     },
     {
       "question": "Which HTTP response header must be set by a server to permit cross-origin requests from a web application hosted on a different domain?",
-      "answers": [
-        "Access-Control-Allow-Origin",
-        "Cross-Origin-Allow-Host",
-        "X-Permitted-Cross-Domain"
-      ],
+      "answers": ["Access-Control-Allow-Origin", "Cross-Origin-Allow-Host", "X-Permitted-Cross-Domain"],
       "correct": "Access-Control-Allow-Origin"
     },
     {
@@ -1052,11 +904,7 @@
     },
     {
       "question": "Which open-source library is recommended for handling complex gesture interactions and animations in React Native?",
-      "answers": [
-        "react-native-gesture-handler",
-        "react-native-reanimated",
-        "react-native-animatable"
-      ],
+      "answers": ["react-native-gesture-handler", "react-native-reanimated", "react-native-animatable"],
       "correct": "react-native-gesture-handler"
     },
     {
@@ -1066,11 +914,7 @@
     },
     {
       "question": "What is the primary benefit of enabling the Hermes JavaScript engine in a React Native Android application?",
-      "answers": [
-        "Reduced app size and faster startup",
-        "Enhanced JSX compilation",
-        "Automatic memory management"
-      ],
+      "answers": ["Reduced app size and faster startup", "Enhanced JSX compilation", "Automatic memory management"],
       "correct": "Reduced app size and faster startup"
     },
     {
@@ -1112,11 +956,7 @@
     },
     {
       "question": "In React Native Android modules, which base class should native modules extend to bridge with JavaScript?",
-      "answers": [
-        "ReactActivity",
-        "ReactContextBaseJavaModule",
-        "ReactNativeHost"
-      ],
+      "answers": ["ReactActivity", "ReactContextBaseJavaModule", "ReactNativeHost"],
       "correct": "ReactContextBaseJavaModule"
     },
     {
@@ -1126,11 +966,7 @@
     },
     {
       "question": "For handling complex gestures in React Native, which library is preferred over the built-in PanResponder?",
-      "answers": [
-        "react-native-gesture-handler",
-        "react-native-animatable",
-        "react-navigation-gesture"
-      ],
+      "answers": ["react-native-gesture-handler", "react-native-animatable", "react-navigation-gesture"],
       "correct": "react-native-gesture-handler"
     },
     {
@@ -1172,20 +1008,12 @@
     },
     {
       "question": "Which library is commonly used for navigation in React Native apps?",
-      "answers": [
-        "react-navigation",
-        "react-router-native",
-        "react-native-navigator"
-      ],
+      "answers": ["react-navigation", "react-router-native", "react-native-navigator"],
       "correct": "react-navigation"
     },
     {
       "question": "On Android in React Native, to request permissions at runtime, which module is used?",
-      "answers": [
-        "PermissionsAndroid",
-        "Permissions",
-        "ReactNativePermissions"
-      ],
+      "answers": ["PermissionsAndroid", "Permissions", "ReactNativePermissions"],
       "correct": "PermissionsAndroid"
     },
     {
@@ -1232,20 +1060,12 @@
     },
     {
       "question": "What primary benefit do multistage builds in Docker provide?",
-      "answers": [
-        "Reduced final image size",
-        "Parallel container startup",
-        "Improved network isolation"
-      ],
+      "answers": ["Reduced final image size", "Parallel container startup", "Improved network isolation"],
       "correct": "Reduced final image size"
     },
     {
       "question": "Which HTTP header can be used to mitigate Cross-Site Scripting (XSS) attacks by specifying allowable script sources?",
-      "answers": [
-        "X-Content-Type-Options",
-        "Content-Security-Policy",
-        "X-Frame-Options"
-      ],
+      "answers": ["X-Content-Type-Options", "Content-Security-Policy", "X-Frame-Options"],
       "correct": "Content-Security-Policy"
     },
     {
@@ -1277,11 +1097,7 @@
     },
     {
       "question": "Which of the following is a core feature of GraphQL compared to REST?",
-      "answers": [
-        "Single endpoint for all queries",
-        "Automatic HTTP caching",
-        "Implicit data normalization"
-      ],
+      "answers": ["Single endpoint for all queries", "Automatic HTTP caching", "Implicit data normalization"],
       "correct": "Single endpoint for all queries"
     },
     {
@@ -1301,29 +1117,17 @@
     },
     {
       "question": "What is the primary purpose of the React Native bridge?",
-      "answers": [
-        "Handling network requests",
-        "Facilitating communication between JavaScript and native modules",
-        "Managing component rendering lifecycle"
-      ],
+      "answers": ["Handling network requests", "Facilitating communication between JavaScript and native modules", "Managing component rendering lifecycle"],
       "correct": "Facilitating communication between JavaScript and native modules"
     },
     {
       "question": "Which tool allows you to debug JavaScript code running in a React Native application?",
-      "answers": [
-        "Chrome DevTools Remote Debugging",
-        "Xcode Instruments",
-        "Android Profiler"
-      ],
+      "answers": ["Chrome DevTools Remote Debugging", "Xcode Instruments", "Android Profiler"],
       "correct": "Chrome DevTools Remote Debugging"
     },
     {
       "question": "Which library is most commonly used for navigation in React Native applications?",
-      "answers": [
-        "React Navigation",
-        "React Native Navigation",
-        "React Router"
-      ],
+      "answers": ["React Navigation", "React Native Navigation", "React Router"],
       "correct": "React Navigation"
     }
   ],
@@ -1335,11 +1139,7 @@
     },
     {
       "question": "In Node.js, what is the primary reason to use the cluster module?",
-      "answers": [
-        "Run multiple Node.js instances across CPU cores",
-        "Optimize memory usage automatically",
-        "Manage asynchronous event loop tasks"
-      ],
+      "answers": ["Run multiple Node.js instances across CPU cores", "Optimize memory usage automatically", "Manage asynchronous event loop tasks"],
       "correct": "Run multiple Node.js instances across CPU cores"
     },
     {
@@ -1349,20 +1149,12 @@
     },
     {
       "question": "What is the main advantage of using JSON Web Tokens (JWT) over traditional server-side sessions?",
-      "answers": [
-        "Stateless authentication",
-        "Built-in encryption of payload",
-        "Automatic session invalidation"
-      ],
+      "answers": ["Stateless authentication", "Built-in encryption of payload", "Automatic session invalidation"],
       "correct": "Stateless authentication"
     },
     {
       "question": "In a MERN stack application, where should sensitive environment variables like database credentials be stored?",
-      "answers": [
-        "Client-side .env bundled with React",
-        "Server-side process.env loaded from a .env file",
-        "Hardcoded in deployment scripts"
-      ],
+      "answers": ["Client-side .env bundled with React", "Server-side process.env loaded from a .env file", "Hardcoded in deployment scripts"],
       "correct": "Server-side process.env loaded from a .env file"
     },
     {
@@ -1377,29 +1169,17 @@
     },
     {
       "question": "Which command is typically used to assemble a production-ready Android APK in a React Native project?",
-      "answers": [
-        "react-native bundle --platform android --dev false",
-        "./gradlew assembleRelease",
-        "react-native run-android --variant=release"
-      ],
+      "answers": ["react-native bundle --platform android --dev false", "./gradlew assembleRelease", "react-native run-android --variant=release"],
       "correct": "./gradlew assembleRelease"
     },
     {
       "question": "How can you call a method exposed by a native module from Java or Objective-C in React Native?",
-      "answers": [
-        "NativeModules.ModuleName.method()",
-        "requireNativeComponent('ModuleName')",
-        "NativeAppEventEmitter.emit('ModuleName')"
-      ],
+      "answers": ["NativeModules.ModuleName.method()", "requireNativeComponent('ModuleName')", "NativeAppEventEmitter.emit('ModuleName')"],
       "correct": "NativeModules.ModuleName.method()"
     },
     {
       "question": "When using React Navigation, which navigator should you choose for implementing bottom tab navigation?",
-      "answers": [
-        "createBottomTabNavigator",
-        "createStackNavigator",
-        "createDrawerNavigator"
-      ],
+      "answers": ["createBottomTabNavigator", "createStackNavigator", "createDrawerNavigator"],
       "correct": "createBottomTabNavigator"
     }
   ],
@@ -1411,11 +1191,7 @@
     },
     {
       "question": "When an API implements rate limiting, which HTTP status code is typically returned to indicate too many requests?",
-      "answers": [
-        "429 Too Many Requests",
-        "503 Service Unavailable",
-        "401 Unauthorized"
-      ],
+      "answers": ["429 Too Many Requests", "503 Service Unavailable", "401 Unauthorized"],
       "correct": "429 Too Many Requests"
     },
     {
@@ -1425,11 +1201,7 @@
     },
     {
       "question": "In OAuth 2.0, what is the primary purpose of a refresh token?",
-      "answers": [
-        "Obtain new access tokens after expiration",
-        "Authenticate the user’s credentials",
-        "Grant access to protected resources"
-      ],
+      "answers": ["Obtain new access tokens after expiration", "Authenticate the user’s credentials", "Grant access to protected resources"],
       "correct": "Obtain new access tokens after expiration"
     },
     {
@@ -1439,11 +1211,7 @@
     },
     {
       "question": "In React Native, what is the primary role of the Bridge?",
-      "answers": [
-        "Enable communication between JavaScript and native modules",
-        "Handle navigation between screens",
-        "Render UI components directly"
-      ],
+      "answers": ["Enable communication between JavaScript and native modules", "Handle navigation between screens", "Render UI components directly"],
       "correct": "Enable communication between JavaScript and native modules"
     },
     {
@@ -1458,85 +1226,49 @@
     },
     {
       "question": "For improved caching and performance of images in React Native, which library is commonly recommended?",
-      "answers": [
-        "react-native-fast-image",
-        "react-native-image-header",
-        "react-native-image-scroller"
-      ],
+      "answers": ["react-native-fast-image", "react-native-image-header", "react-native-image-scroller"],
       "correct": "react-native-fast-image"
     },
     {
       "question": "Which navigation library for React Native uses native navigation primitives on both iOS and Android for better performance?",
-      "answers": [
-        "React Native Navigation",
-        "React Navigation",
-        "React Native Router Flux"
-      ],
+      "answers": ["React Native Navigation", "React Navigation", "React Native Router Flux"],
       "correct": "React Native Navigation"
     }
   ],
   [
     {
       "question": "In Express.js, where must an error-handling middleware be placed to ensure it catches errors from other middleware and routes?",
-      "answers": [
-        "Before defining any routes",
-        "After defining all routes",
-        "Between router and static middleware"
-      ],
+      "answers": ["Before defining any routes", "After defining all routes", "Between router and static middleware"],
       "correct": "After defining all routes"
     },
     {
       "question": "Which HTTP header is primarily included by browsers in a CORS preflight (OPTIONS) request to indicate the HTTP method to be used?",
-      "answers": [
-        "Access-Control-Request-Method",
-        "Access-Control-Allow-Origin",
-        "Access-Control-Allow-Methods"
-      ],
+      "answers": ["Access-Control-Request-Method", "Access-Control-Allow-Origin", "Access-Control-Allow-Methods"],
       "correct": "Access-Control-Request-Method"
     },
     {
       "question": "In server-side rendering of a React application, which method is used on the client to attach event listeners and hydrate the markup?",
-      "answers": [
-        "ReactDOM.hydrate()",
-        "ReactDOM.renderToString()",
-        "ReactDOM.createPortal()"
-      ],
+      "answers": ["ReactDOM.hydrate()", "ReactDOM.renderToString()", "ReactDOM.createPortal()"],
       "correct": "ReactDOM.hydrate()"
     },
     {
       "question": "What is the main advantage of using a connection pool for a relational database in a full stack web application?",
-      "answers": [
-        "Reuses active connections to reduce latency",
-        "Automatically scales the number of database instances",
-        "Encrypts connections by default"
-      ],
+      "answers": ["Reuses active connections to reduce latency", "Automatically scales the number of database instances", "Encrypts connections by default"],
       "correct": "Reuses active connections to reduce latency"
     },
     {
       "question": "In a GraphQL server implementation, which technique helps mitigate the N+1 query problem when resolving relational fields?",
-      "answers": [
-        "Batching with DataLoader",
-        "Caching with Redis",
-        "Using REST endpoints"
-      ],
+      "answers": ["Batching with DataLoader", "Caching with Redis", "Using REST endpoints"],
       "correct": "Batching with DataLoader"
     },
     {
       "question": "What is a primary performance benefit of enabling the Hermes engine in a React Native Android build?",
-      "answers": [
-        "Faster JavaScript startup time",
-        "Automatic JIT compilation",
-        "Larger APK size"
-      ],
+      "answers": ["Faster JavaScript startup time", "Automatic JIT compilation", "Larger APK size"],
       "correct": "Faster JavaScript startup time"
     },
     {
       "question": "When creating a native module for iOS in React Native, which macro must you use to expose the module to JavaScript?",
-      "answers": [
-        "RCT_EXPORT_MODULE()",
-        "RN_EXPORT_MODULE()",
-        "RCT_MODULE_EXPORT()"
-      ],
+      "answers": ["RCT_EXPORT_MODULE()", "RN_EXPORT_MODULE()", "RCT_MODULE_EXPORT()"],
       "correct": "RCT_EXPORT_MODULE()"
     },
     {
@@ -1546,11 +1278,7 @@
     },
     {
       "question": "In React Navigation v5 and above, what does the 'replace' method do differently compared to 'navigate'?",
-      "answers": [
-        "Replaces the current route without adding to history",
-        "Clears the entire navigation stack",
-        "Navigates back to the top of the stack"
-      ],
+      "answers": ["Replaces the current route without adding to history", "Clears the entire navigation stack", "Navigates back to the top of the stack"],
       "correct": "Replaces the current route without adding to history"
     },
     {
@@ -1567,20 +1295,12 @@
     },
     {
       "question": "Which command initializes a new Express application with default configurations?",
-      "answers": [
-        "npx express-generator",
-        "express init",
-        "npm create express-app"
-      ],
+      "answers": ["npx express-generator", "express init", "npm create express-app"],
       "correct": "npx express-generator"
     },
     {
       "question": "In React Native, which API would you use to enable gesture handling for swipable views?",
-      "answers": [
-        "PanResponder",
-        "GestureDetector",
-        "TouchableWithoutFeedback"
-      ],
+      "answers": ["PanResponder", "GestureDetector", "TouchableWithoutFeedback"],
       "correct": "PanResponder"
     },
     {
@@ -1600,11 +1320,7 @@
     },
     {
       "question": "In a typical Node.js Express middleware chain, what does calling next() do?",
-      "answers": [
-        "Terminates the request-response cycle",
-        "Passes control to the next middleware",
-        "Sends response to the client"
-      ],
+      "answers": ["Terminates the request-response cycle", "Passes control to the next middleware", "Sends response to the client"],
       "correct": "Passes control to the next middleware"
     },
     {
@@ -1626,20 +1342,12 @@
   [
     {
       "question": "Which Express.js middleware function signature is used for error handling?",
-      "answers": [
-        "function(err, req, res, next)",
-        "function(req, res, next)",
-        "function(req, res)"
-      ],
+      "answers": ["function(err, req, res, next)", "function(req, res, next)", "function(req, res)"],
       "correct": "function(err, req, res, next)"
     },
     {
       "question": "In a Node.js application using Mongoose, which method is used to establish a connection to a MongoDB database?",
-      "answers": [
-        "mongoose.connect(uri, options)",
-        "mongoose.open(uri)",
-        "mongoose.init(uri)"
-      ],
+      "answers": ["mongoose.connect(uri, options)", "mongoose.open(uri)", "mongoose.init(uri)"],
       "correct": "mongoose.connect(uri, options)"
     },
     {
@@ -1649,11 +1357,7 @@
     },
     {
       "question": "In GraphQL, what is the primary role of a resolver?",
-      "answers": [
-        "To fetch and return data for a specific field",
-        "To define the schema types and fields",
-        "To validate client-side queries before execution"
-      ],
+      "answers": ["To fetch and return data for a specific field", "To define the schema types and fields", "To validate client-side queries before execution"],
       "correct": "To fetch and return data for a specific field"
     },
     {
@@ -1663,20 +1367,12 @@
     },
     {
       "question": "Which library provides a JavaScript-based navigation stack with native-like animations in React Native?",
-      "answers": [
-        "react-navigation",
-        "react-native-navigation",
-        "react-router-native"
-      ],
+      "answers": ["react-navigation", "react-native-navigation", "react-router-native"],
       "correct": "react-navigation"
     },
     {
       "question": "To register a custom native Android module in a React Native app, which file must you modify?",
-      "answers": [
-        "MainApplication.java",
-        "MainActivity.java",
-        "settings.gradle"
-      ],
+      "answers": ["MainApplication.java", "MainActivity.java", "settings.gradle"],
       "correct": "MainApplication.java"
     },
     {
@@ -1702,11 +1398,7 @@
   [
     {
       "question": "In React Native, what is the primary advantage of using createNativeStackNavigator over createStackNavigator from @react-navigation/stack?",
-      "answers": [
-        "It provides built-in theming support",
-        "It uses platform-native primitives for better performance",
-        "It automatically generates deep links"
-      ],
+      "answers": ["It provides built-in theming support", "It uses platform-native primitives for better performance", "It automatically generates deep links"],
       "correct": "It uses platform-native primitives for better performance"
     },
     {
@@ -1767,22 +1459,14 @@
     },
     {
       "question": "In Express.js middleware, what is the role of the next() function?",
-      "answers": [
-        "To send the HTTP response to the client",
-        "To pass control to the next middleware or route handler",
-        "To terminate the application process"
-      ],
+      "answers": ["To send the HTTP response to the client", "To pass control to the next middleware or route handler", "To terminate the application process"],
       "correct": "To pass control to the next middleware or route handler"
     }
   ],
   [
     {
       "question": "What is the main advantage of server-side rendering (SSR) over client-side rendering (CSR) in a React web application?",
-      "answers": [
-        "Improved SEO and faster initial load times",
-        "Reduced server load due to client processing",
-        "Simplified client codebase without hydration"
-      ],
+      "answers": ["Improved SEO and faster initial load times", "Reduced server load due to client processing", "Simplified client codebase without hydration"],
       "correct": "Improved SEO and faster initial load times"
     },
     {
@@ -1797,20 +1481,12 @@
     },
     {
       "question": "Which header must be configured on a server to allow cross-origin requests from a specific domain?",
-      "answers": [
-        "Access-Control-Allow-Origin",
-        "X-Frame-Options",
-        "Content-Security-Policy"
-      ],
+      "answers": ["Access-Control-Allow-Origin", "X-Frame-Options", "Content-Security-Policy"],
       "correct": "Access-Control-Allow-Origin"
     },
     {
       "question": "Which database type is most suitable for storing hierarchical JSON documents in a full-stack JavaScript application?",
-      "answers": [
-        "Relational SQL database",
-        "Document-oriented NoSQL database",
-        "In-memory key-value store"
-      ],
+      "answers": ["Relational SQL database", "Document-oriented NoSQL database", "In-memory key-value store"],
       "correct": "Document-oriented NoSQL database"
     },
     {
@@ -1825,29 +1501,17 @@
     },
     {
       "question": "In React Native styling, what unit of measurement is used by default for defining layout dimensions?",
-      "answers": [
-        "dp (density-independent pixels)",
-        "px (pixels)",
-        "% (percentage)"
-      ],
+      "answers": ["dp (density-independent pixels)", "px (pixels)", "% (percentage)"],
       "correct": "dp (density-independent pixels)"
     },
     {
       "question": "Which library is commonly used to handle navigation in React Native apps?",
-      "answers": [
-        "react-native-router-flux",
-        "react-navigation",
-        "react-native-navigation"
-      ],
+      "answers": ["react-native-router-flux", "react-navigation", "react-native-navigation"],
       "correct": "react-navigation"
     },
     {
       "question": "How can you enable debugging of JavaScript code in a React Native app running on an Android emulator?",
-      "answers": [
-        "Use Chrome DevTools by selecting 'Debug JS Remotely'",
-        "Connect via Android Studio's Logcat",
-        "Use Xcode's debugger"
-      ],
+      "answers": ["Use Chrome DevTools by selecting 'Debug JS Remotely'", "Connect via Android Studio's Logcat", "Use Xcode's debugger"],
       "correct": "Use Chrome DevTools by selecting 'Debug JS Remotely'"
     }
   ],
@@ -1889,11 +1553,7 @@
     },
     {
       "question": "What is the recommended approach for integrating a native iOS library into a React Native application?",
-      "answers": [
-        "Creating a Native Module Bridge",
-        "Embedding a WebView",
-        "Using React Native Paper"
-      ],
+      "answers": ["Creating a Native Module Bridge", "Embedding a WebView", "Using React Native Paper"],
       "correct": "Creating a Native Module Bridge"
     },
     {
@@ -1915,11 +1575,7 @@
     },
     {
       "question": "Which of the following is a primary advantage of GraphQL over REST?",
-      "answers": [
-        "Single endpoint reducing overfetching",
-        "Built-in HTTP caching",
-        "Automatic request authentication"
-      ],
+      "answers": ["Single endpoint reducing overfetching", "Built-in HTTP caching", "Automatic request authentication"],
       "correct": "Single endpoint reducing overfetching"
     },
     {
@@ -1959,11 +1615,7 @@
     },
     {
       "question": "For declarative gesture handling in React Native, which library is specifically designed for robust gesture detection?",
-      "answers": [
-        "react-native-gesture-handler",
-        "PanResponder",
-        "Animated API"
-      ],
+      "answers": ["react-native-gesture-handler", "PanResponder", "Animated API"],
       "correct": "react-native-gesture-handler"
     }
   ],
@@ -1979,11 +1631,7 @@
     },
     {
       "question": "In a production Node.js application, which pattern is recommended to achieve true horizontal scaling across multiple servers?",
-      "answers": [
-        "Using the built-in cluster module",
-        "Running multiple instances behind a load balancer",
-        "Forking child processes manually"
-      ],
+      "answers": ["Using the built-in cluster module", "Running multiple instances behind a load balancer", "Forking child processes manually"],
       "correct": "Running multiple instances behind a load balancer"
     },
     {
@@ -2011,11 +1659,7 @@
     },
     {
       "question": "In React Native, which component is recommended for handling complex gestures with native performance?",
-      "answers": [
-        "PanResponder",
-        "TouchableOpacity",
-        "React Native Gesture Handler"
-      ],
+      "answers": ["PanResponder", "TouchableOpacity", "React Native Gesture Handler"],
       "correct": "React Native Gesture Handler"
     },
     {
@@ -2029,20 +1673,12 @@
     },
     {
       "question": "In an Expo-managed workflow, what is a common limitation compared to a bare workflow?",
-      "answers": [
-        "Access to over-the-air updates",
-        "Ability to use custom native modules without ejecting",
-        "Automated app signing and build service"
-      ],
+      "answers": ["Access to over-the-air updates", "Ability to use custom native modules without ejecting", "Automated app signing and build service"],
       "correct": "Ability to use custom native modules without ejecting"
     },
     {
       "question": "Which library would you choose for performant animations in React Native that run on the native UI thread?",
-      "answers": [
-        "React Native Animated API",
-        "React Native Reanimated",
-        "LayoutAnimation"
-      ],
+      "answers": ["React Native Animated API", "React Native Reanimated", "LayoutAnimation"],
       "correct": "React Native Reanimated"
     },
     {
@@ -2059,11 +1695,7 @@
     },
     {
       "question": "In relational databases, what is the primary purpose of an index?",
-      "answers": [
-        "Optimize query performance",
-        "Ensure referential integrity",
-        "Provide data replication"
-      ],
+      "answers": ["Optimize query performance", "Ensure referential integrity", "Provide data replication"],
       "correct": "Optimize query performance"
     },
     {
@@ -2078,11 +1710,7 @@
     },
     {
       "question": "What is a primary benefit of server-side rendering compared to client-side rendering?",
-      "answers": [
-        "Improved SEO",
-        "Reduced server load",
-        "Enhanced real-time updates"
-      ],
+      "answers": ["Improved SEO", "Reduced server load", "Enhanced real-time updates"],
       "correct": "Improved SEO"
     },
     {
@@ -2092,11 +1720,7 @@
     },
     {
       "question": "Which library is the de facto standard for navigation in React Native apps?",
-      "answers": [
-        "react-navigation",
-        "react-router-native",
-        "navigation-react"
-      ],
+      "answers": ["react-navigation", "react-router-native", "navigation-react"],
       "correct": "react-navigation"
     },
     {
@@ -2110,11 +1734,7 @@
     },
     {
       "question": "Which animation library offers better performance through native-driven animations in React Native?",
-      "answers": [
-        "Animated API",
-        "LayoutAnimation API",
-        "react-native-reanimated"
-      ],
+      "answers": ["Animated API", "LayoutAnimation API", "react-native-reanimated"],
       "correct": "react-native-reanimated"
     },
     {
@@ -2126,11 +1746,7 @@
   [
     {
       "question": "In an Express.js application, which method allows you to apply middleware to routes starting with \"/api\"?",
-      "answers": [
-        "app.use('/api', middleware)",
-        "app.get('/api', middleware)",
-        "app.route('/api').use(middleware)"
-      ],
+      "answers": ["app.use('/api', middleware)", "app.get('/api', middleware)", "app.route('/api').use(middleware)"],
       "correct": "app.use('/api', middleware)"
     },
     {
@@ -2169,11 +1785,7 @@
     },
     {
       "question": "Which React Native navigation library uses the platform's native navigation stack on iOS and Android while providing a React API?",
-      "answers": [
-        "React Native Navigation",
-        "React Navigation",
-        "React Router"
-      ],
+      "answers": ["React Native Navigation", "React Navigation", "React Router"],
       "correct": "React Native Navigation"
     },
     {
@@ -2183,22 +1795,14 @@
     },
     {
       "question": "In React Native styling, how do you apply multiple style objects to a single component?",
-      "answers": [
-        "style={[styles.container, styles.primary]}",
-        "style={styles.container & styles.primary}",
-        "style={merge(styles.container, styles.primary)}"
-      ],
+      "answers": ["style={[styles.container, styles.primary]}", "style={styles.container & styles.primary}", "style={merge(styles.container, styles.primary)}"],
       "correct": "style={[styles.container, styles.primary]}"
     }
   ],
   [
     {
       "question": "What is the primary advantage of using server-side rendering (SSR) in Next.js over client-side rendering (CSR) in React?",
-      "answers": [
-        "Reduced bundle size",
-        "Improved SEO and initial load performance",
-        "Simplified state management"
-      ],
+      "answers": ["Reduced bundle size", "Improved SEO and initial load performance", "Simplified state management"],
       "correct": "Improved SEO and initial load performance"
     },
     {
@@ -2213,20 +1817,12 @@
     },
     {
       "question": "Which indexing strategy is best suited for optimizing queries that filter on both fields A and B in MongoDB?",
-      "answers": [
-        "Separate single-field indexes on A and B",
-        "Compound index on A and B",
-        "Text index on combined A and B"
-      ],
+      "answers": ["Separate single-field indexes on A and B", "Compound index on A and B", "Text index on combined A and B"],
       "correct": "Compound index on A and B"
     },
     {
       "question": "In RESTful API design, what is the primary purpose of an HTTP PATCH request?",
-      "answers": [
-        "Create a new resource",
-        "Fully replace an existing resource",
-        "Apply partial modifications to a resource"
-      ],
+      "answers": ["Create a new resource", "Fully replace an existing resource", "Apply partial modifications to a resource"],
       "correct": "Apply partial modifications to a resource"
     },
     {
@@ -2245,11 +1841,7 @@
     },
     {
       "question": "Which library is most commonly used for handling navigation in React Native applications?",
-      "answers": [
-        "React Router",
-        "React Native Navigation",
-        "React Navigation"
-      ],
+      "answers": ["React Router", "React Native Navigation", "React Navigation"],
       "correct": "React Navigation"
     },
     {
@@ -2315,11 +1907,7 @@
     },
     {
       "question": "In GraphQL, what is the purpose of a resolver function?",
-      "answers": [
-        "Define the schema",
-        "Fetch and return data for a field",
-        "Validate queries"
-      ],
+      "answers": ["Define the schema", "Fetch and return data for a field", "Validate queries"],
       "correct": "Fetch and return data for a field"
     }
   ],
@@ -2336,11 +1924,7 @@
     },
     {
       "question": "Which HTTP response header should a server include to allow cross-origin GET requests from any domain?",
-      "answers": [
-        "Access-Control-Allow-Methods",
-        "Access-Control-Allow-Credentials",
-        "Access-Control-Allow-Origin"
-      ],
+      "answers": ["Access-Control-Allow-Methods", "Access-Control-Allow-Credentials", "Access-Control-Allow-Origin"],
       "correct": "Access-Control-Allow-Origin"
     },
     {
@@ -2375,31 +1959,19 @@
     },
     {
       "question": "In React Native, which API allows scheduling tasks to run after all ongoing interactions and animations have completed?",
-      "answers": [
-        "setImmediate",
-        "requestAnimationFrame",
-        "InteractionManager"
-      ],
+      "answers": ["setImmediate", "requestAnimationFrame", "InteractionManager"],
       "correct": "InteractionManager"
     }
   ],
   [
     {
       "question": "What is the primary benefit of using a GraphQL API over a traditional REST API?",
-      "answers": [
-        "Reduced overfetching of data",
-        "Built-in real-time subscriptions",
-        "Simpler server implementation"
-      ],
+      "answers": ["Reduced overfetching of data", "Built-in real-time subscriptions", "Simpler server implementation"],
       "correct": "Reduced overfetching of data"
     },
     {
       "question": "In Node.js, which mechanism allows handling high concurrency without blocking the event loop?",
-      "answers": [
-        "Asynchronous non-blocking I/O callbacks",
-        "Multithreading with worker threads",
-        "Synchronous file system operations"
-      ],
+      "answers": ["Asynchronous non-blocking I/O callbacks", "Multithreading with worker threads", "Synchronous file system operations"],
       "correct": "Asynchronous non-blocking I/O callbacks"
     },
     {
@@ -2409,11 +1981,7 @@
     },
     {
       "question": "In full stack development, what does SSR (Server-Side Rendering) improve compared to CSR?",
-      "answers": [
-        "Faster initial page load and better SEO",
-        "Reduced server bandwidth usage",
-        "Simplified client-side routing"
-      ],
+      "answers": ["Faster initial page load and better SEO", "Reduced server bandwidth usage", "Simplified client-side routing"],
       "correct": "Faster initial page load and better SEO"
     },
     {
@@ -2447,11 +2015,7 @@
     },
     {
       "question": "In React Native, what is the function of the Metro bundler?",
-      "answers": [
-        "Transforms and serves JavaScript code to the app",
-        "Handles HTTP routing in Express.js",
-        "Minifies CSS stylesheets"
-      ],
+      "answers": ["Transforms and serves JavaScript code to the app", "Handles HTTP routing in Express.js", "Minifies CSS stylesheets"],
       "correct": "Transforms and serves JavaScript code to the app"
     }
   ]

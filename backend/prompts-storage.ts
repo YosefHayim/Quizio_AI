@@ -34,4 +34,4 @@ example:
     "correct": "JSON.parse()"
   }
 ]
-and than append it to quizzez.json file.`;
+and than append it to quizzes.json file.`;
