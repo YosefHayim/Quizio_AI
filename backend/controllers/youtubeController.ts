@@ -22,7 +22,9 @@ const getCaptionsByVideoID = async (req: Request, res: Response): Promise<void> 
     res.status(200).json(result.data);
   } catch (error) {
     console.error("getCaptionsByVideoID fn:", error);
-    res.status(500).json({ error: "Internal server error" });
+    res.status(500).json({ 
+      status:'failed',
+      error: "Internal server error" });
   }
 };
 
@@ -35,7 +37,7 @@ export const fetchCaptionsWithoutAuth = async (req: Request, res: Response): Pro
   }
 
   try {
-    const pythonProcess = spawn("python", ["./scraper.py", videoId]);
+    const pythonProcess = spawn("python3", ["./scraper.py", videoId]);
 
     let output = "";
     let errorOutput = "";
