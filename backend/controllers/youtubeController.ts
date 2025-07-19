@@ -28,7 +28,7 @@ const getCaptionsByVideoID = async (req: Request, res: Response): Promise<void> 
 
 export default getCaptionsByVideoID;
 
-export const unAuthorizedCaptionsParserByVideoId = async (req: Request, res: Response): Promise<any> => {
+export const fetchCaptionsWithoutAuth = async (req: Request, res: Response): Promise<any> => {
   const videoId = req.params.videoId;
   if (!videoId) {
     return res.status(400).json({ error: "Missing videoId parameter" });
