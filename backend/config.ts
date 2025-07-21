@@ -1,8 +1,9 @@
-import dotenv from 'dotenv';
-import fs from 'fs';
-import { google } from 'googleapis';
-import OpenAI from 'openai';
-import path from 'path';
+import OpenAI from "openai";
+import { createClient } from "@supabase/supabase-js";
+import dotenv from "dotenv";
+import fs from "fs";
+import { google } from "googleapis";
+import path from "path";
 
 dotenv.config();
 
@@ -18,22 +19,30 @@ export const CONFIG = {
   port: process.env.PORT,
 };
 
+export const supabase = createClient(CONFIG.supabaseUrl!, CONFIG.supabaseKey!);
+
+export const adminSupbase = createClient(CONFIG.supabaseUrl!, CONFIG.supabaseServiceRole!, {
+  auth: {
+    autoRefreshToken: false,
+    persistSession: false,
+  },
+});
+
+if (!(CONFIG.supabaseUrl! || CONFIG.supabaseKey)) throw new Error("Public Client Not loaded");
+if (!CONFIG.supabaseServiceRole) throw new Error("Service role Not loaded");
+
 export const client = new OpenAI({ apiKey: CONFIG.openAiKey });
 
-const oauth2Client = new google.auth.OAuth2(
-  process.env.CLIENT_ID,
-  process.env.CLIENT_SECRET,
-  process.env.LOCAL_REDIRECT_URL
-);
+const oauth2Client = new google.auth.OAuth2(process.env.CLIENT_ID, process.env.CLIENT_SECRET, process.env.LOCAL_REDIRECT_URL);
 
-const CREDENTIALS_PATH = path.resolve(__dirname, './credentails.json');
+const CREDENTIALS_PATH = path.resolve(__dirname, "./credentails.json");
 
 if (fs.existsSync(CREDENTIALS_PATH)) {
-  console.log('Credentails loaded');
-  const tokens = JSON.parse(fs.readFileSync(CREDENTIALS_PATH, 'utf8'));
+  console.log("Credentails loaded");
+  const tokens = JSON.parse(fs.readFileSync(CREDENTIALS_PATH, "utf8"));
   oauth2Client.setCredentials(tokens);
 } else {
-  console.warn('Token file not found at: ', CREDENTIALS_PATH);
+  console.warn("Token file not found at: ", CREDENTIALS_PATH);
 }
 
 export { oauth2Client };

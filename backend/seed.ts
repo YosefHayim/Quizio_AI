@@ -1,21 +1,10 @@
-import { CONFIG } from "./config";
+import { adminSupbase, supabase } from "./config";
+
 import axios from "axios";
-import { createClient } from "@supabase/supabase-js";
 import { faker } from "@faker-js/faker";
 import fs from "fs";
 
 const QUIZZEZ_DATA = JSON.parse(fs.readFileSync("./quizzes.json", "utf8"));
-const supabase = createClient(CONFIG.supabaseUrl!, CONFIG.supabaseKey!);
-
-const adminSupbase = createClient(CONFIG.supabaseUrl!, CONFIG.supabaseServiceRole!, {
-  auth: {
-    autoRefreshToken: false,
-    persistSession: false,
-  },
-});
-
-if (!(CONFIG.supabaseUrl! || CONFIG.supabaseKey)) throw new Error("Public Client Not loaded");
-if (!CONFIG.supabaseServiceRole) throw new Error("Service role Not loaded");
 
 const createUsers = async (amount: number) => {
   try {

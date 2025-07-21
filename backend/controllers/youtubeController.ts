@@ -1,34 +1,6 @@
 import type { Request, Response } from "express";
 
-import { google } from "googleapis";
-import { oauth2Client } from "../config";
 import { spawn } from "child_process";
-
-const getCaptionsByVideoID = async (req: Request, res: Response): Promise<void> => {
-  try {
-    const videoId = req.params.videoId;
-
-    const service = google.youtube({
-      version: "v3",
-      auth: oauth2Client,
-    });
-
-    const result = await service.captions.list({
-      videoId,
-      part: ["snippet"],
-    });
-    console.log("Result: ", result);
-
-    res.status(200).json(result.data);
-  } catch (error) {
-    console.error("getCaptionsByVideoID fn:", error);
-    res.status(500).json({ 
-      status:'failed',
-      error: "Internal server error" });
-  }
-};
-
-export default getCaptionsByVideoID;
 
 export const fetchCaptionsWithoutAuth = async (req: Request, res: Response): Promise<any> => {
   const videoId = req.params.videoId;
@@ -37,8 +9,11 @@ export const fetchCaptionsWithoutAuth = async (req: Request, res: Response): Pro
   }
 
   try {
-    const pythonProcess = spawn("python3", ["./scraper.py", videoId]);
-
+    const pythonProcess = spawn(
+      "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+      ["./scraper.py", videoId]
+    );
+    
     let output = "";
     let errorOutput = "";
 
